@@ -1,0 +1,125 @@
+[
+    {
+        "name": "Caleb Williams",
+        "position": "QB",
+        "team": "USC",
+        "stats": {
+            "height": "6'1",
+            "weight": "215 lb",
+            "40Time": "4.50"
+        },
+        "rating": 97
+    },
+    {
+        "name": "Marvin Harrsion Jr.",
+        "position": "WR",
+        "team": "Ohio State",
+        "stats": {
+            "height": "6'3",
+            "weight": "205 lb",
+            "40Time": "4.46"
+        },
+        "rating": 97
+    },
+    {
+        "name": "Malik Nabers",
+        "position": "WR",
+        "team": "LSU",
+        "stats": {
+            "height": "6'0",
+            "weight": "200 lb",
+            "40Time": "4.30"
+        },
+        "rating": 97
+    },
+    {
+        "name": "Brock Bowers",
+        "position": "TE",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'4",
+            "weight": "230 lb",
+            "40Time": "4.45"
+        },
+        "rating": 97
+    },
+    {
+        "name": "Joe Alt",
+        "position": "OT",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'8",
+            "weight": "315 lb",
+            "40Time": "4.90"
+        },
+        "rating": 95
+    },
+    {
+        "name": "Laiatu Latu",
+        "position": "EDGE",
+        "team": "UCLA",
+        "stats": {
+            "height": "6'5",
+            "weight": "270 lb",
+            "40Time": "4.70"
+        },
+        "rating": 94
+    },
+    {
+        "name": "Drake Maye",
+        "position": "QB",
+        "team": "QB",
+        "stats": {
+            "height": "6'4",
+            "weight": "229 lb",
+            "40Time": "4.63"
+        },
+        "rating": 93
+    },
+    {
+        "name": "Jayden Daniels",
+        "position": "QB",
+        "team": "LSU",
+        "stats": {
+            "height": "6'4",
+            "weight": "210 lb",
+            "40Time": "4.40"
+        },
+        "rating": 93
+    },
+    {
+        "name": "Olu Fashanu",
+        "position": "OT",
+        "team": "PSU",
+        "stats": {
+            "height": "6'6",
+            "weight": "317 lb",
+            "40Time": "4.97"
+        },
+        "rating": 93
+    },
+    {
+        "name": "Dallas Turner",
+        "position": "EDGE",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'4",
+            "weight": "242 lb",
+            "40Time": "4.45"
+        },
+        "rating": 93
+    },
+    {
+        "name": "Rome Odunze",
+        "position": "WR",
+        "team": "Washington",
+        "stats": {
+            "height": "6'3",
+            "weight": "216 lb",
+            "40Time": "4.40"
+        },
+        "rating": 92
+    }
+
+
+]
