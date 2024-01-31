@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Simulator - NFL Mock Draft Simulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="models/draft.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>NFL Mock Draft Simulator</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">NFL Info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="draftSection">
+            <h2>NFL Draft Simulator</h2>
+            <div>
+                <label for="teamSelect">Select Team:</label>
+                <select id="teamSelect"></select>
+            </div>
+            <div>
+                <label for="playerSelect">Select Player:</label>
+                <select id="playerSelect">
+                    <!-- Player options will be populated here -->
+                </select>
+            </div>
+            <button id="startDraft">Start Draft</button>
+            <div id="draftControls">
+                <!-- Controls for draft rounds -->
+                <button id="selectPlayer" disabled>Select Player</button> <!-- The Select Player button -->
+                <button id="nextRound">Next Round</button>
+                <button id="finishDraft">Finish Draft</button>
+            </div>
+            <div id="draftResults">
+                <!-- Draft results will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 NFL Mock Draft Simulator</p>
+    </footer>
+    <script src="models/draft.js"></script>
+</body>
+
+</html>
