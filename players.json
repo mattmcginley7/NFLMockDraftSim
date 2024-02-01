@@ -8,7 +8,7 @@
             "weight": "215 lb",
             "40Time": "4.50"
         },
-        "rating": 97
+        "rating": 1
     },
     {
         "name": "Marvin Harrsion Jr.",
@@ -19,7 +19,7 @@
             "weight": "205 lb",
             "40Time": "4.46"
         },
-        "rating": 97
+        "rating": 2
     },
     {
         "name": "Malik Nabers",
@@ -30,7 +30,7 @@
             "weight": "200 lb",
             "40Time": "4.30"
         },
-        "rating": 97
+        "rating": 3
     },
     {
         "name": "Brock Bowers",
@@ -41,7 +41,7 @@
             "weight": "230 lb",
             "40Time": "4.45"
         },
-        "rating": 97
+        "rating": 4
     },
     {
         "name": "Joe Alt",
@@ -52,7 +52,7 @@
             "weight": "315 lb",
             "40Time": "4.90"
         },
-        "rating": 95
+        "rating": 5
     },
     {
         "name": "Laiatu Latu",
@@ -63,7 +63,7 @@
             "weight": "270 lb",
             "40Time": "4.70"
         },
-        "rating": 94
+        "rating": 6
     },
     {
         "name": "Drake Maye",
@@ -74,7 +74,7 @@
             "weight": "229 lb",
             "40Time": "4.63"
         },
-        "rating": 93
+        "rating": 7
     },
     {
         "name": "Jayden Daniels",
@@ -85,7 +85,7 @@
             "weight": "210 lb",
             "40Time": "4.40"
         },
-        "rating": 93
+        "rating": 8
     },
     {
         "name": "Olu Fashanu",
@@ -96,7 +96,7 @@
             "weight": "317 lb",
             "40Time": "4.97"
         },
-        "rating": 93
+        "rating": 9
     },
     {
         "name": "Dallas Turner",
@@ -107,7 +107,7 @@
             "weight": "242 lb",
             "40Time": "4.45"
         },
-        "rating": 93
+        "rating": 10
     },
     {
         "name": "Rome Odunze",
@@ -118,8 +118,74 @@
             "weight": "216 lb",
             "40Time": "4.40"
         },
-        "rating": 92
+        "rating": 11
+    },
+    {    "name": "Darius Robinson",
+        "position": "EDGE",
+        "team": "Missouri",
+        "stats":{
+            "height": "6'5",
+            "weight": "286",
+            "40Time": "4.70"
+        },
+        "rating": 12
+    },
+    {
+        "name": "Terrion Arnold",
+        "position": "CB",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'0",
+            "weight": "196",
+            "40Time": "4.38"
+        },
+        "rating": 13
+    },
+    {
+        "name": "Jared Verse",
+        "position": "EDGE",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'4",
+            "weight": "260",
+            "40Time": "4.57"
+        },
+        "rating": 14
+    },
+    {
+        "name": "Cooper DeJean",
+        "position": "CB",
+        "team": "Iowa",
+        "stats": {
+            "height": "6'1",
+            "weight": "207",
+            "40Time": "4.43"
+        },
+        "rating": 15
+    },
+    {
+        "name": "Nate Wiggins",
+        "position": "CB",
+        "team": "Clemson",
+        "stats": {
+            "height": "6'2",
+            "weight": "185",
+            "40Time": "4.30"
+        },
+        "rating": 16
+    },
+    {
+        "name": "Taliese Fuaga",
+        "position": "OT",
+        "team": "Oregon State",
+        "stats": {
+            "height": "6'6",
+            "weight": "OT",
+            "40Time": "5.20"
+        },
+        "rating": 17
     }
+
 
 
 ]
