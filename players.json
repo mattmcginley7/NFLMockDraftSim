@@ -180,8 +180,19 @@
         "team": "Oregon State",
         "stats": {
             "height": "6'6",
-            "weight": "OT",
+            "weight": "334",
             "40Time": "5.20"
+        },
+        "rating": 17
+    },
+    {
+        "name": "Tyler Guyton",
+        "position": "OT",
+        "team": "Oklahoma",
+        "stats": {
+            "height": "6'7",
+            "weight": "328",
+            "40Time": "4.92"
         },
         "rating": 17
     }
