@@ -195,7 +195,63 @@
             "40Time": "4.92"
         },
         "rating": 17
+    },
+    {
+        "name": "Amarius Mims",
+        "position": "OT",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'7",
+            "weight": "340",
+            "40Time": "5.15"
+        },
+        "rating": 17
+    },
+    {
+        "name": "Quinyon Mitchell",
+        "position": "CB",
+        "team": "Toledo",
+        "stats": {
+            "height": "6'0",
+            "weight": "196",
+            "40Time": "4.33"
+        },
+        "rating": 17
+    },
+    {
+        "name": "Kool-Aid McKinstry",
+        "position": "CB",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'1",
+            "weight": "194",
+            "40Time": "4.50"
+        },
+        "rating": 17
+    },
+    {
+        "name": "JC Latham",
+        "position": "OT",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'6",
+            "weight": "360",
+            "40Time": "5.28"
+        },
+        "rating": 17
+    },
+    {
+        "name": "Brian Thomas Jr",
+        "position": "WR",
+        "team": "LSU",
+        "stats": {
+            "height": "6'4",
+            "weight": "205",
+            "40Time": "4.37"
+        },
+        "rating": 17
     }
+
 
 
 
