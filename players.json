@@ -305,7 +305,63 @@
             "40Time": "4.43"
         },
         "rating": 29
+    },
+    {
+        "name": "Tez Walker",
+        "position": "WR",
+        "team": "North Carolina",
+        "stats": {
+            "height": "6'2",
+            "weight": "200",
+            "40Time": "4.43"
+        },
+        "rating": 30
+    },
+    {
+        "name": "JJ McCarthy",
+        "position": "QB",
+        "team": "Michigan",
+        "stats": {
+            "height": "6'3",
+            "weight": "202",
+            "40Time": "4.58"
+        },
+        "rating": 31
+    },
+    {
+        "name": "Jer'Zhan Newton",
+        "position": "DT",
+        "team": "Illinois",
+        "stats": {
+            "height": "6'2",
+            "weight": "295",
+            "40Time": "4.93"
+        },
+        "rating": 32
+    },
+    {
+        "name": "Jordan Morgan",
+        "position": "OT",
+        "team": "Arizona",
+        "stats": {
+            "height": "6'5",
+            "weight": "312",
+            "40Time": "5.03"
+        },
+        "rating": 33
+    },
+    {
+        "name": "Graham Barton",
+        "position": "OT",
+        "team": "Duke",
+        "stats": {
+            "height": "6'5",
+            "weight": "314",
+            "40Time": "5.03"
+        },
+        "rating": 34
     }
+
 
 
 
