@@ -183,7 +183,7 @@
             "weight": "334",
             "40Time": "5.20"
         },
-        "rating": 17
+        "rating": 18
     },
     {
         "name": "Tyler Guyton",
@@ -194,7 +194,7 @@
             "weight": "328",
             "40Time": "4.92"
         },
-        "rating": 17
+        "rating": 19
     },
     {
         "name": "Amarius Mims",
@@ -205,7 +205,7 @@
             "weight": "340",
             "40Time": "5.15"
         },
-        "rating": 17
+        "rating": 20
     },
     {
         "name": "Quinyon Mitchell",
@@ -216,7 +216,7 @@
             "weight": "196",
             "40Time": "4.33"
         },
-        "rating": 17
+        "rating": 21
     },
     {
         "name": "Kool-Aid McKinstry",
@@ -227,7 +227,7 @@
             "weight": "194",
             "40Time": "4.50"
         },
-        "rating": 17
+        "rating": 22
     },
     {
         "name": "JC Latham",
@@ -238,7 +238,7 @@
             "weight": "360",
             "40Time": "5.28"
         },
-        "rating": 17
+        "rating": 23
     },
     {
         "name": "Brian Thomas Jr",
@@ -249,8 +249,64 @@
             "weight": "205",
             "40Time": "4.37"
         },
-        "rating": 17
+        "rating": 24
+    },
+    {
+        "name": "Edgerrin Cooper",
+        "position": "LB",
+        "team": "Texas A&M",
+        "stats": {
+            "height": "6'2",
+            "weight": "227",
+            "40Time": "4.43"
+        },
+        "rating": 25
+    },
+    {
+        "name": "Byron Murphy",
+        "position": "DT",
+        "team": "Texas",
+        "stats": {
+            "height": "6'1",
+            "weight": "308",
+            "40Time": "4.93"
+        },
+        "rating": 26
+    },
+    {
+        "name": "Bo Nix",
+        "position": "QB",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'2",
+            "weight": "218",
+            "40Time": "4.63"
+        },
+        "rating": 27
+    },
+    {
+        "name": "Ennis Rakestraw Jr",
+        "position": "CB",
+        "team": "Missouri",
+        "stats": {
+            "height": "6'0",
+            "weight": "188",
+            "40Time": "4.43"
+        },
+        "rating": 28
+    },
+    {
+        "name": "Chop Robinson",
+        "position": "EDGE",
+        "team": "Penn State",
+        "stats": {
+            "height": "6'3",
+            "weight": "250",
+            "40Time": "4.43"
+        },
+        "rating": 29
     }
+
 
 
 
