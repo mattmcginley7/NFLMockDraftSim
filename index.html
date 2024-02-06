@@ -1,32 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFL Mock Draft Simulator</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .team-selection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .team-selection button {
+            cursor: pointer;
+            padding: 5px 15px;
+            margin-bottom: 20px;
+        }
+
+        .team-logo {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .team-logo.selected {
+            border-color: #007bff;
+        }
+
+        .start-simulation {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .division-title {
+            grid-column: span 4;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to the NFL Mock Draft Simulator</h1>
-        <nav>
-            <ul>
-                <li><a href="draft.html">Start Drafting</a></li>
-                <li><a href="info.html">NFL Info</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Select Your Team(s)</h1>
+        <div class="team-selection">
+            <button id="selectAll">SELECT ALL</button>
+            <button id="clearAll">CLEAR ALL</button>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>About the Simulator</h2>
-            <p>Experience the thrill of the NFL Draft. Select your favorite teams and players to create your mock draft.
-            </p>
-        </section>
+        <div class="team-selection">
+            <span class="division-title">NFC East</span>
+            <!-- Repeat this block for each team, with the appropriate logo and id -->
+            <img src="EaglesLogoGreen.png" class="team-logo" id="team1" title="Eagles">
+            <img src="Cowboys.png" class="team-logo" id="team1" title="Cowboys">
+            <img src="CommandersRed.png" class="team-logo" id="team1" title="Commanders">
+            <img src="GiantsLogoCircle.png" class="team-logo" id="team1" title="Giants">
+
+            <span class="division-title">AFC North</span>
+            <img src="RavensLogo.png" class="team-logo" id="team1" title="Ravens">
+            <img src="SteelersLogo.png" class="team-logo" id="team1" title="Steelers">
+            <img src="Cleveland-Browns-logo.png" class="team-logo" id="team1" title="Browns">
+            <img src="Cincinnati_Bengals_logo.png".png" class="team-logo" id="team1" title="Bengals">
+
+           
+        </div>
+        <button id="startSimulation" class="start-simulation">START SIMULATION</button>
     </main>
     <footer>
-        <p>&copy; 2023 NFL Mock Draft Simulator</p>
+        <p>&copy; 2024 NFL Mock Draft Simulator</p>
     </footer>
+
+    <script>
+        // JavaScript to handle team selection and start simulation
+        const selectAllButton = document.getElementById('selectAll');
+        const clearAllButton = document.getElementById('clearAll');
+        const startSimulationButton = document.getElementById('startSimulation');
+        const teamLogos = document.querySelectorAll('.team-logo');
+
+        selectAllButton.addEventListener('click', () => {
+            teamLogos.forEach(logo => logo.classList.add('selected'));
+        });
+
+        clearAllButton.addEventListener('click', () => {
+            teamLogos.forEach(logo => logo.classList.remove('selected'));
+        });
+
+        teamLogos.forEach(logo => {
+            logo.addEventListener('click', () => {
+                logo.classList.toggle('selected');
+            });
+        });
+
+        startSimulationButton.addEventListener('click', () => {
+            const selectedTeams = Array.from(teamLogos)
+                .filter(logo => logo.classList.contains('selected'))
+                .map(logo => logo.id);
+            // Add logic to start the draft with selectedTeams
+        });
+    </script>
 </body>
 
 </html>
