@@ -119,7 +119,6 @@
     <header>
         <h1>Select Your Team(s)</h1>
         <div class="team-selection">
-            <button id="toggleConference">Toggle Conference</button>
             <button id="selectAll">SELECT ALL</button>
             <button id="clearAll">CLEAR ALL</button>
         </div>
@@ -190,24 +189,7 @@
         <p>&copy; 2024 NFL Mock Draft Simulator</p>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-                const toggleConferenceButton = document.getElementById('toggleConference');
-                const nfcTeams = document.querySelector('.nfc-teams');
-                const afcTeams = document.querySelector('.afc-teams');
-
-                toggleConferenceButton.addEventListener('click', () => {
-                    if (nfcTeams.style.display === 'none') {
-                        nfcTeams.style.display = 'grid'; // Show NFC teams
-                        afcTeams.style.display = 'none';  // Hide AFC teams
-                    } else {
-                        nfcTeams.style.display = 'none';  // Hide NFC teams
-                        afcTeams.style.display = 'grid'; // Show AFC teams
-                    }
-                });
-            });
-
-
-        // JavaScript to handle team selection and start simulation
+       // JavaScript to handle team selection and start simulation
         const selectAllButton = document.getElementById('selectAll');
         const clearAllButton = document.getElementById('clearAll');
         const startSimulationButton = document.getElementById('startSimulation');
