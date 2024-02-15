@@ -1,0 +1,231 @@
+{
+    "teams": [
+        {
+            "name": "Chicago Bears",
+            "picks": [
+                1,
+                9,
+                67
+            ]
+        },
+        {
+            "name": "Washington Commanders",
+            "picks": [
+                2,
+                36
+            ]
+        },
+        {
+            "name": "New England Patriots",
+            "picks": [
+                3,
+                34
+            ]
+        },
+        {
+            "name": "Arizona Cardinals",
+            "picks": [
+                4,
+                35
+            ]
+        },
+        {
+            "name": "LA Chargers",
+            "picks": [
+                5,
+                37
+            ]
+        },
+        {
+            "name": "New York Giants",
+            "picks": [
+                6,
+                39,
+                47
+            ]
+        },
+        {
+            "name": "Tennessee Titans",
+            "picks": [
+                7,
+                38
+            ]
+        },
+        {
+            "name": "Atlanta Falcons",
+            "picks": [
+                8,
+                43
+            ]
+        },
+        {
+            "name": "New York Jets",
+            "picks": [
+                10,
+                40
+            ]
+        },
+        {
+            "name": "Minnesota Vikings",
+            "picks": [
+                11
+            ]
+        },
+        {
+            "name": "Denver Broncos",
+            "picks": [
+                12
+            ]
+        },
+        {
+            "name": "Las Vegas Raiders",
+            "picks": [
+                13,
+                44
+            ]
+        },
+        {
+            "name": "New Orleans Saints",
+            "picks": [
+                14,
+                45
+            ]
+        },
+        {
+            "name": "Indianapolis Colts",
+            "picks": [
+                15,
+                46
+            ]
+        },
+        {
+            "name": "Seattle Seahawks",
+            "picks": [
+                16
+            ]
+        },
+        {
+            "name": "Jacksonville Jaguars",
+            "picks": [
+                17,
+                48
+            ]
+        },
+        {
+            "name": "Cincinnati Bengals",
+            "picks": [
+                18,
+                49
+            ]
+        },
+        {
+            "name": "LA Rams",
+            "picks": [
+                19,
+                51
+            ]
+        },
+        {
+            "name": "Pittsburgh Steelers",
+            "picks": [
+                20,
+                52
+            ]
+        },
+        {
+            "name": "Miami Dolphins",
+            "picks": [
+                21,
+                53
+            ]
+        },
+        {
+            "name": "Philadelphia Eagles",
+            "picks": [
+                22,
+                50,
+                53,
+                97
+            ]
+        },
+        {
+            "name": "Houston Texans",
+            "picks": [
+                23,
+                59
+            ]
+        },
+        {
+            "name": "Dallas Cowboys",
+            "picks": [
+                24,
+                56
+            ]
+        },
+        {
+            "name": "Green Bay Packers",
+            "picks": [
+                25,
+                41,
+                57
+            ]
+        },
+        {
+            "name": "Tampa Bay Buccanners",
+            "picks": [
+                26,
+                58
+            ]
+        },
+        {
+            "name": "Buffalo Bills",
+            "picks": [
+                28,
+                60
+            ]
+        },
+        {
+            "name": "Detroit Lions",
+            "picks": [
+                29,
+                61
+            ]
+        },
+        {
+            "name": "Baltimore Ravens",
+            "picks": [
+                30,
+                42,
+                62
+            ]
+        },
+        {
+            "name": "San Francisco 49ers",
+            "picks": [
+                31,
+                63
+            ]
+        },
+        {
+            "name": "Kansas City Chiefs",
+            "picks": [
+                32,
+                64
+            ]
+        },
+        {
+            "name": "Carolina Panthers",
+            "picks": [
+                33
+            ]
+        },
+        {
+            "name": "Cleveland Browns",
+            "picks": [
+                55
+            ]
+        }
+
+        
+    ]
+}
