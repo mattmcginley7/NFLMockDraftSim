@@ -360,7 +360,229 @@
             "40Time": "5.03"
         },
         "rating": 34
+    },
+    {
+        "name": "Troy Franklin",
+        "position": "WR",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3",
+            "weight": "187",
+            "40Time": "4.33"
+        },
+        "rating": 35
+    },
+    {
+        "name": "Adonai Mitchell",
+        "position": "WR",
+        "team": "Texas",
+        "stats": {
+            "height": "6'4",
+            "weight": "198",
+            "40Time": "4.49"
+        },
+        "rating": 36
+    },
+    {
+        "name": "Jackson Powers-Johnson",
+        "position": "IOL",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3",
+            "weight": "334",
+            "40Time": "5.29"
+        },
+        "rating": 37
+    },
+    {
+        "name": "Zach Frazier",
+        "position": "IOL",
+        "team": "West Virginia",
+        "stats": {
+            "height": "6'3",
+            "weight": "314",
+            "40Time": "5.13"
+        },
+        "rating": 38
+    },
+    {
+        "name": "Keon Coleman",
+        "position": "WR",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'4",
+            "weight": "215",
+            "40Time": "4.53"
+        },
+        "rating": 39
+    },
+    {
+        "name": "Michael Penix Jr.",
+        "position": "QB",
+        "team": "Washington",
+        "stats": {
+            "height": "6'3",
+            "weight": "213",
+            "40Time": "4.73"
+        },
+        "rating": 40
+    },
+    {
+        "name": "Ja'Tavion Sanders",
+        "position": "TE",
+        "team": "Texas",
+        "stats": {
+            "height": "6'4",
+            "weight": "247",
+            "40Time": "4.59"
+        },
+        "rating": 41
+    },
+    {
+        "name": "Kamari Lassiter",
+        "position": "CB",
+        "team": "Georiga",
+        "stats": {
+            "height": "6'0",
+            "weight": "180",
+            "40Time": "4.49"
+        },
+        "rating": 42
+    },
+    {
+        "name": "Xavier Worthy",
+        "position": "WR",
+        "team": "Texas",
+        "stats": {
+            "height": "6'1",
+            "weight": "170",
+            "40Time": "4.29"
+        },
+        "rating": 43
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 44
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 45
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 46
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 47
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 48
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 49
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 50
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 51
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 52
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 53
+    },
+    {
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'11",
+            "weight": "185",
+            "40Time": "4.48"
+        },
+        "rating": 54
     }
+
+
 
 
 
