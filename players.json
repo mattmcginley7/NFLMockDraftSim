@@ -472,79 +472,79 @@
         "rating": 44
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Junior Colson",
+        "position": "LB",
+        "team": "Michigan",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'3",
+            "weight": "247",
+            "40Time": "4.58"
         },
         "rating": 45
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Chris Braswell",
+        "position": "EDGE",
+        "team": "Alabama",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'3",
+            "weight": "255",
+            "40Time": "4.58"
         },
         "rating": 46
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Payton Wilson",
+        "position": "LB",
+        "team": "NC State",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
+            "height": "6'4",
+            "weight": "238",
             "40Time": "4.48"
         },
         "rating": 47
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "T'Vondre Sweat",
+        "position": "DT",
+        "team": "Texas",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'3",
+            "weight": "370",
+            "40Time": "5.58"
         },
         "rating": 48
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Marshawn Kneeland",
+        "position": "EDGE",
+        "team": "Western Michigan",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'3",
+            "weight": "268",
+            "40Time": "4.68"
         },
         "rating": 49
     },
     {
-        "name": "Ladd McConkey",
+        "name": "Malachi Corley",
         "position": "WR",
-        "team": "Georgia",
+        "team": "Western Kentucky",
         "stats": {
             "height": "5'11",
-            "weight": "185",
+            "weight": "215",
             "40Time": "4.48"
         },
         "rating": 50
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Bralen Trice",
+        "position": "EDGE",
+        "team": "Washington",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'4",
+            "weight": "273",
+            "40Time": "4.68"
         },
         "rating": 51
     },
@@ -560,27 +560,249 @@
         "rating": 52
     },
     {
-        "name": "Ladd McConkey",
-        "position": "WR",
-        "team": "Georgia",
+        "name": "Kamren Kinchens",
+        "position": "S",
+        "team": "Miami",
         "stats": {
             "height": "5'11",
-            "weight": "185",
+            "weight": "205",
             "40Time": "4.48"
         },
         "rating": 53
     },
     {
-        "name": "Ladd McConkey",
+        "name": "Tyler Nubin",
+        "position": "S",
+        "team": "Minnesota",
+        "stats": {
+            "height": "6'2",
+            "weight": "210",
+            "40Time": "4.52"
+        },
+        "rating": 54
+    },
+    {
+        "name": "Leonard Taylor III",
+        "position": "DT",
+        "team": "Miami",
+        "stats": {
+            "height": "6'3",
+            "weight": "304",
+            "40Time": "4.82"
+        },
+        "rating": 55
+    },
+    {
+        "name": "Troy Fautanu",
+        "position": "IOL",
+        "team": "Washington",
+        "stats": {
+            "height": "6'4",
+            "weight": "317",
+            "40Time": "5.05"
+        },
+        "rating": 56
+    },
+    {
+        "name": "Jonah Elliss",
+        "position": "EDGE",
+        "team": "Utah",
+        "stats": {
+            "height": "6'2",
+            "weight": "246",
+            "40Time": "4.62"
+        },
+        "rating": 57
+    },
+    {
+        "name": "TJ Tampa",
+        "position": "CB",
+        "team": "Iowa State",
+        "stats": {
+            "height": "6'2",
+            "weight": "201",
+            "40Time": "4.42"
+        },
+        "rating": 58
+    },
+    {
+        "name": "Xavier Legette",
         "position": "WR",
+        "team": "South Carolina",
+        "stats": {
+            "height": "6'1",
+            "weight": "223",
+            "40Time": "4.35"
+        },
+        "rating": 59
+    },
+    {
+        "name": "Kiran Amegadjie",
+        "position": "OT",
+        "team": "Yale",
+        "stats": {
+            "height": "6'5",
+            "weight": "326",
+            "40Time": "5.09"
+        },
+        "rating": 60
+    },
+    {
+        "name": "Calen Bullock",
+        "position": "S",
+        "team": "USC",
+        "stats": {
+            "height": "6'3",
+            "weight": "191",
+            "40Time": "4.47"
+        },
+        "rating": 61
+    },
+    {
+        "name": "Jermaine Burton",
+        "position": "WR",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'0",
+            "weight": "194",
+            "40Time": "4.50"
+        },
+        "rating": 62
+    },
+    {
+        "name": "Kalen King",
+        "position": "CB",
+        "team": "Penn State",
+        "stats": {
+            "height": "5'11",
+            "weight": "190",
+            "40Time": "4.45"
+        },
+        "rating": 63
+    },
+    {
+        "name": "Kris Jenkins",
+        "position": "DT",
+        "team": "Michigan",
+        "stats": {
+            "height": "6'3",
+            "weight": "305",
+            "40Time": "4.52"
+        },
+        "rating": 64
+    },
+    {
+        "name": "Adisa Isaac",
+        "position": "EDGE",
+        "team": "Penn State",
+        "stats": {
+            "height": "6'4",
+            "weight": "254",
+            "40Time": "4.62"
+        },
+        "rating": 65
+    },
+    {
+        "name": "Kingsley Suamataia",
+        "position": "OT",
+        "team": "BYU",
+        "stats": {
+            "height": "6'4",
+            "weight": "315",
+            "40Time": "4.85"
+        },
+        "rating": 66
+    },
+    {
+        "name": "Roman Wilson",
+        "position": "WR",
+        "team": "Michigan",
+        "stats": {
+            "height": "5'11",
+            "weight": "190",
+            "40Time": "4.42"
+        },
+        "rating": 67
+    },
+    {
+        "name": "Mike Sainristil",
+        "position": "CB",
+        "team": "Michigan",
+        "stats": {
+            "height": "5'10",
+            "weight": "182",
+            "40Time": "4.45"
+        },
+        "rating": 68
+    },
+    {
+        "name": "Ja'Lynn Polk",
+        "position": "WR",
+        "team": "Washington",
+        "stats": {
+            "height": "6'2",
+            "weight": "204",
+            "40Time": "4.53"
+        },
+        "rating": 69
+    },
+    {
+        "name": "Javon Bullard",
+        "position": "S",
         "team": "Georgia",
         "stats": {
             "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "weight": "195",
+            "40Time": "4.52"
         },
-        "rating": 54
+        "rating": 70
+    },
+    {
+        "name": "Jaden Hicks",
+        "position": "S",
+        "team": "Washington State",
+        "stats": {
+            "height": "6'3",
+            "weight": "212",
+            "40Time": "4.52"
+        },
+        "rating": 71
+    },
+    {
+        "name": "Khyree Jackson",
+        "position": "CB",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3",
+            "weight": "195",
+            "40Time": "4.52"
+        },
+        "rating": 72
+    },
+    {
+        "name": "Jonathan Brooks",
+        "position": "RB",
+        "team": "Texas",
+        "stats": {
+            "height": "6'0",
+            "weight": "207",
+            "40Time": "4.47"
+        },
+        "rating": 73
+    },
+    {
+        "name": "Ricky Pearsall",
+        "position": "WR",
+        "team": "Florida",
+        "stats": {
+            "height": "6'0",
+            "weight": "191",
+            "40Time": "4.47"
+        },
+        "rating": 74
     }
+
+
 
 
 
