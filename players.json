@@ -800,7 +800,229 @@
             "40Time": "4.47"
         },
         "rating": 74
+    },
+    {
+        "name": "Jalen McMillan",
+        "position": "WR",
+        "team": "Washington",
+        "stats": {
+            "height": "6'0",
+            "weight": "191",
+            "40Time": "4.47"
+        },
+        "rating": 75
+    },
+    {
+        "name": "Christian Haynes",
+        "position": "IOL",
+        "team": "UCONN",
+        "stats": {
+            "height": "6'2",
+            "weight": "313",
+            "40Time": "5.18"
+        },
+        "rating": 76
+    },
+    {
+        "name": "Michael Pratt",
+        "position": "QB",
+        "team": "Tulane",
+        "stats": {
+            "height": "6'3",
+            "weight": "220",
+            "40Time": "4.71"
+        },
+        "rating": 77
+    },
+    {
+        "name": "Ruke Orhorhoro",
+        "position": "DT",
+        "team": "Clemson",
+        "stats": {
+            "height": "6'4",
+            "weight": "291",
+            "40Time": "4.77"
+        },
+        "rating": 78
+    },
+    {
+        "name": "Devontez Walker",
+        "position": "WR",
+        "team": "North Carolina",
+        "stats": {
+            "height": "6'2",
+            "weight": "200",
+            "40Time": "4.47"
+        },
+        "rating": 79
+    },
+    {
+        "name": "Blake Fisher",
+        "position": "OT",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'6",
+            "weight": "312",
+            "40Time": "5.17"
+        },
+        "rating": 80
+    },
+    {
+        "name": "Johnny Wilson",
+        "position": "WR",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'6",
+            "weight": "237",
+            "40Time": "4.57"
+        },
+        "rating": 81
+    },
+    {
+        "name": "Jamari Thrash",
+        "position": "WR",
+        "team": "Louisville",
+        "stats": {
+            "height": "6'0",
+            "weight": "180",
+            "40Time": "4.47"
+        },
+        "rating": 82
+    },
+    {
+        "name": "Brenden Rice",
+        "position": "WR",
+        "team": "USC",
+        "stats": {
+            "height": "6'3",
+            "weight": "210",
+            "40Time": "4.47"
+        },
+        "rating": 83
+    },
+    {
+        "name": "Austin Booker",
+        "position": "EDGE",
+        "team": "Kansas",
+        "stats": {
+            "height": "6'6",
+            "weight": "245",
+            "40Time": "4.64"
+        },
+        "rating": 84
+    },
+    {
+        "name": "Gabriel Murphy",
+        "position": "EDGE",
+        "team": "UCLA",
+        "stats": {
+            "height": "6'3",
+            "weight": "260",
+            "40Time": "4.69"
+        },
+        "rating": 85
+    },
+    {
+        "name": "Brandon Dorlus",
+        "position": "EDGE",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3",
+            "weight": "270",
+            "40Time": "4.71"
+        },
+        "rating": 86
+    },
+    {
+        "name": "Braden Fiske",
+        "position": "DT",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'4",
+            "weight": "290",
+            "40Time": "4.84"
+        },
+        "rating": 87
+    },
+    {
+        "name": "Jaylen Wright",
+        "position": "RB",
+        "team": "Tennessee",
+        "stats": {
+            "height": "5'11",
+            "weight": "210",
+            "40Time": "4.34"
+        },
+        "rating": 88
+    },
+    {
+        "name": "Jeremiah Trotter",
+        "position": "LB",
+        "team": "CLemson",
+        "stats": {
+            "height": "6'0",
+            "weight": "229",
+            "40Time": "4.64"
+        },
+        "rating": 89
+    },
+    {
+        "name": "Patrick Paul",
+        "position": "OT",
+        "team": "Houston",
+        "stats": {
+            "height": "6'7",
+            "weight": "335",
+            "40Time": "5.20"
+        },
+        "rating": 90
+    },
+    {
+        "name": "Spencer Rattler",
+        "position": "QB",
+        "team": "South Carolina",
+        "stats": {
+            "height": "6'1",
+            "weight": "217",
+            "40Time": "4.74"
+        },
+        "rating": 91
+    },
+    {
+        "name": "Christian Mahogany",
+        "position": "IOL",
+        "team": "Boston College",
+        "stats": {
+            "height": "6'3",
+            "weight": "322",
+            "40Time": "5.14"
+        },
+        "rating": 92
+    },
+    {
+        "name": "Jarrian Jones",
+        "position": "CB",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'0",
+            "weight": "191",
+            "40Time": "4.49"
+        },
+        "rating": 93
+    },
+    {
+        "name": "Sedrick Van Pran",
+        "position": "IOL",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'4",
+            "weight": "311",
+            "40Time": "5.14"
+        },
+        "rating": 94
     }
+
+
 
 
 
