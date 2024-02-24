@@ -1240,7 +1240,118 @@
             "40Time": "4.48"
         },
         "rating": 114
+    },
+    {
+        "name": "Dominick Puni",
+        "position": "OT",
+        "team": "Kansas",
+        "stats": {
+            "height": "6'5",
+            "weight": "320",
+            "40Time": "5.18"
+        },
+        "rating": 115
+    },
+    {
+        "name": "Leonard Taylor III",
+        "position": "DT",
+        "team": "Miami",
+        "stats": {
+            "height": "6'3",
+            "weight": "305",
+            "40Time": "4.78"
+        },
+        "rating": 116
+    },
+    {
+        "name": "Audric Estime",
+        "position": "RB",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "5'11",
+            "weight": "227",
+            "40Time": "4.58"
+        },
+        "rating": 117
+    },
+    {
+        "name": "Jarvis Brownlee",
+        "position": "CB",
+        "team": "Louisville",
+        "stats": {
+            "height": "6'0",
+            "weight": "190",
+            "40Time": "4.48"
+        },
+        "rating": 118
+    },
+    {
+        "name": "Max Melton",
+        "position": "CB",
+        "team": "Rutgers",
+        "stats": {
+            "height": "6'0",
+            "weight": "190",
+            "40Time": "4.38"
+        },
+        "rating": 119
+    },
+    {
+        "name": "Ainias Smith",
+        "position": "WR",
+        "team": "Texas A&M",
+        "stats": {
+            "height": "5'10",
+            "weight": "200",
+            "40Time": "4.48"
+        },
+        "rating": 120
+    },
+    {
+        "name": "Dadrion Taylor-Demerson",
+        "position": "S",
+        "team": "Texas Tech",
+        "stats": {
+            "height": "5'11",
+            "weight": "195",
+            "40Time": "4.53"
+        },
+        "rating": 121
+    },
+    {
+        "name": "Javon Baker",
+        "position": "WR",
+        "team": "UFC",
+        "stats": {
+            "height": "6'1",
+            "weight": "208",
+            "40Time": "4.52"
+        },
+        "rating": 122
+    },
+    {
+        "name": "Tykee Smith",
+        "position": "S",
+        "team": "Georgia",
+        "stats": {
+            "height": "5'10",
+            "weight": "205",
+            "40Time": "4.54"
+        },
+        "rating": 123
+    },
+    {
+        "name": "Beaux Limmer",
+        "position": "C",
+        "team": "Arkansas",
+        "stats": {
+            "height": "6'5",
+            "weight": "307",
+            "40Time": "4.98"
+        },
+        "rating": 124
     }
+
 
 
 
