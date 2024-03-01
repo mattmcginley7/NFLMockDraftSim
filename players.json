@@ -60,8 +60,8 @@
         "team": "UCLA",
         "stats": {
             "height": "6'5",
-            "weight": "270 lb",
-            "40Time": "4.70"
+            "weight": "259 lb",
+            "40Time": "4.64"
         },
         "rating": 6
     },
@@ -105,7 +105,7 @@
         "stats": {
             "height": "6'4",
             "weight": "242 lb",
-            "40Time": "4.45"
+            "40Time": "4.46"
         },
         "rating": 10
     },
@@ -126,7 +126,7 @@
         "stats":{
             "height": "6'5",
             "weight": "286",
-            "40Time": "4.70"
+            "40Time": "4.95"
         },
         "rating": 12
     },
@@ -147,8 +147,8 @@
         "team": "Florida State",
         "stats": {
             "height": "6'4",
-            "weight": "260",
-            "40Time": "4.57"
+            "weight": "254",
+            "40Time": "4.58"
         },
         "rating": 14
     },
@@ -268,8 +268,8 @@
         "team": "Texas",
         "stats": {
             "height": "6'1",
-            "weight": "308",
-            "40Time": "4.93"
+            "weight": "297",
+            "40Time": "4.88"
         },
         "rating": 26
     },
@@ -301,8 +301,8 @@
         "team": "Penn State",
         "stats": {
             "height": "6'3",
-            "weight": "250",
-            "40Time": "4.43"
+            "weight": "254",
+            "40Time": "4.48"
         },
         "rating": 29
     },
@@ -500,7 +500,7 @@
         "stats": {
             "height": "6'4",
             "weight": "238",
-            "40Time": "4.48"
+            "40Time": "4.43"
         },
         "rating": 47
     },
@@ -510,8 +510,8 @@
         "team": "Texas",
         "stats": {
             "height": "6'3",
-            "weight": "370",
-            "40Time": "5.58"
+            "weight": "366",
+            "40Time": "5.27"
         },
         "rating": 48
     },
@@ -543,8 +543,8 @@
         "team": "Washington",
         "stats": {
             "height": "6'4",
-            "weight": "273",
-            "40Time": "4.68"
+            "weight": "245",
+            "40Time": "4.72"
         },
         "rating": 51
     },
@@ -587,8 +587,8 @@
         "team": "Miami",
         "stats": {
             "height": "6'3",
-            "weight": "304",
-            "40Time": "4.82"
+            "weight": "303",
+            "40Time": "5.12"
         },
         "rating": 55
     },
@@ -1059,9 +1059,9 @@
         "position": "EDGE",
         "team": "Troy",
         "stats": {
-            "height": "6'2",
-            "weight": "249",
-            "40Time": "4.64"
+            "height": "6'1",
+            "weight": "246",
+            "40Time": "4.72"
         },
         "rating": 98
     },
@@ -1365,11 +1365,11 @@
     {
         "name": "Justin Eboigbe",
         "position": "DT",
-        "team": "Kansas",
+        "team": "Alabama",
         "stats": {
-            "height": "6'5",
-            "weight": "292",
-            "40Time": "5.03"
+            "height": "6'4",
+            "weight": "297",
+            "40Time": "5.18"
         },
         "rating": 126
     },
@@ -1390,8 +1390,8 @@
         "team": "Colorado State",
         "stats": {
             "height": "6'1",
-            "weight": "250",
-            "40Time": "4.68"
+            "weight": "248",
+            "40Time": "4.57"
         },
         "rating": 128
     },
@@ -1412,8 +1412,8 @@
         "team": "Texas A&M",
         "stats": {
             "height": "6'2",
-            "weight": "325",
-            "40Time": "5.18"
+            "weight": "326",
+            "40Time": "5.26"
         },
         "rating": 130
     },
@@ -1643,8 +1643,8 @@
         "team": "Clemson",
         "stats": {
             "height": "6'2",
-            "weight": "245",
-            "40Time": "4.59"
+            "weight": "244",
+            "40Time": "4.62"
         },
         "rating": 151
     },
@@ -1677,7 +1677,7 @@
         "stats": {
             "height": "6'2",
             "weight": "300",
-            "40Time": "4.95"
+            "40Time": "5.02"
         },
         "rating": 154
     },
@@ -1884,9 +1884,9 @@
         "position": "DT",
         "team": "North Carolina",
         "stats": {
-            "height": "6'5",
-            "weight": "310",
-            "40Time": "5.10"
+            "height": "6'4",
+            "weight": "309",
+            "40Time": "5.20"
         },
         "rating": 173
     },
@@ -2194,7 +2194,7 @@
         "stats": {
             "height": "6'4",
             "weight": "264",
-            "40Time": "4.77"
+            "40Time": "4.69"
         },
         "rating": 201
     },
@@ -2351,7 +2351,118 @@
             "40Time": "4.53"
         },
         "rating": 215
+    },
+    {
+        "name": "Cedric Johnson",
+        "position": "EDGE",
+        "team": "Mississippi",
+        "stats": {
+            "height": "6'3",
+            "weight": "260",
+            "40Time": "4.63"
+        },
+        "rating": 216
+    },
+    {
+        "name": "Jalyx Hunt",
+        "position": "EDGE",
+        "team": "Houston Christian Univ",
+        "stats": {
+            "height": "6'4",
+            "weight": "252",
+            "40Time": "4.64"
+        },
+        "rating": 217
+    },
+    {
+        "name": "Javontae Jean Baptiste",
+        "position": "EDGE",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'5",
+            "weight": "239",
+            "40Time": "4.66"
+        },
+        "rating": 218
+    },
+    {
+        "name": "Myles Cole",
+        "position": "EDGE",
+        "team": "Texas Tech",
+        "stats": {
+            "height": "6'6",
+            "weight": "278",
+            "40Time": "4.67"
+        },
+        "rating": 219
+    },
+    {
+        "name": "Eric Watts",
+        "position": "EDGE",
+        "team": "Connecticut",
+        "stats": {
+            "height": "6'6",
+            "weight": "274",
+            "40Time": "4.67"
+        },
+        "rating": 220
+    },
+    {
+        "name": "Trajan Jeffcoat",
+        "position": "EDGE",
+        "team": "Arkansas",
+        "stats": {
+            "height": "6'4",
+            "weight": "266",
+            "40Time": "4.69"
+        },
+        "rating": 221
+    },
+    {
+        "name": "Kalen DeLoach",
+        "position": "LB",
+        "team": "Florida State",
+        "stats": {
+            "height": "6'0",
+            "weight": "210",
+            "40Time": "4.47"
+        },
+        "rating": 222
+    },
+    {
+        "name": "Gabe Hall",
+        "position": "DT",
+        "team": "Baylor",
+        "stats": {
+            "height": "6'6",
+            "weight": "291",
+            "40Time": "5.03"
+        },
+        "rating": 223
+    },
+    {
+        "name": "Trevin Wallace",
+        "position": "LB",
+        "team": "Kentucky",
+        "stats": {
+            "height": "6'1",
+            "weight": "237",
+            "40Time": "4.51"
+        },
+        "rating": 224
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
     }
+
 
 
 
