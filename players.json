@@ -652,9 +652,9 @@
         "position": "S",
         "team": "USC",
         "stats": {
-            "height": "6'3",
-            "weight": "191",
-            "40Time": "4.47"
+            "height": "6'2",
+            "weight": "190",
+            "40Time": "4.48"
         },
         "rating": 61
     },
@@ -752,8 +752,8 @@
         "team": "Georgia",
         "stats": {
             "height": "5'11",
-            "weight": "195",
-            "40Time": "4.52"
+            "weight": "198",
+            "40Time": "4.47"
         },
         "rating": 70
     },
@@ -1006,7 +1006,7 @@
         "stats": {
             "height": "6'0",
             "weight": "191",
-            "40Time": "4.49"
+            "40Time": "4.38"
         },
         "rating": 93
     },
@@ -1290,9 +1290,9 @@
         "position": "CB",
         "team": "Rutgers",
         "stats": {
-            "height": "6'0",
+            "height": "5'11",
             "weight": "190",
-            "40Time": "4.38"
+            "40Time": "4.39"
         },
         "rating": 119
     },
@@ -1312,9 +1312,9 @@
         "position": "S",
         "team": "Texas Tech",
         "stats": {
-            "height": "5'11",
-            "weight": "195",
-            "40Time": "4.53"
+            "height": "5'10",
+            "weight": "197",
+            "40Time": "4.41"
         },
         "rating": 121
     },
@@ -1335,8 +1335,8 @@
         "team": "Georgia",
         "stats": {
             "height": "5'10",
-            "weight": "205",
-            "40Time": "4.54"
+            "weight": "202",
+            "40Time": "4.46"
         },
         "rating": 123
     },
@@ -1358,7 +1358,7 @@
         "stats": {
             "height": "6'2",
             "weight": "207",
-            "40Time": "4.48"
+            "40Time": "4.45"
         },
         "rating": 125
     },
@@ -1565,9 +1565,9 @@
         "position": "CB",
         "team": "Auburn",
         "stats": {
-            "height": "6'1",
-            "weight": "164",
-            "40Time": "4.45"
+            "height": "6'0",
+            "weight": "175",
+            "40Time": "4.42"
         },
         "rating": 144
     },
@@ -1895,9 +1895,9 @@
         "position": "CB",
         "team": "Auburn",
         "stats": {
-            "height": "6'1",
-            "weight": "184",
-            "40Time": "4.45"
+            "height": "6'0",
+            "weight": "190",
+            "40Time": "4.36"
         },
         "rating": 174
     },
@@ -2038,9 +2038,9 @@
         "position": "S",
         "team": "Auburn",
         "stats": {
-            "height": "6'1",
-            "weight": "178",
-            "40Time": "4.46"
+            "height": "6'0",
+            "weight": "179",
+            "40Time": "4.45"
         },
         "rating": 187
     },
@@ -2183,7 +2183,7 @@
         "stats": {
             "height": "5'11",
             "weight": "190",
-            "40Time": "4.52"
+            "40Time": "4.45"
         },
         "rating": 200
     },
@@ -2461,7 +2461,118 @@
             "40Time": "4.55"
         },
         "rating": 225
+    },
+    {
+        "name": "Decamerion Richardson",
+        "position": "CB",
+        "team": "Mississippi State",
+        "stats": {
+            "height": "6'2",
+            "weight": "188",
+            "40Time": "4.34"
+        },
+        "rating": 226
+    },
+    {
+        "name": "Daequan Hardy",
+        "position": "CB",
+        "team": "Penn State",
+        "stats": {
+            "height": "5'9",
+            "weight": "179",
+            "40Time": "4.39"
+        },
+        "rating": 227
+    },
+    {
+        "name": "Millard Bradford",
+        "position": "S",
+        "team": "TCU",
+        "stats": {
+            "height": "5'11",
+            "weight": "191",
+            "40Time": "4.42"
+        },
+        "rating": 228
+    },
+    {
+        "name": "Elijah Jones",
+        "position": "CB",
+        "team": "Boston College",
+        "stats": {
+            "height": "6'2",
+            "weight": "185",
+            "40Time": "4.44"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
+    },
+    {
+        "name": "Jordan Magee",
+        "position": "LB",
+        "team": "Temple",
+        "stats": {
+            "height": "6'1",
+            "weight": "228",
+            "40Time": "4.55"
+        },
+        "rating": 225
     }
+
 
 
 
