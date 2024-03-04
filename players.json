@@ -50,7 +50,7 @@
         "stats": {
             "height": "6'8",
             "weight": "315 lb",
-            "40Time": "4.90"
+            "40Time": "5.05"
         },
         "rating": 5
     },
@@ -93,8 +93,8 @@
         "team": "PSU",
         "stats": {
             "height": "6'6",
-            "weight": "317 lb",
-            "40Time": "4.97"
+            "weight": "312 lb",
+            "40Time": "5.11"
         },
         "rating": 9
     },
@@ -115,8 +115,8 @@
         "team": "Washington",
         "stats": {
             "height": "6'3",
-            "weight": "216 lb",
-            "40Time": "4.40"
+            "weight": "212 lb",
+            "40Time": "4.45"
         },
         "rating": 11
     },
@@ -135,9 +135,9 @@
         "position": "CB",
         "team": "Alabama",
         "stats": {
-            "height": "6'0",
-            "weight": "196",
-            "40Time": "4.38"
+            "height": "5'11",
+            "weight": "189",
+            "40Time": "4.50"
         },
         "rating": 13
     },
@@ -169,8 +169,8 @@
         "team": "Clemson",
         "stats": {
             "height": "6'2",
-            "weight": "185",
-            "40Time": "4.30"
+            "weight": "173",
+            "40Time": "4.28"
         },
         "rating": 16
     },
@@ -180,8 +180,8 @@
         "team": "Oregon State",
         "stats": {
             "height": "6'6",
-            "weight": "334",
-            "40Time": "5.20"
+            "weight": "324",
+            "40Time": "5.13"
         },
         "rating": 18
     },
@@ -190,9 +190,9 @@
         "position": "OT",
         "team": "Oklahoma",
         "stats": {
-            "height": "6'7",
-            "weight": "328",
-            "40Time": "4.92"
+            "height": "6'8",
+            "weight": "322",
+            "40Time": "5.19"
         },
         "rating": 19
     },
@@ -201,9 +201,9 @@
         "position": "OT",
         "team": "Georgia",
         "stats": {
-            "height": "6'7",
+            "height": "6'8",
             "weight": "340",
-            "40Time": "5.15"
+            "40Time": "5.07"
         },
         "rating": 20
     },
@@ -234,8 +234,8 @@
         "position": "OT",
         "team": "Alabama",
         "stats": {
-            "height": "6'6",
-            "weight": "360",
+            "height": "6'5",
+            "weight": "342",
             "40Time": "5.28"
         },
         "rating": 23
@@ -245,9 +245,9 @@
         "position": "WR",
         "team": "LSU",
         "stats": {
-            "height": "6'4",
-            "weight": "205",
-            "40Time": "4.37"
+            "height": "6'3",
+            "weight": "209",
+            "40Time": "4.33"
         },
         "rating": 24
     },
@@ -257,8 +257,8 @@
         "team": "Texas A&M",
         "stats": {
             "height": "6'2",
-            "weight": "227",
-            "40Time": "4.43"
+            "weight": "230",
+            "40Time": "4.51"
         },
         "rating": 25
     },
@@ -289,9 +289,9 @@
         "position": "CB",
         "team": "Missouri",
         "stats": {
-            "height": "6'0",
-            "weight": "188",
-            "40Time": "4.43"
+            "height": "5'11",
+            "weight": "183",
+            "40Time": "4.51"
         },
         "rating": 28
     },
@@ -312,8 +312,8 @@
         "team": "North Carolina",
         "stats": {
             "height": "6'2",
-            "weight": "200",
-            "40Time": "4.43"
+            "weight": "193",
+            "40Time": "4.36"
         },
         "rating": 30
     },
@@ -323,7 +323,7 @@
         "team": "Michigan",
         "stats": {
             "height": "6'3",
-            "weight": "202",
+            "weight": "219",
             "40Time": "4.58"
         },
         "rating": 31
@@ -345,8 +345,8 @@
         "team": "Arizona",
         "stats": {
             "height": "6'5",
-            "weight": "312",
-            "40Time": "5.03"
+            "weight": "311",
+            "40Time": "5.04"
         },
         "rating": 33
     },
@@ -357,7 +357,7 @@
         "stats": {
             "height": "6'5",
             "weight": "314",
-            "40Time": "5.03"
+            "40Time": "5.04"
         },
         "rating": 34
     },
@@ -366,9 +366,9 @@
         "position": "WR",
         "team": "Oregon",
         "stats": {
-            "height": "6'3",
-            "weight": "187",
-            "40Time": "4.33"
+            "height": "6'2",
+            "weight": "176",
+            "40Time": "4.4`"
         },
         "rating": 35
     },
@@ -377,9 +377,9 @@
         "position": "WR",
         "team": "Texas",
         "stats": {
-            "height": "6'4",
-            "weight": "198",
-            "40Time": "4.49"
+            "height": "6'2",
+            "weight": "205",
+            "40Time": "4.34"
         },
         "rating": 36
     },
@@ -410,9 +410,9 @@
         "position": "WR",
         "team": "Florida State",
         "stats": {
-            "height": "6'4",
-            "weight": "215",
-            "40Time": "4.53"
+            "height": "6'3",
+            "weight": "213",
+            "40Time": "4.61"
         },
         "rating": 39
     },
@@ -433,8 +433,8 @@
         "team": "Texas",
         "stats": {
             "height": "6'4",
-            "weight": "247",
-            "40Time": "4.59"
+            "weight": "245",
+            "40Time": "4.69"
         },
         "rating": 41
     },
@@ -444,7 +444,7 @@
         "team": "Georiga",
         "stats": {
             "height": "6'0",
-            "weight": "180",
+            "weight": "186",
             "40Time": "4.49"
         },
         "rating": 42
@@ -454,9 +454,9 @@
         "position": "WR",
         "team": "Texas",
         "stats": {
-            "height": "6'1",
-            "weight": "170",
-            "40Time": "4.29"
+            "height": "5'11",
+            "weight": "165",
+            "40Time": "4.21"
         },
         "rating": 43
     },
@@ -465,9 +465,9 @@
         "position": "WR",
         "team": "Georgia",
         "stats": {
-            "height": "5'11",
-            "weight": "185",
-            "40Time": "4.48"
+            "height": "6'0",
+            "weight": "186",
+            "40Time": "4.39"
         },
         "rating": 44
     },
@@ -488,8 +488,8 @@
         "team": "Alabama",
         "stats": {
             "height": "6'3",
-            "weight": "255",
-            "40Time": "4.58"
+            "weight": "251",
+            "40Time": "4.60"
         },
         "rating": 46
     },
@@ -521,8 +521,8 @@
         "team": "Western Michigan",
         "stats": {
             "height": "6'3",
-            "weight": "268",
-            "40Time": "4.68"
+            "weight": "267",
+            "40Time": "4.75"
         },
         "rating": 49
     },
@@ -565,8 +565,8 @@
         "team": "Miami",
         "stats": {
             "height": "5'11",
-            "weight": "205",
-            "40Time": "4.48"
+            "weight": "203",
+            "40Time": "4.65"
         },
         "rating": 53
     },
@@ -599,7 +599,7 @@
         "stats": {
             "height": "6'4",
             "weight": "317",
-            "40Time": "5.05"
+            "40Time": "5.01"
         },
         "rating": 56
     },
@@ -631,8 +631,8 @@
         "team": "South Carolina",
         "stats": {
             "height": "6'1",
-            "weight": "223",
-            "40Time": "4.35"
+            "weight": "221",
+            "40Time": "4.39"
         },
         "rating": 59
     },
@@ -664,8 +664,8 @@
         "team": "Alabama",
         "stats": {
             "height": "6'0",
-            "weight": "194",
-            "40Time": "4.50"
+            "weight": "196",
+            "40Time": "4.45"
         },
         "rating": 62
     },
@@ -675,8 +675,8 @@
         "team": "Penn State",
         "stats": {
             "height": "5'11",
-            "weight": "190",
-            "40Time": "4.45"
+            "weight": "191",
+            "40Time": "4.61"
         },
         "rating": 63
     },
@@ -686,8 +686,8 @@
         "team": "Michigan",
         "stats": {
             "height": "6'3",
-            "weight": "305",
-            "40Time": "4.52"
+            "weight": "299",
+            "40Time": "4.91"
         },
         "rating": 64
     },
@@ -697,8 +697,8 @@
         "team": "Penn State",
         "stats": {
             "height": "6'4",
-            "weight": "254",
-            "40Time": "4.62"
+            "weight": "247",
+            "40Time": "4.74"
         },
         "rating": 65
     },
@@ -708,8 +708,8 @@
         "team": "BYU",
         "stats": {
             "height": "6'4",
-            "weight": "315",
-            "40Time": "4.85"
+            "weight": "326",
+            "40Time": "5.04"
         },
         "rating": 66
     },
@@ -719,8 +719,8 @@
         "team": "Michigan",
         "stats": {
             "height": "5'11",
-            "weight": "190",
-            "40Time": "4.42"
+            "weight": "185",
+            "40Time": "4.39"
         },
         "rating": 67
     },
@@ -729,9 +729,9 @@
         "position": "CB",
         "team": "Michigan",
         "stats": {
-            "height": "5'10",
+            "height": "5'9",
             "weight": "182",
-            "40Time": "4.45"
+            "40Time": "4.47"
         },
         "rating": 68
     },
@@ -740,9 +740,9 @@
         "position": "WR",
         "team": "Washington",
         "stats": {
-            "height": "6'2",
+            "height": "6'1",
             "weight": "204",
-            "40Time": "4.53"
+            "40Time": "4.52"
         },
         "rating": 69
     },
@@ -773,9 +773,9 @@
         "position": "CB",
         "team": "Oregon",
         "stats": {
-            "height": "6'3",
-            "weight": "195",
-            "40Time": "4.52"
+            "height": "6'4",
+            "weight": "194",
+            "40Time": "4.50"
         },
         "rating": 72
     },
@@ -785,7 +785,7 @@
         "team": "Texas",
         "stats": {
             "height": "6'0",
-            "weight": "207",
+            "weight": "216",
             "40Time": "4.47"
         },
         "rating": 73
@@ -795,9 +795,9 @@
         "position": "WR",
         "team": "Florida",
         "stats": {
-            "height": "6'0",
+            "height": "6'1",
             "weight": "191",
-            "40Time": "4.47"
+            "40Time": "4.41"
         },
         "rating": 74
     },
@@ -806,7 +806,7 @@
         "position": "WR",
         "team": "Washington",
         "stats": {
-            "height": "6'0",
+            "height": "6'1",
             "weight": "191",
             "40Time": "4.47"
         },
@@ -817,9 +817,9 @@
         "position": "IOL",
         "team": "UCONN",
         "stats": {
-            "height": "6'2",
-            "weight": "313",
-            "40Time": "5.18"
+            "height": "6'3",
+            "weight": "317",
+            "40Time": "5.03"
         },
         "rating": 76
     },
@@ -840,8 +840,8 @@
         "team": "Clemson",
         "stats": {
             "height": "6'4",
-            "weight": "291",
-            "40Time": "4.77"
+            "weight": "294",
+            "40Time": "4.89"
         },
         "rating": 78
     },
@@ -851,8 +851,8 @@
         "team": "North Carolina",
         "stats": {
             "height": "6'2",
-            "weight": "200",
-            "40Time": "4.47"
+            "weight": "193",
+            "40Time": "4.36"
         },
         "rating": 79
     },
@@ -863,7 +863,7 @@
         "stats": {
             "height": "6'6",
             "weight": "312",
-            "40Time": "5.17"
+            "40Time": "5.20"
         },
         "rating": 80
     },
