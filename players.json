@@ -874,7 +874,7 @@
         "stats": {
             "height": "6'6",
             "weight": "237",
-            "40Time": "4.57"
+            "40Time": "4.52"
         },
         "rating": 81
     },
@@ -884,8 +884,8 @@
         "team": "Louisville",
         "stats": {
             "height": "6'0",
-            "weight": "180",
-            "40Time": "4.47"
+            "weight": "188",
+            "40Time": "4.46"
         },
         "rating": 82
     },
@@ -894,9 +894,9 @@
         "position": "WR",
         "team": "USC",
         "stats": {
-            "height": "6'3",
-            "weight": "210",
-            "40Time": "4.47"
+            "height": "6'2",
+            "weight": "208",
+            "40Time": "4.50"
         },
         "rating": 83
     },
@@ -905,9 +905,9 @@
         "position": "EDGE",
         "team": "Kansas",
         "stats": {
-            "height": "6'6",
-            "weight": "245",
-            "40Time": "4.64"
+            "height": "6'5",
+            "weight": "240",
+            "40Time": "4.79"
         },
         "rating": 84
     },
@@ -916,9 +916,9 @@
         "position": "EDGE",
         "team": "UCLA",
         "stats": {
-            "height": "6'3",
-            "weight": "260",
-            "40Time": "4.69"
+            "height": "6'2",
+            "weight": "247",
+            "40Time": "4.68"
         },
         "rating": 85
     },
@@ -928,8 +928,8 @@
         "team": "Oregon",
         "stats": {
             "height": "6'3",
-            "weight": "270",
-            "40Time": "4.71"
+            "weight": "283",
+            "40Time": "4.85"
         },
         "rating": 86
     },
@@ -939,8 +939,8 @@
         "team": "Florida State",
         "stats": {
             "height": "6'4",
-            "weight": "290",
-            "40Time": "4.84"
+            "weight": "292",
+            "40Time": "4.78"
         },
         "rating": 87
     },
@@ -951,7 +951,7 @@
         "stats": {
             "height": "5'11",
             "weight": "210",
-            "40Time": "4.34"
+            "40Time": "4.38"
         },
         "rating": 88
     },
@@ -961,8 +961,8 @@
         "team": "CLemson",
         "stats": {
             "height": "6'0",
-            "weight": "229",
-            "40Time": "4.64"
+            "weight": "228",
+            "40Time": "4.68"
         },
         "rating": 89
     },
@@ -971,9 +971,9 @@
         "position": "OT",
         "team": "Houston",
         "stats": {
-            "height": "6'7",
-            "weight": "335",
-            "40Time": "5.20"
+            "height": "6'8",
+            "weight": "331",
+            "40Time": "5.13"
         },
         "rating": 90
     },
@@ -982,9 +982,9 @@
         "position": "QB",
         "team": "South Carolina",
         "stats": {
-            "height": "6'1",
-            "weight": "217",
-            "40Time": "4.74"
+            "height": "6'0",
+            "weight": "211",
+            "40Time": "4.95"
         },
         "rating": 91
     },
@@ -994,8 +994,8 @@
         "team": "Boston College",
         "stats": {
             "height": "6'3",
-            "weight": "322",
-            "40Time": "5.14"
+            "weight": "314",
+            "40Time": "5.13"
         },
         "rating": 92
     },
@@ -1016,8 +1016,8 @@
         "team": "Georgia",
         "stats": {
             "height": "6'4",
-            "weight": "311",
-            "40Time": "5.14"
+            "weight": "298",
+            "40Time": "5.20"
         },
         "rating": 94
     },
@@ -1027,8 +1027,8 @@
         "team": "Michigan",
         "stats": {
             "height": "5'8",
-            "weight": "214",
-            "40Time": "4.64"
+            "weight": "205",
+            "40Time": "4.53"
         },
         "rating": 95
     },
@@ -1037,9 +1037,9 @@
         "position": "IOL",
         "team": "South Dakota State",
         "stats": {
-            "height": "6'5",
-            "weight": "315",
-            "40Time": "5.17"
+            "height": "6'4",
+            "weight": "309",
+            "40Time": "5.08"
         },
         "rating": 96
     },
@@ -1049,8 +1049,8 @@
         "team": "Notre Dame",
         "stats": {
             "height": "6'3",
-            "weight": "204",
-            "40Time": "4.54"
+            "weight": "202",
+            "40Time": "4.50"
         },
         "rating": 97
     },
@@ -1070,9 +1070,9 @@
         "position": "S",
         "team": "Utah",
         "stats": {
-            "height": "6'0",
-            "weight": "190",
-            "40Time": "4.50"
+            "height": "5'11",
+            "weight": "210",
+            "40Time": "4.62"
         },
         "rating": 99
     },
@@ -1125,9 +1125,9 @@
         "position": "RB",
         "team": "Oregon",
         "stats": {
-            "height": "5'10",
-            "weight": "194",
-            "40Time": "4.44"
+            "height": "5'9",
+            "weight": "192",
+            "40Time": "4.55"
         },
         "rating": 104
     },
@@ -1137,8 +1137,8 @@
         "team": "Kentucky",
         "stats": {
             "height": "5'11",
-            "weight": "180",
-            "40Time": "4.44"
+            "weight": "190",
+            "40Time": "4.48"
         },
         "rating": 105
     },
@@ -1148,8 +1148,8 @@
         "team": "Notre Dame",
         "stats": {
             "height": "6'2",
-            "weight": "235",
-            "40Time": "4.58"
+            "weight": "234",
+            "40Time": "4.64"
         },
         "rating": 106
     },
@@ -1158,9 +1158,9 @@
         "position": "RB",
         "team": "Kentucky",
         "stats": {
-            "height": "5'10",
-            "weight": "220",
-            "40Time": "4.64"
+            "height": "5'8",
+            "weight": "211",
+            "40Time": "4.52"
         },
         "rating": 107
     },
@@ -1180,9 +1180,9 @@
         "position": "DT",
         "team": "Duke",
         "stats": {
-            "height": "6'3",
-            "weight": "305",
-            "40Time": "5.08"
+            "height": "6'2",
+            "weight": "302",
+            "40Time": "4.99"
         },
         "rating": 109
     },
@@ -1193,7 +1193,7 @@
         "stats": {
             "height": "6'0",
             "weight": "186",
-            "40Time": "4.48"
+            "40Time": "4.49"
         },
         "rating": 110
     },
@@ -1214,8 +1214,8 @@
         "team": "Ohio State",
         "stats": {
             "height": "6'4",
-            "weight": "251",
-            "40Time": "4.64"
+            "weight": "247",
+            "40Time": "4.65"
         },
         "rating": 112
     },
@@ -1224,9 +1224,9 @@
         "position": "WR",
         "team": "Arizona",
         "stats": {
-            "height": "5'9",
-            "weight": "165",
-            "40Time": "4.42"
+            "height": "5'8",
+            "weight": "168",
+            "40Time": "4.38"
         },
         "rating": 113
     },
@@ -1236,8 +1236,8 @@
         "team": "USC",
         "stats": {
             "height": "5'9",
-            "weight": "210",
-            "40Time": "4.48"
+            "weight": "220",
+            "40Time": "4.46"
         },
         "rating": 114
     },
@@ -1247,8 +1247,8 @@
         "team": "Kansas",
         "stats": {
             "height": "6'5",
-            "weight": "320",
-            "40Time": "5.18"
+            "weight": "313",
+            "40Time": "5.35"
         },
         "rating": 115
     },
@@ -1257,9 +1257,9 @@
         "position": "DT",
         "team": "Miami",
         "stats": {
-            "height": "6'3",
-            "weight": "305",
-            "40Time": "4.78"
+            "height": "6'4",
+            "weight": "303",
+            "40Time": "5.12"
         },
         "rating": 116
     },
@@ -1269,8 +1269,8 @@
         "team": "Notre Dame",
         "stats": {
             "height": "5'11",
-            "weight": "227",
-            "40Time": "4.58"
+            "weight": "221",
+            "40Time": "4.71"
         },
         "rating": 117
     },
@@ -1291,7 +1291,7 @@
         "team": "Rutgers",
         "stats": {
             "height": "5'11",
-            "weight": "190",
+            "weight": "187",
             "40Time": "4.39"
         },
         "rating": 119
@@ -1324,8 +1324,8 @@
         "team": "UFC",
         "stats": {
             "height": "6'1",
-            "weight": "208",
-            "40Time": "4.52"
+            "weight": "202",
+            "40Time": "4.54"
         },
         "rating": 122
     },
@@ -1346,8 +1346,8 @@
         "team": "Arkansas",
         "stats": {
             "height": "6'5",
-            "weight": "307",
-            "40Time": "4.98"
+            "weight": "302",
+            "40Time": "5.22"
         },
         "rating": 124
     },
@@ -1357,7 +1357,7 @@
         "team": "Utah",
         "stats": {
             "height": "6'2",
-            "weight": "207",
+            "weight": "206",
             "40Time": "4.45"
         },
         "rating": 125
@@ -1378,9 +1378,9 @@
         "position": "OT",
         "team": "Texas",
         "stats": {
-            "height": "6'6",
-            "weight": "321",
-            "40Time": "5.18"
+            "height": "6'5",
+            "weight": "305",
+            "40Time": "5.04"
         },
         "rating": 127
     },
@@ -1455,9 +1455,9 @@
         "position": "OT",
         "team": "Michigan",
         "stats": {
-            "height": "6'5",
-            "weight": "320",
-            "40Time": "5.19"
+            "height": "6'4",
+            "weight": "315",
+            "40Time": "5.22"
         },
         "rating": 134
     },
@@ -1467,8 +1467,8 @@
         "team": "Michigan",
         "stats": {
             "height": "6'3",
-            "weight": "208",
-            "40Time": "4.55"
+            "weight": "212",
+            "40Time": "4.44"
         },
         "rating": 135
     },
@@ -1489,8 +1489,8 @@
         "team": "Kansas State",
         "stats": {
             "height": "6'4",
-            "weight": "245",
-            "40Time": "4.65"
+            "weight": "250",
+            "40Time": "4.68"
         },
         "rating": 137
     },
@@ -1510,9 +1510,9 @@
         "position": "WR",
         "team": "Virgina",
         "stats": {
-            "height": "5'8",
-            "weight": "194",
-            "40Time": "4.54"
+            "height": "5'9",
+            "weight": "191",
+            "40Time": "4.57"
         },
         "rating": 139
     },
@@ -1521,9 +1521,9 @@
         "position": "DT",
         "team": "LSU",
         "stats": {
-            "height": "6'6",
-            "weight": "315",
-            "40Time": "5.05"
+            "height": "6'5",
+            "weight": "306",
+            "40Time": "5.01"
         },
         "rating": 140
     },
@@ -1532,9 +1532,9 @@
         "position": "RB",
         "team": "Florida State",
         "stats": {
-            "height": "6'1",
-            "weight": "223",
-            "40Time": "4.49"
+            "height": "6'0",
+            "weight": "216",
+            "40Time": "4.39"
         },
         "rating": 141
     },
@@ -1543,9 +1543,9 @@
         "position": "EDGE",
         "team": "UCLA",
         "stats": {
-            "height": "6'3",
-            "weight": "260",
-            "40Time": "4.61"
+            "height": "6'2",
+            "weight": "247",
+            "40Time": "4.68"
         },
         "rating": 142
     },
@@ -1598,9 +1598,9 @@
         "position": "IOL",
         "team": "Kansas State",
         "stats": {
-            "height": "6'4",
-            "weight": "335",
-            "40Time": "5.34"
+            "height": "6'3",
+            "weight": "322",
+            "40Time": "5.03"
         },
         "rating": 147
     },
@@ -1621,8 +1621,8 @@
         "team": "Kentucky",
         "stats": {
             "height": "6'2",
-            "weight": "230",
-            "40Time": "4.85"
+            "weight": "220",
+            "40Time": "4.82"
         },
         "rating": 149
     },
@@ -1631,9 +1631,9 @@
         "position": "CB",
         "team": "Washington State",
         "stats": {
-            "height": "5'11",
-            "weight": "176",
-            "40Time": "4.45"
+            "height": "5'10",
+            "weight": "184",
+            "40Time": "4.54"
         },
         "rating": 150
     },
@@ -1653,9 +1653,9 @@
         "position": "CB",
         "team": "TCU",
         "stats": {
-            "height": "6'0",
+            "height": "5'11",
             "weight": "190",
-            "40Time": "4.43"
+            "40Time": "4.51"
         },
         "rating": 152
     },
@@ -1676,7 +1676,7 @@
         "team": "Clemson",
         "stats": {
             "height": "6'2",
-            "weight": "300",
+            "weight": "301",
             "40Time": "5.02"
         },
         "rating": 154
@@ -1686,9 +1686,9 @@
         "position": "DT",
         "team": "LSU",
         "stats": {
-            "height": "6'1",
-            "weight": "295",
-            "40Time": "5.05"
+            "height": "6'0",
+            "weight": "284",
+            "40Time": "5.85"
         },
         "rating": 155
     },
@@ -1708,9 +1708,9 @@
         "position": "RB",
         "team": "Louisville",
         "stats": {
-            "height": "6'1",
-            "weight": "225",
-            "40Time": "4.45"
+            "height": "6'0",
+            "weight": "221",
+            "40Time": "4.33"
         },
         "rating": 157
     },
@@ -1719,9 +1719,9 @@
         "position": "TE",
         "team": "Colorado State",
         "stats": {
-            "height": "6'5",
-            "weight": "235",
-            "40Time": "4.65"
+            "height": "6'3",
+            "weight": "241",
+            "40Time": "4.78"
         },
         "rating": 158
     },
@@ -1763,9 +1763,9 @@
         "position": "WR",
         "team": "Illinois",
         "stats": {
-            "height": "5'10",
-            "weight": "185",
-            "40Time": "4.45"
+            "height": "5'19",
+            "weight": "182",
+            "40Time": "4.63"
         },
         "rating": 162
     },
@@ -1786,8 +1786,8 @@
         "team": "Penn State",
         "stats": {
             "height": "6'6",
-            "weight": "264",
-            "40Time": "4.70"
+            "weight": "259",
+            "40Time": "4.57"
         },
         "rating": 164
     },
@@ -1808,8 +1808,8 @@
         "team": "New Hampshire",
         "stats": {
             "height": "5'10",
-            "weight": "207",
-            "40Time": "4.50"
+            "weight": "206",
+            "40Time": "4.53"
         },
         "rating": 166
     },
@@ -1819,8 +1819,8 @@
         "team": "Michigan",
         "stats": {
             "height": "6'2",
-            "weight": "301",
-            "40Time": "5.06"
+            "weight": "298",
+            "40Time": "5.23"
         },
         "rating": 167
     },
@@ -1829,9 +1829,9 @@
         "position": "OT",
         "team": "Missouri",
         "stats": {
-            "height": "6'5",
-            "weight": "319",
-            "40Time": "5.08"
+            "height": "6'6",
+            "weight": "313",
+            "40Time": "5.30"
         },
         "rating": 168
     },
@@ -1840,9 +1840,9 @@
         "position": "S",
         "team": "Miami",
         "stats": {
-            "height": "6'5",
-            "weight": "215",
-            "40Time": "4.56"
+            "height": "6'4",
+            "weight": "231",
+            "40Time": "4.65"
         },
         "rating": 169
     },
@@ -1852,8 +1852,8 @@
         "team": "Washington",
         "stats": {
             "height": "6'0",
-            "weight": "218",
-            "40Time": "4.55"
+            "weight": "217",
+            "40Time": "4.68"
         },
         "rating": 170
     },
@@ -1874,8 +1874,8 @@
         "team": "Arkansas",
         "stats": {
             "height": "6'2",
-            "weight": "188",
-            "40Time": "4.50"
+            "weight": "185",
+            "40Time": "4.47"
         },
         "rating": 172
     },
@@ -1906,9 +1906,9 @@
         "position": "LB",
         "team": "North Carolina",
         "stats": {
-            "height": "6'3",
-            "weight": "235",
-            "40Time": "4.56"
+            "height": "6'2",
+            "weight": "234",
+            "40Time": "4.64"
         },
         "rating": 175
     },
@@ -1917,9 +1917,9 @@
         "position": "TE",
         "team": "Florida State",
         "stats": {
-            "height": "6'3",
-            "weight": "239",
-            "40Time": "4.56"
+            "height": "6'2",
+            "weight": "241",
+            "40Time": "4.61"
         },
         "rating": 176
     },
@@ -1928,9 +1928,9 @@
         "position": "RB",
         "team": "Purdue",
         "stats": {
-            "height": "6'1",
-            "weight": "210",
-            "40Time": "4.53"
+            "height": "5'11",
+            "weight": "209",
+            "40Time": "4.48"
         },
         "rating": 177
     },
@@ -1961,9 +1961,9 @@
         "position": "CB",
         "team": "Maryland",
         "stats": {
-            "height": "6'1",
-            "weight": "196",
-            "40Time": "4.51"
+            "height": "6'0",
+            "weight": "189",
+            "40Time": "4.52"
         },
         "rating": 180
     },
@@ -1984,8 +1984,8 @@
         "team": "Rice",
         "stats": {
             "height": "6'2",
-            "weight": "195",
-            "40Time": "4.50"
+            "weight": "198",
+            "40Time": "4.46"
         },
         "rating": 182
     },
@@ -1995,8 +1995,8 @@
         "team": "Troy",
         "stats": {
             "height": "5'8",
-            "weight": "215",
-            "40Time": "4.56"
+            "weight": "213",
+            "40Time": "4.46"
         },
         "rating": 183
     },
@@ -2028,8 +2028,8 @@
         "team": "Texas",
         "stats": {
             "height": "6'3",
-            "weight": "213",
-            "40Time": "4.54"
+            "weight": "208",
+            "40Time": "4.53"
         },
         "rating": 186
     },
@@ -2060,9 +2060,9 @@
         "position": "S",
         "team": "Ole Miss",
         "stats": {
-            "height": "6'1",
-            "weight": "205",
-            "40Time": "4.56"
+            "height": "6'0",
+            "weight": "195",
+            "40Time": "4.55"
         },
         "rating": 189
     },
@@ -2072,8 +2072,8 @@
         "team": "Missouri",
         "stats": {
             "height": "5'9",
-            "weight": "214",
-            "40Time": "4.56"
+            "weight": "202",
+            "40Time": "4.61"
         },
         "rating": 190
     },
@@ -2116,8 +2116,8 @@
         "team": "Washington",
         "stats": {
             "height": "6'5",
-            "weight": "300",
-            "40Time": "5.04"
+            "weight": "308",
+            "40Time": "4.92"
         },
         "rating": 194
     },
@@ -2137,9 +2137,9 @@
         "position": "G",
         "team": "Michigan",
         "stats": {
-            "height": "6'6",
-            "weight": "320",
-            "40Time": "5.25"
+            "height": "6'5",
+            "weight": "310",
+            "40Time": "5.24"
         },
         "rating": 196
     },
@@ -2171,8 +2171,8 @@
         "team": "Oregon State",
         "stats": {
             "height": "5'8",
-            "weight": "165",
-            "40Time": "4.30"
+            "weight": "174",
+            "40Time": "4.39"
         },
         "rating": 199
     },
@@ -2182,7 +2182,7 @@
         "team": "Pittsburgh",
         "stats": {
             "height": "5'11",
-            "weight": "190",
+            "weight": "186",
             "40Time": "4.45"
         },
         "rating": 200
@@ -2226,8 +2226,8 @@
         "team": "LA Lafayette",
         "stats": {
             "height": "6'5",
-            "weight": "334",
-            "40Time": "5.40"
+            "weight": "332",
+            "40Time": "5.19"
         },
         "rating": 204
     },
@@ -2314,8 +2314,8 @@
         "team": "Penn State",
         "stats": {
             "height": "6'5",
-            "weight": "341",
-            "40Time": "5.38"
+            "weight": "314",
+            "40Time": "5.15"
         },
         "rating": 212
     },
@@ -2504,74 +2504,407 @@
             "weight": "185",
             "40Time": "4.44"
         },
-        "rating": 225
+        "rating": 229
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Lideatrick Griffin",
+        "position": "WR",
+        "team": "Mississippi State",
         "stats": {
-            "height": "6'1",
-            "weight": "228",
-            "40Time": "4.55"
+            "height": "5'10",
+            "weight": "181",
+            "40Time": "4.43"
         },
-        "rating": 225
+        "rating": 230
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Bub Means",
+        "position": "WR",
+        "team": "Pittsburgh",
         "stats": {
             "height": "6'1",
-            "weight": "228",
-            "40Time": "4.55"
+            "weight": "212",
+            "40Time": "4.43"
         },
-        "rating": 225
+        "rating": 231
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Ryan Flournoy",
+        "position": "WR",
+        "team": "Southeast Missouri State",
         "stats": {
             "height": "6'1",
-            "weight": "228",
-            "40Time": "4.55"
+            "weight": "202",
+            "40Time": "4.44"
         },
-        "rating": 225
+        "rating": 232
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Devaughn Vele",
+        "position": "WR",
+        "team": "Utah",
         "stats": {
-            "height": "6'1",
-            "weight": "228",
-            "40Time": "4.55"
+            "height": "6'4",
+            "weight": "203",
+            "40Time": "4.47"
         },
-        "rating": 225
+        "rating": 233
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Jalen Coker",
+        "position": "WR",
+        "team": "Holy Cross",
         "stats": {
             "height": "6'1",
-            "weight": "228",
-            "40Time": "4.55"
+            "weight": "208",
+            "40Time": "4.57"
         },
-        "rating": 225
+        "rating": 234
     },
     {
-        "name": "Jordan Magee",
-        "position": "LB",
-        "team": "Temple",
+        "name": "Kedon Slovis",
+        "position": "QB",
+        "team": "BYU",
         "stats": {
-            "height": "6'1",
-            "weight": "228",
+            "height": "6'3",
+            "weight": "223",
             "40Time": "4.55"
         },
-        "rating": 225
+        "rating": 235
+    },
+    {
+        "name": "Kedon Slovis",
+        "position": "QB",
+        "team": "BYU",
+        "stats": {
+            "height": "6'3",
+            "weight": "223",
+            "40Time": "4.55"
+        },
+        "rating": 235
+    },
+    {
+        "name": "Sam Hartman",
+        "position": "QB",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'1",
+            "weight": "211",
+            "40Time": "4.80"
+        },
+        "rating": 236
+    },
+    {
+        "name": "Austin Reed",
+        "position": "QB",
+        "team": "Western Kentucky",
+        "stats": {
+            "height": "6'2",
+            "weight": "220",
+            "40Time": "4.82"
+        },
+        "rating": 237
+    },
+    {
+        "name": "Keilan Robinson",
+        "position": "RB",
+        "team": "Texas",
+        "stats": {
+            "height": "5'8",
+            "weight": "191",
+            "40Time": "4.42"
+        },
+        "rating": 238
+    },
+    {
+        "name": "Jaden Shirden",
+        "position": "RB",
+        "team": "Monmouth",
+        "stats": {
+            "height": "5'8",
+            "weight": "187",
+            "40Time": "4.45"
+        },
+        "rating": 239
+    },
+    {
+        "name": "Michael Wiley",
+        "position": "RB",
+        "team": "Arizona",
+        "stats": {
+            "height": "5'11",
+            "weight": "210",
+            "40Time": "4.51"
+        },
+        "rating": 240
+    },
+    {
+        "name": "George Holani",
+        "position": "RB",
+        "team": "Boise State",
+        "stats": {
+            "height": "5'10",
+            "weight": "208",
+            "40Time": "4.52"
+        },
+        "rating": 241
+    },
+    {
+        "name": "Jawhar Jordan",
+        "position": "RB",
+        "team": "Louisville",
+        "stats": {
+            "height": "5'10",
+            "weight": "193",
+            "40Time": "4.56"
+        },
+        "rating": 242
+    },
+    {
+        "name": "Isaiah Davis",
+        "position": "RB",
+        "team": "South Dakota State",
+        "stats": {
+            "height": "6'0",
+            "weight": "218",
+            "40Time": "4.57"
+        },
+        "rating": 243
+    },
+    {
+        "name": "Kendall Milton",
+        "position": "RB",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'2",
+            "weight": "225",
+            "40Time": "4.62"
+        },
+        "rating": 244
+    },
+    {
+        "name": "Emani Bailey",
+        "position": "RB",
+        "team": "TCU",
+        "stats": {
+            "height": "5'7",
+            "weight": "202",
+            "40Time": "4.61"
+        },
+        "rating": 245
+    },
+    {
+        "name": "Devin Culp",
+        "position": "TE",
+        "team": "Washington",
+        "stats": {
+            "height": "6'3",
+            "weight": "231",
+            "40Time": "4.47"
+        },
+        "rating": 246
+    },
+    {
+        "name": "Tanner McLachlan",
+        "position": "TE",
+        "team": "Arizona",
+        "stats": {
+            "height": "6'5",
+            "weight": "244",
+            "40Time": "4.61"
+        },
+        "rating": 247
+    },
+    {
+        "name": "Jared Wiley",
+        "position": "TE",
+        "team": "TCU",
+        "stats": {
+            "height": "6'6",
+            "weight": "249",
+            "40Time": "4.62"
+        },
+        "rating": 248
+    },
+    {
+        "name": "Tip Reiman",
+        "position": "TE",
+        "team": "Illinois",
+        "stats": {
+            "height": "6'5",
+            "weight": "271",
+            "40Time": "4.64"
+        },
+        "rating": 249
+    },
+    {
+        "name": "Brevyn Spann-Ford",
+        "position": "TE",
+        "team": "Minnesota",
+        "stats": {
+            "height": "6'7",
+            "weight": "260",
+            "40Time": "4.77"
+        },
+        "rating": 250
+    },
+    {
+        "name": "Tanor Bortolini",
+        "position": "IOL",
+        "team": "Wisconsin",
+        "stats": {
+            "height": "6'4",
+            "weight": "303",
+            "40Time": "4.94"
+        },
+        "rating": 251
+    },
+    {
+        "name": "Frank Crum",
+        "position": "OT",
+        "team": "Wyoming",
+        "stats": {
+            "height": "6'8",
+            "weight": "313",
+            "40Time": "4.94"
+        },
+        "rating": 252
+    },
+    {
+        "name": "Tylan Grable",
+        "position": "OT",
+        "team": "UFC",
+        "stats": {
+            "height": "6'6",
+            "weight": "306",
+            "40Time": "4.95"
+        },
+        "rating": 253
+    },
+    {
+        "name": "Brandon Coleman",
+        "position": "IOL",
+        "team": "TCU",
+        "stats": {
+            "height": "6'5",
+            "weight": "313",
+            "40Time": "4.99"
+        },
+        "rating": 254
+    },
+    {
+        "name": "CJ Hanson ",
+        "position": "IOL",
+        "team": "Holy Cross",
+        "stats": {
+            "height": "6'5",
+            "weight": "300",
+            "40Time": "5.00"
+        },
+        "rating": 255
+    },
+    {
+        "name": "Gottlieb Ayedze",
+        "position": "IOL",
+        "team": "Maryland",
+        "stats": {
+            "height": "6'4",
+            "weight": "308",
+            "40Time": "5.01"
+        },
+        "rating": 256
+    },
+    {
+        "name": "Jarrett Kingston",
+        "position": "IOL",
+        "team": "USC",
+        "stats": {
+            "height": "6'4",
+            "weight": "306",
+            "40Time": "5.02"
+        },
+        "rating": 257
+    },
+    {
+        "name": "Matt Lee",
+        "position": "IOL",
+        "team": "Miami",
+        "stats": {
+            "height": "6'4",
+            "weight": "301",
+            "40Time": "5.03"
+        },
+        "rating": 258
+    },
+    {
+        "name": "Jacob Monk",
+        "position": "IOL",
+        "team": "Duke",
+        "stats": {
+            "height": "6'3",
+            "weight": "308",
+            "40Time": "5.09"
+        },
+        "rating": 259
+    },
+    {
+        "name": "Dylan McMahon",
+        "position": "IOL",
+        "team": "NC State",
+        "stats": {
+            "height": "6'3",
+            "weight": "299",
+            "40Time": "5.10"
+        },
+        "rating": 260
+    },
+    {
+        "name": "Trente Jones",
+        "position": "IOL",
+        "team": "Michigan",
+        "stats": {
+            "height": "6'4",
+            "weight": "305",
+            "40Time": "5.17"
+        },
+        "rating": 261
+    },
+    {
+        "name": "Nathan Thomas",
+        "position": "OT",
+        "team": "Louisiana",
+        "stats": {
+            "height": "6'5",
+            "weight": "332",
+            "40Time": "5.19"
+        },
+        "rating": 262
+    },
+    {
+        "name": "Karsen Barnhart",
+        "position": "IOL",
+        "team": "Michigan",
+        "stats": {
+            "height": "6'5",
+            "weight": "306",
+            "40Time": "5.21"
+        },
+        "rating": 263
+    },
+    {
+        "name": "Delmar Glaze",
+        "position": "OT",
+        "team": "Maryland",
+        "stats": {
+            "height": "6'4",
+            "weight": "315",
+            "40Time": "5.21"
+        },
+        "rating": 264
     }
+
+
+
 
 
 
