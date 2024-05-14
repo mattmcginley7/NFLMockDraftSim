@@ -56,13 +56,13 @@
             justify-items: center;
             align-items: center;
             margin: 20px auto;
-            padding: 0 10px; /* Add padding to prevent items from touching the screen edges */
-            max-width: 1200px; /* Adjust this value based on your layout needs */
-            grid-template-columns: repeat(4, 1fr); /* 4 items per row for all screens */
-        }    
+            padding: 0 10px;
+            max-width: 1200px;
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         .division-title {
-            grid-column: 1 / -1; /* Span full width */
+            grid-column: 1 / -1;
         }
 
         .team-selection button {
@@ -98,17 +98,17 @@
 
         .conference-logos-container {
             display: flex;
-            justify-content: center; /* Centers the logos horizontally */
-            margin-bottom: 20px; /* Adds some space below the logos */
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
-        .startSimulationContainer{
+        .startSimulationContainer {
             display: flex;
             justify-content: center;
         }
 
         .conferenceLogo {
-            margin: 0 10px; /* Adds spacing between the logos */
+            margin: 0 10px;
             height: 50px;
             width: 50px;
         }
@@ -124,13 +124,12 @@
         </div>
     </header>
     <main>
-       <div class="conference-logos-container">
-        <img class="conferenceLogo" src="AFC.png" alt="Select AFC team">
-        <img class="conferenceLogo" src="NFCLogo.png" alt="Select NFC team">
+        <div class="conference-logos-container">
+            <img class="conferenceLogo" src="AFC.png" alt="Select AFC team">
+            <img class="conferenceLogo" src="NFCLogo.png" alt="Select NFC team">
         </div>
         <div class="team-selection nfc-teams">
             <span class="division-title">NFC East</span>
-            <!-- Repeat this block for each team, with the appropriate logo and id -->
             <img src="EaglesLogoGreen.png" class="team-logo" id="EaglesIMG" title="Eagles">
             <img src="Cowboys.png" class="team-logo" id="CowboysIMG" title="Cowboys">
             <img src="CommandersRed.png" class="team-logo" id="CommandersIMG" title="Commanders">
@@ -140,13 +139,13 @@
             <img src="Green_Bay_Packers_logo.png" class="team-logo" id="PackerIMG" title="Packers">
             <img src="LionsLogoMockDraft.png" class="team-logo" id="LionsIMG" title="Lions">
             <img src="Minnesota-Vikings-Logo.png" class="team-logo" id="VikingsIMG" title="Vikings">
-            <img src="Chicago-Bears-Logo.png" .png" class="team-logo" id="BearsIMG" title="Bears">
+            <img src="Chicago-Bears-Logo.png" class="team-logo" id="BearsIMG" title="Bears">
 
             <span class="division-title">NFC West</span>
             <img src="San_Francisco_49ers_logo.png" class="team-logo" id="49ersIMG" title="49ers">
             <img src="LARams.png" class="team-logo" id="RamsIMG" title="Rams">
             <img src="Seattle-Seahawks-Logo.png" class="team-logo" id="SeahawksIMG" title="Seahawks">
-            <img src="Arizona-Cardinals-Logo.png" .png" class="team-logo" id="CardinalsIMG" title="Cardinals">
+            <img src="Arizona-Cardinals-Logo.png" class="team-logo" id="CardinalsIMG" title="Cardinals">
 
             <span class="division-title">NFC South</span>
             <img src="tampa-bay-buccaneers-logo-transparent (1).png" class="team-logo" id="BucsIMG" title="Bucs">
@@ -154,7 +153,7 @@
             <img src="Atlanta-Falcons-logo (1).png" class="team-logo" id="FalconsIMG" title="Falcons">
             <img src="Carolina-Panthers-Logo.png" class="team-logo" id="PantherIMG" title="Panthers">
         </div>
-           
+
         <div class="team-selection afc-teams">
             <span class="division-title">AFC East</span>
             <img src="PatsLogo.png" class="team-logo" id="PatriotsIMG" title="Patriots">
@@ -166,7 +165,7 @@
             <img src="RavensLogo.png" class="team-logo" id="RavensIMG" title="Ravens">
             <img src="SteelersLogo.png" class="team-logo" id="SteelersIMG" title="Steelers">
             <img src="Cleveland-Browns-logo.png" class="team-logo" id="BrownsIMG" title="Browns">
-            <img src="Cincinnati_Bengals_logo.png" .png" class="team-logo" id="BengalsIMG" title="Bengals">
+            <img src="Cincinnati_Bengals_logo.png" class="team-logo" id="BengalsIMG" title="Bengals">
 
             <span class="division-title">AFC West</span>
             <img src="Chiefs-Symbol.png" class="team-logo" id="ChiefsIMG" title="Chiefs">
@@ -180,42 +179,45 @@
             <img src="jacksonville-jaguars-logo-transparent.png" class="team-logo" id="JagsIMG" title="Jaguars">
             <img src="Tennessee-Titans-Logo.png" class="team-logo" id="TitansIMG" title="Titans">
         </div>
-           
+
         <div class="startSimulationContainer">
-        <button id="startSimulation" class="start-simulation">START SIMULATION</button>
+            <button id="startSimulation" class="start-simulation">START SIMULATION</button>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 NFL Mock Draft Simulator</p>
     </footer>
-    <script>
-       // JavaScript to handle team selection and start simulation
-        const selectAllButton = document.getElementById('selectAll');
-        const clearAllButton = document.getElementById('clearAll');
-        const startSimulationButton = document.getElementById('startSimulation');
-        const teamLogos = document.querySelectorAll('.team-logo');
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            const teamLogos = document.querySelectorAll('.team-logo');
+            const startButton = document.getElementById('startSimulation');
 
-        selectAllButton.addEventListener('click', () => {
-            teamLogos.forEach(logo => logo.classList.add('selected'));
-        });
+            // Function to update local storage after selecting a team
+            function setSelectedTeam(logo) {
+                teamLogos.forEach(other => other.classList.remove('selected'));
+                logo.classList.add('selected');
+                const selectedTeam = logo.title; // or logo.alt depending on attribute used
+                localStorage.setItem('selectedTeam', selectedTeam);
+                localStorage.setItem('selectedTeamLogo', logo.src);
+                console.log('Team Selected:', selectedTeam, 'Logo URL:', logo.src); // Debug output
+            }
 
-        clearAllButton.addEventListener('click', () => {
-            teamLogos.forEach(logo => logo.classList.remove('selected'));
-        });
+            // Set up event listeners for all logos
+            teamLogos.forEach(logo => {
+                logo.addEventListener('click', function () {
+                    setSelectedTeam(this);
+                });
+            });
 
-        teamLogos.forEach(logo => {
-            logo.addEventListener('click', () => {
-                logo.classList.toggle('selected');
+            // Handle Start Simulation click event
+            startButton.addEventListener('click', function () {
+                const selectedTeam = localStorage.getItem('selectedTeam');
+                if (!selectedTeam) {
+                    alert('Please select a team to start.');
+                } else {
+                    console.log('Redirecting to draft.html with team:', selectedTeam); // Debugging output
+                    window.location.href = 'draft.html'; // Redirect to the draft page
+                }
             });
         });
-
-        startSimulationButton.addEventListener('click', () => {
-            const selectedTeams = Array.from(teamLogos)
-                .filter(logo => logo.classList.contains('selected'))
-                .map(logo => logo.id);
-            // Add logic to start the draft with selectedTeams
-        });
-    </script>
-</body>
-
-</html>
+</script>

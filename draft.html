@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draft Simulator - NFL Mock Draft Simulator</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="models/draft.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>NFL Mock Draft Simulator</h1>
+        <div id="selectedTeamInfo"></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,32 +21,30 @@
         </nav>
     </header>
     <main>
-        <section id="draftSection">
-            <h2>NFL Draft Simulator</h2>
-            <div>
-                <label for="teamSelect">Select Team:</label>
-                <select id="teamSelect"></select>
-            </div>
-            <div>
-                <label for="playerSelect">Select Player:</label>
-                <select id="playerSelect">
-                    <!-- Player options will be populated here -->
-                </select>
-            </div>
-            <button id="startDraft">Start Draft</button>
-            <div id="draftControls">
-                <!-- Controls for draft rounds -->
-                <button id="selectPlayer" disabled>Select Player</button> <!-- The Select Player button -->
-                <button id="nextRound">Next Round</button>
-                <button id="finishDraft">Finish Draft</button>
-            </div>
-            <div id="draftResults">
-                <!-- Draft results will be displayed here -->
-            </div>
-        </section>
+        <h2>Drafting for your selected team</h2>
+        <div id="teamLogoContainer">
+            <img id="teamLogo" src="" alt="Selected Team Logo" style="width: 100px; height: 100px;">
+            <h3 id="teamName"></h3>
+        </div>
+
+        <!-- Dropdown to Select Players -->
+        <div>
+            <label for="playerSelect">Select Player:</label>
+            <select id="playerSelect">
+                <!-- Player options will be populated here -->
+            </select>
+        </div>
+
+        <!-- Draft Controls -->
+        <div id="draftControls">
+            <button id="selectPlayer" disabled>Select Player</button>
+            <button id="nextRound" disabled>Next Round</button>
+        </div>
+
+        <div id="draftResults"></div>
     </main>
     <footer>
-        <p>&copy; 2023 NFL Mock Draft Simulator</p>
+        <p>&copy; 2025 NFL Mock Draft Simulator</p>
     </footer>
     <script src="models/draft.js"></script>
 </body>
