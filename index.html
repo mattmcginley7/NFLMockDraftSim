@@ -189,35 +189,69 @@
     </footer>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-            const teamLogos = document.querySelectorAll('.team-logo');
-            const startButton = document.getElementById('startSimulation');
+        const teamLogos = document.querySelectorAll('.team-logo');
+        const startButton = document.getElementById('startSimulation');
 
-            // Function to update local storage after selecting a team
-            function setSelectedTeam(logo) {
-                teamLogos.forEach(other => other.classList.remove('selected'));
-                logo.classList.add('selected');
-                const selectedTeam = logo.title; // or logo.alt depending on attribute used
-                localStorage.setItem('selectedTeam', selectedTeam);
-                localStorage.setItem('selectedTeamLogo', logo.src);
-                console.log('Team Selected:', selectedTeam, 'Logo URL:', logo.src); // Debug output
-            }
+        // Mapping short names to full team names
+        const teamNameMap = {
+            Eagles: 'Philadelphia Eagles',
+            Bears: 'Chicago Bears',
+            Commanders: 'Washington Commanders',
+            Patriots: 'New England Patriots',
+            Cardinals: 'Arizona Cardinals',
+            Chargers: 'LA Chargers',
+            Giants: 'New York Giants',
+            Titans: 'Tennessee Titans',
+            Falcons: 'Atlanta Falcons',
+            Jets: 'New York Jets',
+            Vikings: 'Minnesota Vikings',
+            Broncos: 'Denver Broncos',
+            Raiders: 'Las Vegas Raiders',
+            Saints: 'New Orleans Saints',
+            Colts: 'Indianapolis Colts',
+            Seahawks: 'Seattle Seahawks',
+            Jaguars: 'Jacksonville Jaguars',
+            Bengals: 'Cincinnati Bengals',
+            Rams: 'LA Rams',
+            Steelers: 'Pittsburgh Steelers',
+            Dolphins: 'Miami Dolphins',
+            Texans: 'Houston Texans',
+            Cowboys: 'Dallas Cowboys',
+            Packers: 'Green Bay Packers',
+            Buccaneers: 'Tampa Bay Buccanners',
+            Bills: 'Buffalo Bills',
+            Lions: 'Detroit Lions',
+            Ravens: 'Baltimore Ravens',
+            "49ers": 'San Francisco 49ers',
+            Chiefs: 'Kansas City Chiefs',
+            Panthers: 'Carolina Panthers',
+            Browns: 'Cleveland Browns'
+        };
 
-            // Set up event listeners for all logos
-            teamLogos.forEach(logo => {
-                logo.addEventListener('click', function () {
-                    setSelectedTeam(this);
-                });
-            });
+        function setSelectedTeam(logo) {
+            teamLogos.forEach(other => other.classList.remove('selected'));
+            logo.classList.add('selected');
+            const selectedTeamShortName = logo.title; // or logo.alt depending on attribute used
+            const selectedTeamFullName = teamNameMap[selectedTeamShortName];
+            localStorage.setItem('selectedTeam', selectedTeamFullName);
+            localStorage.setItem('selectedTeamLogo', logo.src);
+            console.log('Team Selected:', selectedTeamFullName, 'Logo URL:', logo.src);
+        }
 
-            // Handle Start Simulation click event
-            startButton.addEventListener('click', function () {
-                const selectedTeam = localStorage.getItem('selectedTeam');
-                if (!selectedTeam) {
-                    alert('Please select a team to start.');
-                } else {
-                    console.log('Redirecting to draft.html with team:', selectedTeam); // Debugging output
-                    window.location.href = 'draft.html'; // Redirect to the draft page
-                }
+        teamLogos.forEach(logo => {
+            logo.addEventListener('click', function () {
+                setSelectedTeam(this);
             });
         });
+
+        startButton.addEventListener('click', function () {
+            const selectedTeam = localStorage.getItem('selectedTeam');
+            if (!selectedTeam) {
+                alert('Please select a team to start.');
+            } else {
+                console.log('Redirecting to draft.html with team:', selectedTeam);
+                window.location.href = 'draft.html';
+            }
+        });
+    });
 </script>
