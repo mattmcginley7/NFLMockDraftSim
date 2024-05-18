@@ -4,48 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draft Simulator - NFL Mock Draft Simulator</title>
+    <title>NFL Mock Draft Simulator</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <h1>NFL Mock Draft Simulator</h1>
-        <div id="selectedTeamInfo"></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">NFL Info</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
     <main>
-        <h2>Drafting for your selected team</h2>
-        <div id="teamLogoContainer">
-            <img id="teamLogo" src="" alt="Selected Team Logo" style="width: 100px; height: 100px;">
-            <h3 id="teamName"></h3>
-        </div>
+        <section>
+            <img id="teamLogo" alt="Team Logo">
+            <h2 id="teamName">Drafting for: </h2>
+        </section>
 
-        <!-- Dropdown to Select Players -->
-        <div>
-            <label for="playerSelect">Select Player:</label>
-            <select id="playerSelect">
-                <!-- Player options will be populated here -->
-            </select>
-        </div>
+        <section>
+            <label for="playerSelect">Select a Player:</label>
+            <select id="playerSelect"></select>
+            <button id="selectPlayer">Select Player</button>
+        </section>
 
-        <!-- Draft Controls -->
-        <div id="draftControls">
-            <button id="selectPlayer" disabled>Select Player</button>
-            <button id="nextRound" disabled>Next Round</button>
-        </div>
+        <section id="draftResults">
+            <h2>Draft Results</h2>
+        </section>
 
-        <div id="draftResults"></div>
+        <section id="draftHistory">
+            <h2>Draft History</h2>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 NFL Mock Draft Simulator</p>
-    </footer>
+
     <script src="models/draft.js"></script>
 </body>
 

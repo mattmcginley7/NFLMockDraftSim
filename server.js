@@ -13,21 +13,30 @@ app.use(bodyParser.json());
 const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
-let draftState = {
-    currentRound: 1,
-    totalRounds: 7,
-    draftHistory: [],
-    teamPicks: {},
-    availablePlayers: JSON.parse(fs.readFileSync(playersFilePath, 'utf-8'))
+let draftState;
+
+// Function to initialize draft state
+const initializeDraftState = () => {
+    const players = JSON.parse(fs.readFileSync(playersFilePath, 'utf-8'));
+    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
+
+    return {
+        currentRound: 1,
+        totalRounds: 7,
+        draftHistory: [],
+        teamPicks: teams.teams.reduce((acc, team) => {
+            acc[team.name] = team.picks.map(pick => ({ pick, player: null }));
+            return acc;
+        }, {}),
+        availablePlayers: players
+    };
 };
 
-const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
-draftState.teamPicks = teams.teams.reduce((acc, team) => {
-    acc[team.name] = acc[team.name] || team.picks.map(pick => ({ pick, player: null }));
-    return acc;
-}, draftState.teamPicks);
+// Initialize draft state
+draftState = initializeDraftState();
 
 app.get('/teams', (req, res) => {
+    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
     res.json(teams.teams);
 });
 
@@ -35,13 +44,16 @@ app.get('/players', (req, res) => {
     res.json(draftState.availablePlayers);
 });
 
+app.get('/draftHistory', (req, res) => {
+    res.json(draftState.draftHistory);
+});
+
 app.post('/startDraft', (req, res) => {
     const { teamId } = req.body;
     if (!teamId) return res.status(400).json({ message: 'Team ID is required' });
 
-    draftState.currentRound = 1;
-    draftState.draftHistory = [];
-    draftState.teamPicks[teamId] = draftState.teamPicks[teamId] || [];
+    // Reset draft state
+    draftState = initializeDraftState();
 
     res.json({
         message: 'Draft started',
@@ -72,8 +84,9 @@ app.post('/selectPlayer', (req, res) => {
 
         if (pickIndex !== -1) {
             draftState.teamPicks[team][pickIndex].player = selectedPlayer;
+            draftState.draftHistory.push({ round: draftState.currentRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
-            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer });
+            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
         } else {
             console.error('No available picks for the team');
             return res.status(400).json({ message: 'No available picks for the team' });

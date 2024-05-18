@@ -7,15 +7,26 @@ function fetchPlayers() {
         .then(players => {
             const playerSelect = document.getElementById('playerSelect');
             playerSelect.innerHTML = '';
-            players.forEach(player => {
+            players.forEach((player, index) => {
                 let option = document.createElement('option');
                 option.value = player.name;
-                option.textContent = `${player.name} - ${player.position}`;
+                option.textContent = `${index + 1}. ${player.name} - ${player.position}`;
                 playerSelect.appendChild(option);
             });
             document.getElementById('selectPlayer').disabled = players.length === 0;
         })
         .catch(error => console.error('Error fetching players:', error));
+}
+
+function updateDraftHistory(draftHistory) {
+    const draftHistoryContainer = document.getElementById('draftHistory');
+    draftHistoryContainer.innerHTML = '';
+    draftHistory.forEach(pick => {
+        const pickElement = document.createElement('div');
+        pickElement.className = 'draft-pick';
+        pickElement.innerHTML = `<strong>${pick.pick}. ${pick.team} selects ${pick.player}, ${pick.position}</strong>`;
+        draftHistoryContainer.appendChild(pickElement);
+    });
 }
 
 function initializeDraftControls() {
@@ -48,6 +59,7 @@ function initializeDraftControls() {
                     document.getElementById('draftResults').innerHTML += `<br>Draft Completed. Review the results.`;
                     document.getElementById('selectPlayer').disabled = true;
                 }
+                updateDraftHistory(data.draftHistory);
             })
             .catch(error => {
                 console.error('Failed to select player:', error);
@@ -73,4 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fetchPlayers();
     initializeDraftControls();
+
+    // Fetch and display the draft history
+    fetch('http://localhost:5000/draftHistory')
+        .then(response => response.json())
+        .then(draftHistory => {
+            updateDraftHistory(draftHistory);
+        })
+        .catch(error => console.error('Error fetching draft history:', error));
 });
