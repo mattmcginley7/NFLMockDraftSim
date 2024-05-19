@@ -62,6 +62,54 @@ app.post('/startDraft', (req, res) => {
     });
 });
 
+const simulateDraftPick = (team, round) => {
+    const playerIndex = Math.floor(Math.random() * draftState.availablePlayers.length);
+    const selectedPlayer = draftState.availablePlayers.splice(playerIndex, 1)[0];
+    const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
+
+    if (pickIndex !== -1) {
+        draftState.teamPicks[team][pickIndex].player = selectedPlayer;
+        draftState.draftHistory.push({ round, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+        console.log(`Player ${selectedPlayer.name} selected by ${team}`);
+    }
+};
+
+app.post('/simulateDraft', (req, res) => {
+    const { userTeam } = req.body;
+    const draftSequence = [];
+
+    for (let round = 1; round <= draftState.totalRounds; round++) {
+        draftState.currentRound = round;
+        for (let pick = 1; pick <= 32; pick++) { // Assuming 32 teams
+            const team = Object.keys(draftState.teamPicks).find(teamName =>
+                draftState.teamPicks[teamName].some(pickObj => pickObj.pick === pick && pickObj.player === null)
+            );
+            if (team) {
+                if (team !== userTeam || round !== draftState.currentRound) {
+                    draftSequence.push({ team, round, pick });
+                } else {
+                    draftSequence.push({ team, round, pick, user: true });
+                }
+            }
+        }
+    }
+
+    res.json({
+        message: 'Draft simulation sequence generated',
+        draftSequence
+    });
+});
+
+app.post('/simulateDraftPick', (req, res) => {
+    const { team, round } = req.body;
+    simulateDraftPick(team, round);
+    res.json({
+        message: `Simulated draft pick for ${team}`,
+        draftHistory: draftState.draftHistory,
+        availablePlayers: draftState.availablePlayers
+    });
+});
+
 app.post('/selectPlayer', (req, res) => {
     try {
         const { player, team } = req.body;

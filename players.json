@@ -1,104 +1,5 @@
 [
   {
-    "name": "Darius Robinson",
-    "position": "EDGE",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'5",
-      "weight": "286",
-      "40Time": "4.95"
-    },
-    "rating": 12
-  },
-  {
-    "name": "Terrion Arnold",
-    "position": "CB",
-    "team": "Alabama",
-    "stats": {
-      "height": "5'11",
-      "weight": "189",
-      "40Time": "4.50"
-    },
-    "rating": 13
-  },
-  {
-    "name": "Jared Verse",
-    "position": "EDGE",
-    "team": "Florida State",
-    "stats": {
-      "height": "6'4",
-      "weight": "254",
-      "40Time": "4.58"
-    },
-    "rating": 14
-  },
-  {
-    "name": "Cooper DeJean",
-    "position": "CB",
-    "team": "Iowa",
-    "stats": {
-      "height": "6'1",
-      "weight": "207",
-      "40Time": "4.43"
-    },
-    "rating": 15
-  },
-  {
-    "name": "Nate Wiggins",
-    "position": "CB",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'2",
-      "weight": "173",
-      "40Time": "4.28"
-    },
-    "rating": 16
-  },
-  {
-    "name": "Taliese Fuaga",
-    "position": "OT",
-    "team": "Oregon State",
-    "stats": {
-      "height": "6'6",
-      "weight": "324",
-      "40Time": "5.13"
-    },
-    "rating": 18
-  },
-  {
-    "name": "Tyler Guyton",
-    "position": "OT",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'8",
-      "weight": "322",
-      "40Time": "5.19"
-    },
-    "rating": 19
-  },
-  {
-    "name": "Amarius Mims",
-    "position": "OT",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'8",
-      "weight": "340",
-      "40Time": "5.07"
-    },
-    "rating": 20
-  },
-  {
-    "name": "Quinyon Mitchell",
-    "position": "CB",
-    "team": "Toledo",
-    "stats": {
-      "height": "6'0",
-      "weight": "196",
-      "40Time": "4.33"
-    },
-    "rating": 21
-  },
-  {
     "name": "Kool-Aid McKinstry",
     "position": "CB",
     "team": "Alabama",
@@ -198,17 +99,6 @@
     "rating": 30
   },
   {
-    "name": "JJ McCarthy",
-    "position": "QB",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'3",
-      "weight": "219",
-      "40Time": "4.58"
-    },
-    "rating": 31
-  },
-  {
     "name": "Jer'Zhan Newton",
     "position": "DT",
     "team": "Illinois",
@@ -231,17 +121,6 @@
     "rating": 33
   },
   {
-    "name": "Graham Barton",
-    "position": "OT",
-    "team": "Duke",
-    "stats": {
-      "height": "6'5",
-      "weight": "314",
-      "40Time": "5.04"
-    },
-    "rating": 34
-  },
-  {
     "name": "Troy Franklin",
     "position": "WR",
     "team": "Oregon",
@@ -251,28 +130,6 @@
       "40Time": "4.4`"
     },
     "rating": 35
-  },
-  {
-    "name": "Adonai Mitchell",
-    "position": "WR",
-    "team": "Texas",
-    "stats": {
-      "height": "6'2",
-      "weight": "205",
-      "40Time": "4.34"
-    },
-    "rating": 36
-  },
-  {
-    "name": "Jackson Powers-Johnson",
-    "position": "IOL",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'3",
-      "weight": "334",
-      "40Time": "5.29"
-    },
-    "rating": 37
   },
   {
     "name": "Zach Frazier",
@@ -306,17 +163,6 @@
       "40Time": "4.73"
     },
     "rating": 40
-  },
-  {
-    "name": "Ja'Tavion Sanders",
-    "position": "TE",
-    "team": "Texas",
-    "stats": {
-      "height": "6'4",
-      "weight": "245",
-      "40Time": "4.69"
-    },
-    "rating": 41
   },
   {
     "name": "Kamari Lassiter",
@@ -363,50 +209,6 @@
     "rating": 45
   },
   {
-    "name": "Chris Braswell",
-    "position": "EDGE",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'3",
-      "weight": "251",
-      "40Time": "4.60"
-    },
-    "rating": 46
-  },
-  {
-    "name": "Payton Wilson",
-    "position": "LB",
-    "team": "NC State",
-    "stats": {
-      "height": "6'4",
-      "weight": "238",
-      "40Time": "4.43"
-    },
-    "rating": 47
-  },
-  {
-    "name": "T'Vondre Sweat",
-    "position": "DT",
-    "team": "Texas",
-    "stats": {
-      "height": "6'3",
-      "weight": "366",
-      "40Time": "5.27"
-    },
-    "rating": 48
-  },
-  {
-    "name": "Marshawn Kneeland",
-    "position": "EDGE",
-    "team": "Western Michigan",
-    "stats": {
-      "height": "6'3",
-      "weight": "267",
-      "40Time": "4.75"
-    },
-    "rating": 49
-  },
-  {
     "name": "Malachi Corley",
     "position": "WR",
     "team": "Western Kentucky",
@@ -427,17 +229,6 @@
       "40Time": "4.72"
     },
     "rating": 51
-  },
-  {
-    "name": "Ladd McConkey",
-    "position": "WR",
-    "team": "Georgia",
-    "stats": {
-      "height": "5'11",
-      "weight": "185",
-      "40Time": "4.48"
-    },
-    "rating": 52
   },
   {
     "name": "Kamren Kinchens",
@@ -506,17 +297,6 @@
     "rating": 58
   },
   {
-    "name": "Xavier Legette",
-    "position": "WR",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'1",
-      "weight": "221",
-      "40Time": "4.39"
-    },
-    "rating": 59
-  },
-  {
     "name": "Kiran Amegadjie",
     "position": "OT",
     "team": "Yale",
@@ -537,17 +317,6 @@
       "40Time": "4.48"
     },
     "rating": 61
-  },
-  {
-    "name": "Jermaine Burton",
-    "position": "WR",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'0",
-      "weight": "196",
-      "40Time": "4.45"
-    },
-    "rating": 62
   },
   {
     "name": "Kalen King",
@@ -572,17 +341,6 @@
     "rating": 64
   },
   {
-    "name": "Adisa Isaac",
-    "position": "EDGE",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'4",
-      "weight": "247",
-      "40Time": "4.74"
-    },
-    "rating": 65
-  },
-  {
     "name": "Kingsley Suamataia",
     "position": "OT",
     "team": "BYU",
@@ -592,17 +350,6 @@
       "40Time": "5.04"
     },
     "rating": 66
-  },
-  {
-    "name": "Roman Wilson",
-    "position": "WR",
-    "team": "Michigan",
-    "stats": {
-      "height": "5'11",
-      "weight": "185",
-      "40Time": "4.39"
-    },
-    "rating": 67
   },
   {
     "name": "Mike Sainristil",
@@ -625,17 +372,6 @@
       "40Time": "4.52"
     },
     "rating": 69
-  },
-  {
-    "name": "Javon Bullard",
-    "position": "S",
-    "team": "Georgia",
-    "stats": {
-      "height": "5'11",
-      "weight": "198",
-      "40Time": "4.47"
-    },
-    "rating": 70
   },
   {
     "name": "Jaden Hicks",
@@ -704,17 +440,6 @@
     "rating": 76
   },
   {
-    "name": "Michael Pratt",
-    "position": "QB",
-    "team": "Tulane",
-    "stats": {
-      "height": "6'3",
-      "weight": "220",
-      "40Time": "4.71"
-    },
-    "rating": 77
-  },
-  {
     "name": "Ruke Orhorhoro",
     "position": "DT",
     "team": "Clemson",
@@ -781,28 +506,6 @@
     "rating": 83
   },
   {
-    "name": "Austin Booker",
-    "position": "EDGE",
-    "team": "Kansas",
-    "stats": {
-      "height": "6'5",
-      "weight": "240",
-      "40Time": "4.79"
-    },
-    "rating": 84
-  },
-  {
-    "name": "Gabriel Murphy",
-    "position": "EDGE",
-    "team": "UCLA",
-    "stats": {
-      "height": "6'2",
-      "weight": "247",
-      "40Time": "4.68"
-    },
-    "rating": 85
-  },
-  {
     "name": "Brandon Dorlus",
     "position": "EDGE",
     "team": "Oregon",
@@ -836,17 +539,6 @@
     "rating": 88
   },
   {
-    "name": "Jeremiah Trotter",
-    "position": "LB",
-    "team": "CLemson",
-    "stats": {
-      "height": "6'0",
-      "weight": "228",
-      "40Time": "4.68"
-    },
-    "rating": 89
-  },
-  {
     "name": "Patrick Paul",
     "position": "OT",
     "team": "Houston",
@@ -856,17 +548,6 @@
       "40Time": "5.13"
     },
     "rating": 90
-  },
-  {
-    "name": "Spencer Rattler",
-    "position": "QB",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'0",
-      "weight": "211",
-      "40Time": "4.95"
-    },
-    "rating": 91
   },
   {
     "name": "Christian Mahogany",
@@ -889,28 +570,6 @@
       "40Time": "4.38"
     },
     "rating": 93
-  },
-  {
-    "name": "Sedrick Van Pran",
-    "position": "IOL",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'4",
-      "weight": "298",
-      "40Time": "5.20"
-    },
-    "rating": 94
-  },
-  {
-    "name": "Blake Corum",
-    "position": "RB",
-    "team": "Michigan",
-    "stats": {
-      "height": "5'8",
-      "weight": "205",
-      "40Time": "4.53"
-    },
-    "rating": 95
   },
   {
     "name": "Mason McCormick",
@@ -944,28 +603,6 @@
       "40Time": "4.72"
     },
     "rating": 98
-  },
-  {
-    "name": "Sione Vaki",
-    "position": "S",
-    "team": "Utah",
-    "stats": {
-      "height": "5'11",
-      "weight": "210",
-      "40Time": "4.62"
-    },
-    "rating": 99
-  },
-  {
-    "name": "Sedrick Van Pran",
-    "position": "IOL",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'4",
-      "weight": "311",
-      "40Time": "5.14"
-    },
-    "rating": 100
   },
   {
     "name": "Kris Abrams-Draine",
@@ -1034,17 +671,6 @@
     "rating": 106
   },
   {
-    "name": "Ray Davis",
-    "position": "RB",
-    "team": "Kentucky",
-    "stats": {
-      "height": "5'8",
-      "weight": "211",
-      "40Time": "4.52"
-    },
-    "rating": 107
-  },
-  {
     "name": "Tommy Eichenberg",
     "position": "LB",
     "team": "Ohio State",
@@ -1065,17 +691,6 @@
       "40Time": "4.99"
     },
     "rating": 109
-  },
-  {
-    "name": "Renardo Green",
-    "position": "CB",
-    "team": "Florida State",
-    "stats": {
-      "height": "6'0",
-      "weight": "186",
-      "40Time": "4.49"
-    },
-    "rating": 110
   },
   {
     "name": "Matt Goncalves",
@@ -1100,28 +715,6 @@
     "rating": 112
   },
   {
-    "name": "Jacob Cowing",
-    "position": "WR",
-    "team": "Arizona",
-    "stats": {
-      "height": "5'8",
-      "weight": "168",
-      "40Time": "4.38"
-    },
-    "rating": 113
-  },
-  {
-    "name": "MarShawn Lloyd",
-    "position": "RB",
-    "team": "USC",
-    "stats": {
-      "height": "5'9",
-      "weight": "220",
-      "40Time": "4.46"
-    },
-    "rating": 114
-  },
-  {
     "name": "Dominick Puni",
     "position": "OT",
     "team": "Kansas",
@@ -1144,17 +737,6 @@
     "rating": 116
   },
   {
-    "name": "Audric Estime",
-    "position": "RB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "5'11",
-      "weight": "221",
-      "40Time": "4.71"
-    },
-    "rating": 117
-  },
-  {
     "name": "Jarvis Brownlee",
     "position": "CB",
     "team": "Louisville",
@@ -1164,28 +746,6 @@
       "40Time": "4.48"
     },
     "rating": 118
-  },
-  {
-    "name": "Max Melton",
-    "position": "CB",
-    "team": "Rutgers",
-    "stats": {
-      "height": "5'11",
-      "weight": "187",
-      "40Time": "4.39"
-    },
-    "rating": 119
-  },
-  {
-    "name": "Ainias Smith",
-    "position": "WR",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "5'10",
-      "weight": "200",
-      "40Time": "4.48"
-    },
-    "rating": 120
   },
   {
     "name": "Dadrion Taylor-Demerson",
@@ -1241,61 +801,6 @@
       "40Time": "4.45"
     },
     "rating": 125
-  },
-  {
-    "name": "Justin Eboigbe",
-    "position": "DT",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'4",
-      "weight": "297",
-      "40Time": "5.18"
-    },
-    "rating": 126
-  },
-  {
-    "name": "Christian Jones",
-    "position": "OT",
-    "team": "Texas",
-    "stats": {
-      "height": "6'5",
-      "weight": "305",
-      "40Time": "5.04"
-    },
-    "rating": 127
-  },
-  {
-    "name": "Mohamed Kamara",
-    "position": "EDGE",
-    "team": "Colorado State",
-    "stats": {
-      "height": "6'1",
-      "weight": "248",
-      "40Time": "4.57"
-    },
-    "rating": 128
-  },
-  {
-    "name": "Braelon Allen",
-    "position": "RB",
-    "team": "Wisconsin",
-    "stats": {
-      "height": "6'2",
-      "weight": "245",
-      "40Time": "4.58"
-    },
-    "rating": 129
-  },
-  {
-    "name": "McKinnley Jackson",
-    "position": "DT",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'2",
-      "weight": "326",
-      "40Time": "5.26"
-    },
-    "rating": 130
   },
   {
     "name": "Jordan Travis",
@@ -1386,50 +891,6 @@
     "rating": 138
   },
   {
-    "name": "Malik Washington",
-    "position": "WR",
-    "team": "Virgina",
-    "stats": {
-      "height": "5'9",
-      "weight": "191",
-      "40Time": "4.57"
-    },
-    "rating": 139
-  },
-  {
-    "name": "Maason Smith",
-    "position": "DT",
-    "team": "LSU",
-    "stats": {
-      "height": "6'5",
-      "weight": "306",
-      "40Time": "5.01"
-    },
-    "rating": 140
-  },
-  {
-    "name": "Trey Benson",
-    "position": "RB",
-    "team": "Florida State",
-    "stats": {
-      "height": "6'0",
-      "weight": "216",
-      "40Time": "4.39"
-    },
-    "rating": 141
-  },
-  {
-    "name": "Grayson Murphy",
-    "position": "EDGE",
-    "team": "UCLA",
-    "stats": {
-      "height": "6'2",
-      "weight": "247",
-      "40Time": "4.68"
-    },
-    "rating": 142
-  },
-  {
     "name": "Logan Lee",
     "position": "EDGE",
     "team": "Iowa",
@@ -1452,17 +913,6 @@
     "rating": 144
   },
   {
-    "name": "Caelen Carson",
-    "position": "CB",
-    "team": "Wake Forest",
-    "stats": {
-      "height": "6'3",
-      "weight": "208",
-      "40Time": "4.55"
-    },
-    "rating": 145
-  },
-  {
     "name": "Marcus Rosemy-Jacksaint",
     "position": "WR",
     "team": "Georgia",
@@ -1472,50 +922,6 @@
       "40Time": "4.50"
     },
     "rating": 146
-  },
-  {
-    "name": "Cooper Beebe",
-    "position": "IOL",
-    "team": "Kansas State",
-    "stats": {
-      "height": "6'3",
-      "weight": "322",
-      "40Time": "5.03"
-    },
-    "rating": 147
-  },
-  {
-    "name": "Caelen Carson",
-    "position": "CB",
-    "team": "Wake Forest",
-    "stats": {
-      "height": "6'3",
-      "weight": "208",
-      "40Time": "4.55"
-    },
-    "rating": 148
-  },
-  {
-    "name": "Austin Reed",
-    "position": "QB",
-    "team": "Kentucky",
-    "stats": {
-      "height": "6'2",
-      "weight": "220",
-      "40Time": "4.82"
-    },
-    "rating": 149
-  },
-  {
-    "name": "Chau Smith-Wade",
-    "position": "CB",
-    "team": "Washington State",
-    "stats": {
-      "height": "5'10",
-      "weight": "184",
-      "40Time": "4.54"
-    },
-    "rating": 150
   },
   {
     "name": "Xavier Thomas",
@@ -1529,28 +935,6 @@
     "rating": 151
   },
   {
-    "name": "Josh Newton",
-    "position": "CB",
-    "team": "TCU",
-    "stats": {
-      "height": "5'11",
-      "weight": "190",
-      "40Time": "4.51"
-    },
-    "rating": 152
-  },
-  {
-    "name": "Michael Barrett",
-    "position": "LB",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'0",
-      "weight": "239",
-      "40Time": "4.55"
-    },
-    "rating": 153
-  },
-  {
     "name": "Tyler Davis",
     "position": "DT",
     "team": "Clemson",
@@ -1560,17 +944,6 @@
       "40Time": "5.02"
     },
     "rating": 154
-  },
-  {
-    "name": "Mekhi Wingo",
-    "position": "DT",
-    "team": "LSU",
-    "stats": {
-      "height": "6'0",
-      "weight": "284",
-      "40Time": "5.85"
-    },
-    "rating": 155
   },
   {
     "name": "Tahj Washington",
@@ -1593,17 +966,6 @@
       "40Time": "4.33"
     },
     "rating": 157
-  },
-  {
-    "name": "Dallin Holker",
-    "position": "TE",
-    "team": "Colorado State",
-    "stats": {
-      "height": "6'3",
-      "weight": "241",
-      "40Time": "4.78"
-    },
-    "rating": 158
   },
   {
     "name": "Zak Zinter",
@@ -1694,28 +1056,6 @@
     "rating": 166
   },
   {
-    "name": "Drake Nugent",
-    "position": "C",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'2",
-      "weight": "298",
-      "40Time": "5.23"
-    },
-    "rating": 167
-  },
-  {
-    "name": "Javon Foster",
-    "position": "OT",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'6",
-      "weight": "313",
-      "40Time": "5.30"
-    },
-    "rating": 168
-  },
-  {
     "name": "James Williams",
     "position": "S",
     "team": "Miami",
@@ -1749,28 +1089,6 @@
     "rating": 171
   },
   {
-    "name": "Dwight McGlothern",
-    "position": "CB",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'2",
-      "weight": "185",
-      "40Time": "4.47"
-    },
-    "rating": 172
-  },
-  {
-    "name": "Myles Murphy",
-    "position": "DT",
-    "team": "North Carolina",
-    "stats": {
-      "height": "6'4",
-      "weight": "309",
-      "40Time": "5.20"
-    },
-    "rating": 173
-  },
-  {
     "name": "Nehemiah Pritchett",
     "position": "CB",
     "team": "Auburn",
@@ -1780,39 +1098,6 @@
       "40Time": "4.36"
     },
     "rating": 174
-  },
-  {
-    "name": "Cedric Gray",
-    "position": "LB",
-    "team": "North Carolina",
-    "stats": {
-      "height": "6'2",
-      "weight": "234",
-      "40Time": "4.64"
-    },
-    "rating": 175
-  },
-  {
-    "name": "Jaheim Bell",
-    "position": "TE",
-    "team": "Florida State",
-    "stats": {
-      "height": "6'2",
-      "weight": "241",
-      "40Time": "4.61"
-    },
-    "rating": 176
-  },
-  {
-    "name": "Tyrone Tracy",
-    "position": "RB",
-    "team": "Purdue",
-    "stats": {
-      "height": "5'11",
-      "weight": "209",
-      "40Time": "4.48"
-    },
-    "rating": 177
   },
   {
     "name": "Jalen Sundell",
@@ -1837,17 +1122,6 @@
     "rating": 179
   },
   {
-    "name": "Tarheeb Still",
-    "position": "CB",
-    "team": "Maryland",
-    "stats": {
-      "height": "6'0",
-      "weight": "189",
-      "40Time": "4.52"
-    },
-    "rating": 180
-  },
-  {
     "name": "AJ Barner",
     "position": "TE",
     "team": "Michigan",
@@ -1859,17 +1133,6 @@
     "rating": 181
   },
   {
-    "name": "Luke McCaffrey",
-    "position": "WR",
-    "team": "Rice",
-    "stats": {
-      "height": "6'2",
-      "weight": "198",
-      "40Time": "4.46"
-    },
-    "rating": 182
-  },
-  {
     "name": "Kimani Vidal",
     "position": "RB",
     "team": "Troy",
@@ -1879,28 +1142,6 @@
       "40Time": "4.46"
     },
     "rating": 183
-  },
-  {
-    "name": "Jowon Briggs",
-    "position": "DT",
-    "team": "Cincinnati",
-    "stats": {
-      "height": "6'2",
-      "weight": "297",
-      "40Time": "5.08"
-    },
-    "rating": 184
-  },
-  {
-    "name": "Jordan Jefferson",
-    "position": "DT",
-    "team": "LSU",
-    "stats": {
-      "height": "6'4",
-      "weight": "317",
-      "40Time": "5.16"
-    },
-    "rating": 185
   },
   {
     "name": "Ryan Watts",
@@ -1925,61 +1166,6 @@
     "rating": 187
   },
   {
-    "name": "Justin Rogers",
-    "position": "DT",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'3",
-      "weight": "346",
-      "40Time": "5.36"
-    },
-    "rating": 188
-  },
-  {
-    "name": "Daijahn Anthony",
-    "position": "S",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'0",
-      "weight": "195",
-      "40Time": "4.55"
-    },
-    "rating": 189
-  },
-  {
-    "name": "Cody Schrader",
-    "position": "RB",
-    "team": "Missouri",
-    "stats": {
-      "height": "5'9",
-      "weight": "202",
-      "40Time": "4.61"
-    },
-    "rating": 190
-  },
-  {
-    "name": "Kamal Hadden",
-    "position": "CB",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'1",
-      "weight": "197",
-      "40Time": "4.51"
-    },
-    "rating": 191
-  },
-  {
-    "name": "Casey Washington",
-    "position": "WR",
-    "team": "Illinois",
-    "stats": {
-      "height": "6'2",
-      "weight": "200",
-      "40Time": "4.50"
-    },
-    "rating": 192
-  },
-  {
     "name": "De'Corian Clark",
     "position": "WR",
     "team": "UTSA",
@@ -2000,17 +1186,6 @@
       "40Time": "4.92"
     },
     "rating": 194
-  },
-  {
-    "name": "Jalen Green",
-    "position": "S",
-    "team": "Mississippi State",
-    "stats": {
-      "height": "6'1",
-      "weight": "200",
-      "40Time": "4.50"
-    },
-    "rating": 195
   },
   {
     "name": "Trevor Keegan",
@@ -2044,39 +1219,6 @@
       "40Time": "5.15"
     },
     "rating": 198
-  },
-  {
-    "name": "Anthony Gould",
-    "position": "WR",
-    "team": "Oregon State",
-    "stats": {
-      "height": "5'8",
-      "weight": "174",
-      "40Time": "4.39"
-    },
-    "rating": 199
-  },
-  {
-    "name": "MJ Devonshire",
-    "position": "CB",
-    "team": "Pittsburgh",
-    "stats": {
-      "height": "5'11",
-      "weight": "186",
-      "40Time": "4.45"
-    },
-    "rating": 200
-  },
-  {
-    "name": "Brennan Jackson",
-    "position": "EDGE",
-    "team": "Washington State",
-    "stats": {
-      "height": "6'4",
-      "weight": "264",
-      "40Time": "4.69"
-    },
-    "rating": 201
   },
   {
     "name": "Hunter Nourzad",
@@ -2178,28 +1320,6 @@
     "rating": 210
   },
   {
-    "name": "Jaylen Harrell",
-    "position": "EDGE",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'4",
-      "weight": "242",
-      "40Time": "4.68"
-    },
-    "rating": 211
-  },
-  {
-    "name": "Caedan Wallace",
-    "position": "OT",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'5",
-      "weight": "314",
-      "40Time": "5.15"
-    },
-    "rating": 212
-  },
-  {
     "name": "Ty'Ron Hopper",
     "position": "LB",
     "team": "Missouri",
@@ -2244,17 +1364,6 @@
     "rating": 216
   },
   {
-    "name": "Jalyx Hunt",
-    "position": "EDGE",
-    "team": "Houston Christian Univ",
-    "stats": {
-      "height": "6'4",
-      "weight": "252",
-      "40Time": "4.64"
-    },
-    "rating": 217
-  },
-  {
     "name": "Javontae Jean Baptiste",
     "position": "EDGE",
     "team": "Notre Dame",
@@ -2264,28 +1373,6 @@
       "40Time": "4.66"
     },
     "rating": 218
-  },
-  {
-    "name": "Myles Cole",
-    "position": "EDGE",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'6",
-      "weight": "278",
-      "40Time": "4.67"
-    },
-    "rating": 219
-  },
-  {
-    "name": "Eric Watts",
-    "position": "EDGE",
-    "team": "Connecticut",
-    "stats": {
-      "height": "6'6",
-      "weight": "274",
-      "40Time": "4.67"
-    },
-    "rating": 220
   },
   {
     "name": "Trajan Jeffcoat",
@@ -2310,17 +1397,6 @@
     "rating": 222
   },
   {
-    "name": "Gabe Hall",
-    "position": "DT",
-    "team": "Baylor",
-    "stats": {
-      "height": "6'6",
-      "weight": "291",
-      "40Time": "5.03"
-    },
-    "rating": 223
-  },
-  {
     "name": "Trevin Wallace",
     "position": "LB",
     "team": "Kentucky",
@@ -2330,17 +1406,6 @@
       "40Time": "4.51"
     },
     "rating": 224
-  },
-  {
-    "name": "Jordan Magee",
-    "position": "LB",
-    "team": "Temple",
-    "stats": {
-      "height": "6'1",
-      "weight": "228",
-      "40Time": "4.55"
-    },
-    "rating": 225
   },
   {
     "name": "Decamerion Richardson",
@@ -2363,17 +1428,6 @@
       "40Time": "4.39"
     },
     "rating": 227
-  },
-  {
-    "name": "Millard Bradford",
-    "position": "S",
-    "team": "TCU",
-    "stats": {
-      "height": "5'11",
-      "weight": "191",
-      "40Time": "4.42"
-    },
-    "rating": 228
   },
   {
     "name": "Elijah Jones",
@@ -2409,39 +1463,6 @@
     "rating": 231
   },
   {
-    "name": "Ryan Flournoy",
-    "position": "WR",
-    "team": "Southeast Missouri State",
-    "stats": {
-      "height": "6'1",
-      "weight": "202",
-      "40Time": "4.44"
-    },
-    "rating": 232
-  },
-  {
-    "name": "Devaughn Vele",
-    "position": "WR",
-    "team": "Utah",
-    "stats": {
-      "height": "6'4",
-      "weight": "203",
-      "40Time": "4.47"
-    },
-    "rating": 233
-  },
-  {
-    "name": "Jalen Coker",
-    "position": "WR",
-    "team": "Holy Cross",
-    "stats": {
-      "height": "6'1",
-      "weight": "208",
-      "40Time": "4.57"
-    },
-    "rating": 234
-  },
-  {
     "name": "Kedon Slovis",
     "position": "QB",
     "team": "BYU",
@@ -2451,28 +1472,6 @@
       "40Time": "4.55"
     },
     "rating": 235
-  },
-  {
-    "name": "Kedon Slovis",
-    "position": "QB",
-    "team": "BYU",
-    "stats": {
-      "height": "6'3",
-      "weight": "223",
-      "40Time": "4.55"
-    },
-    "rating": 235
-  },
-  {
-    "name": "Sam Hartman",
-    "position": "QB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'1",
-      "weight": "211",
-      "40Time": "4.80"
-    },
-    "rating": 236
   },
   {
     "name": "Austin Reed",
@@ -2508,94 +1507,6 @@
     "rating": 239
   },
   {
-    "name": "Michael Wiley",
-    "position": "RB",
-    "team": "Arizona",
-    "stats": {
-      "height": "5'11",
-      "weight": "210",
-      "40Time": "4.51"
-    },
-    "rating": 240
-  },
-  {
-    "name": "George Holani",
-    "position": "RB",
-    "team": "Boise State",
-    "stats": {
-      "height": "5'10",
-      "weight": "208",
-      "40Time": "4.52"
-    },
-    "rating": 241
-  },
-  {
-    "name": "Jawhar Jordan",
-    "position": "RB",
-    "team": "Louisville",
-    "stats": {
-      "height": "5'10",
-      "weight": "193",
-      "40Time": "4.56"
-    },
-    "rating": 242
-  },
-  {
-    "name": "Isaiah Davis",
-    "position": "RB",
-    "team": "South Dakota State",
-    "stats": {
-      "height": "6'0",
-      "weight": "218",
-      "40Time": "4.57"
-    },
-    "rating": 243
-  },
-  {
-    "name": "Kendall Milton",
-    "position": "RB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'2",
-      "weight": "225",
-      "40Time": "4.62"
-    },
-    "rating": 244
-  },
-  {
-    "name": "Emani Bailey",
-    "position": "RB",
-    "team": "TCU",
-    "stats": {
-      "height": "5'7",
-      "weight": "202",
-      "40Time": "4.61"
-    },
-    "rating": 245
-  },
-  {
-    "name": "Devin Culp",
-    "position": "TE",
-    "team": "Washington",
-    "stats": {
-      "height": "6'3",
-      "weight": "231",
-      "40Time": "4.47"
-    },
-    "rating": 246
-  },
-  {
-    "name": "Tanner McLachlan",
-    "position": "TE",
-    "team": "Arizona",
-    "stats": {
-      "height": "6'5",
-      "weight": "244",
-      "40Time": "4.61"
-    },
-    "rating": 247
-  },
-  {
     "name": "Jared Wiley",
     "position": "TE",
     "team": "TCU",
@@ -2605,28 +1516,6 @@
       "40Time": "4.62"
     },
     "rating": 248
-  },
-  {
-    "name": "Tip Reiman",
-    "position": "TE",
-    "team": "Illinois",
-    "stats": {
-      "height": "6'5",
-      "weight": "271",
-      "40Time": "4.64"
-    },
-    "rating": 249
-  },
-  {
-    "name": "Brevyn Spann-Ford",
-    "position": "TE",
-    "team": "Minnesota",
-    "stats": {
-      "height": "6'7",
-      "weight": "260",
-      "40Time": "4.77"
-    },
-    "rating": 250
   },
   {
     "name": "Tanor Bortolini",
@@ -2684,17 +1573,6 @@
     "rating": 255
   },
   {
-    "name": "Gottlieb Ayedze",
-    "position": "IOL",
-    "team": "Maryland",
-    "stats": {
-      "height": "6'4",
-      "weight": "308",
-      "40Time": "5.01"
-    },
-    "rating": 256
-  },
-  {
     "name": "Jarrett Kingston",
     "position": "IOL",
     "team": "USC",
@@ -2704,28 +1582,6 @@
       "40Time": "5.02"
     },
     "rating": 257
-  },
-  {
-    "name": "Matt Lee",
-    "position": "IOL",
-    "team": "Miami",
-    "stats": {
-      "height": "6'4",
-      "weight": "301",
-      "40Time": "5.03"
-    },
-    "rating": 258
-  },
-  {
-    "name": "Jacob Monk",
-    "position": "IOL",
-    "team": "Duke",
-    "stats": {
-      "height": "6'3",
-      "weight": "308",
-      "40Time": "5.09"
-    },
-    "rating": 259
   },
   {
     "name": "Dylan McMahon",
@@ -2761,17 +1617,6 @@
     "rating": 262
   },
   {
-    "name": "Karsen Barnhart",
-    "position": "IOL",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'5",
-      "weight": "306",
-      "40Time": "5.21"
-    },
-    "rating": 263
-  },
-  {
     "name": "Delmar Glaze",
     "position": "OT",
     "team": "Maryland",
@@ -2781,17 +1626,6 @@
       "40Time": "5.21"
     },
     "rating": 264
-  },
-  {
-    "name": "Matthew Jones",
-    "position": "IOL",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'4",
-      "weight": "316",
-      "40Time": "5.21"
-    },
-    "rating": 265
   },
   {
     "name": "Garret Greenfield",
@@ -2816,17 +1650,6 @@
     "rating": 267
   },
   {
-    "name": "Brady Latham",
-    "position": "IOL",
-    "team": "Maryland",
-    "stats": {
-      "height": "6'5",
-      "weight": "304",
-      "40Time": "5.31"
-    },
-    "rating": 268
-  },
-  {
     "name": "Prince Pines",
     "position": "IOL",
     "team": "Tulane",
@@ -2838,17 +1661,6 @@
     "rating": 269
   },
   {
-    "name": "Andrew Coker",
-    "position": "OT",
-    "team": "TCU",
-    "stats": {
-      "height": "6'7",
-      "weight": "315",
-      "40Time": "5.36"
-    },
-    "rating": 270
-  },
-  {
     "name": "Keaton Bills",
     "position": "OT",
     "team": "Maryland",
@@ -2858,17 +1670,6 @@
       "40Time": "5.38"
     },
     "rating": 271
-  },
-  {
-    "name": "KT Leveston",
-    "position": "IOL",
-    "team": "Kansas State",
-    "stats": {
-      "height": "6'4",
-      "weight": "326",
-      "40Time": "5.38"
-    },
-    "rating": 272
   },
   {
     "name": "Jeremy Flax",
@@ -2959,17 +1760,6 @@
     "rating": 280
   },
   {
-    "name": "Easton Gibbs",
-    "position": "LB",
-    "team": "Wyoming",
-    "stats": {
-      "height": "6'0",
-      "weight": "232",
-      "40Time": "4.73"
-    },
-    "rating": 281
-  },
-  {
     "name": "Aaron Casey",
     "position": "LB",
     "team": "Indiana",
@@ -2992,83 +1782,6 @@
     "rating": 283
   },
   {
-    "name": "Deantre Prince",
-    "position": "CB",
-    "team": "Mississippi",
-    "stats": {
-      "height": "6'0",
-      "weight": "183",
-      "40Time": "4.38"
-    },
-    "rating": 284
-  },
-  {
-    "name": "Marcellas Dial",
-    "position": "CB",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'0",
-      "weight": "190",
-      "40Time": "4.46"
-    },
-    "rating": 285
-  },
-  {
-    "name": "Willie Drew",
-    "position": "CB",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'0",
-      "weight": "191",
-      "40Time": "4.46"
-    },
-    "rating": 286
-  },
-  {
-    "name": "Myles Harden",
-    "position": "CB",
-    "team": "South Dakota",
-    "stats": {
-      "height": "5'11",
-      "weight": "195",
-      "40Time": "4.50"
-    },
-    "rating": 287
-  },
-  {
-    "name": "Isaiah Johnson",
-    "position": "CB",
-    "team": "Syracuse",
-    "stats": {
-      "height": "6'3",
-      "weight": "205",
-      "40Time": "4.64"
-    },
-    "rating": 288
-  },
-  {
-    "name": "Jaylon Carlies",
-    "position": "S",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'3",
-      "weight": "227",
-      "40Time": "4.50"
-    },
-    "rating": 289
-  },
-  {
-    "name": "Dominique Hampton",
-    "position": "S",
-    "team": "Washington",
-    "stats": {
-      "height": "6'2",
-      "weight": "215",
-      "40Time": "4.51"
-    },
-    "rating": 290
-  },
-  {
     "name": "Josh Proctor",
     "position": "S",
     "team": "Ohio State",
@@ -3078,39 +1791,6 @@
       "40Time": "4.55"
     },
     "rating": 291
-  },
-  {
-    "name": "Kitan Oladapo",
-    "position": "S",
-    "team": "Oregon State",
-    "stats": {
-      "height": "6'2",
-      "weight": "216",
-      "40Time": "4.58"
-    },
-    "rating": 292
-  },
-  {
-    "name": "Andre' Sam",
-    "position": "S",
-    "team": "LSU",
-    "stats": {
-      "height": "5'11",
-      "weight": "191",
-      "40Time": "4.59"
-    },
-    "rating": 293
-  },
-  {
-    "name": "Jaylen Key",
-    "position": "S",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'1",
-      "weight": "208",
-      "40Time": "4.60"
-    },
-    "rating": 294
   },
   {
     "name": "Demani Richardson",
