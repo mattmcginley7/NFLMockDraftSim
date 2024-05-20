@@ -42,13 +42,16 @@ function simulateDraftPick(team, round) {
         .then(data => {
             updateDraftHistory(data.draftHistory);
             fetchPlayers();
+            if (draftSequence.length > 0) {
+                draftInterval = setTimeout(processDraftSequence, 1000); // Continue processing draft sequence
+            }
         })
         .catch(error => console.error('Error simulating draft pick:', error));
 }
 
 function processDraftSequence() {
     if (draftSequence.length > 0) {
-        const { team, round, user } = draftSequence[0];
+        const { team, round, user } = draftSequence.shift(); // Remove the processed item from the sequence
 
         // Check if it's the user's turn to pick
         if (user) {
@@ -58,17 +61,12 @@ function processDraftSequence() {
         }
 
         // Otherwise, simulate the pick for the current team
-        draftSequence.shift(); // Remove the processed item from the sequence
         if (round !== currentRound) {
             currentRound = round;
         }
         simulateDraftPick(team, round);
-
-        if (draftSequence.length > 0) {
-            draftInterval = setTimeout(processDraftSequence, 1000);
-        } else {
-            clearTimeout(draftInterval);
-        }
+    } else {
+        clearTimeout(draftInterval);
     }
 }
 
@@ -98,7 +96,7 @@ function initializeDraftControls() {
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
-                processDraftSequence(); // Resume draft sequence after user makes a pick
+                setTimeout(processDraftSequence, 1000); // Resume draft sequence after user makes a pick
             })
             .catch(error => {
                 console.error('Failed to select player:', error);
