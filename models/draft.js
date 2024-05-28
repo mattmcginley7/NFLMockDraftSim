@@ -3,11 +3,13 @@ const totalRounds = 7;
 let draftSequence = [];
 let draftInterval;
 let userTeam;
+const roundEndPicks = [32, 64, 100, 135, 176, 220, 257];
 
 function fetchPlayers() {
     fetch('http://localhost:5000/players')
         .then(response => response.json())
         .then(players => {
+            console.log("Players fetched:", players);
             const playerSelect = document.getElementById('playerSelect');
             playerSelect.innerHTML = '';
             players.forEach((player, index) => {
@@ -24,7 +26,7 @@ function fetchPlayers() {
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
     draftHistoryContainer.innerHTML = '';
-    draftHistory.forEach(pick => {
+    (draftHistory || []).forEach(pick => {
         const pickElement = document.createElement('div');
         pickElement.className = 'draft-pick';
         pickElement.innerHTML = `<strong>${pick.pick}. ${pick.team} selects ${pick.player}, ${pick.position}</strong>`;
@@ -44,6 +46,8 @@ function simulateDraftPick(team, round) {
             fetchPlayers();
             if (draftSequence.length > 0) {
                 draftInterval = setTimeout(processDraftSequence, 1000); // Continue processing draft sequence
+            } else {
+                checkRoundEnd();
             }
         })
         .catch(error => console.error('Error simulating draft pick:', error));
@@ -67,6 +71,14 @@ function processDraftSequence() {
         simulateDraftPick(team, round);
     } else {
         clearTimeout(draftInterval);
+        checkRoundEnd();
+    }
+}
+
+function checkRoundEnd() {
+    const currentRoundPicks = draftSequence.filter(seq => seq.round === currentRound).length;
+    if (currentRoundPicks === 0 && currentRound <= totalRounds) {
+        document.getElementById('nextRoundButton').disabled = false;
     }
 }
 
@@ -103,6 +115,20 @@ function initializeDraftControls() {
                 alert(`Error: ${error.message}`);
             });
     });
+
+    const nextRoundButton = document.getElementById('nextRoundButton');
+    nextRoundButton.addEventListener('click', function () {
+        nextRoundButton.disabled = true;
+        fetch('http://localhost:5000/prepareNextRound', {
+            method: 'POST'
+        })
+            .then(response => response.json())
+            .then(data => {
+                currentRound = data.currentRound;
+                simulateDraft();
+            })
+            .catch(error => console.error('Error preparing next round:', error));
+    });
 }
 
 function simulateDraft() {
@@ -113,6 +139,7 @@ function simulateDraft() {
     })
         .then(response => response.json())
         .then(data => {
+            console.log("Draft sequence:", data.draftSequence);
             draftSequence = data.draftSequence;
             processDraftSequence();
         })

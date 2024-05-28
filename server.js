@@ -17,19 +17,27 @@ let draftState;
 
 // Function to initialize draft state
 const initializeDraftState = () => {
-    const players = JSON.parse(fs.readFileSync(playersFilePath, 'utf-8'));
-    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
+    try {
+        const players = JSON.parse(fs.readFileSync(playersFilePath, 'utf-8'));
+        const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
 
-    return {
-        currentRound: 1,
-        totalRounds: 7,
-        draftHistory: [],
-        teamPicks: teams.teams.reduce((acc, team) => {
-            acc[team.name] = team.picks.map(pick => ({ pick, player: null }));
-            return acc;
-        }, {}),
-        availablePlayers: players
-    };
+        console.log("Players initialized:", players.length);
+        console.log("Teams initialized:", teams.teams.length);
+
+        return {
+            currentRound: 1,
+            totalRounds: 7,
+            draftHistory: [],
+            teamPicks: teams.teams.reduce((acc, team) => {
+                acc[team.name] = team.picks.map(pick => ({ pick, player: null }));
+                return acc;
+            }, {}),
+            availablePlayers: players // Reset available players to the initial list
+        };
+    } catch (error) {
+        console.error("Error initializing draft state:", error);
+        throw error;
+    }
 };
 
 // Initialize draft state
@@ -55,17 +63,30 @@ app.post('/startDraft', (req, res) => {
     // Reset draft state
     draftState = initializeDraftState();
 
+    console.log("Draft state after reset:", draftState);
+
     res.json({
         message: 'Draft started',
         currentRound: draftState.currentRound,
-        teamPicks: draftState.teamPicks[teamId]
+        teamPicks: draftState.teamPicks[teamId],
+        availablePlayers: draftState.availablePlayers
     });
 });
 
 const simulateDraftPick = (team, round) => {
+    if (draftState.availablePlayers.length === 0) {
+        console.error('No available players to pick');
+        return;
+    }
+
     const playerIndex = Math.floor(Math.random() * draftState.availablePlayers.length);
     const selectedPlayer = draftState.availablePlayers.splice(playerIndex, 1)[0];
     const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
+
+    if (!selectedPlayer) {
+        console.error('Selected player is undefined');
+        return;
+    }
 
     if (pickIndex !== -1) {
         draftState.teamPicks[team][pickIndex].player = selectedPlayer;
@@ -78,20 +99,18 @@ app.post('/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
     const draftSequence = [];
 
+    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8')).teams;
+
     for (let round = 1; round <= draftState.totalRounds; round++) {
-        draftState.currentRound = round;
-        for (let pick = 1; pick <= 32; pick++) { // Assuming 32 teams
-            const team = Object.keys(draftState.teamPicks).find(teamName =>
-                draftState.teamPicks[teamName].some(pickObj => pickObj.pick === pick && pickObj.player === null)
-            );
-            if (team) {
-                if (team !== userTeam || round !== draftState.currentRound) {
-                    draftSequence.push({ team, round, pick });
-                } else {
-                    draftSequence.push({ team, round, pick, user: true });
-                }
-            }
-        }
+        const roundPicks = [];
+        teams.forEach(team => {
+            const picksForRound = team.picks.filter(pick => Math.ceil(pick / 32) === round);
+            picksForRound.forEach(pick => {
+                roundPicks.push({ pick, team: team.name, user: team.name === userTeam && round === draftState.currentRound });
+            });
+        });
+        roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
+        draftSequence.push(...roundPicks);
     }
 
     res.json({
@@ -139,9 +158,6 @@ app.post('/selectPlayer', (req, res) => {
             console.error('No available picks for the team');
             return res.status(400).json({ message: 'No available picks for the team' });
         }
-
-        // Save updated draft state to files
-        fs.writeFileSync(playersFilePath, JSON.stringify(draftState.availablePlayers, null, 2));
     } catch (error) {
         console.error('Error during selectPlayer:', error);
         res.status(500).json({ message: 'Internal Server Error' });
