@@ -106,7 +106,7 @@ app.post('/simulateDraft', (req, res) => {
         teams.forEach(team => {
             const picksForRound = team.picks.filter(pick => Math.ceil(pick / 32) === round);
             picksForRound.forEach(pick => {
-                roundPicks.push({ pick, team: team.name, user: team.name === userTeam && round === draftState.currentRound });
+                roundPicks.push({ pick, team: team.name, user: team.name === userTeam });
             });
         });
         roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
