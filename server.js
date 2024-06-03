@@ -89,8 +89,9 @@ const simulateDraftPick = (team, round) => {
     }
 
     if (pickIndex !== -1) {
+        const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
         draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-        draftState.draftHistory.push({ round, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+        draftState.draftHistory.push({ round: pickRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
         console.log(`Player ${selectedPlayer.name} selected by ${team}`);
     }
 };
@@ -106,7 +107,7 @@ app.post('/simulateDraft', (req, res) => {
         teams.forEach(team => {
             const picksForRound = team.picks.filter(pick => Math.ceil(pick / 32) === round);
             picksForRound.forEach(pick => {
-                roundPicks.push({ pick, team: team.name, user: team.name === userTeam });
+                roundPicks.push({ pick, team: team.name, user: team.name === userTeam, round });
             });
         });
         roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
@@ -150,10 +151,11 @@ app.post('/selectPlayer', (req, res) => {
         const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
 
         if (pickIndex !== -1) {
+            const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
             draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-            draftState.draftHistory.push({ round: draftState.currentRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+            draftState.draftHistory.push({ round: pickRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
-            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
+            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer: { ...selectedPlayer, round: pickRound }, draftHistory: draftState.draftHistory });
         } else {
             console.error('No available picks for the team');
             return res.status(400).json({ message: 'No available picks for the team' });

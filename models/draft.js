@@ -104,7 +104,7 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
-                document.getElementById('draftResults').innerHTML += `<p>Round ${currentRound}: ${selectedTeam} selects ${selectedPlayer}.</p>`;
+                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} selects ${selectedPlayer} in Round ${data.selectedPlayer.round}.</p>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
