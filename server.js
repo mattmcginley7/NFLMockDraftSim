@@ -99,7 +99,7 @@ const simulateDraftPick = (team, round) => {
     if (pickIndex !== -1) {
         const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
         draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-        draftState.draftHistory.push({ round: pickRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+        draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
         console.log(`Player ${selectedPlayer.name} selected by ${team}`);
     }
 };
@@ -161,9 +161,9 @@ app.post('/selectPlayer', (req, res) => {
         if (pickIndex !== -1) {
             const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
             draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-            draftState.draftHistory.push({ round: pickRound, pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+            draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
-            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer: { ...selectedPlayer, round: pickRound }, draftHistory: draftState.draftHistory });
+            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
         } else {
             console.error('No available picks for the team');
             return res.status(400).json({ message: 'No available picks for the team' });
@@ -171,15 +171,6 @@ app.post('/selectPlayer', (req, res) => {
     } catch (error) {
         console.error('Error during selectPlayer:', error);
         res.status(500).json({ message: 'Internal Server Error' });
-    }
-});
-
-app.post('/prepareNextRound', (req, res) => {
-    if (draftState.currentRound < draftState.totalRounds) {
-        draftState.currentRound++;
-        res.json({ message: 'Preparing next round', currentRound: draftState.currentRound });
-    } else {
-        res.json({ message: 'Draft completed', currentRound: draftState.currentRound });
     }
 });
 

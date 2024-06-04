@@ -3,7 +3,6 @@ const totalRounds = 7;
 let draftSequence = [];
 let draftInterval;
 let userTeam;
-const roundEndPicks = [32, 64, 100, 135, 176, 220, 257];
 
 function fetchPlayers() {
     fetch('http://localhost:5000/players')
@@ -46,8 +45,6 @@ function simulateDraftPick(team, round) {
             fetchPlayers();
             if (draftSequence.length > 0) {
                 draftInterval = setTimeout(processDraftSequence, 1000); // Continue processing draft sequence
-            } else {
-                checkRoundEnd();
             }
         })
         .catch(error => console.error('Error simulating draft pick:', error));
@@ -78,7 +75,8 @@ function processDraftSequence() {
 function checkRoundEnd() {
     const currentRoundPicks = draftSequence.filter(seq => seq.round === currentRound).length;
     if (currentRoundPicks === 0 && currentRound <= totalRounds) {
-        document.getElementById('nextRoundButton').disabled = false;
+        currentRound++;
+        simulateDraft(); // Automatically proceed to the next round
     }
 }
 
@@ -104,7 +102,7 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
-                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} selects ${selectedPlayer} in Round ${data.selectedPlayer.round}.</p>`;
+                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} selects ${selectedPlayer}.</p>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
@@ -114,20 +112,6 @@ function initializeDraftControls() {
                 console.error('Failed to select player:', error);
                 alert(`Error: ${error.message}`);
             });
-    });
-
-    const nextRoundButton = document.getElementById('nextRoundButton');
-    nextRoundButton.addEventListener('click', function () {
-        nextRoundButton.disabled = true;
-        fetch('http://localhost:5000/prepareNextRound', {
-            method: 'POST'
-        })
-            .then(response => response.json())
-            .then(data => {
-                currentRound = data.currentRound;
-                simulateDraft();
-            })
-            .catch(error => console.error('Error preparing next round:', error));
     });
 }
 
