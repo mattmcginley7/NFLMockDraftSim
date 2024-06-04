@@ -73,14 +73,22 @@ app.post('/startDraft', (req, res) => {
     });
 });
 
+// New function to get a random player with bias based on round
+const getRandomPlayerWithBias = (availablePlayers, round) => {
+    const biasRange = [10, 20, 30, 35, 35, 35, 35]; // Bias ranges for rounds 1-7
+    const range = biasRange[round - 1];
+    const maxIndex = Math.min(range, availablePlayers.length);
+    const randomIndex = Math.floor(Math.random() * maxIndex);
+    return availablePlayers.splice(randomIndex, 1)[0];
+};
+
 const simulateDraftPick = (team, round) => {
     if (draftState.availablePlayers.length === 0) {
         console.error('No available players to pick');
         return;
     }
 
-    const playerIndex = Math.floor(Math.random() * draftState.availablePlayers.length);
-    const selectedPlayer = draftState.availablePlayers.splice(playerIndex, 1)[0];
+    const selectedPlayer = getRandomPlayerWithBias(draftState.availablePlayers, round);
     const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
 
     if (!selectedPlayer) {
