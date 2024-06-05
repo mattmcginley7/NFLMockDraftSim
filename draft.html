@@ -11,27 +11,51 @@
 <body>
     <header>
         <h1>NFL Mock Draft Simulator</h1>
+        <div class="team-selection">
+            <button id="selectAll">SELECT ALL</button>
+            <button id="clearAll">CLEAR ALL</button>
+        </div>
     </header>
 
     <main>
-        <section>
-            <img id="teamLogo" alt="Team Logo">
-            <h2 id="teamName">Drafting for: </h2>
-        </section>
+        <div class="filters">
+            <button id="filter-all" class="filter-btn active">All</button>
+            <button id="filter-offense" class="filter-btn">Offense</button>
+            <button id="filter-defense" class="filter-btn">Defense</button>
+            <button id="filter-QB" class="filter-btn">QB</button>
+            <button id="filter-RB" class="filter-btn">RB</button>
+            <button id="filter-WR" class="filter-btn">WR</button>
+            <button id="filter-TE" class="filter-btn">TE</button>
+            <button id="filter-OT" class="filter-btn">OT</button>
+            <button id="filter-IOL" class="filter-btn">IOL</button>
+            <button id="filter-EDGE" class="filter-btn">EDGE</button>
+            <button id="filter-DL" class="filter-btn">DL</button>
+            <button id="filter-LB" class="filter-btn">LB</button>
+            <button id="filter-CB" class="filter-btn">CB</button>
+            <button id="filter-S" class="filter-btn">S</button>
+        </div>
 
-        <section>
-            <label for="playerSelect">Select a Player:</label>
-            <select id="playerSelect"></select>
+        <div>
+            <img id="teamLogo" src="" alt="Team Logo" style="width: 100px; height: 100px;">
+            <h2 id="teamName"></h2>
+        </div>
+
+        <div>
+            <select id="playerSelect">
+                <!-- Options will be populated by JavaScript -->
+            </select>
             <button id="selectPlayer" disabled>Select Player</button>
-        </section>
+        </div>
 
-        <section id="draftResults">
+        <div id="draftResults">
             <h2>Draft Results</h2>
-        </section>
+            <!-- Draft results will be populated by JavaScript -->
+        </div>
 
-        <section id="draftHistory">
+        <div id="draftHistory">
             <h2>Draft History</h2>
-        </section>
+            <!-- Draft history will be populated by JavaScript -->
+        </div>
 
         <button id="nextRoundButton" disabled>Next Round</button>
     </main>

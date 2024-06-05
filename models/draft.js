@@ -3,23 +3,41 @@ const totalRounds = 7;
 let draftSequence = [];
 let draftInterval;
 let userTeam;
+let allPlayers = []; // Store all players to enable filtering
 
 function fetchPlayers() {
     fetch('http://localhost:5000/players')
         .then(response => response.json())
         .then(players => {
             console.log("Players fetched:", players);
-            const playerSelect = document.getElementById('playerSelect');
-            playerSelect.innerHTML = '';
-            players.forEach((player) => {
-                let option = document.createElement('option');
-                option.value = player.name;
-                option.textContent = `${player.rating}. ${player.name} - ${player.position}`;
-                playerSelect.appendChild(option);
-            });
-            document.getElementById('selectPlayer').disabled = players.length === 0;
+            allPlayers = players;
+            populatePlayerDropdown(players);
         })
         .catch(error => console.error('Error fetching players:', error));
+}
+
+function populatePlayerDropdown(players) {
+    const playerSelect = document.getElementById('playerSelect');
+    playerSelect.innerHTML = '';
+    players.forEach((player) => {
+        let option = document.createElement('option');
+        option.value = player.name;
+        option.textContent = `${player.rating}. ${player.name} - ${player.position}`;
+        playerSelect.appendChild(option);
+    });
+    document.getElementById('selectPlayer').disabled = players.length === 0;
+}
+
+function filterPlayers(criteria) {
+    let filteredPlayers = allPlayers;
+    if (criteria === 'offense') {
+        filteredPlayers = allPlayers.filter(player => ['QB', 'RB', 'WR', 'TE', 'OT', 'IOL'].includes(player.position));
+    } else if (criteria === 'defense') {
+        filteredPlayers = allPlayers.filter(player => ['EDGE', 'DL', 'LB', 'CB', 'S'].includes(player.position));
+    } else if (criteria !== 'all') {
+        filteredPlayers = allPlayers.filter(player => player.position === criteria);
+    }
+    populatePlayerDropdown(filteredPlayers);
 }
 
 function updateDraftHistory(draftHistory) {
@@ -112,6 +130,15 @@ function initializeDraftControls() {
                 console.error('Failed to select player:', error);
                 alert(`Error: ${error.message}`);
             });
+    });
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            button.classList.add('active');
+            filterPlayers(button.id.replace('filter-', ''));
+        });
     });
 }
 
