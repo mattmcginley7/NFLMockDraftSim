@@ -11,10 +11,10 @@ function fetchPlayers() {
             console.log("Players fetched:", players);
             const playerSelect = document.getElementById('playerSelect');
             playerSelect.innerHTML = '';
-            players.forEach((player, index) => {
+            players.forEach((player) => {
                 let option = document.createElement('option');
                 option.value = player.name;
-                option.textContent = `${index + 1}. ${player.name} - ${player.position}`;
+                option.textContent = `${player.rating}. ${player.name} - ${player.position}`;
                 playerSelect.appendChild(option);
             });
             document.getElementById('selectPlayer').disabled = players.length === 0;

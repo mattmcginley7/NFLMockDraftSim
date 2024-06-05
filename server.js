@@ -77,9 +77,9 @@ app.post('/startDraft', (req, res) => {
 const getRandomPlayerWithBias = (availablePlayers, round) => {
     const biasRange = [10, 20, 30, 35, 35, 35, 35]; // Bias ranges for rounds 1-7
     const range = biasRange[round - 1];
-    const maxIndex = Math.min(range, availablePlayers.length);
-    const randomIndex = Math.floor(Math.random() * maxIndex);
-    return availablePlayers.splice(randomIndex, 1)[0];
+    const eligiblePlayers = availablePlayers.slice(0, Math.min(range, availablePlayers.length));
+    const randomIndex = Math.floor(Math.random() * eligiblePlayers.length);
+    return availablePlayers.splice(availablePlayers.indexOf(eligiblePlayers[randomIndex]), 1)[0];
 };
 
 const simulateDraftPick = (team, round) => {
@@ -97,7 +97,6 @@ const simulateDraftPick = (team, round) => {
     }
 
     if (pickIndex !== -1) {
-        const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
         draftState.teamPicks[team][pickIndex].player = selectedPlayer;
         draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
         console.log(`Player ${selectedPlayer.name} selected by ${team}`);
@@ -159,7 +158,6 @@ app.post('/selectPlayer', (req, res) => {
         const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
 
         if (pickIndex !== -1) {
-            const pickRound = Math.ceil(draftState.teamPicks[team][pickIndex].pick / 32);
             draftState.teamPicks[team][pickIndex].player = selectedPlayer;
             draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
