@@ -44,12 +44,16 @@ function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
     draftHistoryContainer.innerHTML = '';
     (draftHistory || []).forEach(pick => {
+        const teamLogo = `./${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
         const pickElement = document.createElement('div');
-        pickElement.className = 'draft-pick';
-        pickElement.innerHTML = `<strong>${pick.pick}. ${pick.team} selects ${pick.player}, ${pick.position}</strong>`;
+        pickElement.className = 'draft-pick-item';
+        pickElement.innerHTML = `
+            <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+            <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
         draftHistoryContainer.appendChild(pickElement);
     });
 }
+
 
 function simulateDraftPick(team, round) {
     fetch('http://localhost:5000/simulateDraftPick', {

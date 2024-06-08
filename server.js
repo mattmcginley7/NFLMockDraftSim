@@ -98,7 +98,14 @@ const simulateDraftPick = (team, round) => {
 
     if (pickIndex !== -1) {
         draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-        draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+        draftState.draftHistory.push({
+            pick: draftState.teamPicks[team][pickIndex].pick,
+            team,
+            player: selectedPlayer.name,
+            position: selectedPlayer.position,
+            college: selectedPlayer.team,
+            teamLogo: `./${team}Logo.png` // Adjusted to match your logo naming convention
+        });
         console.log(`Player ${selectedPlayer.name} selected by ${team}`);
     }
 };
@@ -159,7 +166,14 @@ app.post('/selectPlayer', (req, res) => {
 
         if (pickIndex !== -1) {
             draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-            draftState.draftHistory.push({ pick: draftState.teamPicks[team][pickIndex].pick, team, player: selectedPlayer.name, position: selectedPlayer.position });
+            draftState.draftHistory.push({
+                pick: draftState.teamPicks[team][pickIndex].pick,
+                team,
+                player: selectedPlayer.name,
+                position: selectedPlayer.position,
+                college: selectedPlayer.team,
+                teamLogo: `./${team}Logo.png` // Adjusted to match your logo naming convention
+            });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
             res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
         } else {

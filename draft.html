@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFL Mock Draft Simulator</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-logo-small {
+            max-width: 50px;
+            max-height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .draft-pick-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .draft-pick-item img {
+            margin-right: 10px;
+        }
+
+        .draft-pick-item strong {
+            font-size: 1.2em;
+        }
+
+        .draft-pick-item span {
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,12 +45,11 @@
     </header>
 
     <main>
-
         <div>
             <img id="teamLogo" src="" alt="Team Logo" style="width: 100px; height: 100px;">
             <h2 id="teamName"></h2>
         </div>
-        
+
         <div class="filters">
             <button id="filter-all" class="filter-btn active">All</button>
             <button id="filter-offense" class="filter-btn">Offense</button>
