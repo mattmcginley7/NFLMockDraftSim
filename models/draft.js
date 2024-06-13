@@ -63,6 +63,7 @@ function simulateDraftPick(team, round) {
     })
         .then(response => response.json())
         .then(data => {
+            console.log(`Draft pick simulated for team ${team}, round ${round}`);
             updateDraftHistory(data.draftHistory);
             fetchPlayers();
             if (draftSequence.length > 0) {
@@ -72,9 +73,12 @@ function simulateDraftPick(team, round) {
         .catch(error => console.error('Error simulating draft pick:', error));
 }
 
+
 function processDraftSequence() {
+    console.log(`Processing draft sequence. Picks remaining: ${draftSequence.length}`);
     if (draftSequence.length > 0) {
         const { team, round, user } = draftSequence.shift(); // Remove the processed item from the sequence
+        console.log(`Processing pick: Team ${team}, Round ${round}, User ${user}, Current Round: ${currentRound}, Picks remaining: ${draftSequence.length}`);
 
         // Check if it's the user's turn to pick
         if (user) {
@@ -89,18 +93,23 @@ function processDraftSequence() {
         }
         simulateDraftPick(team, round);
     } else {
+        console.log('Draft sequence completed or no picks left.');
         clearTimeout(draftInterval);
         checkRoundEnd();
     }
 }
 
 function checkRoundEnd() {
+    console.log(`Checking end of round: ${currentRound}`);
     const currentRoundPicks = draftSequence.filter(seq => seq.round === currentRound).length;
     if (currentRoundPicks === 0 && currentRound <= totalRounds) {
         currentRound++;
+        console.log(`Proceeding to next round: ${currentRound}`);
         simulateDraft(); // Automatically proceed to the next round
     }
 }
+
+
 
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');

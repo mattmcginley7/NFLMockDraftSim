@@ -104,11 +104,14 @@ const simulateDraftPick = (team, round) => {
             player: selectedPlayer.name,
             position: selectedPlayer.position,
             college: selectedPlayer.team,
-            teamLogo: `./${team}Logo.png` // Adjusted to match your logo naming convention
+            teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
         });
-        console.log(`Player ${selectedPlayer.name} selected by ${team}`);
+        console.log(`Player ${selectedPlayer.name} selected by ${team} at pick ${draftState.teamPicks[team][pickIndex].pick}`);
+    } else {
+        console.error(`No available pick slot for ${team} in round ${round}`);
     }
 };
+
 
 app.post('/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
@@ -116,10 +119,21 @@ app.post('/simulateDraft', (req, res) => {
 
     const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8')).teams;
 
+    const roundRanges = [
+        [1, 32],    // Round 1
+        [33, 64],   // Round 2
+        [65, 100],  // Round 3
+        [101, 135], // Round 4
+        [136, 176], // Round 5
+        [177, 220], // Round 6
+        [221, 257]  // Round 7
+    ];
+
     for (let round = 1; round <= draftState.totalRounds; round++) {
+        const [start, end] = roundRanges[round - 1];
         const roundPicks = [];
         teams.forEach(team => {
-            const picksForRound = team.picks.filter(pick => Math.ceil(pick / 32) === round);
+            const picksForRound = team.picks.filter(pick => pick >= start && pick <= end);
             picksForRound.forEach(pick => {
                 roundPicks.push({ pick, team: team.name, user: team.name === userTeam, round });
             });
@@ -128,11 +142,18 @@ app.post('/simulateDraft', (req, res) => {
         draftSequence.push(...roundPicks);
     }
 
+    // Log the number of picks processed
+    console.log(`Total picks processed: ${draftSequence.length}`);
+
     res.json({
         message: 'Draft simulation sequence generated',
         draftSequence
     });
 });
+
+
+
+
 
 app.post('/simulateDraftPick', (req, res) => {
     const { team, round } = req.body;
