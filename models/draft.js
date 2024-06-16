@@ -54,7 +54,6 @@ function updateDraftHistory(draftHistory) {
     });
 }
 
-
 function simulateDraftPick(team, round) {
     fetch('http://localhost:5000/simulateDraftPick', {
         method: 'POST',
@@ -63,22 +62,21 @@ function simulateDraftPick(team, round) {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(`Draft pick simulated for team ${team}, round ${round}`);
             updateDraftHistory(data.draftHistory);
             fetchPlayers();
             if (draftSequence.length > 0) {
-                draftInterval = setTimeout(processDraftSequence, 1000); // Continue processing draft sequence
+                draftInterval = setTimeout(processDraftSequence, 500); // Continue processing draft sequence
             }
+            checkRoundEnd();
         })
         .catch(error => console.error('Error simulating draft pick:', error));
 }
 
-
 function processDraftSequence() {
-    console.log(`Processing draft sequence. Picks remaining: ${draftSequence.length}`);
+    console.log(`Draft sequence before processing: ${draftSequence.length} picks remaining.`);
     if (draftSequence.length > 0) {
         const { team, round, user } = draftSequence.shift(); // Remove the processed item from the sequence
-        console.log(`Processing pick: Team ${team}, Round ${round}, User ${user}, Current Round: ${currentRound}, Picks remaining: ${draftSequence.length}`);
+        console.log(`Processing pick: Team ${team}, Round ${round}, User ${user}`);
 
         // Check if it's the user's turn to pick
         if (user) {
@@ -93,23 +91,22 @@ function processDraftSequence() {
         }
         simulateDraftPick(team, round);
     } else {
-        console.log('Draft sequence completed or no picks left.');
         clearTimeout(draftInterval);
+        console.log("Draft sequence completed. Checking round end.");
         checkRoundEnd();
     }
 }
 
 function checkRoundEnd() {
-    console.log(`Checking end of round: ${currentRound}`);
-    const currentRoundPicks = draftSequence.filter(seq => seq.round === currentRound).length;
-    if (currentRoundPicks === 0 && currentRound <= totalRounds) {
-        currentRound++;
-        console.log(`Proceeding to next round: ${currentRound}`);
-        simulateDraft(); // Automatically proceed to the next round
+    console.log(`Checking round end. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
+    if (draftSequence.length === 0) {
+        console.log("Draft complete. Showing results modal.");
+        // Draft is complete
+        showResultsModal();
+    } else {
+        console.log(`Draft is still in progress. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
     }
 }
-
-
 
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
@@ -137,7 +134,7 @@ function initializeDraftControls() {
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
-                setTimeout(processDraftSequence, 1000); // Resume draft sequence after user makes a pick
+                setTimeout(processDraftSequence, 500); // Resume draft sequence after user makes a pick
             })
             .catch(error => {
                 console.error('Failed to select player:', error);
@@ -191,3 +188,34 @@ document.addEventListener('DOMContentLoaded', function () {
     // Simulate the draft when the page loads
     simulateDraft();
 });
+
+function showResultsModal() {
+    console.log("Entering showResultsModal function.");
+    const modal = document.getElementById('resultsModal');
+    const span = document.getElementsByClassName('close')[0];
+    const resultsContainer = document.getElementById('resultsContainer');
+    const draftResults = document.getElementById('draftResults').innerHTML;
+
+    resultsContainer.innerHTML = draftResults;
+
+    modal.style.display = 'block';
+    console.log("Modal should be displayed now.");
+
+    span.onclick = function () {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    document.getElementById('backToHome').addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
+
+    document.getElementById('restartDraft').addEventListener('click', () => {
+        location.reload();
+    });
+}
