@@ -112,14 +112,17 @@ function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
 
     selectPlayerButton.addEventListener('click', function () {
-        const selectedPlayer = document.getElementById('playerSelect').value;
+        const selectedPlayerName = document.getElementById('playerSelect').value;
         const selectedTeam = userTeam;
         console.log(`Selected Team: ${selectedTeam}`);
+
+        // Find the selected player object from allPlayers array
+        const selectedPlayer = allPlayers.find(player => player.name === selectedPlayerName);
 
         fetch('http://localhost:5000/selectPlayer', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ player: selectedPlayer, team: selectedTeam })
+            body: JSON.stringify({ player: selectedPlayerName, team: selectedTeam })
         })
             .then(response => {
                 if (!response.ok) {
@@ -130,7 +133,7 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
-                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} selects ${selectedPlayer}.</p>`;
+                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} select ${selectedPlayerName}, ${selectedPlayer.position}, ${selectedPlayer.team}.</p>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
@@ -151,6 +154,7 @@ function initializeDraftControls() {
         });
     });
 }
+
 
 function simulateDraft() {
     fetch('http://localhost:5000/simulateDraft', {
