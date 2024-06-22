@@ -29,7 +29,7 @@ const initializeDraftState = () => {
             totalRounds: 7,
             draftHistory: [],
             teamPicks: teams.teams.reduce((acc, team) => {
-                acc[team.name] = team.picks.map(pick => ({ pick, player: null }));
+                acc[team.name] = team.picks.map(pick => ({ ...pick, player: null }));
                 return acc;
             }, {}),
             availablePlayers: players // Reset available players to the initial list
@@ -39,6 +39,7 @@ const initializeDraftState = () => {
         throw error;
     }
 };
+
 
 // Initialize draft state
 draftState = initializeDraftState();
@@ -133,9 +134,9 @@ app.post('/simulateDraft', (req, res) => {
         const [start, end] = roundRanges[round - 1];
         const roundPicks = [];
         teams.forEach(team => {
-            const picksForRound = team.picks.filter(pick => pick >= start && pick <= end);
+            const picksForRound = team.picks.filter(pick => pick.pick >= start && pick.pick <= end);
             picksForRound.forEach(pick => {
-                roundPicks.push({ pick, team: team.name, user: team.name === userTeam, round });
+                roundPicks.push({ pick: pick.pick, team: team.name, user: team.name === userTeam, round });
             });
         });
         roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
@@ -150,6 +151,7 @@ app.post('/simulateDraft', (req, res) => {
         draftSequence
     });
 });
+
 
 
 
