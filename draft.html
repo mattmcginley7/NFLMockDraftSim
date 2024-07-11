@@ -36,7 +36,8 @@
         .modal {
             display: none;
             position: fixed;
-            z-index: 1001; /* Increased z-index to ensure the modal is on top */
+            z-index: 1001;
+            /* Increased z-index to ensure the modal is on top */
             left: 0;
             top: 0;
             width: 100%;
@@ -84,7 +85,7 @@
             /* Adjust this value based on the height of the fixed element to prevent overlap */
         }
 
-        #teamLogo{
+        #teamLogo {
             width: 200px;
             height: auto;
         }
@@ -145,6 +146,14 @@
             <div id="resultsContainer"></div>
             <button id="backToHome">Back to Home</button>
             <button id="restartDraft">Restart Draft</button>
+        </div>
+    </div>
+
+    <!-- Add this for trade offers modal -->
+    <div id="tradeOfferModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="tradeOfferText"></div>
         </div>
     </div>
 

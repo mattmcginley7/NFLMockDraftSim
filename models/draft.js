@@ -3,19 +3,46 @@ const totalRounds = 7;
 let draftSequence = [];
 let draftInterval;
 let userTeam;
-let allPlayers = []; // Store all players to enable filtering
+let allPlayers = [];
+let draftState = { teamPicks: {} };
+let tradeOffers = [];
+let currentOfferIndex = 0;
+let teamsData = {};
 
+// Function to load teams data
+async function loadTeamsData() {
+    try {
+        const response = await fetch('http://localhost:5000/teams');
+        teamsData = await response.json();
+        console.log('Teams data loaded:', teamsData);
+    } catch (error) {
+        console.error('Error loading teams data:', error);
+    }
+}
+
+// Function to fetch draft state
+function fetchDraftState() {
+    return fetch('http://localhost:5000/draftState')
+        .then(response => response.json())
+        .then(data => {
+            draftState = data;
+            console.log('Draft state fetched:', draftState);
+        })
+        .catch(error => console.error('Error fetching draft state:', error));
+}
+
+// Function to fetch players
 function fetchPlayers() {
     fetch('http://localhost:5000/players')
         .then(response => response.json())
         .then(players => {
-            console.log("Players fetched:", players);
             allPlayers = players;
             populatePlayerDropdown(players);
         })
         .catch(error => console.error('Error fetching players:', error));
 }
 
+// Function to populate player dropdown
 function populatePlayerDropdown(players) {
     const playerSelect = document.getElementById('playerSelect');
     playerSelect.innerHTML = '';
@@ -25,9 +52,10 @@ function populatePlayerDropdown(players) {
         option.textContent = `${player.rating}. ${player.name} - ${player.position}`;
         playerSelect.appendChild(option);
     });
-    document.getElementById('selectPlayer').disabled = players.length === 0;
+    document.getElementById('selectPlayer').disabled = true;
 }
 
+// Function to filter players
 function filterPlayers(criteria) {
     let filteredPlayers = allPlayers;
     if (criteria === 'offense') {
@@ -40,6 +68,7 @@ function filterPlayers(criteria) {
     populatePlayerDropdown(filteredPlayers);
 }
 
+// Function to update draft history
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
     draftHistoryContainer.innerHTML = '';
@@ -54,6 +83,7 @@ function updateDraftHistory(draftHistory) {
     });
 }
 
+// Function to simulate a draft pick
 function simulateDraftPick(team, round) {
     fetch('http://localhost:5000/simulateDraftPick', {
         method: 'POST',
@@ -65,58 +95,253 @@ function simulateDraftPick(team, round) {
             updateDraftHistory(data.draftHistory);
             fetchPlayers();
             if (draftSequence.length > 0) {
-                draftInterval = setTimeout(processDraftSequence, 500); // Continue processing draft sequence
+                draftInterval = setTimeout(processDraftSequence, 500);
             }
             checkRoundEnd();
         })
         .catch(error => console.error('Error simulating draft pick:', error));
 }
 
+// Function to process the draft sequence
 function processDraftSequence() {
-    console.log(`Draft sequence before processing: ${draftSequence.length} picks remaining.`);
-    if (draftSequence.length > 0) {
-        const { team, round, user } = draftSequence.shift(); // Remove the processed item from the sequence
-        console.log(`Processing pick: Team ${team}, Round ${round}, User ${user}`);
-
-        // Check if it's the user's turn to pick
-        if (user) {
-            clearTimeout(draftInterval); // Pause when it's the user's turn
-            document.getElementById('selectPlayer').disabled = false; // Enable the select button
-            return;
-        }
-
-        // Otherwise, simulate the pick for the current team
-        if (round !== currentRound) {
-            currentRound = round;
-        }
-        simulateDraftPick(team, round);
-    } else {
+    if (!draftSequence || draftSequence.length === 0) {
+        console.log("Draft sequence is empty or not defined. Ending draft.");
         clearTimeout(draftInterval);
-        console.log("Draft sequence completed. Checking round end.");
-        checkRoundEnd();
+        showResultsModal();
+        return;
+    }
+
+    const { team, round, user, pick } = draftSequence.shift();
+
+    if (user) {
+        clearTimeout(draftInterval);
+        document.getElementById('selectPlayer').disabled = false;
+
+        tradeOffers = generateTradeOffers(pick, round);
+        if (tradeOffers.length > 0) {
+            showTradeOffersModal(tradeOffers);
+        }
+        return;
+    }
+
+    if (round !== currentRound) {
+        currentRound = round;
+    }
+    simulateDraftPick(team, round);
+}
+
+// Function to generate trade offers
+function generateTradeOffers(userPick, currentRound) {
+    if (!draftState || !draftState.teamPicks) {
+        console.error('Draft state not available');
+        return [];
+    }
+
+    const maxOffersPerRound = [3, 2, 2, 2, 1, 1, 1];
+    const maxOffers = maxOffersPerRound[currentRound - 1];
+
+    const userPickValue = draftState.teamPicks[userTeam]?.find(pick => pick.pick === userPick)?.value || 0;
+
+    const eligibleTeams = Object.keys(draftState.teamPicks).filter(team => team !== userTeam);
+    const offers = [];
+
+    for (const team of eligibleTeams) {
+        const teamPicks = draftState.teamPicks[team];
+        const laterPicks = teamPicks.filter(pick => pick.pick > userPick && pick.player === null);
+
+        if (laterPicks.length >= 2) {
+            const mainPick = laterPicks[0];
+            const compensationPicks = laterPicks.slice(1);
+
+            let totalOfferValue = mainPick.value;
+            const additionalPicks = [];
+
+            for (const pick of compensationPicks) {
+                if (totalOfferValue < userPickValue * 0.95) {
+                    totalOfferValue += pick.value;
+                    additionalPicks.push(pick);
+                } else {
+                    break;
+                }
+            }
+
+            if (totalOfferValue >= userPickValue * 0.95 && additionalPicks.length > 0) {
+                offers.push({
+                    fromTeam: team,
+                    fromPicks: [mainPick, ...additionalPicks],
+                    toTeam: userTeam,
+                    toPick: { pick: userPick, value: userPickValue },
+                });
+            }
+        }
+    }
+
+    console.log(`Generated trade offers:`, offers);
+    return offers.slice(0, maxOffers);
+}
+
+// Function to execute a trade
+function executeTrade(draftOrder, currentTeam, offerTeam, offeredPicks, receivedPicks) {
+    // Remove the current team's pick from the draft order
+    receivedPicks.forEach(pick => {
+        draftOrder[pick] = offerTeam;
+    });
+
+    // Add the offer team's picks to the draft order
+    offeredPicks.forEach(pick => {
+        draftOrder[pick] = currentTeam;
+    });
+
+    return draftOrder;
+}
+
+// Function to display the current offer
+function displayCurrentOffer() {
+    if (tradeOffers.length === 0) {
+        console.error("No trade offers available!");
+        return;
+    }
+
+    const offer = tradeOffers[currentOfferIndex];
+    const fromPicksText = offer.fromPicks.map(pick => `#${pick.pick} (value: ${pick.value})`).join(', ');
+    const tradeOfferText = document.getElementById('tradeOfferText');
+
+    if (!tradeOfferText) {
+        console.error("Trade offer text element not found!");
+        return;
+    }
+
+    tradeOfferText.innerHTML = `
+        <p>${offer.fromTeam} offers their picks ${fromPicksText} for your pick #${offer.toPick.pick} (value: ${offer.toPick.value})</p>
+        <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
+        <button onclick="declineTrade()">Decline</button>
+        ${tradeOffers.length > 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
+        <p>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</p>
+    `;
+}
+
+// Function to show trade offers modal
+function showTradeOffersModal(offers) {
+    console.log("Showing trade offers modal.");
+    const modal = document.getElementById('tradeOfferModal');
+    const span = modal.querySelector('.close');
+
+    if (!modal || !span) {
+        console.error("Modal elements not found!");
+        return;
+    }
+
+    currentOfferIndex = 0;
+    displayCurrentOffer();
+
+    modal.style.display = 'block';
+
+    span.onclick = function () {
+        modal.style.display = 'none';
+        enableUserPick();
+    }
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            enableUserPick();
+        }
     }
 }
 
+// Function to go to the next offer
+function nextOffer() {
+    currentOfferIndex = (currentOfferIndex + 1) % tradeOffers.length;
+    displayCurrentOffer();
+}
+
+function acceptTrade(offerIndex) {
+    if (offerIndex < 0 || offerIndex >= tradeOffers.length) {
+        console.error("Invalid trade offer index!");
+        return;
+    }
+
+    const offer = tradeOffers[offerIndex];
+
+    fetch('http://localhost:5000/makeTrade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ offer, userTeam })
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Server response:', data);
+
+            if (!data.draftState || !data.draftSequence) {
+                throw new Error('Invalid draft state or sequence returned from server');
+            }
+
+            draftState = data.draftState;
+            draftSequence = data.draftSequence;
+
+            // Close the trade offer modal
+            document.getElementById('tradeOfferModal').style.display = 'none';
+
+            // Update the UI
+            updateDraftDisplay();
+
+            // Resume the draft
+            processDraftSequence();
+        })
+        .catch(error => {
+            console.error('Error accepting trade:', error);
+            alert(`Error accepting trade: ${error.message}`);
+        });
+}
+// Add this function to update the draft display after a trade
+function updateDraftDisplay() {
+    updateDraftHistory(draftState.draftHistory);
+    fetchPlayers();
+    // You may need to update other UI elements here
+}
+
+// Function to decline a trade
+function declineTrade() {
+    currentOfferIndex++;
+    if (currentOfferIndex < tradeOffers.length) {
+        displayCurrentOffer();
+    } else {
+        document.getElementById('tradeOfferModal').style.display = 'none';
+        enableUserPick();
+    }
+}
+
+// Function to enable user pick
+function enableUserPick() {
+    document.getElementById('selectPlayer').disabled = false;
+    console.log("It's your turn to pick!");
+}
+
+// Function to check if the round has ended
 function checkRoundEnd() {
     console.log(`Checking round end. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
     if (draftSequence.length === 0) {
         console.log("Draft complete. Showing results modal.");
-        // Draft is complete
         showResultsModal();
     } else {
         console.log(`Draft is still in progress. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
     }
 }
 
+// Function to initialize draft controls
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
+
+    if (!selectPlayerButton) {
+        console.error("Select player button not found!");
+        return;
+    }
 
     selectPlayerButton.addEventListener('click', function () {
         const selectedPlayerName = document.getElementById('playerSelect').value;
         const selectedTeam = userTeam;
         console.log(`Selected Team: ${selectedTeam}`);
 
-        // Find the selected player object from allPlayers array
         const selectedPlayer = allPlayers.find(player => player.name === selectedPlayerName);
 
         fetch('http://localhost:5000/selectPlayer', {
@@ -136,8 +361,8 @@ function initializeDraftControls() {
                 document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} select ${selectedPlayerName}, ${selectedPlayer.position}, ${selectedPlayer.team}.</p>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
-                document.getElementById('selectPlayer').disabled = true; // Disable the select button after pick
-                setTimeout(processDraftSequence, 500); // Resume draft sequence after user makes a pick
+                document.getElementById('selectPlayer').disabled = true;
+                setTimeout(processDraftSequence, 500);
             })
             .catch(error => {
                 console.error('Failed to select player:', error);
@@ -155,7 +380,7 @@ function initializeDraftControls() {
     });
 }
 
-
+// Function to simulate the draft
 function simulateDraft() {
     fetch('http://localhost:5000/simulateDraft', {
         method: 'POST',
@@ -171,32 +396,11 @@ function simulateDraft() {
         .catch(error => console.error('Error simulating draft:', error));
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    userTeam = localStorage.getItem('selectedTeam');
-    const selectedTeamLogo = localStorage.getItem('selectedTeamLogo');
-
-    if (!userTeam || !selectedTeamLogo) {
-        alert('No team data found. Returning to selection page.');
-        window.location.href = 'index.html';
-        return;
-    }
-
-    const teamLogoImg = document.getElementById('teamLogo');
-    teamLogoImg.src = selectedTeamLogo;
-    teamLogoImg.alt = `${userTeam} Logo`;
-    document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
-
-    fetchPlayers();
-    initializeDraftControls();
-
-    // Simulate the draft when the page loads
-    simulateDraft();
-});
-
+// Function to show results modal
 function showResultsModal() {
     console.log("Entering showResultsModal function.");
     const modal = document.getElementById('resultsModal');
-    const span = document.getElementsByClassName('close')[0];
+    const span = modal.querySelector('.close');
     const resultsContainer = document.getElementById('resultsContainer');
     const draftResults = document.getElementById('draftResults').innerHTML;
 
@@ -223,3 +427,28 @@ function showResultsModal() {
         location.reload();
     });
 }
+
+// Document ready function
+document.addEventListener('DOMContentLoaded', function () {
+    userTeam = localStorage.getItem('selectedTeam');
+    const selectedTeamLogo = localStorage.getItem('selectedTeamLogo');
+
+    if (!userTeam || !selectedTeamLogo) {
+        alert('No team data found. Returning to selection page.');
+        window.location.href = 'index.html';
+        return;
+    }
+
+    const teamLogoImg = document.getElementById('teamLogo');
+    teamLogoImg.src = selectedTeamLogo;
+    teamLogoImg.alt = `${userTeam} Logo`;
+    document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
+
+    loadTeamsData().then(() => {
+        fetchDraftState().then(() => {
+            fetchPlayers();
+            initializeDraftControls();
+            simulateDraft();
+        });
+    });
+});

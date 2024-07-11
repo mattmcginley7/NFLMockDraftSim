@@ -14,6 +14,7 @@ const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
 let draftState;
+let tradeOffers = []; // Initialize tradeOffers array
 
 // Function to initialize draft state
 const initializeDraftState = () => {
@@ -40,7 +41,6 @@ const initializeDraftState = () => {
     }
 };
 
-
 // Initialize draft state
 draftState = initializeDraftState();
 
@@ -55,6 +55,10 @@ app.get('/players', (req, res) => {
 
 app.get('/draftHistory', (req, res) => {
     res.json(draftState.draftHistory);
+});
+
+app.get('/draftState', (req, res) => {
+    res.json(draftState);
 });
 
 app.post('/startDraft', (req, res) => {
@@ -113,7 +117,6 @@ const simulateDraftPick = (team, round) => {
     }
 };
 
-
 app.post('/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
     const draftSequence = [];
@@ -136,14 +139,19 @@ app.post('/simulateDraft', (req, res) => {
         teams.forEach(team => {
             const picksForRound = team.picks.filter(pick => pick.pick >= start && pick.pick <= end);
             picksForRound.forEach(pick => {
-                roundPicks.push({ pick: pick.pick, team: team.name, user: team.name === userTeam, round });
+                roundPicks.push({
+                    pick: pick.pick,
+                    team: team.name,
+                    user: team.name === userTeam,
+                    round,
+                    value: pick.value
+                });
             });
         });
         roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
         draftSequence.push(...roundPicks);
     }
 
-    // Log the number of picks processed
     console.log(`Total picks processed: ${draftSequence.length}`);
 
     res.json({
@@ -151,11 +159,6 @@ app.post('/simulateDraft', (req, res) => {
         draftSequence
     });
 });
-
-
-
-
-
 
 app.post('/simulateDraftPick', (req, res) => {
     const { team, round } = req.body;
@@ -195,7 +198,7 @@ app.post('/selectPlayer', (req, res) => {
                 player: selectedPlayer.name,
                 position: selectedPlayer.position,
                 college: selectedPlayer.team,
-                teamLogo: `./${team}Logo.png` // Adjusted to match your logo naming convention
+                teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
             });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
             res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
@@ -208,6 +211,96 @@ app.post('/selectPlayer', (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
+
+app.post('/makeTrade', (req, res) => {
+    const { offer, userTeam } = req.body;
+    console.log('Received trade offer:', offer);
+
+    if (!offer) {
+        return res.status(400).json({ message: 'Invalid trade offer' });
+    }
+
+    const { fromTeam, fromPicks, toTeam, toPick } = offer;
+
+    try {
+        // Update the draft state
+        draftState = updateDraftState(draftState, fromTeam, fromPicks, toTeam, toPick);
+
+        // Regenerate the draft sequence based on the updated draft state
+        const draftSequence = generateDraftSequence(draftState, userTeam);
+
+        res.json({
+            message: 'Trade accepted',
+            draftState,
+            draftSequence
+        });
+    } catch (error) {
+        console.error('Error processing trade:', error);
+        res.status(500).json({ message: 'Error processing trade', error: error.message });
+    }
+});
+
+// Function to update draft state after a trade
+function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
+    return sequence.map(pick => {
+        if (pick.team === fromTeam && fromPicks.some(fp => fp.pick === pick.pick)) {
+            return { ...pick, team: toTeam };
+        }
+        if (pick.team === toTeam && pick.pick === toPick.pick) {
+            return { ...pick, team: fromTeam };
+        }
+        return pick;
+    });
+}
+
+function generateDraftSequence(state, userTeam) {
+    const sequence = [];
+    for (let round = 1; round <= state.totalRounds; round++) {
+        for (const [team, picks] of Object.entries(state.teamPicks)) {
+            const roundPicks = picks.filter(pick => getRoundFromPick(pick.pick) === round);
+            roundPicks.forEach(pick => {
+                sequence.push({
+                    pick: pick.pick,
+                    team,
+                    user: team === userTeam,
+                    round,
+                    value: pick.value
+                });
+            });
+        }
+    }
+    return sequence.sort((a, b) => a.pick - b.pick);
+}
+
+function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
+    const newState = JSON.parse(JSON.stringify(state)); // Deep copy
+
+    // Update fromTeam picks
+    newState.teamPicks[fromTeam] = newState.teamPicks[fromTeam].filter(pick => !fromPicks.some(fp => fp.pick === pick.pick));
+    newState.teamPicks[fromTeam].push({ ...toPick, player: null });
+
+    // Update toTeam picks
+    newState.teamPicks[toTeam] = newState.teamPicks[toTeam].filter(pick => pick.pick !== toPick.pick);
+    newState.teamPicks[toTeam].push(...fromPicks.map(pick => ({ ...pick, player: null })));
+
+    // Sort picks for both teams
+    newState.teamPicks[fromTeam].sort((a, b) => a.pick - b.pick);
+    newState.teamPicks[toTeam].sort((a, b) => a.pick - b.pick);
+
+    return newState;
+}
+
+// Function to get the round from a pick number
+function getRoundFromPick(pick) {
+    if (pick >= 1 && pick <= 32) return 1;
+    if (pick >= 33 && pick <= 64) return 2;
+    if (pick >= 65 && pick <= 100) return 3;
+    if (pick >= 101 && pick <= 135) return 4;
+    if (pick >= 136 && pick <= 176) return 5;
+    if (pick >= 177 && pick <= 220) return 6;
+    if (pick >= 221 && pick <= 257) return 7;
+    return -1; // Invalid pick number
+}
 
 // 404 Error Handler
 app.use((req, res) => {
