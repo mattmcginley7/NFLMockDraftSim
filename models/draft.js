@@ -127,7 +127,7 @@ function processDraftSequence() {
     if (round !== currentRound) {
         currentRound = round;
     }
-    simulateDraftPick(team, round);
+    simulateDraftPick(team, currentRound);
 }
 
 // Function to generate trade offers

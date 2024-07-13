@@ -229,48 +229,20 @@ app.post('/makeTrade', (req, res) => {
         // Regenerate the draft sequence based on the updated draft state
         const draftSequence = generateDraftSequence(draftState, userTeam);
 
+        // Filter out picks that have already been made
+        const currentDraftPick = draftState.draftHistory.length ? draftState.draftHistory[draftState.draftHistory.length - 1].pick : 0;
+        const filteredDraftSequence = draftSequence.filter(pick => pick.pick > currentDraftPick);
+
         res.json({
             message: 'Trade accepted',
             draftState,
-            draftSequence
+            draftSequence: filteredDraftSequence
         });
     } catch (error) {
         console.error('Error processing trade:', error);
         res.status(500).json({ message: 'Error processing trade', error: error.message });
     }
 });
-
-// Function to update draft state after a trade
-function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
-    return sequence.map(pick => {
-        if (pick.team === fromTeam && fromPicks.some(fp => fp.pick === pick.pick)) {
-            return { ...pick, team: toTeam };
-        }
-        if (pick.team === toTeam && pick.pick === toPick.pick) {
-            return { ...pick, team: fromTeam };
-        }
-        return pick;
-    });
-}
-
-function generateDraftSequence(state, userTeam) {
-    const sequence = [];
-    for (let round = 1; round <= state.totalRounds; round++) {
-        for (const [team, picks] of Object.entries(state.teamPicks)) {
-            const roundPicks = picks.filter(pick => getRoundFromPick(pick.pick) === round);
-            roundPicks.forEach(pick => {
-                sequence.push({
-                    pick: pick.pick,
-                    team,
-                    user: team === userTeam,
-                    round,
-                    value: pick.value
-                });
-            });
-        }
-    }
-    return sequence.sort((a, b) => a.pick - b.pick);
-}
 
 function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     const newState = JSON.parse(JSON.stringify(state)); // Deep copy
@@ -288,6 +260,40 @@ function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     newState.teamPicks[toTeam].sort((a, b) => a.pick - b.pick);
 
     return newState;
+}
+
+
+// Function to update draft state after a trade
+function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
+    // Update the picks in the draft sequence
+    sequence = sequence.map(pick => {
+        if (pick.team === fromTeam && fromPicks.some(fp => fp.pick === pick.pick)) {
+            return { ...pick, team: toTeam };
+        }
+        if (pick.team === toTeam && pick.pick === toPick.pick) {
+            return { ...pick, team: fromTeam };
+        }
+        return pick;
+    });
+
+    // Sort the updated sequence
+    return sequence.sort((a, b) => a.pick - b.pick);
+}
+
+function generateDraftSequence(state, userTeam) {
+    const sequence = [];
+    for (const [team, picks] of Object.entries(state.teamPicks)) {
+        picks.forEach(pick => {
+            sequence.push({
+                pick: pick.pick,
+                team,
+                user: team === userTeam,
+                value: pick.value
+            });
+        });
+    }
+    // Sort picks in numerical order to maintain the correct sequence
+    return sequence.sort((a, b) => a.pick - b.pick);
 }
 
 // Function to get the round from a pick number
