@@ -109,13 +109,15 @@ const simulateDraftPick = (team, round) => {
             player: selectedPlayer.name,
             position: selectedPlayer.position,
             college: selectedPlayer.team,
-            teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
+            teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png`
         });
         console.log(`Player ${selectedPlayer.name} selected by ${team} at pick ${draftState.teamPicks[team][pickIndex].pick}`);
     } else {
         console.error(`No available pick slot for ${team} in round ${round}`);
     }
 };
+
+
 
 app.post('/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
@@ -213,7 +215,7 @@ app.post('/selectPlayer', (req, res) => {
 });
 
 app.post('/makeTrade', (req, res) => {
-    const { offer, userTeam } = req.body;
+    const { offer, userTeam, currentRound } = req.body;
     console.log('Received trade offer:', offer);
 
     if (!offer) {
@@ -236,13 +238,16 @@ app.post('/makeTrade', (req, res) => {
         res.json({
             message: 'Trade accepted',
             draftState,
-            draftSequence: filteredDraftSequence
+            draftSequence: filteredDraftSequence,
+            currentRound
         });
     } catch (error) {
         console.error('Error processing trade:', error);
         res.status(500).json({ message: 'Error processing trade', error: error.message });
     }
 });
+
+
 
 function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     const newState = JSON.parse(JSON.stringify(state)); // Deep copy
@@ -282,19 +287,26 @@ function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
 
 function generateDraftSequence(state, userTeam) {
     const sequence = [];
+    let currentRound = 1;
+
     for (const [team, picks] of Object.entries(state.teamPicks)) {
         picks.forEach(pick => {
             sequence.push({
                 pick: pick.pick,
                 team,
                 user: team === userTeam,
+                round: getRoundFromPick(pick.pick),
                 value: pick.value
             });
         });
     }
+
     // Sort picks in numerical order to maintain the correct sequence
-    return sequence.sort((a, b) => a.pick - b.pick);
+    sequence.sort((a, b) => a.pick - b.pick);
+
+    return sequence;
 }
+
 
 // Function to get the round from a pick number
 function getRoundFromPick(pick) {

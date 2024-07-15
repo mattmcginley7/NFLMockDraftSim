@@ -90,7 +90,12 @@ function simulateDraftPick(team, round) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team, round })
     })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => Promise.reject(err));
+            }
+            return response.json();
+        })
         .then(data => {
             updateDraftHistory(data.draftHistory);
             fetchPlayers();
@@ -99,8 +104,12 @@ function simulateDraftPick(team, round) {
             }
             checkRoundEnd();
         })
-        .catch(error => console.error('Error simulating draft pick:', error));
+        .catch(error => {
+            console.error('Error simulating draft pick:', error);
+            alert(`Error simulating draft pick: ${error.message}`);
+        });
 }
+
 
 // Function to process the draft sequence
 function processDraftSequence() {
@@ -113,6 +122,10 @@ function processDraftSequence() {
 
     const { team, round, user, pick } = draftSequence.shift();
 
+    if (round !== currentRound) {
+        currentRound = round;
+    }
+
     if (user) {
         clearTimeout(draftInterval);
         document.getElementById('selectPlayer').disabled = false;
@@ -124,11 +137,9 @@ function processDraftSequence() {
         return;
     }
 
-    if (round !== currentRound) {
-        currentRound = round;
-    }
     simulateDraftPick(team, currentRound);
 }
+
 
 // Function to generate trade offers
 function generateTradeOffers(userPick, currentRound) {
@@ -266,7 +277,7 @@ function acceptTrade(offerIndex) {
     fetch('http://localhost:5000/makeTrade', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ offer, userTeam })
+        body: JSON.stringify({ offer, userTeam, currentRound })
     })
         .then(response => response.json())
         .then(data => {
@@ -278,6 +289,7 @@ function acceptTrade(offerIndex) {
 
             draftState = data.draftState;
             draftSequence = data.draftSequence;
+            currentRound = data.currentRound;
 
             // Close the trade offer modal
             document.getElementById('tradeOfferModal').style.display = 'none';
@@ -293,6 +305,8 @@ function acceptTrade(offerIndex) {
             alert(`Error accepting trade: ${error.message}`);
         });
 }
+
+
 // Add this function to update the draft display after a trade
 function updateDraftDisplay() {
     updateDraftHistory(draftState.draftHistory);
@@ -320,13 +334,17 @@ function enableUserPick() {
 // Function to check if the round has ended
 function checkRoundEnd() {
     console.log(`Checking round end. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
-    if (draftSequence.length === 0) {
+    if (draftSequence.length === 0 && currentRound === totalRounds) {
         console.log("Draft complete. Showing results modal.");
         showResultsModal();
+    } else if (draftSequence.length === 0) {
+        currentRound++;
+        processDraftSequence();
     } else {
         console.log(`Draft is still in progress. Current Round: ${currentRound}, Draft Sequence Length: ${draftSequence.length}`);
     }
 }
+
 
 // Function to initialize draft controls
 function initializeDraftControls() {
