@@ -249,6 +249,8 @@ app.post('/makeTrade', (req, res) => {
 
 
 
+
+
 function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     const newState = JSON.parse(JSON.stringify(state)); // Deep copy
 

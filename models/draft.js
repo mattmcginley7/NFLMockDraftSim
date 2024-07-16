@@ -156,7 +156,11 @@ function generateTradeOffers(userPick, currentRound) {
     const eligibleTeams = Object.keys(draftState.teamPicks).filter(team => team !== userTeam);
     const offers = [];
 
-    for (const team of eligibleTeams) {
+    const shuffledTeams = eligibleTeams.sort(() => 0.5 - Math.random()); // Shuffle teams for randomness
+
+    for (const team of shuffledTeams) {
+        if (offers.length >= maxOffers) break;
+
         const teamPicks = draftState.teamPicks[team];
         const laterPicks = teamPicks.filter(pick => pick.pick > userPick && pick.player === null);
 
@@ -176,7 +180,15 @@ function generateTradeOffers(userPick, currentRound) {
                 }
             }
 
-            if (totalOfferValue >= userPickValue * 0.95 && additionalPicks.length > 0) {
+            // Ensure the offer value is closer to the user's pick value in the first three rounds
+            if (currentRound <= 3 && totalOfferValue >= userPickValue * 0.9 && totalOfferValue <= userPickValue * 1.1) {
+                offers.push({
+                    fromTeam: team,
+                    fromPicks: [mainPick, ...additionalPicks],
+                    toTeam: userTeam,
+                    toPick: { pick: userPick, value: userPickValue },
+                });
+            } else if (currentRound > 3 && totalOfferValue >= userPickValue * 0.95) {
                 offers.push({
                     fromTeam: team,
                     fromPicks: [mainPick, ...additionalPicks],
@@ -190,6 +202,7 @@ function generateTradeOffers(userPick, currentRound) {
     console.log(`Generated trade offers:`, offers);
     return offers.slice(0, maxOffers);
 }
+
 
 // Function to execute a trade
 function executeTrade(draftOrder, currentTeam, offerTeam, offeredPicks, receivedPicks) {
