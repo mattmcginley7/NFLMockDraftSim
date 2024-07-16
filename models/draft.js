@@ -227,7 +227,8 @@ function displayCurrentOffer() {
     }
 
     const offer = tradeOffers[currentOfferIndex];
-    const fromPicksText = offer.fromPicks.map(pick => `#${pick.pick} (value: ${pick.value})`).join(', ');
+    const fromPicksText = offer.fromPicks.map(pick => `<div>#${pick.pick} (value: ${pick.value})</div>`).join('');
+    const toPickText = `<div>#${offer.toPick.pick} (value: ${offer.toPick.value})</div>`;
     const tradeOfferText = document.getElementById('tradeOfferText');
 
     if (!tradeOfferText) {
@@ -236,13 +237,25 @@ function displayCurrentOffer() {
     }
 
     tradeOfferText.innerHTML = `
-        <p>${offer.fromTeam} offers their picks ${fromPicksText} for your pick #${offer.toPick.pick} (value: ${offer.toPick.value})</p>
-        <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
-        <button onclick="declineTrade()">Decline</button>
-        ${tradeOffers.length > 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
-        <p>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</p>
+        <div class="trade-offer-container">
+            <div class="trade-team">
+                <h3>Your Team</h3>
+                ${toPickText}
+            </div>
+            <div class="trade-team">
+                <h3>${offer.fromTeam}</h3>
+                ${fromPicksText}
+            </div>
+        </div>
+        <div class="trade-offer-buttons">
+            <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
+            <button onclick="declineTrade()">Decline</button>
+            ${tradeOffers.length > 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
+        </div>
+        <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
     `;
 }
+
 
 // Function to show trade offers modal
 function showTradeOffersModal(offers) {

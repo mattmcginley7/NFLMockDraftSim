@@ -99,3 +99,37 @@ main {
     border-radius: 10px;
     padding: 5px;
 }
+
+/*Trade module css */
+
+.trade-offer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.trade-team {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.trade-team h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.trade-team div {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.trade-offer-buttons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trade-offer-buttons button {
+    margin: 0 5px;
+}
