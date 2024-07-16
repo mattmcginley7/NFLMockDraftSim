@@ -133,6 +133,11 @@ main {
     font-size: 1em;
 }
 
+.trade-team .total-value {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .trade-offer-buttons {
     text-align: center;
     margin-bottom: 10px;
