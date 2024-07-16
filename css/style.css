@@ -113,10 +113,18 @@ main {
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #f9f9f9;
+    text-align: center;
+}
+
+.trade-team img {
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .trade-team h3 {
-    margin-top: 0;
+    margin: 0;
     font-size: 1.2em;
 }
 

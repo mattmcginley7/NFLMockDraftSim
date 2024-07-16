@@ -236,13 +236,18 @@ function displayCurrentOffer() {
         return;
     }
 
+    const fromTeamLogo = `${offer.fromTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+    const toTeamLogo = `${userTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+
     tradeOfferText.innerHTML = `
         <div class="trade-offer-container">
             <div class="trade-team">
+                <img src="${toTeamLogo}" alt="${userTeam} Logo" class="team-logo-small">
                 <h3>Your Team</h3>
                 ${toPickText}
             </div>
             <div class="trade-team">
+                <img src="${fromTeamLogo}" alt="${offer.fromTeam} Logo" class="team-logo-small">
                 <h3>${offer.fromTeam}</h3>
                 ${fromPicksText}
             </div>
@@ -255,6 +260,7 @@ function displayCurrentOffer() {
         <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
     `;
 }
+
 
 
 // Function to show trade offers modal
