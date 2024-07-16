@@ -166,7 +166,7 @@ function generateTradeOffers(userPick, currentRound) {
 
         if (laterPicks.length >= 2) {
             const mainPick = laterPicks[0];
-            const compensationPicks = laterPicks.slice(1);
+            const compensationPicks = laterPicks.slice(1, 4); // Limit to at most 3 additional picks
 
             let totalOfferValue = mainPick.value;
             const additionalPicks = [];
@@ -181,20 +181,22 @@ function generateTradeOffers(userPick, currentRound) {
             }
 
             // Ensure the offer value is closer to the user's pick value in the first three rounds
-            if (currentRound <= 3 && totalOfferValue >= userPickValue * 0.9 && totalOfferValue <= userPickValue * 1.1) {
-                offers.push({
-                    fromTeam: team,
-                    fromPicks: [mainPick, ...additionalPicks],
-                    toTeam: userTeam,
-                    toPick: { pick: userPick, value: userPickValue },
-                });
-            } else if (currentRound > 3 && totalOfferValue >= userPickValue * 0.95) {
-                offers.push({
-                    fromTeam: team,
-                    fromPicks: [mainPick, ...additionalPicks],
-                    toTeam: userTeam,
-                    toPick: { pick: userPick, value: userPickValue },
-                });
+            if (additionalPicks.length + 1 >= 2 && additionalPicks.length + 1 <= 4) {
+                if (currentRound <= 3 && totalOfferValue >= userPickValue * 0.9 && totalOfferValue <= userPickValue * 1.1) {
+                    offers.push({
+                        fromTeam: team,
+                        fromPicks: [mainPick, ...additionalPicks],
+                        toTeam: userTeam,
+                        toPick: { pick: userPick, value: userPickValue },
+                    });
+                } else if (currentRound > 3 && totalOfferValue >= userPickValue * 0.95) {
+                    offers.push({
+                        fromTeam: team,
+                        fromPicks: [mainPick, ...additionalPicks],
+                        toTeam: userTeam,
+                        toPick: { pick: userPick, value: userPickValue },
+                    });
+                }
             }
         }
     }
@@ -202,6 +204,7 @@ function generateTradeOffers(userPick, currentRound) {
     console.log(`Generated trade offers:`, offers);
     return offers.slice(0, maxOffers);
 }
+
 
 
 // Function to execute a trade
@@ -249,22 +252,33 @@ function displayCurrentOffer() {
                 <img src="${toTeamLogo}" alt="${userTeam} Logo" class="team-logo-small">
                 <h3>Your Team</h3>
                 ${toPickText}
-                <div>Total value: ${totalUserValue}</div>
+                <div class="total-value">Total value: ${totalUserValue}</div>
             </div>
             <div class="trade-team">
                 <img src="${fromTeamLogo}" alt="${offer.fromTeam} Logo" class="team-logo-small">
                 <h3>${offer.fromTeam}</h3>
                 ${fromPicksText}
-                <div>Total value: ${totalOfferedValue}</div>
+                <div class="total-value">Total value: ${totalOfferedValue}</div>
             </div>
         </div>
         <div class="trade-offer-buttons">
+            ${currentOfferIndex > 0 ? `<button onclick="previousOffer()">Previous Offer</button>` : ''}
             <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
             <button onclick="declineTrade()">Decline</button>
-            ${tradeOffers.length > 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
+            ${tradeOffers.length > 1 && currentOfferIndex < tradeOffers.length - 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
         </div>
         <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
     `;
+}
+
+function nextOffer() {
+    currentOfferIndex = (currentOfferIndex + 1) % tradeOffers.length;
+    displayCurrentOffer();
+}
+
+function previousOffer() {
+    currentOfferIndex = (currentOfferIndex - 1 + tradeOffers.length) % tradeOffers.length;
+    displayCurrentOffer();
 }
 
 // Function to show trade offers modal
