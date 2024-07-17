@@ -266,6 +266,7 @@ function displayCurrentOffer() {
             <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
             <button onclick="declineTrade()">Decline</button>
             ${tradeOffers.length > 1 && currentOfferIndex < tradeOffers.length - 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
+            <button onclick="hideTradeOffers()">Hide Offers</button>
         </div>
         <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
     `;
@@ -296,6 +297,7 @@ function showTradeOffersModal(offers) {
     displayCurrentOffer();
 
     modal.style.display = 'block';
+    document.getElementById('showTradeOffers').style.display = 'none';
 
     span.onclick = function () {
         modal.style.display = 'none';
@@ -308,6 +310,19 @@ function showTradeOffersModal(offers) {
             enableUserPick();
         }
     }
+}
+
+
+// Function to hide trade offers
+function hideTradeOffers() {
+    document.getElementById('tradeOfferModal').style.display = 'none';
+    document.getElementById('showTradeOffers').style.display = 'inline-block';
+}
+
+// Function to show trade offers
+function showTradeOffers() {
+    document.getElementById('tradeOfferModal').style.display = 'block';
+    document.getElementById('showTradeOffers').style.display = 'none';
 }
 
 // Function to go to the next offer

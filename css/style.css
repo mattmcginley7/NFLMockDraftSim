@@ -146,3 +146,8 @@ main {
 .trade-offer-buttons button {
     margin: 0 5px;
 }
+
+#showTradeOffers {
+    display: none;
+    /* Initially hidden */
+}
