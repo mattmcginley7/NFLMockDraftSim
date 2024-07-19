@@ -441,7 +441,12 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
-                document.getElementById('draftResults').innerHTML += `<p>${selectedTeam} select ${selectedPlayerName}, ${selectedPlayer.position}, ${selectedPlayer.team}.</p>`;
+                const teamLogo = `${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+                document.getElementById('draftResults').innerHTML += `
+                    <div class="draft-pick-item">
+                        <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
+                        <strong>${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
+                    </div>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true;
@@ -451,7 +456,8 @@ function initializeDraftControls() {
                 console.error('Failed to select player:', error);
                 alert(`Error: ${error.message}`);
             });
-    });
+});
+
 
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
@@ -463,6 +469,15 @@ function initializeDraftControls() {
     });
 }
 
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            button.classList.add('active');
+            filterPlayers(button.id.replace('filter-', ''));
+        });
+    });
 // Function to simulate the draft
 function simulateDraft() {
     fetch('http://localhost:5000/simulateDraft', {
