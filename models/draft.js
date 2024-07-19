@@ -487,7 +487,19 @@ function showResultsModal() {
     const resultsContainer = document.getElementById('resultsContainer');
     const draftResults = document.getElementById('draftResults').innerHTML;
 
-    resultsContainer.innerHTML = draftResults;
+    resultsContainer.innerHTML = '';
+
+    draftState.draftHistory.forEach(pick => {
+        if (pick.team === userTeam) {
+            const teamLogo = `${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+            const pickElement = document.createElement('div');
+            pickElement.className = 'draft-pick-item';
+            pickElement.innerHTML = `
+                <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+                <strong>${pick.player}</strong>, ${pick.position}, ${pick.college}`;
+            resultsContainer.appendChild(pickElement);
+        }
+    });
 
     modal.style.display = 'block';
     console.log("Modal should be displayed now.");
@@ -510,6 +522,7 @@ function showResultsModal() {
         location.reload();
     });
 }
+
 
 // Document ready function
 document.addEventListener('DOMContentLoaded', function () {
