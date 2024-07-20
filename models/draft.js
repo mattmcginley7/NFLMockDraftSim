@@ -66,7 +66,9 @@ function filterPlayers(criteria) {
         filteredPlayers = allPlayers.filter(player => player.position === criteria);
     }
     populatePlayerDropdown(filteredPlayers);
+    document.getElementById('selectPlayer').disabled = false; // Ensure the button is enabled after filtering
 }
+
 
 // Function to update draft history
 function updateDraftHistory(draftHistory) {
@@ -456,8 +458,7 @@ function initializeDraftControls() {
                 console.error('Failed to select player:', error);
                 alert(`Error: ${error.message}`);
             });
-});
-
+    });
 
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
@@ -465,19 +466,11 @@ function initializeDraftControls() {
             document.querySelector('.filter-btn.active').classList.remove('active');
             button.classList.add('active');
             filterPlayers(button.id.replace('filter-', ''));
+            document.getElementById('selectPlayer').disabled = false; // Ensure the button is enabled after filtering
         });
     });
 }
 
-
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            document.querySelector('.filter-btn.active').classList.remove('active');
-            button.classList.add('active');
-            filterPlayers(button.id.replace('filter-', ''));
-        });
-    });
 // Function to simulate the draft
 function simulateDraft() {
     fetch('http://localhost:5000/simulateDraft', {
@@ -500,7 +493,6 @@ function showResultsModal() {
     const modal = document.getElementById('resultsModal');
     const span = modal.querySelector('.close');
     const resultsContainer = document.getElementById('resultsContainer');
-    const draftResults = document.getElementById('draftResults').innerHTML;
 
     resultsContainer.innerHTML = '';
 
