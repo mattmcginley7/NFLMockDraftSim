@@ -232,8 +232,8 @@ function displayCurrentOffer() {
     }
 
     const offer = tradeOffers[currentOfferIndex];
-    const fromPicksText = offer.fromPicks.map(pick => `<div>#${pick.pick} (value: ${pick.value})</div>`).join('');
-    const toPickText = `<div>#${offer.toPick.pick} (value: ${offer.toPick.value})</div>`;
+    const fromPicksText = offer.fromPicks.map(pick => `<div>#${pick.pick} (value: ${pick.value.toFixed(1)})</div>`).join('');
+    const toPickText = `<div>#${offer.toPick.pick} (value: ${offer.toPick.value.toFixed(1)})</div>`;
     const tradeOfferText = document.getElementById('tradeOfferText');
 
     if (!tradeOfferText) {
@@ -245,8 +245,8 @@ function displayCurrentOffer() {
     const toTeamLogo = `${userTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
 
     // Calculate total value
-    const totalOfferedValue = offer.fromPicks.reduce((total, pick) => total + pick.value, 0);
-    const totalUserValue = offer.toPick.value;
+    const totalOfferedValue = offer.fromPicks.reduce((total, pick) => total + pick.value, 0).toFixed(1);
+    const totalUserValue = offer.toPick.value.toFixed(1);
 
     tradeOfferText.innerHTML = `
         <div class="trade-offer-container">
@@ -273,6 +273,7 @@ function displayCurrentOffer() {
         <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
     `;
 }
+
 
 function nextOffer() {
     currentOfferIndex = (currentOfferIndex + 1) % tradeOffers.length;
@@ -496,7 +497,7 @@ function showResultsModal() {
     resultsContainer.innerHTML = '';
 
     draftState.draftHistory.forEach(pick => {
-        if (pick.team === userTeam) {
+        if (pick.team === userTeam) { // Ensure only user's team picks are shown
             const teamLogo = `${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
             const pickElement = document.createElement('div');
             pickElement.className = 'draft-pick-item';
@@ -528,6 +529,7 @@ function showResultsModal() {
         location.reload();
     });
 }
+
 
 
 // Document ready function
