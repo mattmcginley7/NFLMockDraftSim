@@ -302,17 +302,16 @@ function showTradeOffersModal(offers) {
     document.getElementById('showTradeOffers').style.display = 'none';
 
     span.onclick = function () {
-        modal.style.display = 'none';
-        enableUserPick();
+        hideTradeOffers(); // Call hideTradeOffers instead of hiding the modal permanently
     }
 
     window.onclick = function (event) {
         if (event.target === modal) {
-            modal.style.display = 'none';
-            enableUserPick();
+            hideTradeOffers(); // Call hideTradeOffers instead of hiding the modal permanently
         }
     }
 }
+
 
 
 // Function to hide trade offers

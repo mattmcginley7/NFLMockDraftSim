@@ -175,7 +175,7 @@ main {
  }
 
  .modal-content {
-     max-height: 80vh;
+     max-height: 160vh;
      /* Adjust this value as needed */
      overflow-y: auto;
  }
