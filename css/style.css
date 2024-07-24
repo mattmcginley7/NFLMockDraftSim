@@ -152,30 +152,24 @@ main {
     /* Initially hidden */
 }
 
- .draft-pick-item {
-     display: flex;
-     align-items: center;
-     margin-bottom: 10px;
- }
+.draft-pick-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
- .draft-pick-item img {
-     max-width: 50px;
-     max-height: 50px;
-     margin-right: 10px;
- }
+.draft-pick-item img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
+}
 
- .team-logo-small {
-     max-width: 50px;
-     max-height: 50px;
- }
+.team-logo-small {
+    max-width: 50px;
+    max-height: 50px;
+}
 
- .filter-btn.active {
-     background-color: #007bff;
-     color: white;
- }
-
- .modal-content {
-     max-height: 80vh;
-     /* Adjust this value as needed */
-     overflow-y: auto;
- }
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+}

@@ -489,46 +489,51 @@ function simulateDraft() {
 
 // Function to show results modal
 function showResultsModal() {
-    console.log("Entering showResultsModal function.");
-    const modal = document.getElementById('resultsModal');
-    const span = modal.querySelector('.close');
+    const resultsModal = document.getElementById('resultsModal');
     const resultsContainer = document.getElementById('resultsContainer');
+    resultsContainer.innerHTML = ''; // Clear previous results
 
-    resultsContainer.innerHTML = '';
+    // Fetch draft history from server
+    fetch('http://localhost:5000/draftHistory')
+        .then(response => response.json())
+        .then(draftHistory => {
+            const userTeam = localStorage.getItem('selectedTeam');
+            const userPicks = draftHistory.filter(pick => pick.team === userTeam);
 
-    draftState.draftHistory.forEach(pick => {
-        if (pick.team === userTeam) { // Ensure only user's team picks are shown
-            const teamLogo = `${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-            const pickElement = document.createElement('div');
-            pickElement.className = 'draft-pick-item';
-            pickElement.innerHTML = `
-                <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-                <strong>${pick.player}</strong>, ${pick.position}, ${pick.college}`;
-            resultsContainer.appendChild(pickElement);
-        }
-    });
+            if (userPicks.length === 0) {
+                resultsContainer.innerHTML = '<p>No picks made for your team.</p>';
+            } else {
+                userPicks.forEach(pick => {
+                    const pickElement = document.createElement('div');
+                    pickElement.className = 'draft-pick-item';
+                    pickElement.innerHTML = `
+                        <img src="${pick.teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+                        <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}
+                    `;
+                    resultsContainer.appendChild(pickElement);
+                });
+            }
 
-    modal.style.display = 'block';
-    console.log("Modal should be displayed now.");
-
-    span.onclick = function () {
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    }
-
-    document.getElementById('backToHome').addEventListener('click', () => {
-        window.location.href = 'index.html';
-    });
-
-    document.getElementById('restartDraft').addEventListener('click', () => {
-        location.reload();
-    });
+            resultsModal.style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Error fetching draft history:', error);
+            resultsContainer.innerHTML = '<p>Error fetching draft history.</p>';
+        });
 }
+
+// Event listener to close the modal
+document.querySelector('.close').addEventListener('click', () => {
+    document.getElementById('resultsModal').style.display = 'none';
+});
+
+// Event listener to close the modal when clicking outside of it
+window.addEventListener('click', (event) => {
+    const resultsModal = document.getElementById('resultsModal');
+    if (event.target === resultsModal) {
+        resultsModal.style.display = 'none';
+    }
+});
 
 
 

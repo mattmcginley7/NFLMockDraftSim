@@ -53,7 +53,8 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
-            max-height: 80vh; /* Adjust this value as needed */
+            max-height: 80vh;
+            /* Adjust this value as needed */
             overflow-y: auto;
         }
 
@@ -126,7 +127,8 @@
             <select id="playerSelect">
                 <!-- Options will be populated by JavaScript -->
             </select>
-            <button id="selectPlayer" disabled>Select Player</button> <!-- Add this button next to the Select Player button -->
+            <button id="selectPlayer" disabled>Select Player</button>
+            <!-- Add this button next to the Select Player button -->
             <button id="showTradeOffers" onclick="showTradeOffers()">Show Trade Offers</button>
 
         </div>
@@ -134,7 +136,7 @@
 
     <main class="main-content">
         <div id="draftResults">
-            <h2>Draft Results</h2>
+            <h2></h2>
             <!-- Draft results will be populated by JavaScript -->
         </div>
 
@@ -148,8 +150,8 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div id="resultsContainer"></div>
-            <button id="backToHome">Back to Home</button>
-            <button id="restartDraft">Restart Draft</button>
+            <button id="backToHome" onclick="window.location.href='index.html'">Back to Home</button>
+            <button id="restartDraft" onclick="restartDraft()">Restart Draft</button>
         </div>
     </div>
 
