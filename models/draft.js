@@ -493,6 +493,12 @@ function showResultsModal() {
     const resultsContainer = document.getElementById('resultsContainer');
     resultsContainer.innerHTML = ''; // Clear previous results
 
+    // Add the new h1 element
+    const heading = document.createElement('h1');
+    heading.textContent = 'Your 2025 Draft Class';
+    heading.style.textAlign = 'center';
+    resultsContainer.appendChild(heading);
+
     // Fetch draft history from server
     fetch('http://localhost:5000/draftHistory')
         .then(response => response.json())
@@ -501,7 +507,7 @@ function showResultsModal() {
             const userPicks = draftHistory.filter(pick => pick.team === userTeam);
 
             if (userPicks.length === 0) {
-                resultsContainer.innerHTML = '<p>No picks made for your team.</p>';
+                resultsContainer.innerHTML += '<p>No picks made for your team.</p>';
             } else {
                 userPicks.forEach(pick => {
                     const pickElement = document.createElement('div');
@@ -534,8 +540,6 @@ window.addEventListener('click', (event) => {
         resultsModal.style.display = 'none';
     }
 });
-
-
 
 // Document ready function
 document.addEventListener('DOMContentLoaded', function () {
