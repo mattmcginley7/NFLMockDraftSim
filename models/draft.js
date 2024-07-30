@@ -13,7 +13,7 @@ const apiUrl = 'https://draft-day-simulator.vercel.app';
 // Function to load teams data
 async function loadTeamsData() {
     try {
-        const response = await fetch(`${apiURL}/teams`);
+        const response = await fetch(`${apiUrl}/teams`);
         teamsData = await response.json();
         console.log('Teams data loaded:', teamsData);
     } catch (error) {
@@ -23,7 +23,7 @@ async function loadTeamsData() {
 
 // Function to fetch draft state
 function fetchDraftState() {
-    return fetch(`${apiURL}/draftState`)
+    return fetch(`${apiUrl}/draftState`)
         .then(response => response.json())
         .then(data => {
             draftState = data;
@@ -34,7 +34,7 @@ function fetchDraftState() {
 
 // Function to fetch players
 function fetchPlayers() {
-    fetch(`${apiURL}/players`)
+    fetch(`${apiUrl}/players`)
         .then(response => response.json())
         .then(players => {
             allPlayers = players;
@@ -501,7 +501,7 @@ function showResultsModal() {
     resultsContainer.appendChild(heading);
 
     // Fetch draft history from server
-    fetch(`${apiURL}/draftHistory`)
+    fetch(`${apiUrl}/draftHistory`)
         .then(response => response.json())
         .then(draftHistory => {
             const userTeam = localStorage.getItem('selectedTeam');
