@@ -10,6 +10,8 @@ const nflTeams = [
     "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Commanders"
 ];
 
+const apiUrl = 'https://draft-day-simulator.vercel.app';
+
 // Function to populate team selection dropdown
 function populateTeamSelection() {
     const teamSelect = document.getElementById("teamSelect");
@@ -83,7 +85,7 @@ function fetchPlayers() {
 
 // Function to start the draft
 function startDraft() {
-    fetch('http://localhost:5000/startDraft', { method: 'POST' })
+    fetch(`${apiUrl}/startDraft`, { method: 'POST' })
         .then(response => response.json())
         .then(data => {
             console.log(data.message); // Log the start draft message
