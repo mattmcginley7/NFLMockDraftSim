@@ -46,24 +46,24 @@ const initializeDraftState = () => {
 // Initialize draft state
 draftState = initializeDraftState();
 
-app.get('/teams', (req, res) => {
+app.get('/api/teams', (req, res) => {
     const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
     res.json(teams.teams);
 });
 
-app.get('/players', (req, res) => {
+app.get('/api/players', (req, res) => {
     res.json(draftState.availablePlayers);
 });
 
-app.get('/draftHistory', (req, res) => {
+app.get('/api/draftHistory', (req, res) => {
     res.json(draftState.draftHistory);
 });
 
-app.get('/draftState', (req, res) => {
+app.get('/api/draftState', (req, res) => {
     res.json(draftState);
 });
 
-app.post('/startDraft', (req, res) => {
+app.post('/api/startDraft', (req, res) => {
     const { teamId } = req.body;
     if (!teamId) return res.status(400).json({ message: 'Team ID is required' });
 
@@ -80,7 +80,7 @@ app.post('/startDraft', (req, res) => {
     });
 });
 
-app.post('/simulateDraft', (req, res) => {
+app.post('/api/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
     const draftSequence = [];
 
@@ -123,7 +123,7 @@ app.post('/simulateDraft', (req, res) => {
     });
 });
 
-app.post('/selectPlayer', (req, res) => {
+app.post('/api/selectPlayer', (req, res) => {
     try {
         const { player, team } = req.body;
         console.log(`Request to select player: ${player} for team: ${team}`);
@@ -164,7 +164,7 @@ app.post('/selectPlayer', (req, res) => {
     }
 });
 
-app.post('/makeTrade', (req, res) => {
+app.post('/api/makeTrade', (req, res) => {
     const { offer, userTeam, currentRound } = req.body;
     console.log('Received trade offer:', offer);
 
