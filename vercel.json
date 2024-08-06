@@ -15,8 +15,5 @@
             "src": "/(.*)",
             "dest": "/$1"
         }
-    ],
-    "staticFiles": {
-        "public": "./public"
-    }
+    ]
 }
