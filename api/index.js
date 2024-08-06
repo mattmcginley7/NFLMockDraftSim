@@ -150,7 +150,7 @@ app.post('/api/selectPlayer', (req, res) => {
                 player: selectedPlayer.name,
                 position: selectedPlayer.position,
                 college: selectedPlayer.team,
-                teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
+                teamLogo: `/images/${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
             });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
             res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });

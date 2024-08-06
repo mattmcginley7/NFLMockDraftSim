@@ -76,7 +76,7 @@ function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
     draftHistoryContainer.innerHTML = '';
     (draftHistory || []).forEach(pick => {
-        const teamLogo = `./${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+        const teamLogo = `/images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
         const pickElement = document.createElement('div');
         pickElement.className = 'draft-pick-item';
         pickElement.innerHTML = `
@@ -242,8 +242,9 @@ function displayCurrentOffer() {
         return;
     }
 
-    const fromTeamLogo = `${offer.fromTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-    const toTeamLogo = `${userTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+    const fromTeamLogo = `/images/${offer.fromTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+    const toTeamLogo = `/images/${userTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+
 
     // Calculate total value
     const totalOfferedValue = offer.fromPicks.reduce((total, pick) => total + pick.value, 0).toFixed(1);
@@ -444,7 +445,7 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
-                const teamLogo = `${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+                const teamLogo = `/images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
                 document.getElementById('draftResults').innerHTML += `
                     <div class="draft-pick-item">
                         <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
