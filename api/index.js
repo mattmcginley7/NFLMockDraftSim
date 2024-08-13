@@ -3,14 +3,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
-require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname))); // Serve static files from the root directory
 
 const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
@@ -80,6 +78,47 @@ app.post('/api/startDraft', (req, res) => {
     });
 });
 
+// New function to get a random player with bias based on round
+const getRandomPlayerWithBias = (availablePlayers, round) => {
+    const biasRange = [10, 20, 30, 35, 35, 35, 35]; // Bias ranges for rounds 1-7
+    const range = biasRange[round - 1];
+    const eligiblePlayers = availablePlayers.slice(0, Math.min(range, availablePlayers.length));
+    const randomIndex = Math.floor(Math.random() * eligiblePlayers.length);
+    return availablePlayers.splice(availablePlayers.indexOf(eligiblePlayers[randomIndex]), 1)[0];
+};
+
+const simulateDraftPick = (team, round) => {
+    if (draftState.availablePlayers.length === 0) {
+        console.error('No available players to pick');
+        return;
+    }
+
+    const selectedPlayer = getRandomPlayerWithBias(draftState.availablePlayers, round);
+    const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
+
+    if (!selectedPlayer) {
+        console.error('Selected player is undefined');
+        return;
+    }
+
+    if (pickIndex !== -1) {
+        draftState.teamPicks[team][pickIndex].player = selectedPlayer;
+        draftState.draftHistory.push({
+            pick: draftState.teamPicks[team][pickIndex].pick,
+            team,
+            player: selectedPlayer.name,
+            position: selectedPlayer.position,
+            college: selectedPlayer.team,
+            teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png`
+        });
+        console.log(`Player ${selectedPlayer.name} selected by ${team} at pick ${draftState.teamPicks[team][pickIndex].pick}`);
+    } else {
+        console.error(`No available pick slot for ${team} in round ${round}`);
+    }
+};
+
+
+
 app.post('/api/simulateDraft', (req, res) => {
     const { userTeam } = req.body;
     const draftSequence = [];
@@ -123,10 +162,21 @@ app.post('/api/simulateDraft', (req, res) => {
     });
 });
 
+app.post('/api/simulateDraftPick', (req, res) => {
+    const { team, round } = req.body;
+    simulateDraftPick(team, round);
+    res.json({
+        message: `Simulated draft pick for ${team}`,
+        draftHistory: draftState.draftHistory,
+        availablePlayers: draftState.availablePlayers
+    });
+});
+
 app.post('/api/selectPlayer', (req, res) => {
     try {
         const { player, team } = req.body;
         console.log(`Request to select player: ${player} for team: ${team}`);
+        console.log(`Available teams: ${Object.keys(draftState.teamPicks)}`);
 
         if (!draftState.teamPicks[team]) {
             console.error('Invalid team name:', team);
@@ -150,7 +200,7 @@ app.post('/api/selectPlayer', (req, res) => {
                 player: selectedPlayer.name,
                 position: selectedPlayer.position,
                 college: selectedPlayer.team,
-                teamLogo: `/images/${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
+                teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
             });
             console.log(`Player ${selectedPlayer.name} selected by ${team}`);
             res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
@@ -175,8 +225,13 @@ app.post('/api/makeTrade', (req, res) => {
     const { fromTeam, fromPicks, toTeam, toPick } = offer;
 
     try {
+        // Update the draft state
         draftState = updateDraftState(draftState, fromTeam, fromPicks, toTeam, toPick);
+
+        // Regenerate the draft sequence based on the updated draft state
         const draftSequence = generateDraftSequence(draftState, userTeam);
+
+        // Filter out picks that have already been made
         const currentDraftPick = draftState.draftHistory.length ? draftState.draftHistory[draftState.draftHistory.length - 1].pick : 0;
         const filteredDraftSequence = draftSequence.filter(pick => pick.pick > currentDraftPick);
 
@@ -192,10 +247,87 @@ app.post('/api/makeTrade', (req, res) => {
     }
 });
 
+
+
+
+
+function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
+    const newState = JSON.parse(JSON.stringify(state)); // Deep copy
+
+    // Update fromTeam picks
+    newState.teamPicks[fromTeam] = newState.teamPicks[fromTeam].filter(pick => !fromPicks.some(fp => fp.pick === pick.pick));
+    newState.teamPicks[fromTeam].push({ ...toPick, player: null });
+
+    // Update toTeam picks
+    newState.teamPicks[toTeam] = newState.teamPicks[toTeam].filter(pick => pick.pick !== toPick.pick);
+    newState.teamPicks[toTeam].push(...fromPicks.map(pick => ({ ...pick, player: null })));
+
+    // Sort picks for both teams
+    newState.teamPicks[fromTeam].sort((a, b) => a.pick - b.pick);
+    newState.teamPicks[toTeam].sort((a, b) => a.pick - b.pick);
+
+    return newState;
+}
+
+
+// Function to update draft state after a trade
+function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
+    // Update the picks in the draft sequence
+    sequence = sequence.map(pick => {
+        if (pick.team === fromTeam && fromPicks.some(fp => fp.pick === pick.pick)) {
+            return { ...pick, team: toTeam };
+        }
+        if (pick.team === toTeam && pick.pick === toPick.pick) {
+            return { ...pick, team: fromTeam };
+        }
+        return pick;
+    });
+
+    // Sort the updated sequence
+    return sequence.sort((a, b) => a.pick - b.pick);
+}
+
+function generateDraftSequence(state, userTeam) {
+    const sequence = [];
+    let currentRound = 1;
+
+    for (const [team, picks] of Object.entries(state.teamPicks)) {
+        picks.forEach(pick => {
+            sequence.push({
+                pick: pick.pick,
+                team,
+                user: team === userTeam,
+                round: getRoundFromPick(pick.pick),
+                value: pick.value
+            });
+        });
+    }
+
+    // Sort picks in numerical order to maintain the correct sequence
+    sequence.sort((a, b) => a.pick - b.pick);
+
+    return sequence;
+}
+
+
+// Function to get the round from a pick number
+function getRoundFromPick(pick) {
+    if (pick >= 1 && pick <= 32) return 1;
+    if (pick >= 33 && pick <= 64) return 2;
+    if (pick >= 65 && pick <= 100) return 3;
+    if (pick >= 101 && pick <= 135) return 4;
+    if (pick >= 136 && pick <= 176) return 5;
+    if (pick >= 177 && pick <= 220) return 6;
+    if (pick >= 221 && pick <= 257) return 7;
+    return -1; // Invalid pick number
+}
+
+// 404 Error Handler
 app.use((req, res) => {
     res.status(404).json({ message: 'Endpoint not found' });
 });
 
+// General Error Handler
 app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ message: 'Internal Server Error' });

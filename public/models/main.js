@@ -10,8 +10,6 @@ const nflTeams = [
     "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Commanders"
 ];
 
-const apiUrl = 'https://draft-day-simulator.vercel.app';
-
 // Function to populate team selection dropdown
 function populateTeamSelection() {
     const teamSelect = document.getElementById("teamSelect");
@@ -22,9 +20,10 @@ function populateTeamSelection() {
         teamSelect.appendChild(option);
     });
 }
+
 // Function to fetch and display available players
 function fetchPlayers() {
-    fetch('/players')
+    fetch('http://localhost:5000/api/players')
         .then(response => response.json())
         .then(players => {
             const playerSelect = document.getElementById('playerSelect');
@@ -41,7 +40,7 @@ function fetchPlayers() {
 
 // Function to handle player selection, assuming you have some way to capture which player and team was selected
 function handlePlayerSelection(playerName, teamName) {
-    fetch('/selectPlayer', {
+    fetch('http://localhost:5000/api/selectPlayer', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -61,31 +60,14 @@ function handlePlayerSelection(playerName, teamName) {
         .catch(error => console.error('Failed to select player:', error));
 }
 
-
 // Ensure fetchPlayers is called when the document is loaded to populate the initial list of players
 document.addEventListener('DOMContentLoaded', function () {
     fetchPlayers();
 });
 
-function fetchPlayers() {
-    fetch('/players')
-        .then(response => response.json())
-        .then(players => {
-            const playerSelect = document.getElementById('playerSelect');
-            playerSelect.innerHTML = ''; // Clear existing options
-            players.forEach(player => {
-                let option = document.createElement('option');
-                option.value = player.name;
-                option.textContent = `${player.name} - ${player.position}`;
-                playerSelect.appendChild(option);
-            });
-        })
-        .catch(error => console.error('Error fetching players:', error));
-}
-
 // Function to start the draft
 function startDraft() {
-    fetch(`${apiUrl}/startDraft`, { method: 'POST' })
+    fetch('http://localhost:5000/api/startDraft', { method: 'POST' })
         .then(response => response.json())
         .then(data => {
             console.log(data.message); // Log the start draft message
@@ -114,4 +96,3 @@ function startDraft() {
             document.getElementById('startDraft').disabled = false;
         });
 }
-
