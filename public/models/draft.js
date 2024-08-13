@@ -488,6 +488,7 @@ function simulateDraft() {
 }
 
 // Function to show results modal
+// Function to show results modal
 function showResultsModal() {
     const resultsModal = document.getElementById('resultsModal');
     const resultsContainer = document.getElementById('resultsContainer');
@@ -510,10 +511,11 @@ function showResultsModal() {
                 resultsContainer.innerHTML += '<p>No picks made for your team.</p>';
             } else {
                 userPicks.forEach(pick => {
+                    const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`; // Updated path
                     const pickElement = document.createElement('div');
                     pickElement.className = 'draft-pick-item';
                     pickElement.innerHTML = `
-                        <img src="${pick.teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+                        <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
                         <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}
                     `;
                     resultsContainer.appendChild(pickElement);
@@ -527,6 +529,7 @@ function showResultsModal() {
             resultsContainer.innerHTML = '<p>Error fetching draft history.</p>';
         });
 }
+
 
 // Event listener to close the modal
 document.querySelector('.close').addEventListener('click', () => {
