@@ -1,3 +1,5 @@
+const apiUrl = 'http://localhost:5000'
+
 // Complete list of NFL teams
 const nflTeams = [
     "Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills",
@@ -23,7 +25,7 @@ function populateTeamSelection() {
 
 // Function to fetch and display available players
 function fetchPlayers() {
-    fetch('http://localhost:5000/api/players')
+    fetch(`${apiUrl}/api/players`)
         .then(response => response.json())
         .then(players => {
             const playerSelect = document.getElementById('playerSelect');
@@ -40,7 +42,7 @@ function fetchPlayers() {
 
 // Function to handle player selection, assuming you have some way to capture which player and team was selected
 function handlePlayerSelection(playerName, teamName) {
-    fetch('http://localhost:5000/api/selectPlayer', {
+    fetch(`${apiUrl}/api/selectPlayer`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -67,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Function to start the draft
 function startDraft() {
-    fetch('http://localhost:5000/api/startDraft', { method: 'POST' })
+    fetch(`${apiUrl}/api/startDraft`, { method: 'POST' })
         .then(response => response.json())
         .then(data => {
             console.log(data.message); // Log the start draft message

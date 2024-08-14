@@ -9,10 +9,12 @@ let tradeOffers = [];
 let currentOfferIndex = 0;
 let teamsData = {};
 
+const apiUrl = 'http://localhost:5000'
+
 // Function to load teams data
 async function loadTeamsData() {
     try {
-        const response = await fetch('http://localhost:5000/api/teams');
+        const response = await fetch(`${apiUrl}/api/teams`);
         teamsData = await response.json();
         console.log('Teams data loaded:', teamsData);
     } catch (error) {
@@ -22,7 +24,7 @@ async function loadTeamsData() {
 
 // Function to fetch draft state
 function fetchDraftState() {
-    return fetch('http://localhost:5000/api/draftState')
+    return fetch(`${apiUrl}/api/draftState`)
         .then(response => response.json())
         .then(data => {
             draftState = data;
@@ -33,7 +35,7 @@ function fetchDraftState() {
 
 // Function to fetch players
 function fetchPlayers() {
-    fetch('http://localhost:5000/api/players')
+    fetch(`${apiUrl}/api/players`)
         .then(response => response.json())
         .then(players => {
             allPlayers = players;
@@ -87,7 +89,7 @@ function updateDraftHistory(draftHistory) {
 
 // Function to simulate a draft pick
 function simulateDraftPick(team, round) {
-    fetch('http://localhost:5000/api/simulateDraftPick', {
+    fetch(`${apiUrl}/api/simulateDraftPick`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ team, round })
@@ -341,7 +343,7 @@ function acceptTrade(offerIndex) {
 
     const offer = tradeOffers[offerIndex];
 
-    fetch('http://localhost:5000/api/makeTrade', {
+    fetch(`${apiUrl}/api/makeTrade`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ offer, userTeam, currentRound })
@@ -429,7 +431,7 @@ function initializeDraftControls() {
 
         const selectedPlayer = allPlayers.find(player => player.name === selectedPlayerName);
 
-        fetch('http://localhost:5000/api/selectPlayer', {
+        fetch(`${apiUrl}/api/selectPlayer`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ player: selectedPlayerName, team: selectedTeam })
@@ -473,7 +475,7 @@ function initializeDraftControls() {
 
 // Function to simulate the draft
 function simulateDraft() {
-    fetch('http://localhost:5000/api/simulateDraft', {
+    fetch(`${apiUrl}/api/simulateDraft`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userTeam })
@@ -501,7 +503,7 @@ function showResultsModal() {
     resultsContainer.appendChild(heading);
 
     // Fetch draft history from server
-    fetch('http://localhost:5000/api/draftHistory')
+    fetch(`${apiUrl}/api/draftHistory`)
         .then(response => response.json())
         .then(draftHistory => {
             const userTeam = localStorage.getItem('selectedTeam');
