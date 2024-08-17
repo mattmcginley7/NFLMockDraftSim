@@ -1,4 +1,5 @@
-const apiUrl = process.env.REACT_APP_API_URL
+const apiUrl = "https://draft-day-simulator.vercel.app";
+
 
 // Complete list of NFL teams
 const nflTeams = [

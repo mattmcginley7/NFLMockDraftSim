@@ -9,7 +9,7 @@ let tradeOffers = [];
 let currentOfferIndex = 0;
 let teamsData = {};
 
-const apiUrl = process.env.REACT_APP_API_URL
+const apiUrl = "https://draft-day-simulator.vercel.app";
 
 // Function to load teams data
 async function loadTeamsData() {
