@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000'
+const apiUrl = process.env.REACT_APP_API_URL
 
 // Complete list of NFL teams
 const nflTeams = [
