@@ -1,6 +1,10 @@
 {
     "routes": [
         {
+            "src": "/",
+            "dest": "/public/html/index.html"
+        },
+        {
             "src": "/api/(.*)",
             "dest": "/api/$1"
         },
