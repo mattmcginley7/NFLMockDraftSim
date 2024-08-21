@@ -5,6 +5,10 @@
             "dest": "/public/html/index.html"
         },
         {
+            "src": "/draft.html",
+            "dest": "/public/html/draft.html"
+        },
+        {
             "src": "/api/(.*)",
             "dest": "/api/$1"
         },
