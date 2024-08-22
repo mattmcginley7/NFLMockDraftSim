@@ -9,6 +9,10 @@
             "dest": "/public/html/draft.html"
         },
         {
+            "src": "/api/",
+            "dest": "/api/index.js"
+        },
+        {
             "src": "/api/(.*)",
             "dest": "/api/$1"
         },
