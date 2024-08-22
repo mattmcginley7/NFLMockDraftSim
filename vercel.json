@@ -15,6 +15,14 @@
         {
             "src": "/(.*)",
             "dest": "/public/$1"
+        },
+        {
+            "src": "/api/teams",
+            "dest": "/api/teams.json"
+        },
+        {
+            "src": "/api/players",
+            "dest": "/api/players.json"
         }
     ]
 }

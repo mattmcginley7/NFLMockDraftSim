@@ -10,9 +10,8 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const teamsFilePath = path.join(__dirname, '../data/teams.json');
-const playersFilePath = path.join(__dirname, '../data/players.json');
-
+const playersFilePath = path.join(__dirname, 'players.json');
+const teamsFilePath = path.join(__dirname, 'teams.json');
 
 let draftState;
 let tradeOffers = []; // Initialize tradeOffers array
