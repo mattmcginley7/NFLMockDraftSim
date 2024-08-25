@@ -92,6 +92,26 @@
             transition: border-color 0.3s;
         }
 
+          /* Media query for smaller screens */
+  @media (max-width: 768px) {
+      .team-logo {
+          width: 16px;  /* Adjust width for smaller screens */
+          height: 16px; /* Adjust height for smaller screens */
+      }
+
+      .team-selection {
+          gap: 1px; /* Reduce the gap between team logos */
+      }
+
+      .team-selection button {
+          padding: 1px 3px; /* Adjust button padding for smaller screens */
+      }
+
+       main {
+        padding: 0px; /* Reduce padding on the sides of the main container */
+    }
+  }
+
         .team-logo:hover {
             border-color: #007bff;
         }
