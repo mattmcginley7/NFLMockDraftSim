@@ -88,31 +88,34 @@ function updateDraftHistory(draftHistory) {
 }
 
 // Function to simulate a draft pick
-function simulateDraftPick(team, round) {
-    fetch(`${apiUrl}/api/simulateDraftPick`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ team, round })
-    })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => Promise.reject(err));
-            }
-            return response.json();
-        })
-        .then(data => {
-            updateDraftHistory(data.draftHistory);
-            fetchPlayers();
-            if (draftSequence.length > 0) {
-                draftInterval = setTimeout(processDraftSequence, 500);
-            }
-            checkRoundEnd();
-        })
-        .catch(error => {
-            console.error('Error simulating draft pick:', error);
-            alert(`Error simulating draft pick: ${error.message}`);
+async function simulateDraftPick(team, round) {
+    try {
+        const response = await fetch(`${apiUrl}/api/simulateDraftPick`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ team, round })
         });
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message);
+        }
+
+        const data = await response.json();
+        updateDraftHistory(data.draftHistory);
+        await fetchPlayers(); // Ensure players are fetched before moving on
+
+        if (draftSequence.length > 0) {
+            draftInterval = setTimeout(processDraftSequence, 500);
+        }
+
+        checkRoundEnd();
+    } catch (error) {
+        console.error('Error simulating draft pick:', error);
+        alert(`Error simulating draft pick: ${error.message}`);
+    }
 }
+
 
 
 // Function to process the draft sequence
