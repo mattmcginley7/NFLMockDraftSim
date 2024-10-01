@@ -81,8 +81,8 @@ function updateDraftHistory(draftHistory) {
         const pickElement = document.createElement('div');
         pickElement.className = 'draft-pick-item';
         pickElement.innerHTML = `
-            <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-            <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
+           <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+           <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
         draftHistoryContainer.appendChild(pickElement);
     });
 }
@@ -254,29 +254,29 @@ function displayCurrentOffer() {
     const totalUserValue = offer.toPick.value.toFixed(1);
 
     tradeOfferText.innerHTML = `
-        <div class="trade-offer-container">
-            <div class="trade-team">
-                <img src="${toTeamLogo}" alt="${userTeam} Logo" class="team-logo-small">
-                <h3>Your Team</h3>
-                ${toPickText}
-                <div class="total-value">Total value: ${totalUserValue}</div>
-            </div>
-            <div class="trade-team">
-                <img src="${fromTeamLogo}" alt="${offer.fromTeam} Logo" class="team-logo-small">
-                <h3>${offer.fromTeam}</h3>
-                ${fromPicksText}
-                <div class="total-value">Total value: ${totalOfferedValue}</div>
-            </div>
-        </div>
-        <div class="trade-offer-buttons">
-            ${currentOfferIndex > 0 ? `<button onclick="previousOffer()">Previous Offer</button>` : ''}
-            <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
-            <button onclick="declineTrade()">Decline</button>
-            ${tradeOffers.length > 1 && currentOfferIndex < tradeOffers.length - 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
-            <button onclick="hideTradeOffers()">Hide Offers</button>
-        </div>
-        <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
-    `;
+       <div class="trade-offer-container">
+           <div class="trade-team">
+               <img src="${toTeamLogo}" alt="${userTeam} Logo" class="team-logo-small">
+               <h3>Your Team</h3>
+               ${toPickText}
+               <div class="total-value">Total value: ${totalUserValue}</div>
+           </div>
+           <div class="trade-team">
+               <img src="${fromTeamLogo}" alt="${offer.fromTeam} Logo" class="team-logo-small">
+               <h3>${offer.fromTeam}</h3>
+               ${fromPicksText}
+               <div class="total-value">Total value: ${totalOfferedValue}</div>
+           </div>
+       </div>
+       <div class="trade-offer-buttons">
+           ${currentOfferIndex > 0 ? `<button onclick="previousOffer()">Previous Offer</button>` : ''}
+           <button onclick="acceptTrade(${currentOfferIndex})">Accept</button>
+           <button onclick="declineTrade()">Decline</button>
+           ${tradeOffers.length > 1 && currentOfferIndex < tradeOffers.length - 1 ? `<button onclick="nextOffer()">Next Offer</button>` : ''}
+           <button onclick="hideTradeOffers()">Hide Offers</button>
+       </div>
+       <div>Offer ${currentOfferIndex + 1} of ${tradeOffers.length}</div>
+   `;
 }
 
 
@@ -450,10 +450,10 @@ function initializeDraftControls() {
             .then(data => {
                 const teamLogo = `../images/${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
                 document.getElementById('draftResults').innerHTML += `
-                    <div class="draft-pick-item">
-                        <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
-                        <strong>${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
-                    </div>`;
+                   <div class="draft-pick-item">
+                       <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
+                       <strong>${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
+                   </div>`;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true;
@@ -492,8 +492,6 @@ function simulateDraft() {
         .catch(error => console.error('Error simulating draft:', error));
 }
 
-// Function to show results modal
-// Function to show results modal
 function showResultsModal() {
     const resultsModal = document.getElementById('resultsModal');
     const resultsContainer = document.getElementById('resultsContainer');
@@ -509,20 +507,24 @@ function showResultsModal() {
     fetch(`${apiUrl}/api/draftHistory`)
         .then(response => response.json())
         .then(draftHistory => {
-            const userTeam = localStorage.getItem('selectedTeam');
-            const userPicks = draftHistory.filter(pick => pick.team === userTeam);
+            const userTeam = localStorage.getItem('selectedTeam').trim().toLowerCase();
+            console.log('User Team:', userTeam);
+            console.log('Draft History:', draftHistory);
+
+            const userPicks = draftHistory.filter(pick => pick.team.trim().toLowerCase() === userTeam);
+            console.log('User Picks:', userPicks);
 
             if (userPicks.length === 0) {
                 resultsContainer.innerHTML += '<p>No picks made for your team.</p>';
             } else {
                 userPicks.forEach(pick => {
-                    const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`; // Updated path
+                    const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
                     const pickElement = document.createElement('div');
                     pickElement.className = 'draft-pick-item';
                     pickElement.innerHTML = `
-                        <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-                        <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}
-                    `;
+                       <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+                       <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}
+                   `;
                     resultsContainer.appendChild(pickElement);
                 });
             }
@@ -534,6 +536,7 @@ function showResultsModal() {
             resultsContainer.innerHTML = '<p>Error fetching draft history.</p>';
         });
 }
+
 
 
 // Event listener to close the modal

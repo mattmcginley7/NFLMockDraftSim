@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
+const { MongoClient } = require('mongodb');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,27 +14,42 @@ app.use(bodyParser.json());
 const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
-let draftState;
-let tradeOffers = []; // Initialize tradeOffers array
+// MongoDB connection setup
+const uri = process.env.MONGODB_URI; // Ensure this is set in your environment variables
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+let draftStateCollection;
+
+async function connectToDB() {
+    try {
+        await client.connect();
+        const database = client.db('draft_db'); // Use your database name
+        draftStateCollection = database.collection('draft_state');
+        console.log('Connected to MongoDB database');
+    } catch (error) {
+        console.error('Error connecting to database:', error);
+    }
+}
+
+// Call the function to connect to the database
+connectToDB();
 
 // Function to initialize draft state
 const initializeDraftState = () => {
     try {
         const players = JSON.parse(fs.readFileSync(playersFilePath, 'utf-8'));
-        const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
-
-        console.log("Players initialized:", players.length);
-        console.log("Teams initialized:", teams.teams.length);
+        const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8')).teams;
 
         return {
             currentRound: 1,
             totalRounds: 7,
             draftHistory: [],
-            teamPicks: teams.teams.reduce((acc, team) => {
+            teamPicks: teams.reduce((acc, team) => {
                 acc[team.name] = team.picks.map(pick => ({ ...pick, player: null }));
                 return acc;
             }, {}),
-            availablePlayers: players // Reset available players to the initial list
+            availablePlayers: players
+            // Note: version field is not included in draftState object itself
         };
     } catch (error) {
         console.error("Error initializing draft state:", error);
@@ -41,32 +57,59 @@ const initializeDraftState = () => {
     }
 };
 
-// Initialize draft state
-draftState = initializeDraftState();
-
+// Endpoint to get teams
 app.get('/api/teams', (req, res) => {
-    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8'));
-    res.json(teams.teams);
+    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8')).teams;
+    res.json(teams);
 });
 
-app.get('/api/players', (req, res) => {
+// Endpoint to get players
+app.get('/api/players', async (req, res) => {
+    // Load draftState from database
+    const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+    if (!draftStateDoc) {
+        return res.status(500).json({ message: 'Draft state not found' });
+    }
+    const draftState = draftStateDoc.state;
     res.json(draftState.availablePlayers);
 });
 
-app.get('/api/draftHistory', (req, res) => {
+// Endpoint to get draft history
+app.get('/api/draftHistory', async (req, res) => {
+    // Load draftState from database
+    const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+    if (!draftStateDoc) {
+        return res.status(500).json({ message: 'Draft state not found' });
+    }
+    const draftState = draftStateDoc.state;
     res.json(draftState.draftHistory);
 });
 
-app.get('/api/draftState', (req, res) => {
+// Endpoint to get draft state
+app.get('/api/draftState', async (req, res) => {
+    // Load draftState from database
+    const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+    if (!draftStateDoc) {
+        return res.status(500).json({ message: 'Draft state not found' });
+    }
+    const draftState = draftStateDoc.state;
     res.json(draftState);
 });
 
-app.post('/api/startDraft', (req, res) => {
+// Endpoint to start the draft
+app.post('/api/startDraft', async (req, res) => {
     const { teamId } = req.body;
     if (!teamId) return res.status(400).json({ message: 'Team ID is required' });
 
     // Reset draft state
-    draftState = initializeDraftState();
+    const draftState = initializeDraftState();
+
+    // Save draftState to database with version
+    await draftStateCollection.updateOne(
+        { _id: 'draftState' },
+        { $set: { state: draftState, version: 1 } },
+        { upsert: true }
+    );
 
     console.log("Draft state after reset:", draftState);
 
@@ -78,16 +121,125 @@ app.post('/api/startDraft', (req, res) => {
     });
 });
 
-// New function to get a random player with bias based on round
-const getRandomPlayerWithBias = (availablePlayers, round) => {
-    const biasRange = [10, 20, 30, 35, 35, 35, 35]; // Bias ranges for rounds 1-7
-    const range = biasRange[round - 1];
-    const eligiblePlayers = availablePlayers.slice(0, Math.min(range, availablePlayers.length));
-    const randomIndex = Math.floor(Math.random() * eligiblePlayers.length);
-    return availablePlayers.splice(availablePlayers.indexOf(eligiblePlayers[randomIndex]), 1)[0];
-};
+// Function to get round from pick number
+function getRoundFromPick(pick) {
+    if (pick >= 1 && pick <= 32) return 1;
+    if (pick >= 33 && pick <= 64) return 2;
+    if (pick >= 65 && pick <= 100) return 3;
+    if (pick >= 101 && pick <= 135) return 4;
+    if (pick >= 136 && pick <= 176) return 5;
+    if (pick >= 177 && pick <= 220) return 6;
+    if (pick >= 221 && pick <= 257) return 7;
+    return -1; // Invalid pick number
+}
 
-const simulateDraftPick = (team, round) => {
+// Endpoint to simulate draft
+app.post('/api/simulateDraft', async (req, res) => {
+    const { userTeam } = req.body;
+
+    // Load draftState from database
+    const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+    if (!draftStateDoc) {
+        return res.status(500).json({ message: 'Draft state not found' });
+    }
+    const draftState = draftStateDoc.state;
+
+    const draftSequence = generateDraftSequence(draftState, userTeam);
+
+    res.json({
+        message: 'Draft simulation sequence generated',
+        draftSequence
+    });
+});
+
+// Function to generate draft sequence
+function generateDraftSequence(state, userTeam) {
+    const sequence = [];
+    const picks = [];
+
+    for (const [team, teamPicks] of Object.entries(state.teamPicks)) {
+        teamPicks.forEach(pick => {
+            picks.push({
+                pick: pick.pick,
+                team,
+                user: team === userTeam,
+                round: getRoundFromPick(pick.pick),
+                value: pick.value
+            });
+        });
+    }
+
+    // Sort picks in numerical order to maintain the correct sequence
+    picks.sort((a, b) => a.pick - b.pick);
+
+    return picks;
+}
+
+// Endpoint to simulate a draft pick
+app.post('/api/simulateDraftPick', async (req, res) => {
+    const { team, round } = req.body;
+
+    // Load draftState from database
+    const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+    if (!draftStateDoc) {
+        return res.status(500).json({ message: 'Draft state not found' });
+    }
+    let draftState = draftStateDoc.state;
+    const version = draftStateDoc.version || 0;
+
+    // Implement retry logic for conflict resolution
+    let updated = false;
+    let maxRetries = 5;
+    let retries = 0;
+
+    while (!updated && retries < maxRetries) {
+        // Get the available players and team picks
+        draftState = draftStateDoc.state;
+
+        // Simulate the draft pick
+        simulateDraftPick(draftState, team, round);
+
+        // Attempt to atomically update the draftState in the database
+        const result = await draftStateCollection.findOneAndUpdate(
+            { _id: 'draftState', version },
+            {
+                $set: { state: draftState },
+                $inc: { version: 1 }
+            },
+            { returnOriginal: false }
+        );
+
+        if (result.value) {
+            // Update was successful
+            updated = true;
+            res.json({
+                message: `Simulated draft pick for ${team}`,
+                draftHistory: draftState.draftHistory,
+                availablePlayers: draftState.availablePlayers
+            });
+        } else {
+            // Version mismatch, another operation updated the draftState
+            retries++;
+            console.warn(`Version mismatch detected in simulateDraftPick, retrying (${retries}/${maxRetries})...`);
+
+            // Reload draftStateDoc for the next attempt
+            const newDraftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+            if (!newDraftStateDoc) {
+                return res.status(500).json({ message: 'Draft state not found' });
+            }
+            draftStateDoc.state = newDraftStateDoc.state;
+            draftStateDoc.version = newDraftStateDoc.version;
+        }
+    }
+
+    if (!updated) {
+        console.error('Failed to update draftState after maximum retries in simulateDraftPick');
+        return res.status(500).json({ message: 'Failed to update draft state, please try again' });
+    }
+});
+
+// Function to simulate a draft pick
+function simulateDraftPick(draftState, team, round) {
     if (draftState.availablePlayers.length === 0) {
         console.error('No available players to pick');
         return;
@@ -115,98 +267,97 @@ const simulateDraftPick = (team, round) => {
     } else {
         console.error(`No available pick slot for ${team} in round ${round}`);
     }
-};
+}
 
+// Function to get a random player with bias based on round
+function getRandomPlayerWithBias(availablePlayers, round) {
+    const biasRange = [10, 20, 30, 35, 35, 35, 35]; // Bias ranges for rounds 1-7
+    const range = biasRange[round - 1];
+    const eligiblePlayers = availablePlayers.slice(0, Math.min(range, availablePlayers.length));
+    const randomIndex = Math.floor(Math.random() * eligiblePlayers.length);
+    return availablePlayers.splice(availablePlayers.indexOf(eligiblePlayers[randomIndex]), 1)[0];
+}
 
-
-app.post('/api/simulateDraft', (req, res) => {
-    const { userTeam } = req.body;
-    const draftSequence = [];
-
-    const teams = JSON.parse(fs.readFileSync(teamsFilePath, 'utf-8')).teams;
-
-    const roundRanges = [
-        [1, 32],    // Round 1
-        [33, 64],   // Round 2
-        [65, 100],  // Round 3
-        [101, 135], // Round 4
-        [136, 176], // Round 5
-        [177, 220], // Round 6
-        [221, 257]  // Round 7
-    ];
-
-    for (let round = 1; round <= draftState.totalRounds; round++) {
-        const [start, end] = roundRanges[round - 1];
-        const roundPicks = [];
-        teams.forEach(team => {
-            const picksForRound = team.picks.filter(pick => pick.pick >= start && pick.pick <= end);
-            picksForRound.forEach(pick => {
-                roundPicks.push({
-                    pick: pick.pick,
-                    team: team.name,
-                    user: team.name === userTeam,
-                    round,
-                    value: pick.value
-                });
-            });
-        });
-        roundPicks.sort((a, b) => a.pick - b.pick); // Sort picks in numerical order
-        draftSequence.push(...roundPicks);
-    }
-
-    console.log(`Total picks processed: ${draftSequence.length}`);
-
-    res.json({
-        message: 'Draft simulation sequence generated',
-        draftSequence
-    });
-});
-
-app.post('/api/simulateDraftPick', (req, res) => {
-    const { team, round } = req.body;
-    simulateDraftPick(team, round);
-    res.json({
-        message: `Simulated draft pick for ${team}`,
-        draftHistory: draftState.draftHistory,
-        availablePlayers: draftState.availablePlayers
-    });
-});
-
-app.post('/api/selectPlayer', (req, res) => {
+// Endpoint to select a player
+app.post('/api/selectPlayer', async (req, res) => {
     try {
         const { player, team } = req.body;
         console.log(`Request to select player: ${player} for team: ${team}`);
-        console.log(`Available teams: ${Object.keys(draftState.teamPicks)}`);
 
-        if (!draftState.teamPicks[team]) {
-            console.error('Invalid team name:', team);
-            return res.status(400).json({ message: 'Invalid team name' });
+        let updated = false;
+        let maxRetries = 5;
+        let retries = 0;
+
+        while (!updated && retries < maxRetries) {
+            // Load draftState and its version from the database
+            const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+            if (!draftStateDoc) {
+                console.error('Draft state not found in database');
+                return res.status(500).json({ message: 'Draft state not found' });
+            }
+
+            let draftState = draftStateDoc.state;
+            const version = draftStateDoc.version || 0;
+
+            if (!draftState.teamPicks[team]) {
+                console.error('Invalid team name:', team);
+                return res.status(400).json({ message: 'Invalid team name' });
+            }
+
+            const playerIndex = draftState.availablePlayers.findIndex(p => p.name === player);
+            if (playerIndex === -1) {
+                console.error('Player not found or already drafted');
+                return res.status(400).json({ message: 'Player not found or already drafted' });
+            }
+
+            const selectedPlayer = draftState.availablePlayers.splice(playerIndex, 1)[0];
+            const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
+
+            if (pickIndex !== -1) {
+                draftState.teamPicks[team][pickIndex].player = selectedPlayer;
+                draftState.draftHistory.push({
+                    pick: draftState.teamPicks[team][pickIndex].pick,
+                    team,
+                    player: selectedPlayer.name,
+                    position: selectedPlayer.position,
+                    college: selectedPlayer.team,
+                    teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png`
+                });
+
+                console.log(`Player ${selectedPlayer.name} selected by ${team}`);
+
+                // Attempt to atomically update the draftState in the database
+                const result = await draftStateCollection.findOneAndUpdate(
+                    { _id: 'draftState', version },
+                    {
+                        $set: { state: draftState },
+                        $inc: { version: 1 }
+                    },
+                    { returnOriginal: false }
+                );
+
+                if (result.value) {
+                    // Update was successful
+                    updated = true;
+                    res.json({
+                        message: `${team} selects ${selectedPlayer.name}`,
+                        selectedPlayer,
+                        draftHistory: draftState.draftHistory
+                    });
+                } else {
+                    // Version mismatch, another operation updated the draftState
+                    retries++;
+                    console.warn(`Version mismatch detected in selectPlayer, retrying (${retries}/${maxRetries})...`);
+                }
+            } else {
+                console.error('No available picks for the team');
+                return res.status(400).json({ message: 'No available picks for the team' });
+            }
         }
 
-        const playerIndex = draftState.availablePlayers.findIndex(p => p.name === player);
-        if (playerIndex === -1) {
-            console.error('Player not found or already drafted');
-            return res.status(400).json({ message: 'Player not found or already drafted' });
-        }
-
-        const selectedPlayer = draftState.availablePlayers.splice(playerIndex, 1)[0];
-        const pickIndex = draftState.teamPicks[team].findIndex(pick => pick.player === null);
-
-        if (pickIndex !== -1) {
-            draftState.teamPicks[team][pickIndex].player = selectedPlayer;
-            draftState.draftHistory.push({
-                pick: draftState.teamPicks[team][pickIndex].pick,
-                team,
-                player: selectedPlayer.name,
-                position: selectedPlayer.position,
-                college: selectedPlayer.team,
-                teamLogo: `./${team.toLowerCase().replace(/\s/g, '-')}-logo.png` // Adjusted to match your logo naming convention
-            });
-            console.log(`Player ${selectedPlayer.name} selected by ${team}`);
-            res.json({ message: `${team} selects ${selectedPlayer.name}`, selectedPlayer, draftHistory: draftState.draftHistory });
-        } else {
-            console.error('No available picks for the team');
-            return res.status(400).json({ message: 'No available picks for the team' });
+        if (!updated) {
+            console.error('Failed to update draftState after maximum retries in selectPlayer');
+            return res.status(500).json({ message: 'Failed to update draft state, please try again' });
         }
     } catch (error) {
         console.error('Error during selectPlayer:', error);
@@ -214,7 +365,8 @@ app.post('/api/selectPlayer', (req, res) => {
     }
 });
 
-app.post('/api/makeTrade', (req, res) => {
+// Endpoint to make a trade
+app.post('/api/makeTrade', async (req, res) => {
     const { offer, userTeam, currentRound } = req.body;
     console.log('Received trade offer:', offer);
 
@@ -222,104 +374,92 @@ app.post('/api/makeTrade', (req, res) => {
         return res.status(400).json({ message: 'Invalid trade offer' });
     }
 
-    const { fromTeam, fromPicks, toTeam, toPick } = offer;
+    let updated = false;
+    let maxRetries = 5;
+    let retries = 0;
 
-    try {
-        // Update the draft state
-        draftState = updateDraftState(draftState, fromTeam, fromPicks, toTeam, toPick);
+    while (!updated && retries < maxRetries) {
+        // Load draftState and its version from the database
+        const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+        if (!draftStateDoc) {
+            console.error('Draft state not found in database');
+            return res.status(500).json({ message: 'Draft state not found' });
+        }
 
-        // Regenerate the draft sequence based on the updated draft state
-        const draftSequence = generateDraftSequence(draftState, userTeam);
+        let draftState = draftStateDoc.state;
+        const version = draftStateDoc.version || 0;
 
-        // Filter out picks that have already been made
-        const currentDraftPick = draftState.draftHistory.length ? draftState.draftHistory[draftState.draftHistory.length - 1].pick : 0;
-        const filteredDraftSequence = draftSequence.filter(pick => pick.pick > currentDraftPick);
+        const { fromTeam, fromPicks, toTeam, toPick } = offer;
 
-        res.json({
-            message: 'Trade accepted',
-            draftState,
-            draftSequence: filteredDraftSequence,
-            currentRound
-        });
-    } catch (error) {
-        console.error('Error processing trade:', error);
-        res.status(500).json({ message: 'Error processing trade', error: error.message });
+        try {
+            // Update the draft state
+            draftState = updateDraftState(draftState, fromTeam, fromPicks, toTeam, toPick);
+
+            // Attempt to atomically update the draftState in the database
+            const result = await draftStateCollection.findOneAndUpdate(
+                { _id: 'draftState', version },
+                {
+                    $set: { state: draftState },
+                    $inc: { version: 1 }
+                },
+                { returnOriginal: false }
+            );
+
+            if (result.value) {
+                // Update was successful
+                updated = true;
+
+                // Regenerate the draft sequence based on the updated draft state
+                const draftSequence = generateDraftSequence(draftState, userTeam);
+
+                // Filter out picks that have already been made
+                const currentDraftPick = draftState.draftHistory.length
+                    ? draftState.draftHistory[draftState.draftHistory.length - 1].pick
+                    : 0;
+                const filteredDraftSequence = draftSequence.filter(pick => pick.pick > currentDraftPick);
+
+                res.json({
+                    message: 'Trade accepted',
+                    draftState,
+                    draftSequence: filteredDraftSequence,
+                    currentRound
+                });
+            } else {
+                // Version mismatch, another operation updated the draftState
+                retries++;
+                console.warn(`Version mismatch detected in makeTrade, retrying (${retries}/${maxRetries})...`);
+            }
+        } catch (error) {
+            console.error('Error processing trade:', error);
+            return res.status(500).json({ message: 'Error processing trade', error: error.message });
+        }
+    }
+
+    if (!updated) {
+        console.error('Failed to update draftState after maximum retries in makeTrade');
+        return res.status(500).json({ message: 'Failed to update draft state, please try again' });
     }
 });
 
-
-
-
-
+// Function to update draft state after a trade
 function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     const newState = JSON.parse(JSON.stringify(state)); // Deep copy
 
-    // Update fromTeam picks
-    newState.teamPicks[fromTeam] = newState.teamPicks[fromTeam].filter(pick => !fromPicks.some(fp => fp.pick === pick.pick));
+    // Remove toPick from toTeam's picks and add it to fromTeam
+    newState.teamPicks[toTeam] = newState.teamPicks[toTeam].filter(pick => pick.pick !== toPick.pick);
     newState.teamPicks[fromTeam].push({ ...toPick, player: null });
 
-    // Update toTeam picks
-    newState.teamPicks[toTeam] = newState.teamPicks[toTeam].filter(pick => pick.pick !== toPick.pick);
-    newState.teamPicks[toTeam].push(...fromPicks.map(pick => ({ ...pick, player: null })));
+    // Remove fromPicks from fromTeam's picks and add them to toTeam
+    fromPicks.forEach(pick => {
+        newState.teamPicks[fromTeam] = newState.teamPicks[fromTeam].filter(p => p.pick !== pick.pick);
+        newState.teamPicks[toTeam].push({ ...pick, player: null });
+    });
 
     // Sort picks for both teams
     newState.teamPicks[fromTeam].sort((a, b) => a.pick - b.pick);
     newState.teamPicks[toTeam].sort((a, b) => a.pick - b.pick);
 
     return newState;
-}
-
-
-// Function to update draft state after a trade
-function updateDraftSequence(sequence, fromTeam, fromPicks, toTeam, toPick) {
-    // Update the picks in the draft sequence
-    sequence = sequence.map(pick => {
-        if (pick.team === fromTeam && fromPicks.some(fp => fp.pick === pick.pick)) {
-            return { ...pick, team: toTeam };
-        }
-        if (pick.team === toTeam && pick.pick === toPick.pick) {
-            return { ...pick, team: fromTeam };
-        }
-        return pick;
-    });
-
-    // Sort the updated sequence
-    return sequence.sort((a, b) => a.pick - b.pick);
-}
-
-function generateDraftSequence(state, userTeam) {
-    const sequence = [];
-    let currentRound = 1;
-
-    for (const [team, picks] of Object.entries(state.teamPicks)) {
-        picks.forEach(pick => {
-            sequence.push({
-                pick: pick.pick,
-                team,
-                user: team === userTeam,
-                round: getRoundFromPick(pick.pick),
-                value: pick.value
-            });
-        });
-    }
-
-    // Sort picks in numerical order to maintain the correct sequence
-    sequence.sort((a, b) => a.pick - b.pick);
-
-    return sequence;
-}
-
-
-// Function to get the round from a pick number
-function getRoundFromPick(pick) {
-    if (pick >= 1 && pick <= 32) return 1;
-    if (pick >= 33 && pick <= 64) return 2;
-    if (pick >= 65 && pick <= 100) return 3;
-    if (pick >= 101 && pick <= 135) return 4;
-    if (pick >= 136 && pick <= 176) return 5;
-    if (pick >= 177 && pick <= 220) return 6;
-    if (pick >= 221 && pick <= 257) return 7;
-    return -1; // Invalid pick number
 }
 
 // 404 Error Handler
@@ -334,3 +474,4 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
