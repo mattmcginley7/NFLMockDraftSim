@@ -9,7 +9,8 @@ let tradeOffers = [];
 let currentOfferIndex = 0;
 let teamsData = {};
 
-const apiUrl = "https://draft-day-simulator.vercel.app";
+
+const apiUrl = "https://draft-day-simulator.vercel.app"
 
 // Function to load teams data
 async function loadTeamsData() {
@@ -57,6 +58,31 @@ function populatePlayerDropdown(players) {
     document.getElementById('selectPlayer').disabled = true;
 }
 
+function startDraft() {
+    return fetch(`${apiUrl}/api/startDraft`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ teamId: userTeam })
+    })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.message);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data.message); // "Draft started"
+            // Handle any additional data if necessary
+        })
+        .catch(error => {
+            console.error('Error starting draft:', error);
+            alert('Error starting draft: ' + error.message);
+        });
+}
+
+
 // Function to filter players
 function filterPlayers(criteria) {
     let filteredPlayers = allPlayers;
@@ -98,12 +124,12 @@ async function simulateDraftPick(team, round) {
 
         if (!response.ok) {
             const error = await response.json();
-            throw new Error(error.message);
+            throw new Error(error.message || 'Server error');
         }
 
         const data = await response.json();
         updateDraftHistory(data.draftHistory);
-        await fetchPlayers(); // Ensure players are fetched before moving on
+        await fetchPlayers();
 
         if (draftSequence.length > 0) {
             draftInterval = setTimeout(processDraftSequence, 500);
@@ -115,6 +141,7 @@ async function simulateDraftPick(team, round) {
         alert(`Error simulating draft pick: ${error.message}`);
     }
 }
+
 
 
 
@@ -568,11 +595,13 @@ document.addEventListener('DOMContentLoaded', function () {
     teamLogoImg.alt = `${userTeam} Logo`;
     document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
 
-    loadTeamsData().then(() => {
-        fetchDraftState().then(() => {
-            fetchPlayers();
-            initializeDraftControls();
-            simulateDraft();
+    startDraft().then(() => {
+        loadTeamsData().then(() => {
+            fetchDraftState().then(() => {
+                fetchPlayers();
+                initializeDraftControls();
+                simulateDraft();
+            });
         });
     });
 });
