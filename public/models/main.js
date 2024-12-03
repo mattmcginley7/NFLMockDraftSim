@@ -1,4 +1,4 @@
-const apiUrl = "https://draft-day-simulator.vercel.app";
+const apiUrl = "http://localhost:5000"
 
 
 // Complete list of NFL teams

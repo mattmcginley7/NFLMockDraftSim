@@ -10,7 +10,7 @@ let currentOfferIndex = 0;
 let teamsData = {};
 
 
-const apiUrl = "https://draft-day-simulator.vercel.app"
+const apiUrl = "http://localhost:5000"
 
 // Function to load teams data
 async function loadTeamsData() {
