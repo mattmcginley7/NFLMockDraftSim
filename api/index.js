@@ -29,7 +29,7 @@ async function connectToDB() {
         console.log('Connected to MongoDB database');
 
         // Start the server after the database connection is established
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log(`Server running on port ${PORT}`);
         });
     } catch (error) {
