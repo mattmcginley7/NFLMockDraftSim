@@ -24,21 +24,23 @@ let draftStateCollection;
 async function connectToDB() {
     try {
         await client.connect();
-        const database = client.db('draft_db'); // Use your database name
+        const database = client.db('draft_db');
         draftStateCollection = database.collection('draft_state');
         console.log('Connected to MongoDB database');
-
-        // Start the server after the database connection is established
-        app.listen(PORT, '0.0.0.0', () => {
-            console.log(`Server running on port ${PORT}`);
-        });
     } catch (error) {
         console.error('Error connecting to database:', error);
+        // Don't return or throw here; just log the error.
+        // The server will still run, just without a working DB connection.
     }
 }
 
-// Call the function to connect to the database
+// Call the function to connect to the database without blocking app.listen
 connectToDB();
+
+// Start the server regardless of DB success
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
+});
 
 // Function to initialize draft state
 const initializeDraftState = () => {
