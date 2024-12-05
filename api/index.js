@@ -12,6 +12,15 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve static files from the ../public directory
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
+// Serve index.html at the root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'html', 'index.html'));
+});
+
+
 const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
