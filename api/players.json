@@ -241,6 +241,17 @@
   },
   "rating": 22
 },
+{
+  "name": "Savion Williams",
+  "position": "WR",
+  "team": "TCU",
+  "stats": {
+    "height": "6'5",
+    "weight": "225",
+    "40Time": "4.45"
+  },
+  "rating": 23
+},
   {
     "name": "Mykel Williams",
     "position": "EDGE",
