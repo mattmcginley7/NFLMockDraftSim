@@ -1,4 +1,4 @@
-const apiUrl = "https://nflmockdraftsim.onrender.com";
+const apiUrl = "http://localhost:5000";
 
 let players = [];
 

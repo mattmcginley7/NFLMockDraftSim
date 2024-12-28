@@ -10,7 +10,7 @@ let currentOfferIndex = 0;
 let teamsData = {};
 
 
-const apiUrl = "https://nflmockdraftsim.onrender.com"
+const apiUrl = "http://localhost:5000";
 
 // Function to load teams data
 async function loadTeamsData() {
@@ -52,7 +52,7 @@ function populatePlayerDropdown(players) {
     players.forEach((player) => {
         let option = document.createElement('option');
         option.value = player.name;
-        option.textContent = `${player.rating}. ${player.name} - ${player.position}`;
+        option.textContent = `${player.rating}. ${player.name} - ${player.position}, ${player.team}`;
         playerSelect.appendChild(option);
     });
     document.getElementById('selectPlayer').disabled = true;

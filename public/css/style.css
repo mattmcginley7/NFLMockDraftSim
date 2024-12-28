@@ -209,3 +209,20 @@ main {
 .player-stats {
     color: #555;
 }
+
+.button-nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button-nav:hover {
+    background-color: #0056b3;
+}
