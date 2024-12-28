@@ -173,3 +173,39 @@ main {
     background-color: #007bff;
     color: white;
 }
+
+/* Rankings Page Styles */
+.rankings-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.filter-controls {
+    margin-bottom: 20px;
+}
+
+.filter-controls input,
+.filter-controls select,
+.filter-controls button {
+    margin: 5px;
+    padding: 5px;
+}
+
+.player-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-details {
+    font-size: 0.9em;
+}
+
+.player-stats {
+    color: #555;
+}

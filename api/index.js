@@ -542,6 +542,21 @@ function updateDraftState(state, fromTeam, fromPicks, toTeam, toPick) {
     return newState;
 }
 
+//Fetching player rankings for rankings.html  
+app.get('/api/playerRankings', async (req, res) => {
+    try {
+        const draftStateDoc = await draftStateCollection.findOne({ _id: 'draftState' });
+        if (!draftStateDoc) {
+            return res.status(500).json({ message: 'Draft state not found' });
+        }
+
+        const players = draftStateDoc.state.availablePlayers;
+        res.json(players);
+    } catch (error) {
+        console.error('Error in GET /api/playerRankings:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
 
 // 404 Error Handler
 app.use((req, res) => {

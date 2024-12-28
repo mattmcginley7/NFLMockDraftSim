@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Rankings</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .rankings-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .filter-controls {
+            margin-bottom: 20px;
+        }
+
+        .filter-controls select,
+        .filter-controls input {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        .player-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .player-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .player-stats {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Player Rankings</h1>
+    </header>
+    <main class="rankings-container">
+        <div class="filter-controls">
+            <input type="text" id="searchPlayer" placeholder="Search by name or team">
+            <select id="filterPosition">
+                <option value="">All Positions</option>
+                <option value="QB">QB</option>
+                <option value="RB">RB</option>
+                <option value="WR">WR</option>
+                <option value="TE">TE</option>
+                <option value="OT">OT</option>
+                <option value="IOL">IOL</option>
+                <option value="CB">CB</option>
+                <option value="DL">DL</option>
+                <option value="EDGE">EDGE</option>
+                <option value="LB">LB</option>
+                <option value="S">S</option>
+            </select>
+
+            <button onclick="applyFilters()">Search</button>
+        </div>
+        <div id="playerList"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NFL Mock Draft Simulator</p>
+    </footer>
+    <script src="../models/rankings.js"></script>
+</body>
+
+</html>
