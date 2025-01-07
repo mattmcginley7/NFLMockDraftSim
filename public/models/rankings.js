@@ -5,17 +5,31 @@ let players = [];
 // Fetch player rankings
 async function fetchPlayerRankings() {
     try {
-        const response = await fetch(`${apiUrl}/api/playerRankings`);
-        players = await response.json();
+        const response = await fetch(`${apiUrl}/api/allPlayers`);
+        if (!response.ok) {
+            throw new Error('Failed to fetch all players');
+        }
+        const data = await response.json();
+
+        if (!Array.isArray(data)) {
+            throw new Error('Invalid data format: Expected an array of players');
+        }
+
+        players = data;
         displayPlayers(players);
     } catch (error) {
-        console.error('Error fetching player rankings:', error);
+        console.error('Error fetching all players:', error);
     }
 }
 
 function displayPlayers(players) {
     const playerList = document.getElementById('playerList');
     playerList.innerHTML = '';
+
+    if (!Array.isArray(players) || players.length === 0) {
+        playerList.innerHTML = '<p>No players available.</p>';
+        return;
+    }
 
     players.forEach(player => {
         playerList.innerHTML += `
@@ -26,7 +40,7 @@ function displayPlayers(players) {
                     <span class="player-stats">Height: ${player.stats.height}, Weight: ${player.stats.weight}, 40 Time: ${player.stats['40Time']}</span>
                 </div>
                 <div>
-                    <button class="scouting-btn" onclick="showScoutingReport('${player.name}', '${player.scoutingReport}')">
+                    <button class="scouting-btn" onclick="showScoutingReport('${player.name}', '${player.scoutingReport || 'No report available'}')">
                         Scouting Report
                     </button>
                 </div>
@@ -34,6 +48,7 @@ function displayPlayers(players) {
         `;
     });
 }
+
 
 // Show Scouting Report Modal
 function showScoutingReport(playerName, scoutingReport) {

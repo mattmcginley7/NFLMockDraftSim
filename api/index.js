@@ -55,6 +55,23 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+
+// Endpoint for Player Rankings (All Players, No Draft State Filtering)
+// Player Rankings - Fetch all players without draft state filtering
+app.get('/api/allPlayers', (req, res) => {
+    try {
+        const filePath = path.join(__dirname, 'players.json');
+        if (!fs.existsSync(filePath)) {
+            throw new Error('players.json file not found');
+        }
+        const players = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        res.json(players);
+    } catch (error) {
+        console.error('Error reading players.json:', error);
+        res.status(500).json({ message: 'Failed to fetch all players' });
+    }
+});
+
 // Function to initialize draft state
 const initializeDraftState = () => {
     try {
@@ -568,4 +585,3 @@ app.use((err, req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ message: 'Internal Server Error' });
 });
-
