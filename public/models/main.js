@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://nflmockdraftsim.onrender.com";
 
 
 // Complete list of NFL teams

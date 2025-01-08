@@ -10,7 +10,7 @@ let currentOfferIndex = 0;
 let teamsData = {};
 
 
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://nflmockdraftsim.onrender.com";
 
 // Function to load teams data
 async function loadTeamsData() {
