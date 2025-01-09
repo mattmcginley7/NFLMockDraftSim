@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Serve static files from the ../public directory
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve index.html at the root URL
 app.get('/', (req, res) => {
@@ -57,7 +57,6 @@ app.listen(PORT, '0.0.0.0', () => {
 
 
 // Endpoint for Player Rankings (All Players, No Draft State Filtering)
-// Player Rankings - Fetch all players without draft state filtering
 app.get('/api/allPlayers', (req, res) => {
     try {
         const filePath = path.join(__dirname, 'players.json');
