@@ -25,6 +25,17 @@ app.get('/draft.html', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'html', 'draft.html'));
 });
 
+// Serve draft.html at /draft.html
+app.get('/draft.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'html', 'draft.html'));
+});
+
+// Serve rankings.html at /rankings
+app.get('/rankings', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'html', 'rankings.html'));
+});
+
+
 const playersFilePath = path.join(__dirname, 'players.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
