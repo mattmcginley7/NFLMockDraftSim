@@ -60,7 +60,7 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Will Johnson\"",
+    "name": "Will Johnson",
     "position": "CB",
     "team": "Michigan",
     "stats": {
@@ -1221,18 +1221,6 @@
       "40Time": "-"
     },
     "rating": 105,
-    "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Carson Beck",
-    "position": "QB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "220",
-      "40Time": "-"
-    },
-    "rating": 106,
     "scoutingReport": "Coming soon!"
   },
   {
@@ -2805,18 +2793,6 @@
       "40Time": ""
     },
     "rating": 236,
-    "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Nicholas Singleton",
-    "position": "HB",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "226",
-      "40Time": ""
-    },
-    "rating": 237,
     "scoutingReport": "Coming soon!"
   },
   {
