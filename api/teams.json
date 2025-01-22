@@ -24,13 +24,9 @@
     {
       "name": "Washington Commanders",
       "picks": [
-  {
-          "pick": 26,
-          "value": 700
-        },
         {
-          "pick": 36,
-          "value": 540
+          "pick": 29,
+          "value": 640
         },
         {
           "pick": 50,
@@ -152,8 +148,8 @@
       "name": "LA Chargers",
       "picks": [
         {
-          "pick": 23,
-          "value": 760
+          "pick": 22,
+          "value": 780
         },
         {
           "pick": 69,
@@ -324,6 +320,10 @@
     {
       "name": "Minnesota Vikings",
       "picks": [
+        {
+          "pick": 24,
+          "value": 740
+        },
         {
           "pick": 30,
           "value": 620
@@ -625,8 +625,8 @@
       "name": "LA Rams",
       "picks": [
         {
-          "pick": 22,
-          "value": 780
+          "pick": 26,
+          "value": 700
         },
         {
           "pick": 39,
@@ -736,8 +736,8 @@
       "name": "Philadelphia Eagles",
       "picks": [
         {
-          "pick": 29,
-          "value": 640
+          "pick": 32,
+          "value": 590
         },
         {
           "pick": 40,
@@ -859,8 +859,8 @@
       "name": "Green Bay Packers",
       "picks": [
         {
-          "pick": 24,
-          "value": 740
+          "pick": 23,
+          "value": 760
         },
         {
           "pick": 45,
@@ -945,10 +945,6 @@
       "name": "Buffalo Bills",
       "picks": [
         {
-          "pick": 28,
-          "value": 660
-        },
-        {
           "pick": 33,
           "value": 580
         },
@@ -994,8 +990,8 @@
       "name": "Detroit Lions",
       "picks": [
         {
-          "pick": 32,
-          "value": 590
+          "pick": 28,
+          "value": 660
         },
         {
           "pick": 61,
