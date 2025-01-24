@@ -120,6 +120,18 @@
     "scoutingReport": "Coming soon!"
   },
   {
+    "name": "Armand Membou",
+    "position": "IOL",
+    "team": "Missouri",
+    "stats": {
+      "height": "6'3\"",
+      "weight": "325",
+      "40Time": "4.99"
+    },
+    "rating": 11,
+    "scoutingReport": "Freak athlete with great size and strength, and is still very young."
+  },
+  {
     "name": "Kelvin Banks",
     "position": "OT",
     "team": "Texas",
@@ -128,33 +140,21 @@
       "weight": "324",
       "40Time": "5.12"
     },
-    "rating": 11,
+    "rating": 12,
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Jalen Milroe",
-    "position": "QB",
-    "team": "Alabama",
+    "name": "Tyler Warren",
+    "position": "TE",
+    "team": "Penn State",
     "stats": {
-      "height": "6'2\"",
-      "weight": "220",
-      "40Time": "4.49"
+      "height": "6'6",
+      "weight": "261",
+      "40Time": "4.66"
     },
-    "rating": 12,
-  "scoutingReport": "A very athletic QB with a strong arm and speed. A true running threat"
+    "rating": 13,
+    "scoutingReport": "Highly athletic TE that can be lined up in line, in the slot, or even at quarterback. Special quickness and ball skills along with great blocking ability."
   },
-{
-  "name": "Jalon Walker",
-  "position": "LB",
-  "team": "Georgia",
-  "stats": {
-    "height": "6'2\"",
-    "weight": "245",
-    "40Time": "4.55"
-  },
-  "rating": 13,
-  "scoutingReport": "A tweener off ball linebacker/edge rusher with special athletic skills"
-},
 {
   "name": "Cameron Ward",
   "position": "QB",
@@ -172,9 +172,9 @@
   "position": "OT",
   "team": "Ohio State",
   "stats": {
-    "height": "\"",
-    "weight": "",
-    "40Time": ""
+    "height": "6'5\"",
+    "weight": "312",
+    "40Time": "4.96"
   },
   "rating": 15,
   "scoutingReport": "Coming soon!"
@@ -192,16 +192,16 @@
   "scoutingReport": "Versatile WR that can win inside and out, at the catch point and with his route running"
 },
 {
-  "name": "Aireontae Ersery",
-  "position": "OT",
-  "team": "Minnesota",
+  "name": "James Pearce",
+  "position": "EDGE",
+  "team": "Tennessee",
   "stats": {
-    "height": "6'6",
-    "weight": "330",
-    "40Time": "4.95"
+    "height": "6'5\"",
+    "weight": "243",
+    "40Time": "4.55"
   },
   "rating": 17,
-  "scoutingReport": "Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
+  "scoutingReport": "Coming soon!"
 },
 {
   "name": "Wyatt Milum",
@@ -213,7 +213,7 @@
     "40Time": "4.95"
   },
   "rating": 18,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "Ideal size, strength and technique for a tackle, but shorter arms may make him ideal for guard"
 },
 {
   "name": "Benjamin Morrison",
@@ -258,10 +258,10 @@
   "stats": {
     "height": "6'6",
     "weight": "335",
-    "40Time": "5.05"
+    "40Time": "5.15"
   },
   "rating": 22,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
 },
 {
   "name": "Mike Green",
@@ -360,16 +360,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Tyler Warren",
-    "position": "TE",
-    "team": "Penn State",
+    "name": "Jalon Walker",
+    "position": "LB",
+    "team": "Georgia",
     "stats": {
-      "height": "6'6",
-      "weight": "261",
-      "40Time": "4.66"
+      "height": "6'2\"",
+      "weight": "245",
+      "40Time": "4.55"
     },
     "rating": 31,
-    "scoutingReport": "Highly athletic TE that can be lined up in line, in the slot, or even at quarterback. Special quickness and ball skills along with great blocking ability."
+    "scoutingReport": "A tweener off ball linebacker/edge rusher with special athletic skills"
   },
   {
     "name": "Tyleik Williams",
@@ -396,16 +396,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "James Pearce",
-    "position": "EDGE",
-    "team": "Tennessee",
+    "name": "Aireontae Ersery",
+    "position": "OT",
+    "team": "Minnesota",
     "stats": {
-      "height": "6'5\"",
-      "weight": "243",
-      "40Time": "4.55"
+      "height": "6'6",
+      "weight": "330",
+      "40Time": "4.95"
     },
     "rating": 34,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
   },
   {
     "name": "Shavon Revel",
@@ -1428,16 +1428,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Armand Membou",
-    "position": "IOL",
-    "team": "Missouri",
+    "name": "Jalen Milroe",
+    "position": "QB",
+    "team": "Alabama",
     "stats": {
-      "height": "6'3\"",
-      "weight": "314",
-      "40Time": "5.12"
+      "height": "6'2\"",
+      "weight": "220",
+      "40Time": "4.49"
     },
     "rating": 124,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A very athletic QB with a strong arm and speed. A true running threat"
   },
   {
     "name": "Quinn Ewers",
