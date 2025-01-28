@@ -325,10 +325,6 @@
           "value": 740
         },
         {
-          "pick": 30,
-          "value": 620
-        },
-        {
           "pick": 108,
           "value": 78
         },
@@ -945,8 +941,8 @@
       "name": "Buffalo Bills",
       "picks": [
         {
-          "pick": 33,
-          "value": 580
+          "pick": 30,
+          "value": 620
         },
         {
           "pick": 60,

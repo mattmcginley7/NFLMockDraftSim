@@ -1,5 +1,17 @@
 [
   {
+    "name": "Abdul Carter",
+    "position": "EDGE",
+    "team": "Penn State",
+    "stats": {
+      "height": "6'3\"",
+      "weight": "257",
+      "40Time": "4.51"
+    },
+    "rating": 1,
+    "scoutingReport": "A versatile edge rusher with a quick first step and excellent closing speed. A Micah Parsons clone"
+  },
+  {
     "name": "Travis Hunter",
     "position": "CB",
     "team": "Colorado",
@@ -8,7 +20,7 @@
       "weight": "185",
       "40Time": "4.43"
     },
-    "rating": 1,
+    "rating": 2,
     "scoutingReport": "An elite two-way player with excellent coverage skills and dynamic playmaking ability."
   },
   {
@@ -20,7 +32,7 @@
       "weight": "210",
       "40Time": "4.46"
     },
-    "rating": 2,
+    "rating": 3,
     "scoutingReport": "A towering WR with good athleticism and fantastic ball skills"
   },
   {
@@ -32,7 +44,7 @@
       "weight": "313",
       "40Time": "4.92"
     },
-    "rating": 3,
+    "rating": 4,
     "scoutingReport": "An elite interior rusher with great quickness"
   },
   {
@@ -44,20 +56,8 @@
       "weight": "215",
       "40Time": "4.42"
     },
-    "rating": 4,
-    "scoutingReport": "A powerful and explosive runner with great vision and balance"
-  },
-  {
-    "name": "Abdul Carter",
-    "position": "EDGE",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "249",
-      "40Time": "4.51"
-    },
     "rating": 5,
-    "scoutingReport": "A versatile edge rusher with a quick first step and excellent closing speed. A Micah Parsons clone"
+    "scoutingReport": "A powerful and explosive runner with great vision and balance"
   },
   {
     "name": "Will Johnson",
@@ -177,7 +177,7 @@
     "40Time": "4.96"
   },
   "rating": 15,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "Atheltic tackle with ideal size and strength to be a great starter, but still recovering from an ACL tear in the 2024 season"
 },
 {
   "name": "Emeka Egbuka",
@@ -201,7 +201,7 @@
     "40Time": "4.55"
   },
   "rating": 17,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "Very talented speed rusher"
 },
 {
   "name": "Wyatt Milum",
@@ -245,11 +245,23 @@
   "team": "Colorado",
   "stats": {
     "height": "6'2\"",
-    "weight": "215",
+    "weight": "205",
     "40Time": "4.65"
   },
   "rating": 21,
   "scoutingReport": "Coming soon!"
+},
+{
+  "name": "Josh Conerly Jr.",
+  "position": "T",
+  "team": "Oregon",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "315",
+    "40Time": "4.92"
+  },
+  "rating": 22,
+  "scoutingReport": "Elite movement skills, has the ability to be a great pass blocker."
 },
 {
   "name": "Cameron Williams",
@@ -357,7 +369,7 @@
       "40Time": "4.49"
     },
     "rating": 30,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker"
   },
   {
     "name": "Jalon Walker",
@@ -426,10 +438,10 @@
     "stats": {
       "height": "6'4",
       "weight": "290",
-      "40Time": "4.95"
+      "40Time": "4.90"
     },
     "rating": 36,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A very athletic 1 gap penetrator with great moves to make interior lineman miss"
   },
   {
     "name": "L.T. Overton",
@@ -465,7 +477,7 @@
       "40Time": "4.85"
     },
     "rating": 39,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Incredible quickness from an interior pass rusher, but disappears sometimes in games"
   },
   {
     "name": "Landon Jackson",
@@ -537,7 +549,7 @@
       "40Time": "4.75"
     },
     "rating": 45,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
   },
   {
     "name": "Jack Sawyer",
@@ -570,10 +582,10 @@
     "stats": {
       "height": "5'10\"",
       "weight": "208",
-      "40Time": "4.49"
+      "40Time": "4.39"
     },
     "rating": 48,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A home run hitting RB due to his great speed, in the open field he doesn't get caught"
   },
   {
     "name": "JT Tuimoloau",
@@ -657,7 +669,7 @@
       "40Time": "4.67"
     },
     "rating": 55,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "An athletic tight end for his size that is smooth and catches the ball well"
   },
   {
     "name": "Gunnar Helm",
@@ -906,10 +918,10 @@
     "stats": {
       "height": "5'10\"",
       "weight": "165",
-      "40Time": ""
+      "40Time": "4.30"
     },
     "rating": 78,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A small WR but with elite speed and quickness that can catch and run routes at an NFL level"
   },
   {
     "name": "Harold Fannin Jr.",
@@ -1002,10 +1014,10 @@
     "stats": {
       "height": "6'4\"",
       "weight": "320",
-      "40Time": "5.20"
+      "40Time": "5.10"
     },
     "rating": 87,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Moved to tackle to end the year due to injuries and held his own in pass protection with super long reported 36 inch arms."
   },
   {
     "name": "Jonas Sanker",
@@ -1086,10 +1098,10 @@
     "stats": {
       "height": "6'1\"",
       "weight": "245",
-      "40Time": "4.59"
+      "40Time": "4.49"
     },
     "rating": 94,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
   },
   {
     "name": "DJ Giddens",
@@ -1278,10 +1290,10 @@
     "stats": {
       "height": "6'4\"",
       "weight": "315",
-      "40Time": "5.10"
+      "40Time": "4.92"
     },
     "rating": 111,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Elite movement skills, has the ability to be a great pass blocker."
   },
   {
     "name": "Sai'vion Jones",
