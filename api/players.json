@@ -124,12 +124,12 @@
     "position": "IOL",
     "team": "Missouri",
     "stats": {
-      "height": "6'3\"",
-      "weight": "325",
-      "40Time": "4.99"
+      "height": "6'4\"",
+      "weight": "332",
+      "40Time": "4.94"
     },
     "rating": 11,
-    "scoutingReport": "Freak athlete with great size and strength, and is still very young."
+    "scoutingReport": "HAND: 0958 ARM: 3400 WING: 8100 Freak athlete with great size and strength, and is still very young."
   },
   {
     "name": "Kelvin Banks",
@@ -204,16 +204,16 @@
   "scoutingReport": "Very talented speed rusher"
 },
 {
-  "name": "Wyatt Milum",
+  "name": "Tyler Booker",
   "position": "OT",
-  "team": "West Virginia",
+  "team": "Alabama",
   "stats": {
-    "height": "6'6\"",
-    "weight": "317",
-    "40Time": "4.95"
+    "height": "6'5\"",
+    "weight": "325",
+    "40Time": "5.09"
   },
   "rating": 18,
-  "scoutingReport": "Ideal size, strength and technique for a tackle, but shorter arms may make him ideal for guard"
+  "scoutingReport": "Big, strong, reliable, and a leader. A day 1 starter at guard who will hold his position for the next decade for whoever drafts him."
 },
 {
   "name": "Benjamin Morrison",
@@ -257,11 +257,11 @@
   "team": "Oregon",
   "stats": {
     "height": "6'4\"",
-    "weight": "315",
+    "weight": "314",
     "40Time": "4.92"
   },
   "rating": 22,
-  "scoutingReport": "Elite movement skills, has the ability to be a great pass blocker."
+  "scoutingReport": "HAND: 1038 ARM: 3400 WING: 8100 Elite movement skills, has the ability to be a great pass blocker."
 },
 {
   "name": "Cameron Williams",
@@ -280,12 +280,12 @@
   "position": "EDGE",
   "team": "Marshall",
   "stats": {
-    "height": "6'4",
-    "weight": "248",
-    "40Time": "4.65"
+    "height": "6'3",
+    "weight": "251",
+    "40Time": "4.57"
   },
   "rating": 23,
-  "scoutingReport": "Edge rusher with great speed and quickness who wins on the edge with many different moves"
+  "scoutingReport": "HAND: 0858 ARM: 3228 WING: 7728 Edge rusher with great speed and quickness who wins on the edge with many different moves. Strong enough to run over tackles and be a force in the run game."
 },
   {
     "name": "Mykel Williams",
@@ -316,12 +316,12 @@
     "position": "DL",
     "team": "Texas A&M",
     "stats": {
-      "height": "6'6\"",
-      "weight": "290",
+      "height": "6'5\"",
+      "weight": "281",
       "40Time": "4.67"
     },
     "rating": 26,
-    "scoutingReport": "A massive and athletic defensive lineman who can line up anywhere along the line"
+    "scoutingReport": "HAND: 0918 ARM: 3428 WING: 8348 A massive and athletic defensive lineman who can line up anywhere along the line. College sack production was relatively unimpressive, but his elite physical tools give encouragment into developing into a very talented pass rusher."
   },
   {
     "name": "Omarion Hampton",
@@ -400,12 +400,12 @@
     "position": "CB",
     "team": "Ole Miss",
     "stats": {
-      "height": "6'1",
-      "weight": "190",
+      "height": "6'0",
+      "weight": "195",
       "40Time": "4.45"
     },
     "rating": 33,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 3200 WING 7738"
   },
   {
     "name": "Aireontae Ersery",
@@ -413,11 +413,11 @@
     "team": "Minnesota",
     "stats": {
       "height": "6'6",
-      "weight": "330",
+      "weight": "339",
       "40Time": "4.95"
     },
     "rating": 34,
-    "scoutingReport": "Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
+    "scoutingReport": "HAND: 0938 ARM: 3400 WING: 8118 Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
   },
   {
     "name": "Shavon Revel",
@@ -437,11 +437,11 @@
     "team": "South Carolina",
     "stats": {
       "height": "6'4",
-      "weight": "290",
+      "weight": "284",
       "40Time": "4.90"
     },
     "rating": 36,
-    "scoutingReport": "A very athletic 1 gap penetrator with great moves to make interior lineman miss"
+    "scoutingReport": "HAND: 1028 ARM: 3358 WING: 8000 A very athletic 1 gap penetrator with great moves to make interior lineman miss"
   },
   {
     "name": "L.T. Overton",
@@ -472,24 +472,24 @@
     "position": "DL",
     "team": "Ole Miss",
     "stats": {
-      "height": "6'4\"",
-      "weight": "305",
+      "height": "6'3\"",
+      "weight": "293",
       "40Time": "4.85"
     },
     "rating": 39,
-    "scoutingReport": "Incredible quickness from an interior pass rusher, but disappears sometimes in games"
+    "scoutingReport": "HAND: 0928 ARM: 3300 WING: 7948 Incredible quickness from an interior pass rusher and was an elite run defender in 2024"
   },
   {
     "name": "Landon Jackson",
     "position": "EDGE",
     "team": "Arkansas",
     "stats": {
-      "height": "6'7\"",
-      "weight": "280",
+      "height": "6'6\"",
+      "weight": "273",
       "40Time": "4.69"
     },
     "rating": 40,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1011 ARM: 3358 WING 8268"
   },
   {
     "name": "Princely Umanmielen",
@@ -497,23 +497,23 @@
     "team": "Ole Miss",
     "stats": {
       "height": "6'4\"",
-      "weight": "255",
+      "weight": "264",
       "40Time": "4.58"
     },
     "rating": 41,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0958 ARM: 3428 WING 8178"
   },
   {
     "name": "Omarr Norman-Lott",
     "position": "DT",
     "team": "Tennessee",
     "stats": {
-      "height": "6'3",
-      "weight": "315",
-      "40Time": "5.15"
+      "height": "6'2",
+      "weight": "295",
+      "40Time": "4.95"
     },
     "rating": 42,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1118 ARM: 3358 WING 7968"
   },
   {
     "name": "Jihaad Campbell",
@@ -532,12 +532,12 @@
     "position": "OT",
     "team": "North Dakota State",
     "stats": {
-      "height": "6'6",
-      "weight": "305",
+      "height": "6'5",
+      "weight": "316",
       "40Time": "5.02"
     },
     "rating": 44,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758"
   },
   {
     "name": "Ashton Gillotte",
@@ -568,12 +568,12 @@
     "position": "CB",
     "team": "Iowa State",
     "stats": {
-      "height": "6'4",
-      "weight": "200",
-      "40Time": "4.50"
+      "height": "6'2",
+      "weight": "197",
+      "40Time": "4.30"
     },
     "rating": 47,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3328 WING 7938 A very fast and explosive corner with great length and ball skills"
   },
   {
     "name": "TreVeyon Henderson",
@@ -604,12 +604,12 @@
     "position": "EDGE",
     "team": "South Carolina",
     "stats": {
-      "height": "6'5",
-      "weight": "254",
-      "40Time": "4.75"
+      "height": "6'4",
+      "weight": "248",
+      "40Time": "4.68"
     },
     "rating": 50,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3338 WING 8000"
   },
   {
     "name": "Dylan Sampson",
@@ -641,23 +641,35 @@
     "team": "Boston College",
     "stats": {
       "height": "6'2",
-      "weight": "247",
+      "weight": "248",
       "40Time": "4.60"
     },
     "rating": 53,
-    "scoutingReport": "A pass rush specialist with great speed and quickness off the edge"
+    "scoutingReport": "HAND: 0928 ARM: 3448 WING: 8238 A pass rush specialist with great speed and quickness off the edge. Long arms for his size and a great motor."
   },
   {
     "name": "Jack Bech",
     "position": "WR",
     "team": "TCU",
     "stats": {
-      "height": "6'2",
-      "weight": "215",
+      "height": "6'1",
+      "weight": "214",
       "40Time": "4.49"
     },
     "rating": 54,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3138 WING 7500 A big slot receiver with great hands and route running ability"
+  },
+  {
+    "name": "Elijah Arroyo",
+    "position": "TE",
+    "team": "Miami",
+    "stats": {
+      "height": "6'5\"",
+      "weight": "251",
+      "40Time": "4.45"
+    },
+    "rating": 55,
+    "scoutingReport": "HAND: 0958 ARM: 3318 WING 8118 A world class athlete with adequate size and strength for the TE position. A player who can be a mismatch nightmare in the NFL"
   },
   {
     "name": "Mason Taylor",
@@ -665,11 +677,11 @@
     "team": "LSU",
     "stats": {
       "height": "6'5\"",
-      "weight": "255",
-      "40Time": "4.67"
+      "weight": "250",
+      "40Time": "4.63"
     },
     "rating": 55,
-    "scoutingReport": "An athletic tight end for his size that is smooth and catches the ball well"
+    "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638"
   },
   {
     "name": "Gunnar Helm",
@@ -713,23 +725,23 @@
     "team": "Mississippi",
     "stats": {
       "height": "6'6\"",
-      "weight": "285",
+      "weight": "283",
       "40Time": "4.75"
     },
     "rating": 59,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 3368 WING 8138"
   },
   {
     "name": "Xavier Restrepo",
     "position": "WR",
     "team": "Miami",
     "stats": {
-      "height": "5'10",
-      "weight": "198",
-      "40Time": "449"
+      "height": "5'9",
+      "weight": "200",
+      "40Time": "4.49"
     },
     "rating": 60,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 2968 WING 7118 Short, but very stout and built. Wins with route running technique and an understanding of where to postion himself. Very reliable. What you want in a dependable slot receiver."
   },
   {
     "name": "Chris Paul Jr",
@@ -744,16 +756,40 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Tyler Booker",
-    "position": "OT",
-    "team": "Alabama",
+    "name": "Jayden Higgins",
+    "position": "WR",
+    "team": "Iowa State",
     "stats": {
-      "height": "6'5\"",
-      "weight": "325",
-      "40Time": "5.19"
+      "height": "6'4",
+      "weight": "217",
+      "40Time": "4.43"
+    },
+    "rating": 62,
+    "scoutingReport": "HAND: 0948 ARM: 3328 WING 7938 Can play inside and out, has very good speed for his size, gets open and wins at at the catch point. Has the ability to be a great starting WR in the NFL"
+  },
+  {
+    "name": "Kamari Lassiter",
+    "position": "CB",
+    "team": "Georgia",
+    "stats": {
+      "height": "6'0",
+      "weight": "185",
+      "40Time": "4.45"
+    },
+    "rating": 63,
+    "scoutingReport": "Coming soon!"
+  },
+  {
+    "name": "Wyatt Milum",
+    "position": "OT",
+    "team": "West Virginia",
+    "stats": {
+      "height": "6'6\"",
+      "weight": "315",
+      "40Time": "5.01"
     },
     "rating": 64,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Ideal height, strength and technique for a tackle, but shorter arms may make him ideal for guard"
   },
   {
     "name": "Alfred Collins",
@@ -820,12 +856,12 @@
   "position": "WR",
   "team": "Utah State",
   "stats": {
-    "height": "6'0",
-    "weight": "205",
-    "40Time": "4.46"
+    "height": "5'11",
+    "weight": "210",
+    "40Time": "4.49"
   },
   "rating": 70,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "HAND: 0928 ARM: 3100 WING 7338 Built like a running back and strong, a player who wins at the catch point and after the catch."
 },
 {
   "name": "Charles Grant",
@@ -844,24 +880,24 @@
     "position": "DL",
     "team": "Kentucky",
     "stats": {
-      "height": "6'6\"",
-      "weight": "345",
+      "height": "6'7\"",
+      "weight": "340",
       "40Time": "5.11"
     },
     "rating": 72,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1068 ARM: 3458 WING 8448"
   },
   {
     "name": "Maxwell Hairston",
     "position": "CB",
     "team": "Kentucky",
     "stats": {
-      "height": "6'1\"",
-      "weight": "186",
+      "height": "5'11\"",
+      "weight": "179",
       "40Time": "4.42"
     },
     "rating": 73,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3148 WING 7600"
   },
   {
     "name": "Lathan Ransom",
@@ -880,24 +916,24 @@
     "position": "LB",
     "team": "Oregon",
     "stats": {
-      "height": "6'2",
-      "weight": "235",
-      "40Time": "4.65"
+      "height": "6'1",
+      "weight": "226",
+      "40Time": "4.58"
     },
     "rating": 75,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0958 ARM: 3158 WING 7818 An undersized LB but has safety movement skills. Ideal coverage linebacker"
   },
   {
     "name": "Marcus Mbow",
     "position": "OT",
     "team": "Purdue",
     "stats": {
-      "height": "6'5",
-      "weight": "300",
-      "40Time": "5.08"
+      "height": "6'4",
+      "weight": "309",
+      "40Time": "5.00"
     },
     "rating": 76,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 Coming soon!"
   },
   {
     "name": "Eli Stowers",
@@ -916,24 +952,36 @@
     "position": "WR",
     "team": "Oregon",
     "stats": {
-      "height": "5'10\"",
-      "weight": "165",
+      "height": "5'9\"",
+      "weight": "156",
       "40Time": "4.30"
     },
     "rating": 78,
-    "scoutingReport": "A small WR but with elite speed and quickness that can catch and run routes at an NFL level"
+    "scoutingReport": "HAND: 5092 ARM: 2978 WING: 7300 A small WR but with elite speed and quickness that can catch and run routes at an NFL level"
+  },
+  {
+    "name": "Darius Alexander",
+    "position": "DL",
+    "team": "Toledo",
+    "stats": {
+      "height": "6'4\"",
+      "weight": "310",
+      "40Time": "5.00"
+    },
+    "rating": 79,
+    "scoutingReport": "Coming soon!"
   },
   {
     "name": "Harold Fannin Jr.",
     "position": "TE",
     "team": "Bowling Green",
     "stats": {
-      "height": "6'4\"",
-      "weight": "230",
+      "height": "6'3\"",
+      "weight": "238",
       "40Time": "4.55"
     },
     "rating": 80,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college."
   },
   {
     "name": "Nick Emmanwori",
@@ -965,11 +1013,11 @@
     "team": "Boston College",
     "stats": {
       "height": "6'8",
-      "weight": "309",
+      "weight": "321",
       "40Time": "5.19"
     },
     "rating": 83,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1028 ARM: 3348 WING 8128"
   },
   {
     "name": "Tyler Baron",
@@ -1024,24 +1072,24 @@
     "position": "S",
     "team": "Virginia",
     "stats": {
-      "height": "6'1",
-      "weight": "210",
-      "40Time": "4.59"
+      "height": "6'0",
+      "weight": "206",
+      "40Time": "4.53"
     },
     "rating": 88,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND 0958 ARM 3258 WING 7700"
   },
   {
     "name": "Bhayshul Tuten",
-    "position": "S",
+    "position": "RB",
     "team": "Virginia Tech",
     "stats": {
-      "height": "5'll",
-      "weight": "209",
+      "height": "5'9",
+      "weight": "211",
       "40Time": "4.54"
     },
     "rating": 89,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0868 ARM: 3028 WING 7028"
   },
   {
     "name": "Mello Dotson",
@@ -1085,11 +1133,11 @@
     "team": "Florida State",
     "stats": {
       "height": "6'2\"",
-      "weight": "198",
-      "40Time": "4.50"
+      "weight": "191",
+      "40Time": "4.40"
     },
     "rating": 93,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1018 ARM: 3248 WING 7728"
   },
   {
     "name": "Josaiah Stewart",
@@ -1097,11 +1145,11 @@
     "team": "Michigan",
     "stats": {
       "height": "6'1\"",
-      "weight": "245",
+      "weight": "248",
       "40Time": "4.49"
     },
     "rating": 94,
-    "scoutingReport": "Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+    "scoutingReport": "HAND: 0958 ARM: 3268 WING: 7878 Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
   },
   {
     "name": "DJ Giddens",
@@ -1141,27 +1189,27 @@
   },
   {
     "name": "Billy Bowman",
-    "position": "CB",
+    "position": "S",
     "team": "Oklahoma",
     "stats": {
       "height": "5'10\"",
-      "weight": "200",
-      "40Time": "4.51"
+      "weight": "198",
+      "40Time": "4.48"
     },
     "rating": 98,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0858 ARM: 2938 WING 6958"
   },
   {
     "name": "Jarquez Hunter",
     "position": "HB",
     "team": "Auburn",
     "stats": {
-      "height": "5'10\"",
-      "weight": "209",
+      "height": "5'9\"",
+      "weight": "212",
       "40Time": "4.55"
     },
     "rating": 99,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3028 WING 7248"
   },
   {
     "name": "Kyle Monangai",
@@ -1264,12 +1312,12 @@
     "position": "WR",
     "team": "Iowa State",
     "stats": {
-      "height": "5'11\"",
-      "weight": "200",
-      "40Time": "-"
+      "height": "5'10\"",
+      "weight": "196",
+      "40Time": "4.48"
     },
     "rating": 109,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0848 ARM: 3018 WING 7248 A player who wins at the catch point and after the catch, can line up inside or out and is physical. A similar player in playstyle to Golden Tate coming out of Notre Dame"
   },
   {
     "name": "Ajani Cornelius",
@@ -1300,12 +1348,12 @@
     "position": "ED",
     "team": "LSU",
     "stats": {
-      "height": "6'6\"",
-      "weight": "280",
-      "40Time": "-"
+      "height": "6'5\"",
+      "weight": "289",
+      "40Time": "4.95"
     },
     "rating": 112,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1018 ARM: 3348 WING 8148"
   },
   {
     "name": "Deontae Lawson",
@@ -1324,12 +1372,12 @@
     "position": "HB",
     "team": "Oklahoma State",
     "stats": {
-      "height": "6'2\"",
-      "weight": "225",
-      "40Time": "-"
+      "height": "6'1\"",
+      "weight": "233",
+      "40Time": "4.50"
     },
     "rating": 114,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0928 ARM: 3268 WING 8000"
   },
   {
     "name": "Rod Moore",
@@ -1349,11 +1397,11 @@
     "team": "Kansas State",
     "stats": {
       "height": "5'10\"",
-      "weight": "198",
+      "weight": "196",
       "40Time": "4.49"
     },
     "rating": 116,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3128 WING 7500"
   },
   {
     "name": "Simeon Barrow Jr.",
@@ -1372,12 +1420,12 @@
     "position": "LB",
     "team": "Notre Dame",
     "stats": {
-      "height": "6'2\"",
-      "weight": "231",
-      "40Time": "-"
+      "height": "6'1\"",
+      "weight": "237",
+      "40Time": "4.59"
     },
     "rating": 118,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 3048 WING 7538"
   },
   {
     "name": "Kobe Hudson",
@@ -1449,7 +1497,7 @@
       "40Time": "4.49"
     },
     "rating": 124,
-    "scoutingReport": "A very athletic QB with a strong arm and speed. A true running threat"
+    "scoutingReport": "HAND: 0868 ARM: 3128 WING: 7468 A very athletic QB with a strong arm and speed. A true running threat"
   },
   {
     "name": "Quinn Ewers",
@@ -1468,12 +1516,12 @@
     "position": "TE",
     "team": "Georgia Tech",
     "stats": {
-      "height": "6'5\"",
-      "weight": "260",
-      "40Time": "-"
+      "height": "6'4\"",
+      "weight": "252",
+      "40Time": "4.70"
     },
     "rating": 126,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 3248 WING 7900"
   },
   {
     "name": "Luke Kandra",
@@ -1504,12 +1552,12 @@
     "position": "WR",
     "team": "Illinois",
     "stats": {
-      "height": "6'3\"",
-      "weight": "200",
-      "40Time": "-"
+      "height": "6'2\"",
+      "weight": "208",
+      "40Time": "4.54"
     },
     "rating": 129,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3118 WING 7768"
   },
   {
     "name": "Jonah Coleman",
@@ -1540,12 +1588,12 @@
     "position": "HB",
     "team": "UCF",
     "stats": {
-      "height": "5'9\"",
-      "weight": "208",
-      "40Time": "-"
+      "height": "5'8\"",
+      "weight": "207",
+      "40Time": "4.54"
     },
     "rating": 132,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0858 ARM: 3018 WING 7058"
   },
   {
     "name": "Le'Veon Moss",
@@ -1577,11 +1625,11 @@
     "team": "Georgia",
     "stats": {
       "height": "5'9\"",
-      "weight": "205",
-      "40Time": ""
+      "weight": "202",
+      "40Time": "4.54"
     },
     "rating": 135,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0958 ARM: 2928 WING 6948"
   },
   {
     "name": "Shemar Turner",
@@ -1636,12 +1684,12 @@
     "position": "LB",
     "team": "Minnesota",
     "stats": {
-      "height": "6'3\"",
-      "weight": "240",
-      "40Time": "-"
+      "height": "6'2\"",
+      "weight": "239",
+      "40Time": "4.58"
     },
     "rating": 140,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3300 WING 7748"
   },
   {
     "name": "Devin Neal",
@@ -1649,23 +1697,23 @@
     "team": "Kansas",
     "stats": {
       "height": "5'11\"",
-      "weight": "215",
-      "40Time": ""
+      "weight": "220",
+      "40Time": "4.55"
     },
     "rating": 141,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0838 ARM: 3000 WING 7118"
   },
   {
     "name": "Riley Leonard",
     "position": "QB",
     "team": "Notre Dame",
     "stats": {
-      "height": "6'4\"",
-      "weight": "216",
-      "40Time": ""
+      "height": "6'3\"",
+      "weight": "210",
+      "40Time": "4.62"
     },
     "rating": 142,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0928 ARM: 3238 WING 7718"
   },
   {
     "name": "Cam Skattebo",
@@ -1732,12 +1780,12 @@
     "position": "QB",
     "team": "Oregon",
     "stats": {
-      "height": "6'0\"",
-      "weight": "200",
-      "40Time": ""
+      "height": "5'11\"",
+      "weight": "202",
+      "40Time": "4.70"
     },
     "rating": 148,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A tiny QB, but plays with a high level of rhythm and accuracy. HAND: 0900 ARM: 3000 WING 7168"
   },
   {
     "name": "Dorian Strong",
@@ -1745,23 +1793,23 @@
     "team": "Virginia Tech",
     "stats": {
       "height": "6'1\"",
-      "weight": "185",
-      "40Time": "-"
+      "weight": "179",
+      "40Time": "4.41"
     },
     "rating": 149,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3118 WING 7518"
   },
   {
     "name": "Jonah Monheim",
     "position": "OT",
     "team": "USC",
     "stats": {
-      "height": "6'5\"",
-      "weight": "310",
+      "height": "6'4\"",
+      "weight": "307",
       "40Time": "5.12"
     },
     "rating": 150,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0928 ARM: 3058 WING: 7700"
   },
   {
     "name": "Emery Jones Jr.",
@@ -1769,11 +1817,11 @@
     "team": "LSU",
     "stats": {
       "height": "6'6\"",
-      "weight": "315",
-      "40Time": "-"
+      "weight": "312",
+      "40Time": "5.10"
     },
     "rating": 151,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1068 ARM: 3468 WING 8258"
   },
   {
     "name": "Terrance Ferguson",
@@ -1781,11 +1829,11 @@
     "team": "Oregon",
     "stats": {
       "height": "6'5\"",
-      "weight": "255",
-      "40Time": "-"
+      "weight": "245",
+      "40Time": "4.63"
     },
     "rating": 152,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0948 ARM: 3338 WING 8000"
   },
   {
     "name": "Kurtis Rourke",
@@ -1948,12 +1996,12 @@
     "position": "CB",
     "team": "USC",
     "stats": {
-      "height": "5'11\"",
-      "weight": "190",
-      "40Time": "-"
+      "height": "5'10\"",
+      "weight": "182",
+      "40Time": "4.35"
     },
     "rating": 166,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0928 ARM: 3028 WING 7448 Fastest player at the Senior Bowl practice, measured over 21 mph."
   },
   {
     "name": "Akili Arnold",
@@ -1972,12 +2020,12 @@
     "position": "TE",
     "team": "Clemson",
     "stats": {
-      "height": "6'6\"",
-      "weight": "240",
-      "40Time": "-"
+      "height": "6'5\"",
+      "weight": "234",
+      "40Time": "4.70"
     },
     "rating": 168,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3228 WING 7800"
   },
   {
     "name": "Lander Barton",
@@ -2032,12 +2080,12 @@
     "position": "CB",
     "team": "Louisville",
     "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "-"
+      "height": "5'10\"",
+      "weight": "192",
+      "40Time": "4.40"
     },
     "rating": 173,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0838 ARM: 3138 WING 7368"
   },
   {
     "name": "Tommi Hill",
@@ -2045,11 +2093,11 @@
     "team": "Nebraska",
     "stats": {
       "height": "6'0\"",
-      "weight": "205",
-      "40Time": "-"
+      "weight": "210",
+      "40Time": "4.55"
     },
     "rating": 174,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0900 ARM: 3338 WING 7948"
   },
   {
     "name": "Jay Higgins",
@@ -2081,23 +2129,23 @@
     "team": "LSU",
     "stats": {
       "height": "6'5\"",
-      "weight": "325",
-      "40Time": "-"
+      "weight": "324",
+      "40Time": "5.27"
     },
     "rating": 177,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0900 ARM: 3338 WING 8038"
   },
   {
     "name": "Upton Stout",
     "position": "S",
     "team": "Western Kentucky",
     "stats": {
-      "height": "5'9\"",
-      "weight": "182",
-      "40Time": "-"
+      "height": "5'8\"",
+      "weight": "178",
+      "40Time": "4.46"
     },
     "rating": 178,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0900 ARM: 3038 WING 7338"
   },
   {
     "name": "Dani Dennis-Sutton",
@@ -2116,12 +2164,12 @@
     "position": "LB",
     "team": "Georgia",
     "stats": {
-      "height": "6'3\"",
-      "weight": "235",
-      "40Time": "-"
+      "height": "6'2\"",
+      "weight": "229",
+      "40Time": "4.60"
     },
     "rating": 180,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0958 ARM: 3258 WING 7928"
   },
   {
     "name": "Kyle McCord",
@@ -2140,12 +2188,12 @@
     "position": "DI",
     "team": "Virginia Tech",
     "stats": {
-      "height": "6'1\"",
-      "weight": "290",
-      "40Time": "-"
+      "height": "6'0\"",
+      "weight": "289",
+      "40Time": "4.90"
     },
     "rating": 182,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1000 ARM: 3168 WING 7728 A smaller defensive tackle but quick and a great 1 gap penetrator"
   },
   {
     "name": "Jaxson Dart",
@@ -2153,11 +2201,11 @@
     "team": "Mississippi",
     "stats": {
       "height": "6'2\"",
-      "weight": "225",
-      "40Time": "-"
+      "weight": "226",
+      "40Time": "4.75"
     },
     "rating": 183,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0948 ARM: 3028 WING 7268"
   },
   {
     "name": "Jack Nelson",
@@ -2236,12 +2284,12 @@
     "position": "WR",
     "team": "Maryland",
     "stats": {
-      "height": "6'2\"",
+      "height": "6'1\"",
       "weight": "186",
-      "40Time": "-"
+      "40Time": "4.48"
     },
     "rating": 190,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0878 ARM: 3038 WING 7268"
   },
   {
     "name": "Tony Grimes",
@@ -2265,18 +2313,6 @@
       "40Time": "-"
     },
     "rating": 192,
-    "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Darius Alexander",
-    "position": "DL",
-    "team": "Toledo",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "310",
-      "40Time": "5.10"
-    },
-    "rating": 193,
     "scoutingReport": "Coming soon!"
   },
   {
@@ -2440,12 +2476,12 @@
     "position": "S",
     "team": "Wisconsin",
     "stats": {
-      "height": "6'2\"",
-      "weight": "218",
+      "height": "6'1\"",
+      "weight": "217",
       "40Time": "4.60"
     },
     "rating": 207,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0938 ARM: 3118 WING 7428"
   },
   {
     "name": "Mitchell Evans",
@@ -2476,12 +2512,12 @@
     "position": "OT",
     "team": "NC State",
     "stats": {
-      "height": "6'6\"",
-      "weight": "336",
+      "height": "6'5\"",
+      "weight": "345",
       "40Time": "5.35"
     },
     "rating": 210,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1028 ARM: 3258 WING 8318"
   },
   {
     "name": "Ja'Quinden Jackson",
@@ -2508,16 +2544,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Woody Marks",
+    "name": "Jo'quavious Marks",
     "position": "HB",
     "team": "USC",
     "stats": {
       "height": "5'10\"",
-      "weight": "208",
+      "weight": "215",
       "40Time": "4.54"
     },
     "rating": 212,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 2948 WING 7178"
   },
   {
     "name": "Karene Reid",
@@ -2525,11 +2561,11 @@
     "team": "Utah",
     "stats": {
       "height": "6'0\"",
-      "weight": "226",
+      "weight": "231",
       "40Time": "4.59"
     },
     "rating": 213,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0918 ARM: 3168 WING 7528"
   },
   {
     "name": "Aubrey Burks",
@@ -2569,15 +2605,15 @@
   },
   {
     "name": "Ty Robinson",
-    "position": "WR",
-    "team": "Ball State",
+    "position": "EDGE",
+    "team": "Nebraska",
     "stats": {
-      "height": "6'3\"",
-      "weight": "198",
-      "40Time": "4.49"
+      "height": "6'5\"",
+      "weight": "296",
+      "40Time": "5.01"
     },
     "rating": 217,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1000 ARM: 3248 WING 7868"
   },
   {
     "name": "Dylan Fairchild",
@@ -2608,12 +2644,12 @@
     "position": "HB",
     "team": "Delaware",
     "stats": {
-      "height": "5'11\"",
-      "weight": "183",
+      "height": "5'10\"",
+      "weight": "189",
       "40Time": ""
     },
     "rating": 220,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0900 ARM: 3128 WING 7558"
   },
   {
     "name": "Shilo Sanders",
@@ -2669,11 +2705,11 @@
     "team": "Jacksonville State",
     "stats": {
       "height": "6'3\"",
-      "weight": "290",
+      "weight": "310",
       "40Time": ""
     },
     "rating": 225,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0978 ARM: 3258 WING 7900"
   },
   {
     "name": "Hollin Pierce",
@@ -2693,23 +2729,23 @@
     "team": "Maryland",
     "stats": {
       "height": "5'11\"",
-      "weight": "202",
-      "40Time": ""
+      "weight": "196",
+      "40Time": "4.50"
     },
     "rating": 227,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0858 ARM: 3128 WING 7500"
   },
   {
     "name": "Jah Joyner",
     "position": "ED",
     "team": "Minnesota",
     "stats": {
-      "height": "6'5\"",
-      "weight": "265",
-      "40Time": ""
+      "height": "6'4\"",
+      "weight": "264",
+      "40Time": "4.73"
     },
     "rating": 228,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0900 ARM: 3418 WING 8158"
   },
   {
     "name": "Theo Wease Jr.",
@@ -2861,11 +2897,11 @@
     "team": "Oklahoma State",
     "stats": {
       "height": "6'0\"",
-      "weight": "220",
-      "40Time": ""
+      "weight": "222",
+      "40Time": "4.55"
     },
     "rating": 242,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0958 ARM: 3058 WING 7400"
   },
   {
     "name": "DeMonte Capehart",
@@ -2920,12 +2956,12 @@
     "position": "WR",
     "team": "Tennessee",
     "stats": {
-      "height": "6'3\"",
-      "weight": "230",
-      "40Time": ""
+      "height": "6'2\"",
+      "weight": "215",
+      "40Time": "4.54"
     },
     "rating": 247,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1000 ARM: 3328 WING 7758"
   },
   {
     "name": "Jabbar Muhammad",
@@ -2956,12 +2992,12 @@
     "position": "T",
     "team": "Alabama A&M",
     "stats": {
-      "height": "6'6\"",
-      "weight": "305",
+      "height": "6'7\"",
+      "weight": "314",
       "40Time": ""
     },
     "rating": 250,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1018 ARM: 3518 WING 8368"
   },
   {
     "name": "De'Rickey Wright",
@@ -3040,12 +3076,12 @@
     "position": "WR",
     "team": "Virginia Tech",
     "stats": {
-      "height": "6'5\"",
-      "weight": "216",
-      "40Time": ""
+      "height": "6'4\"",
+      "weight": "222",
+      "40Time": "4.59"
     },
     "rating": 257,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0948 ARM: 3328 WING 7858"
   },
   {
     "name": "CJ Taylor",
@@ -3065,11 +3101,11 @@
     "team": "Miami (FL)",
     "stats": {
       "height": "6'5\"",
-      "weight": "325",
+      "weight": "331",
       "40Time": ""
     },
     "rating": 259,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1018 ARM: 3500 WING 8348"
   },
   {
     "name": "Joey Hobert",
@@ -3136,12 +3172,12 @@
     "position": "HB",
     "team": "Miami (FL)",
     "stats": {
-      "height": "6'0\"",
-      "weight": "232",
-      "40Time": ""
+      "height": "5'11\"",
+      "weight": "226",
+      "40Time": "4.56"
     },
     "rating": 265,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0848 ARM: 3200 WING 7758"
   },
   {
     "name": "Collin Oliver",
@@ -3149,11 +3185,11 @@
     "team": "Oklahoma State",
     "stats": {
       "height": "6'2\"",
-      "weight": "240",
-      "40Time": ""
+      "weight": "242",
+      "40Time": "4.69"
     },
     "rating": 266,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0948 ARM: 3118 WING 7568"
   },
   {
     "name": "Emmanuel Pregnon",
@@ -3172,12 +3208,12 @@
     "position": "HB",
     "team": "Michigan",
     "stats": {
-      "height": "6'1\"",
-      "weight": "212",
-      "40Time": ""
+      "height": "5'11\"",
+      "weight": "215",
+      "40Time": "4.49"
     },
     "rating": 268,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1000 ARM: 3028 WING 7378"
   },
   {
     "name": "Isaiah Neyor",
@@ -3288,16 +3324,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "BJ Adams",
+    "name": "Brandon Adams",
     "position": "CB",
     "team": "UCF",
     "stats": {
-      "height": "6'3\"",
-      "weight": "190",
-      "40Time": ""
+      "height": "6'1\"",
+      "weight": "186",
+      "40Time": "4.49"
     },
     "rating": 278,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0838 ARM: 3228 WING 7600"
   },
   {
     "name": "Eric Gentry",
@@ -3364,12 +3400,12 @@
     "position": "WR",
     "team": "Virginia Tech",
     "stats": {
-      "height": "5'10\"",
-      "weight": "196",
-      "40Time": ""
+      "height": "5'9\"",
+      "weight": "191",
+      "40Time": "4.47"
     },
     "rating": 284,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 0968 ARM: 3200 WING 7628"
   },
   {
     "name": "Caden Prieskorn",
@@ -3514,5 +3550,569 @@
   },
   "rating": 296,
   "scoutingReport": "Coming soon!"
+},
+{
+  "name": "Kyle Williams",
+  "position": "WR",
+  "team": "Washington State",
+  "stats": {
+    "height": "5'10\"",
+    "weight": "182",
+    "40Time": "4.45"
+  },
+  "rating": 297,
+  "scoutingReport": "HAND: 0868 ARM: 3058 WING 7228"
+},
+{
+  "name": "David Walker",
+  "position": "DL",
+  "team": "Central Arkansas",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "267",
+    "40Time": ""
+  },
+  "rating": 298,
+  "scoutingReport": "HAND: 0928 ARM: 3168 WING 7700"
+},
+{
+  "name": "Jalen Travis",
+  "position": "OT",
+  "team": "Iowa State",
+  "stats": {
+    "height": "6'8\"",
+    "weight": "341",
+    "40Time": "5.29"
+  },
+  "rating": 299,
+  "scoutingReport": "HAND: 1028 ARM: 3448 WING 8348"
+},
+{
+  "name": "Isaac Teslaa",
+  "position": "WR",
+  "team": "Arkansas",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "212",
+    "40Time": "4.59"
+  },
+  "rating": 300,
+  "scoutingReport":"HAND: 0968 ARM: 3168 WING 7638"
+},
+{
+  "name": "Junior Tafuna",
+  "position": "IOL",
+  "team": "Utah",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "303",
+    "40Time": "5.10"
+  },
+  "rating": 301,
+  "scoutingReport": "HAND: 1018 ARM: 3278 WING 7738"
+},
+{
+  "name": "Barryn Sorrell",
+  "position": "EDGE",
+  "team": "Texas",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "253",
+    "40Time": "4.66"
+  },
+  "rating": 302,
+  "scoutingReport": "HAND: 0948 ARM: 3248 WING 7778"
+},
+{
+  "name": "Tim Smith",
+  "position": "DL",
+  "team": "Alabama",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "311",
+    "40Time": "5.11"
+  },
+  "rating": 303,
+  "scoutingReport": "HAND: 1048 ARM: 3300 WING 8148"
+},
+{
+  "name": "Brashard Smith",
+  "position": "RB",
+  "team": "SMU",
+  "stats": {
+    "height": "5'9\"",
+    "weight": "195",
+    "40Time": "4.49"
+  },
+  "rating": 304,
+  "scoutingReport": "HAND: 0868 ARM: 3068 WING 7328"
+},
+{
+  "name": "Arian Smith",
+  "position": "WR",
+  "team": "Georgia",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "175",
+    "40Time": "4.42"
+  },
+  "rating": 305,
+  "scoutingReport": "HAND 0900 ARM 3158 WING 7628"
+},
+{
+  "name": "Melvin Smith",
+  "position": "S",
+  "team": "Southern Arkansas",
+  "stats": {
+    "height": "5'11\"",
+    "weight": "185",
+    "40Time": "4.49"
+  },
+  "rating": 306,
+  "scoutingReport": "HAND: 0878 ARM: 3100 WING 7358"
+},
+{
+  "name": "Jackson Slater",
+  "position": "C",
+  "team": "Sacramento State",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "320",
+    "40Time": "5.20"
+  },
+  "rating": 307,
+  "scoutingReport": "HAND 0968 ARM 3300 WING 7800"
+},
+{
+  "name": "Trey Rucker",
+  "position": "S",
+  "team": "Oklahoma State",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "212",
+    "40Time": "4.54"
+  },
+  "rating": 308,
+  "scoutingReport": "HAND: 0918 ARM: 3128 WING 7458"
+},
+{
+  "name": "Caleb Rogers",
+  "position": "OT",
+  "team": "Texas Tech",
+  "stats": {
+    "height": "6'5",
+    "weight": "313",
+    "40Time": "5.18"
+  },
+  "rating": 309,
+  "scoutingReport": "HAND: 0968 ARM: 3268 WING 7868"
+},
+{
+  "name": "Caleb Ransaw",
+  "position": "S",
+  "team": "Tulane",
+  "stats": {
+    "height": "5'11\"",
+    "weight": "196",
+    "40Time": "4.48"
+  },
+  "rating": 310,
+  "scoutingReport": "HAND: 0948 ARM: 3100 WING 7468"
+},
+{
+  "name": "Jamaal Pritchett",
+  "position": "WR",
+  "team": "South Alabama",
+  "stats": {
+    "height": "5'8\"",
+    "weight": "170",
+    "40Time": "4.43"
+  },
+  "rating": 311,
+  "scoutingReport": "HAND: 0928 ARM: 2968 WING 7038"
+},
+{
+  "name": "Oluwafemi Oladejo",
+  "position": "EDGE",
+  "team": "Oklahoma State",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "261",
+    "40Time": "4.69"
+  },
+  "rating": 312,
+  "scoutingReport": "HAND: 0968 ARM: 3348 WING 8068"
+},
+{
+  "name": "RJ Oben",
+  "position": "EDGE",
+  "team": "Notre Dame",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "255",
+    "40Time": "4.68"
+  },
+  "rating": 313,
+  "scoutingReport": "HAND: 0938 ARM: 3328 WING 8118"
+},
+{
+  "name": "Mac McWilliams",
+  "position": "CB",
+  "team": "UCF",
+  "stats": {
+    "height": "5'10\"",
+    "weight": "181",
+    "40Time": "4.42"
+  },
+  "rating": 314,
+  "scoutingReport": "HAND: 0848 ARM: 3028 WING 7200"
+},
+{
+  "name": "Jalen McLeod",
+  "position": "LB",
+  "team": "Auburn",
+  "stats": {
+    "height": "6'2\"",
+    "weight": "247",
+    "40Time": "4.67"
+  },
+  "rating": 315,
+  "scoutingReport": "HAND: 0948 ARM: 3268 WING 7900"
+},
+{
+  "name": "Moliki Matavao",
+  "position": "TE",
+  "team": "UCLA",
+  "stats": {
+    "height": "6'5\"",
+    "weight": "265",
+    "40Time": "4.75"
+  },
+  "rating": 316,
+  "scoutingReport": "HAND: 0948 ARM: 3300 WING 7868"
+},
+{
+  "name": "Rayuan Lane III",
+  "position": "S",
+  "team": "Navy",
+  "stats": {
+    "height": "5'11\"",
+    "weight": "198",
+    "40Time": "4.53"
+  },
+  "rating": 317,
+  "scoutingReport": "HAND: 0968 ARM: 3020 WING 7328"
+},
+{
+  "name": "Willie Lampkin",
+  "position": "IOL",
+  "team": "North Carolina",
+  "stats": {
+    "height": "5'10\"",
+    "weight": "270",
+    "40Time": "4.91"
+  },
+  "rating": 318,
+  "scoutingReport": "HAND: 1000 ARM: 3200 WING 7818"
+},
+{
+  "name": "Bilhal Kone",
+  "position": "CB",
+  "team": "Western Michigan",
+  "stats": {
+    "height": "6'1",
+    "weight": "186",
+    "40Time": "4.42"
+  },
+  "rating": 319,
+  "scoutingReport": "HAND: 0900 ARM: 3128 WING 7418"
+},
+{
+  "name": "Demetrius Knight II",
+  "position": "LB",
+  "team": "South Carolina",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "246",
+    "40Time": "4.67"
+  },
+  "rating": 320,
+  "scoutingReport": "HAND: 0958 ARM: 3328 WING 8038"
+},
+{
+  "name": "Shemar James",
+  "position": "LB",
+  "team": "Florida",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "226",
+    "40Time": "4.55"
+  },
+  "rating": 321,
+  "scoutingReport": "HAND: 0868 ARM: 3210 WING 7600"
+},
+{
+  "name": "Keondre Jackson",
+  "position": "S",
+  "team": "Illinois State",
+  "stats": {
+    "height": "6'2\"",
+    "weight": "211",
+    "40Time": "4.52"
+  },
+  "rating": 322,
+  "scoutingReport": "HAND: 0928 ARM: 3218 WING 7848 Keondre can play in the box, in the slot or as a single high safety. Aggressive, strong and physical with solid ball skills to make plays on the ball"
+},
+{
+  "name": "Dan Jackson",
+  "position": "S",
+  "team": "Georgia",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "194",
+    "40Time": "4.48"
+  },
+  "rating": 323,
+  "scoutingReport": "HAND: 0900 ARM: 3048 WING 7268"
+},
+{
+  "name": "Cam'Ron Jackson",
+  "position": "DL",
+  "team": "Florida",
+  "stats": {
+    "height": "6'7\"",
+    "weight": "339",
+    "40Time": "5.28"
+  },
+  "rating": 324,
+  "scoutingReport": "HAND: 0968 ARM: 3418 WING 8328"
+},
+{
+  "name": "Tyrion Ingram-Dawkins",
+  "position": "EDGE",
+  "team": "Georgia",
+  "stats": {
+    "height": "6'4",
+    "weight": "278",
+    "40Time": "4.75"
+  },
+  "rating": 325,
+  "scoutingReport": "HAND: 0978 ARM: 3328 WING 8118"
+},
+{
+  "name": "Maxen Hook",
+  "position": "S",
+  "team": "Toledo",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "193",
+    "40Time": "4.49"
+  },
+  "rating": 326,
+  "scoutingReport": "HAND: 0918 ARM: 3228 WING 7518"
+},
+{
+  "name": "Seth Henigan",
+  "position": "QB",
+  "team": "Memphis",
+  "stats": {
+    "height": "6'3",
+    "weight": "213",
+    "40Time": "4.85"
+  },
+  "rating": 327,
+  "scoutingReport": "HAND: 0878 ARM: 3228 WING 7700"
+},
+{
+  "name": "Thomas Findone II",
+  "position": "TE",
+  "team": "Nebraska",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "241",
+    "40Time": "4.60"
+  },
+  "rating": 328,
+  "scoutingReport": "HAND: 1068 ARM: 3400 WING 8248"
+},
+{
+  "name": "Joshua Farmer",
+  "position": "DL",
+  "team": "Florida State",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "314",
+    "40Time": "5.21"
+  },
+  "rating": 329,
+  "scoutingReport": "HAND: 1048 ARM: 3528 WING 8248"
+},
+{
+  "name": "Taylor Elgersma",
+  "position": "QB",
+  "team": "Laurier",
+  "stats": {
+    "height": "6'4",
+    "weight": "216",
+    "40Time": "4.95"
+  },
+  "rating": 330,
+  "scoutingReport": "HAND: 0948 ARM: 3248 WING 7728"
+},
+{
+  "name": "Jonathan Edwards",
+  "position": "CB",
+  "team": "Tulane",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "203",
+    "40Time": "4.50"
+  },
+  "rating": 331,
+  "scoutingReport": "HAND 0900 ARM 3228 WING 7718"
+},
+{
+  "name": "CJ Dippre",
+  "position": "TE",
+  "team": "Alabama",
+  "stats": {
+    "height": "6'5\"",
+    "weight": "260",
+    "40Time": "4.72"
+  },
+  "rating": 332,
+  "scoutingReport": "HAND: 0958 ARM: 3238 WING 8000"
+},
+{
+  "name": "Chimere Dike",
+  "position": "WR",
+  "team": "Florida",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "192",
+    "40Time": "4.48"
+  },
+  "rating": 333,
+  "scoutingReport": "HAND: 0900 ARM: 3258 WING 7700"
+},
+{
+  "name": "Garrett Dellinger",
+  "position": "IOL",
+  "team": "LSU",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "325",
+    "40Time": "5.22"
+  },
+  "rating": 334,
+  "scoutingReport": "HAND 1000 ARM 3278 WING 7918"
+},
+{
+  "name": "Sebastian Castro",
+  "position": "S",
+  "team": "Iowa",
+  "stats": {
+    "height": "5'11\"",
+    "weight": "202",
+    "40Time": "4.50"
+  },
+  "rating": 335,
+  "scoutingReport": "HAND: 1000 ARM: 3100 WING 7428"
+},
+{
+  "name": "Jamaree Caldwell",
+  "position": "DL",
+  "team": "Oregon",
+  "stats": {
+    "height": "6'2\"",
+    "weight": "342",
+    "40Time": "5.07"
+  },
+  "rating": 336,
+  "scoutingReport": "HAND: 0948 ARM: 3228 WING 7768"
+},
+{
+  "name": "Logan Brown",
+  "position": "OT",
+  "team": "Kansas",
+  "stats": {
+    "height": "6'6\"",
+    "weight": "312",
+    "40Time": "5.12"
+  },
+  "rating": 337,
+  "scoutingReport": "HAND: 0978 ARM: 3468 WING: 8348"
+},
+{
+  "name": "Yahya Black",
+  "position": "DL",
+  "team": "Iowa",
+  "stats": {
+    "height": "6'6\"",
+    "weight": "337",
+    "40Time": "5.30"
+  },
+  "rating": 338,
+  "scoutingReport": "HAND: 1028 ARM: 3500 WING 8428"
+},
+{
+  "name": "Jacob Bayer",
+  "position": "IOL",
+  "team": "Arkansas State",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "315",
+    "40Time": "5.14"
+  },
+  "rating": 339,
+  "scoutingReport": "HAND: 1038 ARM: 3200 WING 7818"
+},
+{
+  "name": "Gavin Bartholomew",
+  "position": "TE",
+  "team": "Pittsburgh",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "241",
+    "40Time": "4.64"
+  },
+  "rating": 340,
+  "scoutingReport": "HAND: 1000 ARM: 3168 WING 7800"
+},
+{
+  "name": "Justin Barron",
+  "position": "S",
+  "team": "Syracuse",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "226",
+    "40Time": "4.59"
+  },
+  "rating": 341,
+  "scoutingReport": "HAND: 0938 ARM: 3168 WING 7618"
+},
+{
+  "name": "Eugene Asante",
+  "position": "LB",
+  "team": "Auburn",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "222",
+    "40Time": "4.55"
+  },
+  "rating": 342,
+  "scoutingReport": "HAND: 0848 ARM: 3000 WING 7248"
+},
+{
+  "name": "Lequint Allen Jr.",
+  "position": "RB",
+  "team": "Syracuse",
+  "stats": {
+    "height": "6'0",
+    "weight": "207",
+    "40Time": "4.49"
+  },
+  "rating": 343,
+  "scoutingReport": "HAND: 1028 ARM: 3248 WING 7668"
 }
 ]
