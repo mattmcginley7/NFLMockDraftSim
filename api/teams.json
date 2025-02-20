@@ -19,14 +19,14 @@
         "pick": 72,
         "value": 230
       },
-        {
-          "pick": 122,
-          "value": 50
-        },
-        {
-          "pick": 144,
-          "value": 34
-        }
+      {
+        "pick": 149,
+        "value": 31.8
+      },
+      {
+        "pick": 197,
+        "value": 12.6
+      }
       ]
     },
     {
@@ -45,12 +45,8 @@
           "value": 195
         },
         {
-          "pick": 139,
-          "value": 36.5
-        },
-        {
-          "pick": 161,
-          "value": 27
+          "pick": 148,
+          "value": 32.3
         },
         {
           "pick": 222,
@@ -82,12 +78,8 @@
           "value": 84
         },
         {
-          "pick": 180,
-          "value": 19.4
-        },
-        {
-          "pick": 193,
-          "value": 14.2
+          "pick": 145,
+          "value": 33.5
         },
         {
           "pick": 231,
@@ -111,16 +103,12 @@
           "value": 200
         },
         {
-          "pick": 138,
-          "value": 37
+          "pick": 114,
+          "value": 66
         },
         {
-          "pick": 162,
-          "value": 26.6
-        },
-        {
-          "pick": 191,
-          "value": 15
+          "pick": 153,
+          "value": 30.2
         },
         {
           "pick": 226,
@@ -144,16 +132,20 @@
           "value": 160
         },
         {
-          "pick": 137,
-          "value": 37.5
+          "pick": 124,
+          "value": 48
         },
         {
-          "pick": 140,
-          "value": 36
+          "pick": 159,
+          "value": 27.8
         },
         {
-          "pick": 181,
-          "value": 19
+          "pick": 177,
+          "value": 20.6
+        },
+        {
+          "pick": 183,
+          "value": 18.2
         },
         {
           "pick": 225,
@@ -185,12 +177,12 @@
           "value": 86
         },
         {
-          "pick": 166,
-          "value": 25
+          "pick": 134,
+          "value": 39
         },
         {
-          "pick": 183,
-          "value": 18.2
+          "pick": 155,
+          "value": 29.4
         }
       ]
     },
@@ -210,12 +202,20 @@
           "value": 92
         },
         {
-          "pick": 146,
-          "value": 33
+          "pick": 119,
+          "value": 56
         },
         {
-          "pick": 182,
-          "value": 18.6
+          "pick": 142,
+          "value": 35
+        },
+        {
+          "pick": 168,
+          "value": 24.2
+        },
+        {
+          "pick": 180,
+          "value": 19.4
         },
         {
           "pick": 242,
@@ -239,20 +239,8 @@
           "value": 440
         },
         {
-          "pick": 143,
-          "value": 34.5
-        },
-        {
-          "pick": 186,
-          "value": 17
-        },
-        {
-          "pick": 187,
-          "value": 16.6
-        },
-        {
-          "pick": 197,
-          "value": 12.6
+          "pick": 117,
+          "value": 60
         }
       ]
     },
@@ -276,20 +264,16 @@
           "value": 76
         },
         {
-          "pick": 134,
-          "value": 39
+          "pick": 146,
+          "value": 33
         },
         {
-          "pick": 171,
-          "value": 23
+          "pick": 157,
+          "value": 28.6
         },
         {
-          "pick": 173,
-          "value": 22.2
-        },
-        {
-          "pick": 176,
-          "value": 21
+          "pick": 188,
+          "value": 16.2
         },
         {
           "pick": 257,
@@ -309,8 +293,12 @@
           "value": 112
         },
         {
-          "pick": 177,
-          "value": 20.6
+          "pick": 140,
+          "value": 36
+        },
+        {
+          "pick": 161,
+          "value": 27
         },
         {
           "pick": 203,
@@ -342,12 +330,16 @@
           "value": 165
         },
         {
-          "pick": 145,
-          "value": 33.5
+          "pick": 121,
+          "value": 52
         },
         {
-          "pick": 147,
-          "value": 32.6
+          "pick": 193,
+          "value": 14.2
+        },
+        {
+          "pick": 199,
+          "value": 11.8
         },
         {
           "pick": 235,
@@ -383,8 +375,12 @@
           "value": 80
         },
         {
-          "pick": 148,
-          "value": 32.3
+          "pick": 144,
+          "value": 34
+        },
+        {
+          "pick": 182,
+          "value": 18.6
         },
         {
           "pick": 208,
@@ -424,20 +420,12 @@
           "value": 72
         },
         {
-          "pick": 150,
-          "value": 31.4
+          "pick": 130,
+          "value": 42
         },
         {
-          "pick": 170,
-          "value": 23.4
-        },
-        {
-          "pick": 175,
-          "value": 21.4
-        },
-        {
-          "pick": 199,
-          "value": 11.8
+          "pick": 186,
+          "value": 17
         },
         {
           "pick": 239,
@@ -461,20 +449,16 @@
           "value": 190
         },
         {
-          "pick": 117,
-          "value": 60
+          "pick": 116,
+          "value": 62
         },
         {
-          "pick": 142,
-          "value": 35
+          "pick": 152,
+          "value": 30.6
         },
         {
-          "pick": 151,
-          "value": 31
-        },
-        {
-          "pick": 164,
-          "value": 25.8
+          "pick": 191,
+          "value": 15
         },
         {
           "pick": 201,
@@ -502,24 +486,16 @@
           "value": 180
         },
         {
-          "pick": 118,
-          "value": 58
+          "pick": 137,
+          "value": 37.5
         },
         {
-          "pick": 121,
-          "value": 52
+          "pick": 173,
+          "value": 22.2
         },
         {
-          "pick": 136,
-          "value": 38
-        },
-        {
-          "pick": 179,
-          "value": 19.8
-        },
-        {
-          "pick": 192,
-          "value": 14.6
+          "pick": 187,
+          "value": 16.6
         },
         {
           "pick": 207,
@@ -551,20 +527,20 @@
           "value": 82
         },
         {
-          "pick": 114,
-          "value": 66
+          "pick": 125,
+          "value": 47
         },
         {
-          "pick": 116,
-          "value": 62
+          "pick": 143,
+          "value": 34.5
         },
         {
-          "pick": 153,
-          "value": 30.2
+          "pick": 184,
+          "value": 17.8
         },
         {
-          "pick": 167,
-          "value": 24.6
+          "pick": 196,
+          "value": 13
         },
         {
           "pick": 212,
@@ -592,16 +568,16 @@
           "value": 185
         },
         {
-          "pick": 115,
-          "value": 64
+          "pick": 118,
+          "value": 58
         },
         {
-          "pick": 149,
-          "value": 31.8
+          "pick": 154,
+          "value": 29.8
         },
         {
-          "pick": 194,
-          "value": 13.8
+          "pick": 195,
+          "value": 13.4
         },
         {
           "pick": 214,
@@ -633,12 +609,12 @@
           "value": 100
         },
         {
-          "pick": 154,
-          "value": 29.8
+          "pick": 126,
+          "value": 46
         },
         {
-          "pick": 196,
-          "value": 13
+          "pick": 192,
+          "value": 14.6
         },
         {
           "pick": 209,
@@ -668,21 +644,18 @@
         {
           "pick": 52,
           "value": 380
-        },{
+        },
+        {
           "pick": 83,
           "value": 175
         },
         {
-          "pick": 119,
-          "value": 56
+          "pick": 122,
+          "value": 50
         },
         {
-          "pick": 178,
-          "value": 20.2
-        },
-        {
-          "pick": 195,
-          "value": 13.4
+          "pick": 163,
+          "value": 26.2
         }
       ]
     },
@@ -702,20 +675,20 @@
           "value": 108
         },
         {
-          "pick": 120,
-          "value": 54
+          "pick": 115,
+          "value": 64
         },
         {
-          "pick": 158,
-          "value": 52
+          "pick": 135,
+          "value": 38.5
         },
         {
-          "pick": 184,
-          "value": 17.8
+          "pick": 151,
+          "value": 31
         },
         {
-          "pick": 198,
-          "value": 12.2
+          "pick": 156,
+          "value": 29
         },
         {
           "pick": 241,
@@ -739,28 +712,20 @@
           "value": 116
         },
         {
-          "pick": 127,
-          "value": 45
+          "pick": 129,
+          "value": 43
         },
         {
-          "pick": 152,
-          "value": 30.6
+          "pick": 162,
+          "value": 26.6
         },
         {
-          "pick": 155,
-          "value": 29.4
+          "pick": 166,
+          "value": 25
         },
         {
-          "pick": 172,
-          "value": 22.6
-        },
-        {
-          "pick": 185,
-          "value": 17.4
-        },
-        {
-          "pick": 190,
-          "value": 15.4
+          "pick": 169,
+          "value": 23.8
         }
       ]
     },
@@ -780,12 +745,12 @@
           "value": 145
         },
         {
-          "pick": 123,
-          "value": 49
+          "pick": 127,
+          "value": 45
         },
         {
-          "pick": 188,
-          "value": 16.2
+          "pick": 167,
+          "value": 24.6
         },
         {
           "pick": 205,
@@ -821,8 +786,24 @@
           "value": 210
         },
         {
+          "pick": 150,
+          "value": 31.4
+        },
+        {
+          "pick": 170,
+          "value": 23.4
+        },
+        {
+          "pick": 172,
+          "value": 22.6
+        },
+        {
           "pick": 174,
           "value": 21.8
+        },
+        {
+          "pick": 190,
+          "value": 15.4
         },
         {
           "pick": 216,
@@ -854,12 +835,16 @@
           "value": 155
         },
         {
-          "pick": 163,
-          "value": 26.2
+          "pick": 123,
+          "value": 49
         },
         {
-          "pick": 169,
-          "value": 23.8
+          "pick": 160,
+          "value": 27.4
+        },
+        {
+          "pick": 200,
+          "value": 11.4
         },
         {
           "pick": 202,
@@ -895,8 +880,12 @@
           "value": 170
         },
         {
-          "pick": 125,
-          "value": 47
+          "pick": 120,
+          "value": 54
+        },
+        {
+          "pick": 158,
+          "value": 52
         },
         {
           "pick": 220,
@@ -928,20 +917,20 @@
           "value": 78
         },
         {
-          "pick": 128,
-          "value": 44
+          "pick": 131,
+          "value": 41
         },
         {
-          "pick": 141,
-          "value": 35.5
+          "pick": 171,
+          "value": 23
         },
         {
-          "pick": 160,
-          "value": 27.4
+          "pick": 175,
+          "value": 21.4
         },
         {
-          "pick": 168,
-          "value": 24.2
+          "pick": 179,
+          "value": 19.8
         },
         {
           "pick": 204,
@@ -973,16 +962,12 @@
           "value": 96
         },
         {
-          "pick": 126,
-          "value": 46
+          "pick": 133,
+          "value": 39.5
         },
         {
-          "pick": 132,
-          "value": 40
-        },
-        {
-          "pick": 189,
-          "value": 15.8
+          "pick": 198,
+          "value": 12.2
         },
         {
           "pick": 210,
@@ -1006,12 +991,24 @@
           "value": 136
         },
         {
-          "pick": 130,
-          "value": 42
+          "pick": 128,
+          "value": 44
         },
         {
-          "pick": 165,
-          "value": 25.4
+          "pick": 136,
+          "value": 38
+        },
+        {
+          "pick": 176,
+          "value": 21
+        },
+        {
+          "pick": 178,
+          "value": 20.2
+        },
+        {
+          "pick": 185,
+          "value": 17.4
         },
         {
           "pick": 218,
@@ -1051,16 +1048,16 @@
           "value": 70
         },
         {
-          "pick": 124,
-          "value": 48
+          "pick": 138,
+          "value": 37
         },
         {
-          "pick": 129,
-          "value": 43
+          "pick": 139,
+          "value": 36.5
         },
         {
-          "pick": 135,
-          "value": 38.5
+          "pick": 189,
+          "value": 15.8
         },
         {
           "pick": 215,
@@ -1092,16 +1089,8 @@
           "value": 120
         },
         {
-          "pick": 131,
-          "value": 41
-        },
-        {
-          "pick": 133,
-          "value": 39.5
-        },
-        {
-          "pick": 159,
-          "value": 27.8
+          "pick": 132,
+          "value": 40
         },
         {
           "pick": 211,
@@ -1137,12 +1126,16 @@
           "value": 68
         },
         {
-          "pick": 157,
-          "value": 28.6
+          "pick": 141,
+          "value": 35.5
         },
         {
-          "pick": 200,
-          "value": 11.4
+          "pick": 147,
+          "value": 32.6
+        },
+        {
+          "pick": 164,
+          "value": 25.8
         },
         {
           "pick": 240,
@@ -1174,8 +1167,16 @@
           "value": 88
         },
         {
-          "pick": 156,
-          "value": 29
+          "pick": 165,
+          "value": 25.4
+        },
+        {
+          "pick": 181,
+          "value": 19
+        },
+        {
+          "pick": 194,
+          "value": 13.8
         },
         {
           "pick": 206,
