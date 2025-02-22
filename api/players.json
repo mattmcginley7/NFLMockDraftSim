@@ -768,18 +768,6 @@
     "scoutingReport": "HAND: 0948 ARM: 3328 WING 7938 Can play inside and out, has very good speed for his size, gets open and wins at at the catch point. Has the ability to be a great starting WR in the NFL"
   },
   {
-    "name": "Kamari Lassiter",
-    "position": "CB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'0",
-      "weight": "185",
-      "40Time": "4.45"
-    },
-    "rating": 63,
-    "scoutingReport": "Coming soon!"
-  },
-  {
     "name": "Wyatt Milum",
     "position": "OT",
     "team": "West Virginia",
@@ -1330,18 +1318,6 @@
     },
     "rating": 110,
     "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Josh Conerly Jr.",
-    "position": "T",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "315",
-      "40Time": "4.92"
-    },
-    "rating": 111,
-    "scoutingReport": "Elite movement skills, has the ability to be a great pass blocker."
   },
   {
     "name": "Sai'vion Jones",

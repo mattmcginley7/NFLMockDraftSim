@@ -132,7 +132,7 @@ async function simulateDraftPick(team, round) {
         await fetchPlayers();
 
         if (draftSequence.length > 0) {
-            draftInterval = setTimeout(processDraftSequence, 500);
+            draftInterval = setTimeout(processDraftSequence, 250);
         }
 
         checkRoundEnd();
