@@ -111,7 +111,10 @@ function updateDraftHistory(draftHistory) {
            <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
         draftHistoryContainer.appendChild(pickElement);
     });
+    // --- Scroll to bottom so the user sees the last pick ---
+    draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
 }
+
 
 // Function to simulate a draft pick
 async function simulateDraftPick(team, round) {
