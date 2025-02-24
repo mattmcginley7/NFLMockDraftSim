@@ -484,6 +484,9 @@ function initializeDraftControls() {
                        <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
                        <strong>${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
                    </div>`;
+                const draftResultsContainer = document.getElementById('draftResults');
+                // Scroll to bottom
+                draftResultsContainer.scrollTop = draftResultsContainer.scrollHeight;
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
                 document.getElementById('selectPlayer').disabled = true;

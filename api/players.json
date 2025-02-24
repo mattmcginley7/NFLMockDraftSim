@@ -21,7 +21,7 @@
       "40Time": "4.43"
     },
     "rating": 2,
-    "scoutingReport": "An elite two-way player with excellent coverage skills and dynamic playmaking ability."
+    "scoutingReport": "An elite two-way player with excellent coverage skills and dynamic playmaking ability. If he plays corner, there will never have been a prospect at the position that has his hands and ball skills."
   },
   {
     "name": "Tetairoa McMillan",
@@ -78,7 +78,7 @@
     "stats": {
       "height": "6'1\"",
       "weight": "205",
-      "40Time": "4.47"
+      "40Time": "4.37"
     },
     "rating": 7,
     "scoutingReport": "A hard-hitting safety with great range and ball skills. Can be played in the slot, in the box, or as a deep safety."
@@ -108,16 +108,16 @@
     "scoutingReport": "An athletic and explosive WR with great run after the catch skills. Very similar player to DJ Moore coming out of Maryland."
   },
   {
-    "name": "Nic Scourton",
-    "position": "EDGE",
-    "team": "Texas A&M",
+    "name": "Jalon Walker",
+    "position": "LB",
+    "team": "Georgia",
     "stats": {
-      "height": "6'4\"",
-      "weight": "280",
-      "40Time": "4.71"
+      "height": "6'2\"",
+      "weight": "245",
+      "40Time": "4.55"
     },
     "rating": 10,
-    "scoutingReport": "Only 20 and has a great physical skillset. Strong and fast, and has the versatility to play standing up on the edge or with his hand in the interior. A great combination of versatility and explosiveness."
+    "scoutingReport": "A tweener off ball linebacker/edge rusher with special athletic skills"
   },
   {
     "name": "Armand Membou",
@@ -205,7 +205,7 @@
 },
 {
   "name": "Tyler Booker",
-  "position": "OT",
+  "position": "IOL",
   "team": "Alabama",
   "stats": {
     "height": "6'5\"",
@@ -216,16 +216,16 @@
   "scoutingReport": "Big, strong, reliable, and a leader. A day 1 starter at guard who will hold his position for the next decade for whoever drafts him."
 },
 {
-  "name": "Benjamin Morrison",
+  "name": "Jahdae Barron",
   "position": "CB",
-  "team": "Notre Dame",
+  "team": "Texas",
   "stats": {
-    "height": "6'0\"",
-    "weight": "185",
-    "40Time": "4.39"
+    "height": "5'11\"",
+    "weight": "200",
+    "40Time": "4.49"
   },
   "rating": 19,
-  "scoutingReport": "Fast and agile, with great ball skills and instincts. A true ball hawk who can make plays on the ball at the catch point. Aggressive for his smaller size."
+  "scoutingReport": "Highly intelligent, tough, and instinctive corner with good athleticism. Can play inside and out."
 },
 {
   "name": "Colston Loveland",
@@ -264,16 +264,16 @@
   "scoutingReport": "HAND: 1038 ARM: 3400 WING: 8100 Elite movement skills, has the ability to be a great pass blocker."
 },
 {
-  "name": "Cameron Williams",
-  "position": "OT",
-  "team": "Texas",
+  "name": "Walter Nolen",
+  "position": "DL",
+  "team": "Ole Miss",
   "stats": {
-    "height": "6'6",
-    "weight": "335",
-    "40Time": "5.15"
+    "height": "6'3\"",
+    "weight": "293",
+    "40Time": "4.85"
   },
   "rating": 22,
-  "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
+  "scoutingReport": "HAND: 0928 ARM: 3300 WING: 7948 Incredible quickness from an interior pass rusher and was an elite run defender in 2024"
 },
 {
   "name": "Mike Green",
@@ -336,16 +336,16 @@
     "scoutingReport": "4.3 yards after contact in college which is extremely impressive, 97th percentile. Has good size, runs decisively and is a one cut runner. Good, not great speed but stays on his feet with great balance and can catch. A 3 down player in the NFL."
   },
   {
-    "name": "Elic Ayomanor",
-    "position": "WR",
-    "team": "Stanford",
+    "name": "Jihaad Campbell",
+    "position": "EDGE",
+    "team": "Alabama",
     "stats": {
-      "height": "6'2\"",
-      "weight": "210",
-      "40Time": "4.50"
+      "height": "6'3",
+      "weight": "244",
+      "40Time": "4.45"
     },
     "rating": 28,
-    "scoutingReport": "Physical WR with good speed and hands. Strong at run blocking, high effort player. Plays out wide with Stanford, but has the skills and ability to play in the slot."
+    "scoutingReport": "Coming soon!"
   },
   {
     "name": "Kaleb Johnson",
@@ -354,34 +354,35 @@
     "stats": {
       "height": "6'0\"",
       "weight": "225",
-      "40Time": "4.50"
+      "40Time": "4.46"
     },
     "rating": 29,
     "scoutingReport": "Very talented all around back that can catch, breaks tackles, has good speed and size, and doesn't fumble. One of the leaders in college football in yards after contact."
   },
+
   {
-    "name": "Quinshon Judkins",
-    "position": "RB",
-    "team": "Ohio State",
+    "name": "Nick Emmanwori",
+    "position": "S",
+    "team": "South Carolina",
     "stats": {
-      "height": "5'10\"",
-      "weight": "210",
-      "40Time": "4.49"
+      "height": "6'3\"",
+      "weight": "227",
+      "40Time": "4.48"
     },
     "rating": 30,
-    "scoutingReport": "A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker"
+    "scoutingReport": "A safety with LB size but true DB coverage skills. A plus in the run game with unbelievable speed and athleticism to cover sideline to sideline."
   },
   {
-    "name": "Jalon Walker",
-    "position": "LB",
-    "team": "Georgia",
+    "name": "Nic Scourton",
+    "position": "EDGE",
+    "team": "Texas A&M",
     "stats": {
-      "height": "6'2\"",
-      "weight": "245",
-      "40Time": "4.55"
+      "height": "6'4\"",
+      "weight": "280",
+      "40Time": "4.71"
     },
     "rating": 31,
-    "scoutingReport": "A tweener off ball linebacker/edge rusher with special athletic skills"
+    "scoutingReport": "Only 20 and has a great physical skillset. Strong and fast, and has the versatility to play standing up on the edge or with his hand in the interior. A great combination of versatility and explosiveness."
   },
   {
     "name": "Tyleik Williams",
@@ -405,7 +406,7 @@
       "40Time": "4.45"
     },
     "rating": 33,
-    "scoutingReport": "HAND: 0918 ARM: 3200 WING 7738"
+    "scoutingReport": "HAND: 0918 ARM: 3200 WING 7738 A corner who can play inside and outside and be trusted immediately at both spots. Great run grade by PFF, has speed and agility, ball skills, and plays the position with intelligence."
   },
   {
     "name": "Aireontae Ersery",
@@ -426,10 +427,10 @@
     "stats": {
       "height": "6'3",
       "weight": "193",
-      "40Time": "4.45"
+      "40Time": "4.35"
     },
     "rating": 35,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Coming off a torn ACL in 2024. A tall corner who plays with physicality and elite speed. Great ball skills. A little refinement needed in using his hands. If healthy and develops his technique, he has the potential to be a top corner in the NFL."
   },
   {
     "name": "T.J. Sanders",
@@ -444,16 +445,16 @@
     "scoutingReport": "HAND: 1028 ARM: 3358 WING: 8000 A very athletic 1 gap penetrator with great moves to make interior lineman miss"
   },
   {
-    "name": "L.T. Overton",
-    "position": "DL",
-    "team": "Alabama",
+    "name": "Cameron Williams",
+    "position": "OT",
+    "team": "Texas",
     "stats": {
-      "height": "6'5",
-      "weight": "283",
-      "40Time": "4.82"
+      "height": "6'6",
+      "weight": "335",
+      "40Time": "5.15"
     },
     "rating": 37,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
   },
   {
     "name": "Jahdae Barron",
@@ -468,16 +469,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Walter Nolen",
-    "position": "DL",
-    "team": "Ole Miss",
+    "name": "Grey Zabel",
+    "position": "OT",
+    "team": "North Dakota State",
     "stats": {
-      "height": "6'3\"",
-      "weight": "293",
-      "40Time": "4.85"
+      "height": "6'5",
+      "weight": "316",
+      "40Time": "5.02"
     },
     "rating": 39,
-    "scoutingReport": "HAND: 0928 ARM: 3300 WING: 7948 Incredible quickness from an interior pass rusher and was an elite run defender in 2024"
+    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758"
   },
   {
     "name": "Landon Jackson",
@@ -516,28 +517,28 @@
     "scoutingReport": "HAND: 1118 ARM: 3358 WING 7968"
   },
   {
-    "name": "Jihaad Campbell",
-    "position": "EDGE",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'3",
-      "weight": "244",
-      "40Time": "4.65"
-    },
-    "rating": 43,
-    "scoutingReport": "Coming soon!"
+  "name": "Benjamin Morrison",
+  "position": "CB",
+  "team": "Notre Dame",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "185",
+    "40Time": "4.39"
+  },
+  "rating": 43,
+  "scoutingReport": "Fast and agile, with great ball skills and instincts. A true ball hawk who can make plays on the ball at the catch point. Aggressive for his smaller size."
   },
   {
-    "name": "Grey Zabel",
-    "position": "OT",
-    "team": "North Dakota State",
+    "name": "Elic Ayomanor",
+    "position": "WR",
+    "team": "Stanford",
     "stats": {
-      "height": "6'5",
-      "weight": "316",
-      "40Time": "5.02"
+      "height": "6'2\"",
+      "weight": "210",
+      "40Time": "4.50"
     },
     "rating": 44,
-    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758"
+    "scoutingReport": "Physical WR with good speed and hands. Strong at run blocking, high effort player. Plays out wide with Stanford, but has the skills and ability to play in the slot."
   },
   {
     "name": "Ashton Gillotte",
@@ -612,28 +613,28 @@
     "scoutingReport": "HAND: 0938 ARM: 3338 WING 8000"
   },
   {
-    "name": "Dylan Sampson",
-    "position": "RB",
-    "team": "Tennessee",
+    "name": "Azareye'h Thomas",
+    "position": "CB",
+    "team": "Florida State",
     "stats": {
-      "height": "5'11",
-      "weight": "201",
-      "40Time": "4.48"
+      "height": "6'2\"",
+      "weight": "191",
+      "40Time": "4.40"
     },
     "rating": 51,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1018 ARM: 3248 WING 7728"
   },
   {
-    "name": "Kamari Ramsey",
-    "position": "S",
-    "team": "USC",
+    "name": "Marcus Mbow",
+    "position": "OT",
+    "team": "Purdue",
     "stats": {
-      "height": "6'0\"",
-      "weight": "204",
-      "40Time": "4.51"
+      "height": "6'4",
+      "weight": "309",
+      "40Time": "5.00"
     },
     "rating": 52,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 Coming soon!"
   },
   {
     "name": "Donovan Ezeiruaku",
@@ -745,7 +746,7 @@
   },
   {
     "name": "Chris Paul Jr",
-    "position": "IOL",
+    "position": "LB",
     "team": "Ole Miss",
     "stats": {
       "height": "6'1",
@@ -873,7 +874,7 @@
       "40Time": "5.11"
     },
     "rating": 72,
-    "scoutingReport": "HAND: 1068 ARM: 3458 WING 8448"
+    "scoutingReport": "HAND: 1068 ARM: 3458 WING 8448 A huge defensive tackle with great athletic ability, but often plays too high which results in him losing leverage and ground and unable to apply all that power as successfully as he should. Talent is there, but needs to be coached up."
   },
   {
     "name": "Maxwell Hairston",
@@ -897,7 +898,7 @@
       "40Time": "4.56"
     },
     "rating": 74,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A huge plus in the run game with his size, speed, and aggressiveness."
   },
   {
     "name": "Jeffrey Bassa",
@@ -910,18 +911,6 @@
     },
     "rating": 75,
     "scoutingReport": "HAND: 0958 ARM: 3158 WING 7818 An undersized LB but has safety movement skills. Ideal coverage linebacker"
-  },
-  {
-    "name": "Marcus Mbow",
-    "position": "OT",
-    "team": "Purdue",
-    "stats": {
-      "height": "6'4",
-      "weight": "309",
-      "40Time": "5.00"
-    },
-    "rating": 76,
-    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 Coming soon!"
   },
   {
     "name": "Eli Stowers",
@@ -957,7 +946,7 @@
       "40Time": "5.00"
     },
     "rating": 79,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Old prospect, turns 25 in his rookie season. A very strong and powerful interior lineman with good quickness and pass rush moves."
   },
   {
     "name": "Harold Fannin Jr.",
@@ -969,19 +958,19 @@
       "40Time": "4.55"
     },
     "rating": 80,
-    "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college."
+    "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college and young."
   },
   {
-    "name": "Nick Emmanwori",
-    "position": "S",
-    "team": "South Carolina",
+    "name": "Quinshon Judkins",
+    "position": "RB",
+    "team": "Ohio State",
     "stats": {
-      "height": "6'3\"",
-      "weight": "227",
-      "40Time": "4.58"
+      "height": "5'10\"",
+      "weight": "210",
+      "40Time": "4.49"
     },
     "rating": 81,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker"
   },
   {
     "name": "Derrick Harmon",
@@ -1074,10 +1063,10 @@
     "stats": {
       "height": "5'9",
       "weight": "211",
-      "40Time": "4.54"
+      "40Time": "4.39"
     },
     "rating": 89,
-    "scoutingReport": "HAND: 0868 ARM: 3028 WING 7028"
+    "scoutingReport": "HAND: 0868 ARM: 3028 WING 7028 Very good speed, quickness, and yards after contact metrics are elite. A playmaker with the ball in space. Can pass protect. Was not used much in the passing game catching the ball at VT. Has fumbling issues which must be fixed."
   },
   {
     "name": "Mello Dotson",
@@ -1116,16 +1105,16 @@
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Azareye'h Thomas",
-    "position": "CB",
-    "team": "Florida State",
+    "name": "Dylan Sampson",
+    "position": "RB",
+    "team": "Tennessee",
     "stats": {
-      "height": "6'2\"",
-      "weight": "191",
-      "40Time": "4.40"
+      "height": "5'11",
+      "weight": "201",
+      "40Time": "4.34"
     },
     "rating": 93,
-    "scoutingReport": "HAND: 1018 ARM: 3248 WING 7728"
+    "scoutingReport": "Coming soon! 10.48 100m HS time. A very fast and explosive back with great agility and vision. Can catch the ball out of the backfield. A home run hitter."
   },
   {
     "name": "Josaiah Stewart",
@@ -1509,18 +1498,6 @@
       "40Time": "-"
     },
     "rating": 127,
-    "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Harold Perkins Jr.",
-    "position": "LB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "225",
-      "40Time": "-"
-    },
-    "rating": 128,
     "scoutingReport": "Coming soon!"
   },
   {
@@ -2058,10 +2035,10 @@
     "stats": {
       "height": "5'10\"",
       "weight": "192",
-      "40Time": "4.40"
+      "40Time": "4.30"
     },
     "rating": 173,
-    "scoutingReport": "HAND: 0838 ARM: 3138 WING 7368"
+    "scoutingReport": "HAND: 0838 ARM: 3138 WING 7368 10.48 HS 100m time"
   },
   {
     "name": "Tommi Hill",
@@ -3633,7 +3610,7 @@
     "40Time": "4.42"
   },
   "rating": 305,
-  "scoutingReport": "HAND 0900 ARM 3158 WING 7628"
+  "scoutingReport": "HAND 0900 ARM 3158 WING 7628 10.1 high school 100m time. World class speed. Has issues with drops. For as blazing fast as he is, his ability to make people miss in space and run after the catch is not as ideal as it could be. If his hands improve, teams will be forced to respect his speed any time he's on the field."
 },
 {
   "name": "Melvin Smith",
