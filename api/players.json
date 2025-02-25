@@ -457,18 +457,6 @@
     "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
   },
   {
-    "name": "Jahdae Barron",
-    "position": "CB",
-    "team": "Texas",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "200",
-      "40Time": "4.49"
-    },
-    "rating": 38,
-    "scoutingReport": "Coming soon!"
-  },
-  {
     "name": "Grey Zabel",
     "position": "OT",
     "team": "North Dakota State",
@@ -478,7 +466,7 @@
       "40Time": "5.02"
     },
     "rating": 39,
-    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758"
+    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758 Won all his 1 on 1s at the Senior Bowl all in the interior, which bodes well for his draft stock since he was playing lower competition. A very strong and physical tackle with great technique and footwork. "
   },
   {
     "name": "Landon Jackson",
@@ -859,10 +847,10 @@
   "stats": {
     "height": "6'4",
     "weight": "300",
-    "40Time": "5.08"
+    "40Time": "4.78"
   },
   "rating": 71,
-  "scoutingReport": "An undersized tackle, but has the athleticism and technique to develop into a starting lineman in the NFL"
+  "scoutingReport": "An undersized tackle, has unbelieveable speed and quickness for an offensive lineman. He'll likely gain weight through the draft process to prove he can play with his elite athletic ability at more ideal tackle weight."
 },
   {
     "name": "Deone Walker",
