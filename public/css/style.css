@@ -297,3 +297,9 @@ footer a:last-child {
 footer a:hover {
     opacity: 0.9;
 }
+
+#draftResults {
+    max-height: 400px;
+    /* or however tall you want */
+    overflow-y: auto;
+}
