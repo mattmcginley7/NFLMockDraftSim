@@ -202,6 +202,22 @@
             height: 60px;
             width: auto;
         }
+
+        .player-rankings-button {
+    display: inline-block;         /* Makes it behave like a button */
+    background-color: #007bff;     /* Same color used elsewhere */
+    color: #fff;                   /* White text stands out */
+    padding: 10px 20px;            /* More padding for a button feel */
+    border: none;                  /* Remove default borders */
+    border-radius: 5px;            /* Rounded corners */
+    text-decoration: none;         /* Remove underline if it’s a link */
+    cursor: pointer;               /* Hand cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+.player-rankings-button:hover {
+    background-color: #0056b3;     /* Slightly darker on hover */
+}
     </style>
 </head>
 
@@ -210,7 +226,7 @@
         <h1>Select Your Team</h1>
         <nav>
             <ul>
-                <li><a href="rankings.html">Player Rankings</a></li>
+                <li><a href="rankings.html" class="player-rankings-button">Player Rankings</a></li>
             </ul>
         </nav>
     </header>
