@@ -901,6 +901,18 @@
     "scoutingReport": "HAND: 0958 ARM: 3158 WING 7818 An undersized LB but has safety movement skills. Ideal coverage linebacker"
   },
   {
+    "name": "Jared Wilson",
+    "position": "IOL",
+    "team": "Georgia",
+    "stats": {
+      "height": "6'3\"",
+      "weight": "310",
+      "40Time": "4.90"
+    },
+    "rating": 76,
+    "scoutingReport": "HAND: 0918 ARM: 3258 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. "
+  },
+  {
     "name": "Eli Stowers",
     "position": "TE",
     "team": "Vanderbilt",
@@ -3586,7 +3598,7 @@
     "40Time": "4.49"
   },
   "rating": 304,
-  "scoutingReport": "HAND: 0868 ARM: 3068 WING 7328"
+  "scoutingReport": "HAND: 0868 ARM: 3068 WING 7328 Former wide receiver, could play in the slot if needed. Great quickness and acceleration and balance to make defenders miss."
 },
 {
   "name": "Arian Smith",
@@ -3595,10 +3607,10 @@
   "stats": {
     "height": "6'0\"",
     "weight": "175",
-    "40Time": "4.42"
+    "40Time": "4.24"
   },
   "rating": 305,
-  "scoutingReport": "HAND 0900 ARM 3158 WING 7628 10.1 high school 100m time. World class speed. Has issues with drops. For as blazing fast as he is, his ability to make people miss in space and run after the catch is not as ideal as it could be. If his hands improve, teams will be forced to respect his speed any time he's on the field."
+  "scoutingReport": "HAND 0900 ARM 3158 WING 7628 10.18 high school 100m time. World class speed. Has issues with drops. For as blazing fast as he is, his ability to make people miss in space and run after the catch is not as ideal as it could be. If his hands improve, teams will be forced to respect his speed any time he's on the field."
 },
 {
   "name": "Melvin Smith",
