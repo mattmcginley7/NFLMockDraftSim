@@ -101,7 +101,7 @@ function filterPlayers(criteria) {
 // Function to update draft history
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
-    draftHistoryContainer.innerHTML = '';
+    draftHistoryContainer.innerHTML = ''; // Clear existing content
     (draftHistory || []).forEach(pick => {
         const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
         const pickElement = document.createElement('div');
@@ -111,8 +111,10 @@ function updateDraftHistory(draftHistory) {
            <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
         draftHistoryContainer.appendChild(pickElement);
     });
-    // --- Scroll to bottom so the user sees the last pick ---
-    draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+    // Scroll to the bottom after elements are added
+    setTimeout(() => {
+        draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+    }, 0);
 }
 
 

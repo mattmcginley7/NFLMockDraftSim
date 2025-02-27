@@ -297,3 +297,14 @@ footer a:last-child {
 footer a:hover {
     opacity: 0.9;
 }
+
+#draftHistory {
+    max-height: 400px;
+    /* Set a fixed height; adjust as needed for your layout */
+    overflow-y: auto;
+    /* Enable vertical scrolling when content overflows */
+    padding: 10px;
+    /* Optional: improves readability */
+    border: 1px solid #ddd;
+    /* Optional: visual separation */
+}

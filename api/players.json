@@ -658,7 +658,7 @@
       "40Time": "4.45"
     },
     "rating": 55,
-    "scoutingReport": "HAND: 0958 ARM: 3318 WING 8118 A world class athlete with adequate size and strength for the TE position. A player who can be a mismatch nightmare in the NFL"
+    "scoutingReport": "HAND: 0958 ARM: 3318 WING 8118 A world class athlete with adequate size and strength for the TE position. A player who can be a mismatch nightmare in the NFL. Elite speed, makes people miss and can really run routes, isn't just a vertical athlete. Is physical in the run game, but technique could use more work."
   },
   {
     "name": "Mason Taylor",
@@ -670,7 +670,7 @@
       "40Time": "4.63"
     },
     "rating": 55,
-    "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638"
+    "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638 A very smooth mover for a tight end, catches the ball very naturally in stride and can get open. Will be able to win as a receiver all over the field. Doesn't make too many people miss, short arms and not the best blocker. But as a receiver, he's a weapon. Similar stylistically to Zach Ertz."
   },
   {
     "name": "Gunnar Helm",
@@ -682,7 +682,7 @@
       "40Time": "4.65"
     },
     "rating": 56,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "Good not great athlete, but very smooth mover and can make people miss in open space. Has reliable hands and can catch the ball naturally in stride picking up yards after the catch."
   },
   {
     "name": "Savion Williams",
@@ -818,7 +818,7 @@
 },
 {
   "name": "Zy Alexander",
-  "position": "S",
+  "position": "CB",
   "team": "LSU",
   "stats": {
     "height": "6'2\"",
@@ -826,7 +826,7 @@
     "40Time": "4.45"
   },
   "rating": 69,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "Outside man to man corner with good long speed and length. 1 year removed from a torn ACL. Shows the ability to make open field tackles at a high rate, limiting yards after the catch."
 },
 {
   "name": "Jalen Royals",
@@ -874,7 +874,7 @@
       "40Time": "4.42"
     },
     "rating": 73,
-    "scoutingReport": "HAND: 0878 ARM: 3148 WING 7600"
+    "scoutingReport": "HAND: 0878 ARM: 3148 WING 7600 Thinner corner, but plays aggressively and had a low missed tackle rate in the SEC. 6 INTs in 20 college starts which is very good. Has the ability to play inside and out and shows good timing and understanding on when to break on the ball. "
   },
   {
     "name": "Lathan Ransom",
@@ -913,18 +913,6 @@
     "scoutingReport": "HAND: 0918 ARM: 3258 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. "
   },
   {
-    "name": "Eli Stowers",
-    "position": "TE",
-    "team": "Vanderbilt",
-    "stats": {
-      "height": "6'4",
-      "weight": "235",
-      "40Time": "4.59"
-    },
-    "rating": 77,
-    "scoutingReport": "Coming soon!"
-  },
-  {
     "name": "Tez Johnson",
     "position": "WR",
     "team": "Oregon",
@@ -958,7 +946,7 @@
       "40Time": "4.55"
     },
     "rating": 80,
-    "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college and young."
+    "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college and young. Ideally, he goes to a creative team that allows Fannin to utilize his receiving ability and doesn't ask him to block in line on edge players."
   },
   {
     "name": "Quinshon Judkins",
