@@ -68,7 +68,7 @@
       "weight": "203",
       "40Time": "4.45"
     },
-    "rating": 6,
+    "rating": 20,
     "scoutingReport": "A tall and physical corner with great ball skills and instincts"
   },
   {
@@ -89,11 +89,11 @@
     "team": "LSU",
     "stats": {
       "height": "6'6\"",
-      "weight": "320",
-      "40Time": "5.13"
+      "weight": "319",
+      "40Time": "4.98"
     },
     "rating": 8,
-    "scoutingReport": "A physical tackle with great footwork and technique. A day 1 starter and leader, but some maybe doesn't possess the elite movement skills and arm length that many of the best pass blocking tackles possess."
+    "scoutingReport": "ARM: 3258 HAND: 0948 A physical tackle with great footwork and technique. A day 1 starter and leader, but some maybe doesn't possess the elite movement skills and arm length that many of the best pass blocking tackles possess."
   },
   {
     "name": "Luther Burden",
@@ -126,22 +126,22 @@
     "stats": {
       "height": "6'4\"",
       "weight": "332",
-      "40Time": "4.94"
+      "40Time": "4.91"
     },
-    "rating": 11,
-    "scoutingReport": "HAND: 0958 ARM: 3400 WING: 8100 Freak athlete with great size and strength, and is still very young. Has the length and foot speed desired to play tackle at a very high level."
+    "rating": 6,
+    "scoutingReport": "HAND: 0968 ARM: 3348 WING: 8100 Freak athlete with great size and strength, and is still very young. Has the length and foot speed desired to play tackle at a very high level."
   },
   {
     "name": "Kelvin Banks",
     "position": "OT",
     "team": "Texas",
     "stats": {
-      "height": "6'4\"",
-      "weight": "324",
-      "40Time": "5.12"
+      "height": "6'5\"",
+      "weight": "315",
+      "40Time": "5.16"
     },
     "rating": 12,
-    "scoutingReport": "A young and athletic tackle with great footwork and technique. A day 1 starter with the potential to be a Pro Bowl tackle in the NFL."
+    "scoutingReport": "ARM: 3348 HAND: 1038 A young and athletic tackle with great footwork and technique. A day 1 starter with the potential to be a Pro Bowl tackle in the NFL."
   },
   {
     "name": "Matthew Golden",
@@ -185,11 +185,11 @@
   "team": "Ohio State",
   "stats": {
     "height": "6'5\"",
-    "weight": "312",
-    "40Time": "4.96"
+    "weight": "317",
+    "40Time": "4.96u"
   },
   "rating": 15,
-  "scoutingReport": "Atheltic tackle with ideal size and strength to be a great starter, but still recovering from an ACL tear in the 2024 season"
+  "scoutingReport": "ARM: 3300 HAND: 1000 Atheltic tackle with ideal size and strength to be a great starter, but still recovering from an ACL tear in the 2024 season"
 },
 {
   "name": "Emeka Egbuka",
@@ -221,11 +221,11 @@
   "team": "Alabama",
   "stats": {
     "height": "6'5\"",
-    "weight": "325",
-    "40Time": "5.09"
+    "weight": "321",
+    "40Time": "5.38"
   },
-  "rating": 18,
-  "scoutingReport": "Big, strong, reliable, and a leader. A day 1 starter at guard who will hold his position for the next decade for whoever drafts him."
+  "rating": 40,
+  "scoutingReport": "ARM: 3448 HAND: 1100 A reliable and refined guard with size and length, but movement skills and athleticism are lacking. If asked to move in space, he is not a good fit. If asked to man blocker in the run game and play in a phone booth, he should be able to hold up."
 },
 {
   "name": "Jahdae Barron",
@@ -268,12 +268,12 @@
   "position": "T",
   "team": "Oregon",
   "stats": {
-    "height": "6'4\"",
-    "weight": "314",
-    "40Time": "4.92"
+    "height": "6'5\"",
+    "weight": "311",
+    "40Time": "5.05"
   },
   "rating": 22,
-  "scoutingReport": "HAND: 1038 ARM: 3400 WING: 8100 Elite movement skills, has the ability to be a great pass blocker."
+  "scoutingReport": "HAND: 1038 ARM: 3348 WING: 8100 Good movement skills, has the ability to be a great pass blocker. 1.71 10 yard split shows his great movement skills in short areas."
 },
 {
   "name": "Walter Nolen",
@@ -426,11 +426,11 @@
     "team": "Minnesota",
     "stats": {
       "height": "6'6",
-      "weight": "339",
-      "40Time": "4.95"
+      "weight": "331",
+      "40Time": "5.01"
     },
     "rating": 34,
-    "scoutingReport": "HAND: 0938 ARM: 3400 WING: 8118 Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
+    "scoutingReport": "HAND: 0938 ARM: 3318 WING: 8118 Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
   },
   {
     "name": "Shavon Revel",
@@ -462,8 +462,8 @@
     "team": "Texas",
     "stats": {
       "height": "6'6",
-      "weight": "335",
-      "40Time": "5.15"
+      "weight": "317",
+      "40Time": "5.15u"
     },
     "rating": 37,
     "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
@@ -473,12 +473,12 @@
     "position": "OT",
     "team": "North Dakota State",
     "stats": {
-      "height": "6'5",
-      "weight": "316",
+      "height": "6'6",
+      "weight": "312",
       "40Time": "5.02"
     },
     "rating": 39,
-    "scoutingReport": "HAND: 0938 ARM: 3228 WING 7758 Won all his 1 on 1s at the Senior Bowl all in the interior, which bodes well for his draft stock since he was playing lower competition. A very strong and physical tackle with great technique and footwork. "
+    "scoutingReport": "HAND: 0938 ARM: 3200 WING 7758 Won all his 1 on 1s at the Senior Bowl all in the interior, which bodes well for his draft stock since he was playing lower competition. A very strong and physical tackle with great technique and footwork. "
   },
   {
     "name": "Landon Jackson",
@@ -493,7 +493,7 @@
     "scoutingReport": "HAND: 1011 ARM: 3358 WING 8268"
   },
   {
-    "name": "Carson VSchwesinger",
+    "name": "Carson Schwesinger",
     "position": "LB",
     "team": "UCLA",
     "stats": {
@@ -642,11 +642,11 @@
     "team": "Purdue",
     "stats": {
       "height": "6'4",
-      "weight": "309",
-      "40Time": "5.00"
+      "weight": "303",
+      "40Time": "5.10u"
     },
     "rating": 52,
-    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 Coming soon!"
+    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018"
   },
   {
     "name": "Donovan Ezeiruaku",
@@ -797,12 +797,12 @@
     "position": "OT",
     "team": "West Virginia",
     "stats": {
-      "height": "6'6\"",
-      "weight": "315",
-      "40Time": "5.01"
+      "height": "6'7\"",
+      "weight": "313",
+      "40Time": "5.27"
     },
     "rating": 64,
-    "scoutingReport": "Ideal height, strength and technique for a tackle, but shorter arms may make him ideal for guard"
+    "scoutingReport": "ARM: 3218 HAND: 1028 Ideal height, strength and technique for a tackle, but shorter arms may make him ideal for guard"
   },
   {
     "name": "Alfred Collins",
@@ -845,12 +845,12 @@
   "position": "IOL",
   "team": "Arizona",
   "stats": {
-    "height": "6'5\"",
-    "weight": "336",
-    "40Time": "5.25"
+    "height": "6'4\"",
+    "weight": "324",
+    "40Time": "4.95"
   },
   "rating": 68,
-  "scoutingReport": "Coming soon!"
+  "scoutingReport": "ARM: 3378 HAND: 1028 Coming soon!"
 },
 {
   "name": "Zy Alexander",
@@ -881,12 +881,12 @@
   "position": "OT",
   "team": "William and Mary",
   "stats": {
-    "height": "6'4",
-    "weight": "300",
-    "40Time": "4.78"
+    "height": "6'5",
+    "weight": "311",
+    "40Time": "4.85u"
   },
   "rating": 71,
-  "scoutingReport": "An undersized tackle, has unbelieveable speed and quickness for an offensive lineman. He'll likely gain weight through the draft process to prove he can play with his elite athletic ability at more ideal tackle weight."
+  "scoutingReport": "ARM: 3468 HAND: 1028 Has unbelieveable speed and quickness for an offensive lineman. He'll likely gain weight through the draft process to prove he can play with his elite athletic ability at more ideal tackle weight."
 },
   {
     "name": "Deone Walker",
@@ -1014,11 +1014,11 @@
     "team": "Boston College",
     "stats": {
       "height": "6'8",
-      "weight": "321",
-      "40Time": "5.19"
+      "weight": "316",
+      "40Time": "5.21"
     },
     "rating": 83,
-    "scoutingReport": "HAND: 1028 ARM: 3348 WING 8128"
+    "scoutingReport": "HAND: 1028 ARM: 3300 WING 8128"
   },
   {
     "name": "Tyler Baron",
@@ -1037,12 +1037,12 @@
     "position": "IOL",
     "team": "Georgia",
     "stats": {
-      "height": "6'6\"",
-      "weight": "320",
-      "40Time": "5.12"
+      "height": "6'7\"",
+      "weight": "308",
+      "40Time": "4.97"
     },
     "rating": 85,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3248 HAND: 1038 Great athlete, 1.72 10 yard split and 7.38 3 cone are elite for a guard. Movement skills this good at guard show the ability to pull and get to the second level and pick up linebackers which can really spring runningbacks into big runs as well as mirror and match most defensive lineman in pass protection."
   },
   {
     "name": "Quandarrius Robinson",
@@ -1062,11 +1062,11 @@
     "team": "Ohio State",
     "stats": {
       "height": "6'4\"",
-      "weight": "320",
-      "40Time": "5.10"
+      "weight": "315",
+      "40Time": "5.20u"
     },
     "rating": 87,
-    "scoutingReport": "Moved to tackle to end the year due to injuries and held his own in pass protection with super long reported 36 inch arms."
+    "scoutingReport": "ARM: 3348 HAND: 0978 Moved to tackle to end the year due to injuries and held his own in pass protection with super long reported 36 inch arms."
   },
   {
     "name": "Jonas Sanker",
@@ -1805,9 +1805,9 @@
     "position": "T",
     "team": "LSU",
     "stats": {
-      "height": "6'6\"",
-      "weight": "312",
-      "40Time": "5.10"
+      "height": "6'5\"",
+      "weight": "315",
+      "40Time": "5.20u"
     },
     "rating": 151,
     "scoutingReport": "HAND: 1068 ARM: 3468 WING 8258"
@@ -2046,11 +2046,11 @@
     "team": "Texas",
     "stats": {
       "height": "6'3\"",
-      "weight": "315",
-      "40Time": "-"
+      "weight": "306",
+      "40Time": "5.20u"
     },
     "rating": 171,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3038 HAND: 0978 Coming soon!"
   },
   {
     "name": "Kaden Prather",
@@ -2106,23 +2106,23 @@
     "team": "Connecticut",
     "stats": {
       "height": "6'8\"",
-      "weight": "305",
-      "40Time": "-"
+      "weight": "304",
+      "40Time": "5.20u"
     },
     "rating": 176,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3258 HAND: 0958"
   },
   {
     "name": "Miles Frazier",
     "position": "G",
     "team": "LSU",
     "stats": {
-      "height": "6'5\"",
-      "weight": "324",
-      "40Time": "5.27"
+      "height": "6'6\"",
+      "weight": "317",
+      "40Time": "5.24"
     },
     "rating": 177,
-    "scoutingReport": "HAND: 0900 ARM: 3338 WING 8038"
+    "scoutingReport": "HAND: 0900 ARM: 3268 WING 8038"
   },
   {
     "name": "Upton Stout",
@@ -2525,9 +2525,9 @@
     "position": "OT",
     "team": "NC State",
     "stats": {
-      "height": "6'5\"",
-      "weight": "345",
-      "40Time": "5.35"
+      "height": "6'6\"",
+      "weight": "336",
+      "40Time": "5.26"
     },
     "rating": 210,
     "scoutingReport": "HAND: 1028 ARM: 3258 WING 8318"
@@ -2730,11 +2730,11 @@
     "team": "Rutgers",
     "stats": {
       "height": "6'8\"",
-      "weight": "344",
-      "40Time": ""
+      "weight": "341",
+      "40Time": "5.35u"
     },
     "rating": 226,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3600 HAND: 0978"
   },
   {
     "name": "Dante Trader Jr.",
@@ -2747,6 +2747,18 @@
     },
     "rating": 227,
     "scoutingReport": "HAND: 0858 ARM: 3128 WING 7500"
+  },
+  {
+    "name": "Joe Huber",
+    "position": "IOL",
+    "team": "Wisconsin",
+    "stats": {
+      "height": "6'5\"",
+      "weight": "310",
+      "40Time": "5.20"
+    },
+    "rating": 228,
+    "scoutingReport": "HAND: 0968 ARM: 3228"
   },
   {
     "name": "Jah Joyner",
@@ -3125,9 +3137,9 @@
     "position": "T",
     "team": "Miami (FL)",
     "stats": {
-      "height": "6'5\"",
-      "weight": "331",
-      "40Time": ""
+      "height": "6'6\"",
+      "weight": "319",
+      "40Time": "5.29"
     },
     "rating": 259,
     "scoutingReport": "HAND: 1018 ARM: 3500 WING 8348"
@@ -3329,12 +3341,12 @@
     "position": "G",
     "team": "Oregon State",
     "stats": {
-      "height": "6'4\"",
-      "weight": "310",
-      "40Time": ""
+      "height": "6'5\"",
+      "weight": "299",
+      "40Time": "5.04"
     },
     "rating": 276,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3138 HAND: 0948"
   },
   {
     "name": "Ja'Corey Brooks",
@@ -3515,6 +3527,18 @@
     },
     "rating": 291,
     "scoutingReport": "Coming soon!"
+  },
+  {
+    "name": "Branson Taylor",
+    "position": "OT",
+    "team": "Pittsburgh",
+    "stats": {
+      "height": "6'6\"",
+      "weight": "321",
+      "40Time": "5.25u"
+    },
+    "rating": 176,
+    "scoutingReport": "ARM: 3268 HAND: 0968"
   },
   {
     "name": "Devonte Ross",
@@ -4062,11 +4086,11 @@
   "team": "Kansas",
   "stats": {
     "height": "6'6\"",
-    "weight": "312",
-    "40Time": "5.12"
+    "weight": "311",
+    "40Time": "5.18"
   },
   "rating": 337,
-  "scoutingReport": "HAND: 0978 ARM: 3468 WING: 8348"
+  "scoutingReport": "HAND: 1000 ARM: 3378 WING: 8348 Shuttle time of 4.51 is great, just misses the mark for elite where there is a very high correlation to players being very successful in their careers."
 },
 {
   "name": "Yahya Black",
