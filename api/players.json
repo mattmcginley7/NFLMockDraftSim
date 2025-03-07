@@ -655,10 +655,10 @@
     "stats": {
       "height": "6'2",
       "weight": "248",
-      "40Time": "4.60"
+      "40Time": "4.70u"
     },
     "rating": 53,
-    "scoutingReport": "HAND: 0928 ARM: 3448 WING: 8238 A pass rush specialist with great speed and quickness off the edge. Long arms for his size and a great motor."
+    "scoutingReport": "HAND: 0928 ARM: 3448 WING: 8238 A pass rush specialist with quickness and bend off the edge. Long arms for his size and a great motor."
   },
   {
     "name": "Jack Bech",
@@ -943,10 +943,10 @@
     "stats": {
       "height": "6'3\"",
       "weight": "310",
-      "40Time": "4.90"
+      "40Time": "4.84"
     },
     "rating": 76,
-    "scoutingReport": "HAND: 0918 ARM: 3258 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. "
+    "scoutingReport": "HAND: 1068 ARM: 3238 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. Elite physical testing at the combine."
   },
   {
     "name": "Tez Johnson",
@@ -1290,11 +1290,11 @@
     "team": "Florida",
     "stats": {
       "height": "6'7\"",
-      "weight": "322",
-      "40Time": "-"
+      "weight": "316",
+      "40Time": "5.33"
     },
     "rating": 107,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3400 HAND: 1048"
   },
   {
     "name": "Barrett Carter",
@@ -1326,11 +1326,11 @@
     "team": "Oregon",
     "stats": {
       "height": "6'5\"",
-      "weight": "315",
-      "40Time": "-"
+      "weight": "310",
+      "40Time": "5.20u"
     },
     "rating": 110,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3348 HAND: 0948"
   },
   {
     "name": "Sai'vion Jones",
@@ -1430,27 +1430,27 @@
   },
   {
     "name": "Connor Colby",
-    "position": "G",
+    "position": "IOL",
     "team": "Iowa",
     "stats": {
       "height": "6'6\"",
-      "weight": "310",
-      "40Time": "-"
+      "weight": "309",
+      "40Time": "5.11"
     },
-    "rating": 120,
-    "scoutingReport": "Coming soon!"
+    "rating": 220,
+    "scoutingReport": "ARM: 3200 HAND: 1000"
   },
   {
-    "name": "Benjamin Yurosek",
-    "position": "TE",
-    "team": "Georgia",
+    "name": "John Williams",
+    "position": "IOL",
+    "team": "Iowa",
     "stats": {
       "height": "6'4\"",
-      "weight": "245",
-      "40Time": "-"
+      "weight": "322",
+      "40Time": "5.17"
     },
-    "rating": 121,
-    "scoutingReport": "Coming soon!"
+    "rating": 220,
+    "scoutingReport": "ARM: 3378 HAND: 1100"
   },
   {
     "name": "Jaeden Roberts",
@@ -1517,12 +1517,12 @@
     "position": "G",
     "team": "Cincinnati",
     "stats": {
-      "height": "6'4\"",
-      "weight": "323",
-      "40Time": "-"
+      "height": "6'5\"",
+      "weight": "319",
+      "40Time": "5.25u"
     },
     "rating": 127,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3178 HAND: 1000 33 bench press reps."
   },
   {
     "name": "Pat Bryant",
@@ -1794,11 +1794,11 @@
     "team": "USC",
     "stats": {
       "height": "6'4\"",
-      "weight": "307",
-      "40Time": "5.12"
+      "weight": "302",
+      "40Time": "5.22u"
     },
     "rating": 150,
-    "scoutingReport": "HAND: 0928 ARM: 3058 WING: 7700"
+    "scoutingReport": "HAND: 0928 ARM: 3018 WING: 7700"
   },
   {
     "name": "Emery Jones Jr.",
@@ -1962,11 +1962,11 @@
     "team": "Ohio State",
     "stats": {
       "height": "6'4\"",
-      "weight": "305",
-      "40Time": "-"
+      "weight": "304",
+      "40Time": "5.15u"
     },
     "rating": 164,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3100 HAND: 0948"
   },
   {
     "name": "Derrick Moore",
@@ -2202,11 +2202,11 @@
     "team": "Wisconsin",
     "stats": {
       "height": "6'7\"",
-      "weight": "316",
-      "40Time": "-"
+      "weight": "314",
+      "40Time": "5.25u"
     },
     "rating": 184,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3348 HAND: 1000"
   },
   {
     "name": "Dominic Lovett",
@@ -2634,11 +2634,11 @@
     "team": "Georgia",
     "stats": {
       "height": "6'5\"",
-      "weight": "315",
-      "40Time": "5.23"
+      "weight": "318",
+      "40Time": "5.23u"
     },
     "rating": 218,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3300 HAND: 1000"
   },
   {
     "name": "Jailin Walker",
@@ -2718,11 +2718,11 @@
     "team": "Jacksonville State",
     "stats": {
       "height": "6'3\"",
-      "weight": "310",
-      "40Time": ""
+      "weight": "312",
+      "40Time": "5.11"
     },
     "rating": 225,
-    "scoutingReport": "HAND: 0978 ARM: 3258 WING 7900"
+    "scoutingReport": "HAND: 0978 ARM: 3200 WING 7900"
   },
   {
     "name": "Hollin Pierce",
@@ -3019,10 +3019,10 @@
     "stats": {
       "height": "6'7\"",
       "weight": "314",
-      "40Time": ""
+      "40Time": "5.12"
     },
-    "rating": 250,
-    "scoutingReport": "HAND: 1018 ARM: 3518 WING 8368"
+    "rating": 150,
+    "scoutingReport": "HAND: 1018 ARM: 3448 WING 8368"
   },
   {
     "name": "De'Rickey Wright",
@@ -3174,11 +3174,11 @@
     "team": "Georgia",
     "stats": {
       "height": "6'7\"",
-      "weight": "320",
-      "40Time": ""
+      "weight": "309",
+      "40Time": "5.24"
     },
     "rating": 262,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3300 HAND: 1048"
   },
   {
     "name": "Jimmy Horn Jr.",
@@ -3609,7 +3609,7 @@
     "weight": "190",
     "40Time": "4.40"
   },
-  "rating": 297,
+  "rating": 110,
   "scoutingReport": "HAND: 0868 ARM: 3058 WING 7228"
 },
 {
@@ -3630,11 +3630,11 @@
   "team": "Iowa State",
   "stats": {
     "height": "6'8\"",
-    "weight": "341",
-    "40Time": "5.29"
+    "weight": "339",
+    "40Time": "5.14"
   },
   "rating": 299,
-  "scoutingReport": "HAND: 1028 ARM: 3448 WING 8348"
+  "scoutingReport": "HAND: 1048 ARM: 3478 WING 8348 Great size, length and testing. A massive human being that can still move, a 35 inch vertical at 340lb is ridiculous. Needs to work on his technique and footwork, but has the physical tools to be a starting tackle in the NFL."
 },
 {
   "name": "Isaac Teslaa",
@@ -3647,6 +3647,18 @@
   },
   "rating": 300,
   "scoutingReport":"HAND: 1000 ARM: 3118 WING 7638 Big WR that can play inside and out and has great ball skills. Makes a lot of impressive catches and high points the ball well. Great speed for his size, tested extremely well at the combine."
+},
+{
+  "name": "Eli Cox",
+  "position": "IOL",
+  "team": "Kentucky",
+  "stats": {
+    "height": "6'4\"",
+    "weight": "306",
+    "40Time": "5.02"
+  },
+  "rating": 161,
+  "scoutingReport": "HAND: 0928 ARM: 3100 Great movement skills for a center. One of the best combine testers all time for the position. "
 },
 {
   "name": "Junior Tafuna",
@@ -3722,15 +3734,15 @@
 },
 {
   "name": "Jackson Slater",
-  "position": "C",
+  "position": "IOL",
   "team": "Sacramento State",
   "stats": {
     "height": "6'3\"",
-    "weight": "320",
-    "40Time": "5.20"
+    "weight": "311",
+    "40Time": "5.01"
   },
-  "rating": 307,
-  "scoutingReport": "HAND 0968 ARM 3300 WING 7800"
+  "rating": 157,
+  "scoutingReport": "HAND 0968 ARM 3200 WING 7800 Showed ability to mirror and match interior defensive lineman in pass protection. Good speed and movement skills to get to 2nd level defenders in the run game. 32 bench press reps which is very strong."
 },
 {
   "name": "Trey Rucker",
@@ -4425,7 +4437,7 @@
     "weight": "212",
     "40Time": "4.41"
   },
-  "rating": 6,
+  "rating": 206,
   "scoutingReport": "ARM: 3068 HAND: 0928"
 },
 {
@@ -4437,7 +4449,7 @@
     "weight": "209",
     "40Time": "4.57"
   },
-  "rating": 138,
+  "rating": 238,
   "scoutingReport": "ARM: 3048 HAND: 0768"
 },
 {
@@ -4487,5 +4499,53 @@
   },
   "rating": 264,
   "scoutingReport": "ARM: 3328 HAND: 0978"
+},
+{
+  "name": "Myles Hinton",
+  "position": "OT",
+  "team": "Michigan",
+  "stats": {
+    "height": "6'7\"",
+    "weight": "323",
+    "40Time": "5.30u"
+  },
+  "rating": 298,
+  "scoutingReport": "HAND: 1028 ARM: 3418"
+},
+{
+  "name": "Marcus Tate",
+  "position": "IOL",
+  "team": "Clemson",
+  "stats": {
+    "height": "6'5",
+    "weight": "321",
+    "40Time": "5.30u"
+  },
+  "rating": 254,
+  "scoutingReport": "HAND: 0900 ARM: 3268"
+},
+{
+  "name": "Drew Kendall",
+  "position": "IOL",
+  "team": "Boston College",
+  "stats": {
+    "height": "6'4",
+    "weight": "308",
+    "40Time": "5.05"
+  },
+  "rating": 254,
+  "scoutingReport": "ARM: 3168 HAND: 0958 4.51 20 yard shuttle which is very close to the elite threshold"
+},
+{
+  "name": "Torricelli Simpkins III",
+  "position": "IOL",
+  "team": "South Carolina",
+  "stats": {
+    "height": "6'5\"",
+    "weight": "312",
+    "40Time": "5.45"
+  },
+  "rating": 350,
+  "scoutingReport": "HAND: 1018 ARM: 3238"
 }
 ]
