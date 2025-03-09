@@ -5,7 +5,7 @@
     "team": "Penn State",
     "stats": {
       "height": "6'3\"",
-      "weight": "257",
+      "weight": "250",
       "40Time": "4.51"
     },
     "rating": 1,
@@ -209,11 +209,11 @@
   "team": "Tennessee",
   "stats": {
     "height": "6'5\"",
-    "weight": "243",
-    "40Time": "4.55"
+    "weight": "245",
+    "40Time": "4.47"
   },
   "rating": 17,
-  "scoutingReport": "Very talented speed rusher, ideal as a 7 or 9 tech, lined up outside the tackle. Plays a little high, but wins with his great athleticism."
+  "scoutingReport": "ARM: 3268 HAND: 1000 Very talented speed rusher, ideal as a 7 or 9 tech, lined up outside the tackle. Plays a little high, but wins with his great athleticism."
 },
 {
   "name": "Tyler Booker",
@@ -294,22 +294,22 @@
   "stats": {
     "height": "6'3",
     "weight": "251",
-    "40Time": "4.57"
+    "40Time": "4.65u"
   },
   "rating": 23,
-  "scoutingReport": "HAND: 0858 ARM: 3228 WING: 7728 Edge rusher with great speed and quickness who wins on the edge with many different moves. Strong enough to run over tackles and be a force in the run game."
+  "scoutingReport": "HAND: 0858 ARM: 3200 WING: 7728 Edge rusher with great speed and quickness who wins on the edge with many different moves. Strong enough to run over tackles and be a force in the run game."
 },
   {
     "name": "Mykel Williams",
     "position": "EDGE",
     "team": "Georgia",
     "stats": {
-      "height": "6'4\"",
-      "weight": "265",
-      "40Time": "4.57"
+      "height": "6'5\"",
+      "weight": "260",
+      "40Time": "4.67u"
     },
     "rating": 24,
-    "scoutingReport": "An athletic defensive lineman that can play anywhere along the defensive line"
+    "scoutingReport": "ARM: 3438 HAND: 1028 An athletic defensive lineman that can play anywhere along the defensive line"
   },
   {
     "name": "Kenneth Grant",
@@ -329,11 +329,11 @@
     "team": "Texas A&M",
     "stats": {
       "height": "6'5\"",
-      "weight": "281",
-      "40Time": "4.67"
+      "weight": "267",
+      "40Time": "4.59"
     },
     "rating": 26,
-    "scoutingReport": "HAND: 0918 ARM: 3428 WING: 8348 A massive and athletic defensive lineman who can line up anywhere along the line. College sack production was relatively unimpressive, but his elite physical tools give encouragment into developing into a very talented pass rusher."
+    "scoutingReport": "HAND: 0958 ARM: 3418 WING: 8348 A massive and athletic defensive lineman who can line up anywhere along the line. College sack production was relatively unimpressive, but his elite physical tools give encouragment into developing into a very talented pass rusher."
   },
   {
     "name": "Omarion Hampton",
@@ -486,11 +486,11 @@
     "team": "Arkansas",
     "stats": {
       "height": "6'6\"",
-      "weight": "273",
-      "40Time": "4.69"
+      "weight": "264",
+      "40Time": "4.68"
     },
     "rating": 40,
-    "scoutingReport": "HAND: 1011 ARM: 3358 WING 8268"
+    "scoutingReport": "HAND: 1000 ARM: 3328 WING 8268"
   },
   {
     "name": "Carson Schwesinger",
@@ -510,11 +510,11 @@
     "team": "Ole Miss",
     "stats": {
       "height": "6'4\"",
-      "weight": "264",
-      "40Time": "4.58"
+      "weight": "244",
+      "40Time": "4.72"
     },
     "rating": 41,
-    "scoutingReport": "HAND: 0958 ARM: 3428 WING 8178"
+    "scoutingReport": "HAND: 0958 ARM: 3378 WING 8178"
   },
   {
     "name": "Omarr Norman-Lott",
@@ -558,11 +558,11 @@
     "team": "Louisville",
     "stats": {
       "height": "6'3\"",
-      "weight": "275",
-      "40Time": "4.75"
+      "weight": "264",
+      "40Time": "4.75u"
     },
-    "rating": 45,
-    "scoutingReport": "A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
+    "rating": 145,
+    "scoutingReport": "ARM: 3178 HAND: 0848 A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
   },
   {
     "name": "Jack Sawyer",
@@ -571,10 +571,10 @@
     "stats": {
       "height": "6'4\"",
       "weight": "260",
-      "40Time": "4.58"
+      "40Time": "4.68u"
     },
-    "rating": 46,
-    "scoutingReport": "An all around prototypical 4-3 DE that can rush the passer and play the run"
+    "rating": 76,
+    "scoutingReport": "ARM: 3168 HAND: 0968 An all around prototypical 4-3 DE that can rush the passer and play the run"
   },
   {
     "name": "Darien Porter",
@@ -605,12 +605,12 @@
     "position": "EDGE",
     "team": "Ohio State",
     "stats": {
-      "height": "6'5\"",
-      "weight": "269",
-      "40Time": "4.75"
+      "height": "6'4\"",
+      "weight": "265",
+      "40Time": "4.79u"
     },
     "rating": 49,
-    "scoutingReport": "A prototypical 4-3 DE build with great effort and technique, but limited ceiling as a high end pass rusher."
+    "scoutingReport": "ARM: 3368 HAND: 1048 A prototypical 4-3 DE build with great effort and technique, but limited ceiling as a high end pass rusher."
   },
   {
     "name": "Kyle Kennard",
@@ -618,11 +618,11 @@
     "team": "South Carolina",
     "stats": {
       "height": "6'4",
-      "weight": "248",
-      "40Time": "4.68"
+      "weight": "254",
+      "40Time": "4.73"
     },
-    "rating": 50,
-    "scoutingReport": "HAND: 0938 ARM: 3338 WING 8000"
+    "rating": 90,
+    "scoutingReport": "HAND: 0938 ARM: 3400 WING 8000"
   },
   {
     "name": "Azareye'h Thomas",
@@ -653,12 +653,12 @@
     "position": "EDGE",
     "team": "Boston College",
     "stats": {
-      "height": "6'2",
+      "height": "6'3",
       "weight": "248",
       "40Time": "4.70u"
     },
     "rating": 53,
-    "scoutingReport": "HAND: 0928 ARM: 3448 WING: 8238 A pass rush specialist with quickness and bend off the edge. Long arms for his size and a great motor."
+    "scoutingReport": "HAND: 0928 ARM: 3400 WING: 8238 A pass rush specialist with quickness and bend off the edge. Long arms for his size and a great motor."
   },
   {
     "name": "Jack Bech",
@@ -750,11 +750,11 @@
     "team": "Mississippi",
     "stats": {
       "height": "6'6\"",
-      "weight": "283",
-      "40Time": "4.75"
+      "weight": "274",
+      "40Time": "4.82u"
     },
-    "rating": 59,
-    "scoutingReport": "HAND: 0918 ARM: 3368 WING 8138"
+    "rating": 79,
+    "scoutingReport": "HAND: 0918 ARM: 3348 WING 8138"
   },
   {
     "name": "Xavier Restrepo",
@@ -1001,12 +1001,12 @@
     "position": "EDGE",
     "team": "Texas A&M",
     "stats": {
-      "height": "6'4\"",
+      "height": "6'3\"",
       "weight": "257",
       "40Time": "4.71u"
     },
     "rating": 82,
-    "scoutingReport": "Only 20 and has a great physical skillset. Strong and fast, and has the versatility to play standing up on the edge or with his hand in the interior. A great combination of versatility and explosiveness."
+    "scoutingReport": "ARM: 3300 HAND: 1000 Only 20 and has a great physical skillset. Strong and fast, and has the versatility to play standing up on the edge or with his hand in the interior. A great combination of versatility and explosiveness."
   },
   {
     "name": "Ozzy Trapilo",
@@ -1026,11 +1026,11 @@
     "team": "Miami",
     "stats": {
       "height": "6'5\"",
-      "weight": "260",
-      "40Time": "4.66"
+      "weight": "258",
+      "40Time": "4.62"
     },
     "rating": 84,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3318 HAND: 1000"
   },
   {
     "name": "Tate Ratledge",
@@ -1146,11 +1146,23 @@
     "team": "Michigan",
     "stats": {
       "height": "6'1\"",
-      "weight": "248",
-      "40Time": "4.49"
+      "weight": "249",
+      "40Time": "4.59u"
     },
     "rating": 94,
-    "scoutingReport": "HAND: 0958 ARM: 3268 WING: 7878 Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+    "scoutingReport": "HAND: 0958 ARM: 3178 WING: 7878 Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+  },
+  {
+    "name": "Jordan Burch",
+    "position": "EDGE",
+    "team": "Oregon",
+    "stats": {
+      "height": "6'4\"",
+      "weight": "279",
+      "40Time": "4.67"
+    },
+    "rating": 94,
+    "scoutingReport": "HAND: 0948 ARM: 3300"
   },
   {
     "name": "DJ Giddens",
@@ -1338,8 +1350,8 @@
     "team": "LSU",
     "stats": {
       "height": "6'5\"",
-      "weight": "289",
-      "40Time": "4.95"
+      "weight": "280",
+      "40Time": "4.95u"
     },
     "rating": 112,
     "scoutingReport": "HAND: 1018 ARM: 3348 WING 8148"
@@ -1926,11 +1938,11 @@
     "team": "LSU",
     "stats": {
       "height": "6'4\"",
-      "weight": "250",
-      "40Time": "-"
+      "weight": "255",
+      "40Time": "4.65u"
     },
-    "rating": 161,
-    "scoutingReport": "Coming soon!"
+    "rating": 61,
+    "scoutingReport": "ARM: 3338 HAND: 0978"
   },
   {
     "name": "Nohl Williams",
@@ -2694,11 +2706,11 @@
     "team": "Virginia Tech",
     "stats": {
       "height": "6'3\"",
-      "weight": "252",
-      "40Time": ""
+      "weight": "258",
+      "40Time": "4.69"
     },
     "rating": 223,
-    "scoutingReport": "Coming soon!"
+    "scoutingReport": "ARM: 3128 HAND: 0958"
   },
   {
     "name": "Fentrell Cypress II",
@@ -2766,11 +2778,11 @@
     "team": "Minnesota",
     "stats": {
       "height": "6'4\"",
-      "weight": "264",
-      "40Time": "4.73"
+      "weight": "262",
+      "40Time": "4.60"
     },
     "rating": 228,
-    "scoutingReport": "HAND: 0900 ARM: 3418 WING 8158"
+    "scoutingReport": "HAND: 0900 ARM: 3400 WING 8158"
   },
   {
     "name": "Theo Wease Jr.",
@@ -3222,11 +3234,11 @@
     "team": "Oklahoma State",
     "stats": {
       "height": "6'2\"",
-      "weight": "242",
-      "40Time": "4.69"
+      "weight": "240",
+      "40Time": "4.56"
     },
     "rating": 266,
-    "scoutingReport": "HAND: 0948 ARM: 3118 WING 7568"
+    "scoutingReport": "HAND: 0948 ARM: 3068 WING 7568"
   },
   {
     "name": "Emmanuel Pregnon",
@@ -3618,11 +3630,11 @@
   "team": "Central Arkansas",
   "stats": {
     "height": "6'1\"",
-    "weight": "267",
-    "40Time": ""
+    "weight": "263",
+    "40Time": "4.69"
   },
-  "rating": 298,
-  "scoutingReport": "HAND: 0928 ARM: 3168 WING 7700"
+  "rating": 168,
+  "scoutingReport": "HAND: 0928 ARM: 3178 WING 7700"
 },
 {
   "name": "Jalen Travis",
@@ -3677,12 +3689,12 @@
   "position": "EDGE",
   "team": "Texas",
   "stats": {
-    "height": "6'4\"",
-    "weight": "253",
-    "40Time": "4.66"
+    "height": "6'3\"",
+    "weight": "256",
+    "40Time": "4.68"
   },
   "rating": 302,
-  "scoutingReport": "HAND: 0948 ARM: 3248 WING 7778"
+  "scoutingReport": "HAND: 0928 ARM: 3228 WING 7778"
 },
 {
   "name": "Tim Smith",
@@ -3798,11 +3810,11 @@
   "team": "Oklahoma State",
   "stats": {
     "height": "6'3\"",
-    "weight": "261",
+    "weight": "259",
     "40Time": "4.69"
   },
   "rating": 312,
-  "scoutingReport": "HAND: 0968 ARM: 3348 WING 8068"
+  "scoutingReport": "HAND: 0968 ARM: 3338 WING 8068"
 },
 {
   "name": "RJ Oben",
