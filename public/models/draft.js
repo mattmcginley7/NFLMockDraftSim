@@ -480,17 +480,25 @@ function initializeDraftControls() {
                 return response.json();
             })
             .then(data => {
+                // The server returns the updated draftHistory.
+                // The last item in draftHistory should be the pick we just made.
+                const latestPick = data.draftHistory[data.draftHistory.length - 1];
+                const pickNumber = latestPick.pick;
+
+                // Build the HTML output with the pick number in front of the player name.
                 const teamLogo = `../images/${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
                 document.getElementById('draftResults').innerHTML += `
-                   <div class="draft-pick-item">
-                       <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
-                       <strong>${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
-                   </div>`;
-                const draftResultsContainer = document.getElementById('draftResults');
-                // Scroll to bottom
-                draftResultsContainer.scrollTop = draftResultsContainer.scrollHeight;
+        <div class="draft-pick-item">
+          <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
+          <strong>${pickNumber}. ${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
+        </div>
+      `;
+
+                // Refresh players list and update the full draft history on the page
                 fetchPlayers();
                 updateDraftHistory(data.draftHistory);
+
+                // Disable the button and proceed to the next pick
                 document.getElementById('selectPlayer').disabled = true;
                 setTimeout(processDraftSequence, 500);
             })
@@ -499,6 +507,7 @@ function initializeDraftControls() {
                 alert(`Error: ${error.message}`);
             });
     });
+
 
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
