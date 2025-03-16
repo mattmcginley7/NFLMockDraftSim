@@ -613,18 +613,6 @@
     "scoutingReport": "ARM: 3368 HAND: 1048 A prototypical 4-3 DE build with great effort and technique, but limited ceiling as a high end pass rusher."
   },
   {
-    "name": "Kyle Kennard",
-    "position": "EDGE",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'4",
-      "weight": "254",
-      "40Time": "4.73"
-    },
-    "rating": 90,
-    "scoutingReport": "HAND: 0938 ARM: 3400 WING 8000"
-  },
-  {
     "name": "Azareye'h Thomas",
     "position": "CB",
     "team": "Florida State",
@@ -693,7 +681,7 @@
       "weight": "251",
       "40Time": "4.67u"
     },
-    "rating": 55,
+    "rating": 56,
     "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638 A very smooth mover for a tight end, catches the ball very naturally in stride and can get open. Will be able to win as a receiver all over the field. Doesn't make too many people miss, short arms and not the best blocker. But as a receiver, he's a weapon. Similar stylistically to Zach Ertz."
   },
   {
@@ -705,21 +693,10 @@
       "weight": "255",
       "40Time": "4.65u"
     },
-    "rating": 61,
+    "rating": 57,
     "scoutingReport": "ARM: 3338 HAND: 0978"
   },
-  {
-    "name": "Tre Harris",
-    "position": "WR",
-    "team": "Mississippi",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "205",
-      "40Time": "4.54"
-    },
-    "rating": 129,
-    "scoutingReport": "HAND: 0958 ARM: 3178"
-  },
+  
   {
     "name": "Gunnar Helm",
     "position": "TE",
@@ -1105,16 +1082,16 @@
     "scoutingReport": "HAND: 0900 ARM: 2948 WING 7028 Very good speed, quickness, and yards after contact metrics are elite. A playmaker with the ball in space. Can pass protect. Was not used much in the passing game catching the ball at VT. Has fumbling issues which must be fixed."
   },
   {
-    "name": "Mello Dotson",
-    "position": "CB",
-    "team": "Kansas",
+    "name": "Kyle Kennard",
+    "position": "EDGE",
+    "team": "South Carolina",
     "stats": {
-      "height": "6'1",
-      "weight": "192",
-      "40Time": "4.59"
+      "height": "6'4",
+      "weight": "254",
+      "40Time": "4.73"
     },
-    "rating": 190,
-    "scoutingReport": "ARM: 3148 HAND: 0848"
+    "rating": 90,
+    "scoutingReport": "HAND: 0938 ARM: 3400 WING 8000"
   },
   {
     "name": "Blake Miller",
@@ -1259,18 +1236,6 @@
     },
     "rating": 101,
     "scoutingReport": "Coming soon!"
-  },
-  {
-    "name": "Kaimon Rucker",
-    "position": "DL",
-    "team": "North Carolina",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "254",
-      "40Time": "4.80u"
-    },
-    "rating": 202,
-    "scoutingReport": "ARM: 3258 HAND: 1000"
   },
   {
     "name": "Tahj Brooks",
@@ -1559,6 +1524,18 @@
     },
     "rating": 127,
     "scoutingReport": "ARM: 3178 HAND: 1000 33 bench press reps."
+  },
+  {
+    "name": "Tre Harris",
+    "position": "WR",
+    "team": "Mississippi",
+    "stats": {
+      "height": "6'2\"",
+      "weight": "205",
+      "40Time": "4.54"
+    },
+    "rating": 128,
+    "scoutingReport": "HAND: 0958 ARM: 3178"
   },
   {
     "name": "Pat Bryant",
@@ -2305,6 +2282,18 @@
     "scoutingReport": "Coming soon!"
   },
   {
+    "name": "Mello Dotson",
+    "position": "CB",
+    "team": "Kansas",
+    "stats": {
+      "height": "6'1",
+      "weight": "192",
+      "40Time": "4.59"
+    },
+    "rating": 190,
+    "scoutingReport": "ARM: 3148 HAND: 0848"
+  },
+  {
     "name": "Tai Felton",
     "position": "WR",
     "team": "Maryland",
@@ -2459,6 +2448,18 @@
     },
     "rating": 203,
     "scoutingReport": "Coming soon!"
+  },
+  {
+    "name": "Kaimon Rucker",
+    "position": "DL",
+    "team": "North Carolina",
+    "stats": {
+      "height": "6'1\"",
+      "weight": "254",
+      "40Time": "4.80u"
+    },
+    "rating": 202,
+    "scoutingReport": "ARM: 3258 HAND: 1000"
   },
   {
     "name": "Davison Igbinosun",
