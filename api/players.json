@@ -1641,7 +1641,7 @@
     "stats": {
       "height": "6'3\"",
       "weight": "264",
-      "40Time": "4.75u"
+      "40Time": "4.63"
     },
     "rating": 145,
     "scoutingReport": "ARM: 3178 HAND: 0848 A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
@@ -2073,7 +2073,7 @@
     "stats": {
       "height": "5'9\"",
       "weight": "196",
-      "40Time": "4.38"
+      "40Time": "4.30"
     },
     "rating": 188,
     "scoutingReport": "ARM: 2978 HAND: 0828"
@@ -2605,6 +2605,18 @@
     },
     "rating": 232,
     "scoutingReport": "Coming soon!"
+  },
+  {
+    "name": "Tyler Elsbury",
+    "position": "IOL",
+    "team": "Iowa",
+    "stats": {
+      "height": "6'5\"",
+      "weight": "318",
+      "40Time": "5.15"
+    },
+    "rating": 217,
+    "scoutingReport": "1.69 10 yard split which is elite for a guard, especially at his size."
   },
   {
     "name": "Raheim Sanders",
