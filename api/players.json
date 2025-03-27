@@ -174,7 +174,7 @@
   "stats": {
     "height": "6'1\"",
     "weight": "202",
-    "40Time": "4.42"
+    "40Time": "4.45"
   },
   "rating": 16,
   "scoutingReport": "Versatile WR that can win inside and out, at the catch point and with his route running. Detailed and a physical run blocker. A do it all WR"
@@ -680,7 +680,7 @@
     "stats": {
       "height": "6'5\"",
       "weight": "251",
-      "40Time": "4.67u"
+      "40Time": "4.64u"
     },
     "rating": 56,
     "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638 A very smooth mover for a tight end, catches the ball very naturally in stride and can get open. Will be able to win as a receiver all over the field. Doesn't make too many people miss, short arms and not the best blocker. But as a receiver, he's a weapon. Similar stylistically to Zach Ertz."
@@ -716,7 +716,7 @@
     "stats": {
       "height": "6'0\"",
       "weight": "204",
-      "40Time": "4.60u"
+      "40Time": "4.56"
     },
     "rating": 58,
     "scoutingReport": "ARM: 3128 0858"
@@ -908,7 +908,7 @@
     "stats": {
       "height": "6'0\"",
       "weight": "206",
-      "40Time": "4.56u"
+      "40Time": "4.53"
     },
     "rating": 74,
     "scoutingReport": "ARM: 3048 HAND: 0848 A huge plus in the run game with his size, speed, and aggressiveness."
@@ -1692,7 +1692,7 @@
       "40Time": "4.50"
     },
     "rating": 149,
-    "scoutingReport": "HAND: 0928 ARM: 3078 WING 7518"
+    "scoutingReport": "HAND: 0928 ARM: 3078 WING 7518 6.60 3 cone and 4.05 short shuttle which are elite times."
   },
   {
     "name": "Jonah Monheim",
@@ -2085,7 +2085,7 @@
     "stats": {
       "height": "6'1\"",
       "weight": "184",
-      "40Time": "4.61"
+      "40Time": "4.44"
     },
     "rating": 188,
     "scoutingReport": "ARM: 3168 HAND: 0928"
@@ -2492,8 +2492,8 @@
     "team": "Florida State",
     "stats": {
       "height": "6'0\"",
-      "weight": "188",
-      "40Time": ""
+      "weight": "182",
+      "40Time": "4.43"
     },
     "rating": 224,
     "scoutingReport": "Coming soon!"
@@ -2588,11 +2588,11 @@
     "team": "Ohio State",
     "stats": {
       "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.60u"
+      "weight": "186",
+      "40Time": "4.42"
     },
     "rating": 231,
-    "scoutingReport": "ARM: 3068 HAND: 0858"
+    "scoutingReport": "ARM: 3158 HAND: 0868"
   },
   {
     "name": "Greg Penn III",
@@ -2713,6 +2713,18 @@
     },
     "rating": 242,
     "scoutingReport": "HAND: 0958 ARM: 3058 WING 7400"
+  },
+  {
+    "name": "Chandler Martin",
+    "position": "LB",
+    "team": "Memphis",
+    "stats": {
+      "height": "6'2\"",
+      "weight": "233",
+      "40Time": "4.55"
+    },
+    "rating": 241,
+    "scoutingReport": "ARM: 3138 HAND: 0938 40 inch vert and 26 bench reps, a very explosive and athletic linebacker"
   },
   {
     "name": "DeMonte Capehart",
@@ -3567,6 +3579,18 @@
   "scoutingReport": "HAND 0900 ARM 3128 WING 7628 10.18 high school 100m time. World class speed. Has issues with drops. For as blazing fast as he is, his ability to make people miss in space and run after the catch is not as ideal as it could be. If his hands improve, teams will be forced to respect his speed any time he's on the field."
 },
 {
+  "name": "Dean Clark",
+  "position": "S",
+  "team": "Fresno State",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "206",
+    "40Time": "4.49"
+  },
+  "rating": 306,
+  "scoutingReport": "41 inch vert and 11 foot broad jump which are elite numbers for a safety."
+},
+{
   "name": "Melvin Smith",
   "position": "S",
   "team": "Southern Arkansas",
@@ -4047,16 +4071,28 @@
   "scoutingReport": "ARM: 3248 HAND: 0948"
 },
 {
+  "name": "Josh Fryar",
+  "position": "OT",
+  "team": "Ohio State",
+  "stats": {
+    "height": "6'5\"",
+    "weight": "318",
+    "40Time": "5.09"
+  },
+  "rating": 345,
+  "scoutingReport": "ARM: 3478 HAND: 0968"
+},
+{
   "name": "Ty Hamilton",
   "position": "DL",
   "team": "Ohio State",
   "stats": {
     "height": "6'3\"",
     "weight": "299",
-    "40Time": "5.09u"
+    "40Time": "4.95"
   },
   "rating": 345,
-  "scoutingReport": "ARM: 3248 HAND: 1018"
+  "scoutingReport": "ARM: 3248 HAND: 1018 35 bench press reps."
 },
 {
   "name": "Warren Brinson",
@@ -4136,8 +4172,8 @@
   "team": "Ohio State",
   "stats": {
     "height": "6'2\"",
-    "weight": "229",
-    "40Time": "4.68u"
+    "weight": "232",
+    "40Time": "4.59u"
   },
   "rating": 351,
   "scoutingReport": "HAND: 0968 ARM: 3128"
