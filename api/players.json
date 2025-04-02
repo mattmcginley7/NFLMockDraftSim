@@ -824,7 +824,7 @@
   "stats": {
     "height": "6'2\"",
     "weight": "215",
-    "40Time": "4.55u"
+    "40Time": "4.50"
   },
   "rating": 67,
   "scoutingReport": "ARM: 3248 HAND: 0948"
@@ -1545,7 +1545,7 @@
     "stats": {
       "height": "6'1\"",
       "weight": "236",
-      "40Time": "4.70u"
+      "40Time": "4.67"
     },
     "rating": 138,
     "scoutingReport": "ARM: 3128 HAND: 0948"
@@ -1657,6 +1657,18 @@
     },
     "rating": 146,
     "scoutingReport": "ARM: 3138 HAND: 0868"
+  },
+  {
+    "name": "Damien Martinez",
+    "position": "HB",
+    "team": "Miami (FL)",
+    "stats": {
+      "height": "6'0\"",
+      "weight": "217",
+      "40Time": "4.51"
+    },
+    "rating": 146,
+    "scoutingReport": "HAND: 0848 ARM: 3200 WING 7758"
   },
   {
     "name": "Danny Stutsman",
@@ -2181,7 +2193,7 @@
     "stats": {
       "height": "6'0\"",
       "weight": "194",
-      "40Time": "4.49"
+      "40Time": "4.43"
     },
     "rating": 202,
     "scoutingReport": "ARM: 3028 HAND: 0928"
@@ -2241,7 +2253,7 @@
     "stats": {
       "height": "6'5\"",
       "weight": "258",
-      "40Time": "4.74"
+      "40Time": "4.69"
     },
     "rating": 208,
     "scoutingReport": "ARM: 3178 HAND: 0948"
@@ -2584,7 +2596,7 @@
   },
   {
     "name": "Jordan Hancock",
-    "position": "CB",
+    "position": "S",
     "team": "Ohio State",
     "stats": {
       "height": "6'0\"",
@@ -2697,7 +2709,7 @@
     "stats": {
       "height": "6'2\"",
       "weight": "233",
-      "40Time": "4.6"
+      "40Time": "4.60"
     },
     "rating": 241,
     "scoutingReport": "ARM: 3138 HAND: 0938 40 inch vert and 26 bench reps, a very explosive and athletic linebacker"
@@ -3015,16 +3027,16 @@
     "scoutingReport": "ARM: 2978 HAND: 0858"
   },
   {
-    "name": "Damien Martinez",
-    "position": "HB",
-    "team": "Miami (FL)",
+    "name": "Wesley Steiner",
+    "position": "LB",
+    "team": "Washington State",
     "stats": {
       "height": "6'0\"",
-      "weight": "217",
-      "40Time": "4.51"
+      "weight": "235",
+      "40Time": "4.39"
     },
     "rating": 265,
-    "scoutingReport": "HAND: 0848 ARM: 3200 WING 7758"
+    "scoutingReport": "ARM: 3128"
   },
   {
     "name": "Collin Oliver",
@@ -3093,19 +3105,19 @@
     "stats": {
       "height": "6'2\"",
       "weight": "208",
-      "40Time": ""
+      "40Time": "4.68"
     },
     "rating": 271,
     "scoutingReport": "Coming soon!"
   },
   {
-    "name": "Nash Hutmacher",
-    "position": "DI",
-    "team": "Nebraska",
+    "name": "Shaun Dolac",
+    "position": "LB",
+    "team": "Buffalo",
     "stats": {
-      "height": "6'4\"",
-      "weight": "310",
-      "40Time": ""
+      "height": "6'0\"",
+      "weight": "221",
+      "40Time": "4.63"
     },
     "rating": 272,
     "scoutingReport": "Coming soon!"
@@ -3116,8 +3128,8 @@
     "team": "Notre Dame",
     "stats": {
       "height": "6'3\"",
-      "weight": "201",
-      "40Time": "4.59u"
+      "weight": "198",
+      "40Time": "4.52"
     },
     "rating": 273,
     "scoutingReport": "ARM: 3158 HAND: 0948"
@@ -3349,6 +3361,18 @@
     },
     "rating": 290,
     "scoutingReport": "Coming soon!"
+  },
+  {
+    "name": "RJ Moten",
+    "position": "LB",
+    "team": "Florida",
+    "stats": {
+      "height": "6'0\"",
+      "weight": "218",
+      "40Time": "4.50"
+    },
+    "rating": 291,
+    "scoutingReport": "ARM: 3218"
   },
   {
     "name": "Donovan Smith",
@@ -3680,8 +3704,8 @@
   "team": "Notre Dame",
   "stats": {
     "height": "6'3\"",
-    "weight": "255",
-    "40Time": "4.68"
+    "weight": "251",
+    "40Time": "4.93"
   },
   "rating": 313,
   "scoutingReport": "HAND: 0938 ARM: 3328 WING 8118"
@@ -3721,6 +3745,18 @@
   },
   "rating": 316,
   "scoutingReport": "HAND: 0948 ARM: 3300 WING 7868"
+},
+{
+  "name": "Brandon George",
+  "position": "LB",
+  "team": "Pittsburgh",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "246",
+    "40Time": "4.65"
+  },
+  "rating": 317,
+  "scoutingReport": "ARM: 3300 World class workout, one of the greatest ever at off ball linebacker."
 },
 {
   "name": "Rayuan Lane III",
@@ -4173,7 +4209,7 @@
   "stats": {
     "height": "6'2\"",
     "weight": "232",
-    "40Time": "4.59u"
+    "40Time": "4.59"
   },
   "rating": 351,
   "scoutingReport": "HAND: 0968 ARM: 3128"
