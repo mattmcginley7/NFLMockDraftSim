@@ -189,7 +189,7 @@
     "40Time": "4.47"
   },
   "rating": 17,
-  "scoutingReport": "ARM: 3268 HAND: 1000 Very talented speed rusher, ideal as a 7 or 9 tech, lined up outside the tackle. Plays a little high, but wins with his great athleticism."
+  "scoutingReport": "ARM: 3268 HAND: 1000 Very talented speed rusher, ideal as a 7 or 9 tech, lined up outside the tackle. Plays a little high, but wins with his great athleticism. His movement skills, first step and speed are all exceptional, there are many plays where he just runs around the tackle untouched. It's like watching a corner in a pass rusher's body. He also can convert speed to power and when he has his leverage and technique down, he can be hard to move in the run game. "
 },
 {
   "name": "Jahdae Barron",
@@ -309,7 +309,7 @@
       "40Time": "5.11"
     },
     "rating": 25,
-    "scoutingReport": "ARM: 3348 HAND: 1018 Most defensive lineman that are 330lb aren't quick one gap penetrators, but Grant's world class athleticism offers the flexibility for him to be a force against the run and a true pass rushing weapon from the inside. His speed and quickness allows him to make plays most interior lineman are unable to make."
+    "scoutingReport": "ARM: 3348 HAND: 1018 Most defensive lineman that are 330lb aren't quick one gap penetrators, but Grant's athleticism offers the flexibility for him to be a force against the run and a true pass rushing weapon from the inside. His speed and quickness allows him to make plays most interior lineman are unable to make. Can play nose tackle, 3 tech or even a 5 tech if needed."
   },
   {
     "name": "Grey Zabel",
@@ -333,7 +333,7 @@
       "40Time": "4.59"
     },
     "rating": 26,
-    "scoutingReport": "HAND: 0958 ARM: 3418 WING: 8348 A massive and athletic defensive lineman who can line up anywhere along the line. College sack production was relatively unimpressive, but his elite physical tools give encouragment into developing into a very talented pass rusher."
+    "scoutingReport": "HAND: 0958 ARM: 3418 WING: 8348 A world class athlete that jumps out immediately, his combination of size and speed is overwhelming. Has great movement skills, but still developing as a pass rusher around the bend. Immediately helps in the run game with dominant upside if he can finish better and develop his pass rush moves."
   },
   {
     "name": "Omarion Hampton",
@@ -402,10 +402,10 @@
     "stats": {
       "height": "6'3\"",
       "weight": "334",
-      "40Time": "5.18u"
+      "40Time": "4.84u"
     },
     "rating": 32,
-    "scoutingReport": "ARM: 3200 HAND: 1028"
+    "scoutingReport": "ARM: 3200 HAND: 1028 As good as it gets as a run defender, can hold up on double teams and stack and shed any college lineman. His immense physicality and strength allows him to be a force in the run game. Has the ability to be a 3 down player in the NFL, but his pass rush skills are still developing."
   },
   {
     "name": "Trey Amos",
@@ -465,7 +465,7 @@
       "weight": "248",
       "40Time": "4.70u"
     },
-    "rating": 49,
+    "rating": 37,
     "scoutingReport": "HAND: 0928 ARM: 3400 WING: 8238 A pass rush specialist with quickness and bend off the edge. Long arms for his size and a great motor."
   },
   {
@@ -479,19 +479,6 @@
     },
     "rating": 38,
     "scoutingReport": "HAND: 1000 ARM: 3328 WING 8268"
-  },
-  
-  {
-    "name": "Grey Zabel",
-    "position": "OT",
-    "team": "North Dakota State",
-    "stats": {
-      "height": "6'6",
-      "weight": "312",
-      "40Time": "5.02"
-    },
-    "rating": 39,
-    "scoutingReport": "HAND: 0938 ARM: 3200 WING 7758 Won all his 1 on 1s at the Senior Bowl all in the interior, which bodes well for his draft stock since he was playing lower competition. A very strong and physical tackle with great technique and footwork. "
   },
   {
     "name": "Tyler Booker",
@@ -626,7 +613,6 @@
     "scoutingReport": "ARM: 3068 HAND: 0948 A home run hitting RB due to his great speed, in the open field he doesn't get caught"
   },
   
-  
   {
     "name": "Azareye'h Thomas",
     "position": "CB",
@@ -640,17 +626,18 @@
     "scoutingReport": "HAND: 1000 ARM: 3238 WING 7728"
   },
   {
-    "name": "Marcus Mbow",
-    "position": "OT",
-    "team": "Purdue",
+    "name": "Nic Scourton",
+    "position": "EDGE",
+    "team": "Texas A&M",
     "stats": {
-      "height": "6'4",
-      "weight": "303",
-      "40Time": "5.10u"
+      "height": "6'3\"",
+      "weight": "257",
+      "40Time": "4.71u"
     },
-    "rating": 52,
-    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018"
+    "rating": 82,
+    "scoutingReport": "ARM: 3300 HAND: 1000 Has a list of moves he uses to win as a pass rusher, loves to spin outside in on tackles. Good hand useage. Likely average athlete. His bodyweight is much lighter than it was at Texas A&M, so whether he'd hold up well as a 5 tech is questionable but could play 7 tech and rush from a two point stance."
   },
+  
   {
     "name": "JT Tuimoloau",
     "position": "EDGE",
@@ -757,7 +744,7 @@
       "40Time": "4.45"
     },
     "rating": 60,
-    "scoutingReport": "ARM: 30 HAND: 0900"
+    "scoutingReport": "ARM: 30 HAND: 0900 Underweight for a safety, but plays with no fear. Very aggressive, breaks on the ball and trusts his eyes fully. Has the speed to play single high and get sideline to sideline and has good enough corner skills to move down and cover in the slot. His frame is a concern though at getting beaten at the catch point by tight ends."
   },
   {
     "name": "Chris Paul Jr",
@@ -778,7 +765,7 @@
     "stats": {
       "height": "6'6",
       "weight": "317",
-      "40Time": "5.15u"
+      "40Time": "5.25u"
     },
     "rating": 62,
     "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
@@ -829,7 +816,7 @@
     "40Time": "4.50"
   },
   "rating": 67,
-  "scoutingReport": "ARM: 3248 HAND: 0948"
+  "scoutingReport": "ARM: 3248 HAND: 0948 Amazing tackler, only one missed in his career. Fast, athletic, and dependable in the run game as much as any safety could be. Coming off a torn ACL."
 },
 {
   "name": "Princely Umanmielen",
@@ -844,16 +831,16 @@
   "scoutingReport": "HAND: 0958 ARM: 3378 WING 8178"
 },
 {
-  "name": "Zy Alexander",
-  "position": "CB",
-  "team": "LSU",
+  "name": "Cam Skattebo",
+  "position": "HB",
+  "team": "Arizona State",
   "stats": {
-    "height": "6'1\"",
-    "weight": "187",
-    "40Time": "4.56"
+    "height": "5'10\"",
+    "weight": "219",
+    "40Time": "4.65u"
   },
   "rating": 69,
-  "scoutingReport": "ARM: 3100 HAND: 0928 Outside man to man corner with good long speed and length. 1 year removed from a torn ACL. Shows the ability to make open field tackles at a high rate, limiting yards after the catch."
+  "scoutingReport": "ARM: 2978 HAND: 0938 Runs as if every play is his last. Balance and strength are elite. Can really catch as well."
 },
 {
   "name": "Jalen Royals",
@@ -879,30 +866,31 @@
   "rating": 71,
   "scoutingReport": "ARM: 3468 HAND: 1028 Has unbelieveable speed and quickness for an offensive lineman. He'll likely gain weight through the draft process to prove he can play with his elite athletic ability at more ideal tackle weight."
 },
-  {
-    "name": "Deone Walker",
-    "position": "DL",
-    "team": "Kentucky",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "340",
-      "40Time": "5.21u"
-    },
-    "rating": 72,
-    "scoutingReport": "HAND: 1068 ARM: 3458 WING 8448 A huge defensive tackle with athletic ability, but often plays too high which results in him losing leverage and ground and unable to apply all that power as successfully as he should. Talent is there, but needs to be coached up."
+{
+  "name": "Quinshon Judkins",
+  "position": "RB",
+  "team": "Ohio State",
+  "stats": {
+    "height": "6'0\"",
+    "weight": "221",
+    "40Time": "4.48"
   },
-  {
-    "name": "Gunnar Helm",
-    "position": "TE",
-    "team": "Texas",
-    "stats": {
-      "height": "6'5",
-      "weight": "241",
-      "40Time": "4.65u"
-    },
-    "rating": 73,
-    "scoutingReport": "Very smooth mover and can make people miss in open space. Has reliable hands and can catch the ball naturally in stride picking up yards after the catch. Sprained ankle at combine before running, so late March pro day testing will be big for him."
+  "rating": 72,
+  "scoutingReport": "ARM: 3028 HAND: 0928 A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker. Great 10 yard split of 1.51, especially impressive considering his size."
+},
+{
+  "name": "Josaiah Stewart",
+  "position": "EDGE",
+  "team": "Michigan",
+  "stats": {
+    "height": "6'1\"",
+    "weight": "249",
+    "40Time": "4.59u"
   },
+  "rating": 73,
+  "scoutingReport": "HAND: 0958 ARM: 3178 WING: 7878 Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+},
+ 
   {
     "name": "Lathan Ransom",
     "position": "S",
@@ -937,7 +925,7 @@
       "40Time": "4.84"
     },
     "rating": 76,
-    "scoutingReport": "HAND: 1068 ARM: 3238 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. Elite physical testing at the combine."
+    "scoutingReport": "HAND: 1068 ARM: 3238 WING 8138 Athletic center that can get to the second level. Keeps a low base, and has the level and power to drive players out of their gaps. Shows ability to mirror defensive tackles without issue thanks to his movement skills. Elite physical testing at the combine. Has the physical tools to also play guard."
   },
   {
     "name": "Jack Sawyer",
@@ -961,19 +949,19 @@
       "40Time": "5.18"
     },
     "rating": 78,
-    "scoutingReport": "HAND: 1118 ARM: 3358 WING 7968"
+    "scoutingReport": "HAND: 1118 ARM: 3358 WING 7968 Great pass rush win rate at Tennessee, has a knack for getting around lineman. Wins with quickness, timing the snap, and hands. Was not used on run downs, but could be because Tennesee liked to keep a rotation opposed to be unable to hold up."
   },
   {
-    "name": "Cam Skattebo",
-    "position": "HB",
-    "team": "Arizona State",
+    "name": "Gunnar Helm",
+    "position": "TE",
+    "team": "Texas",
     "stats": {
-      "height": "5'10\"",
-      "weight": "219",
+      "height": "6'5",
+      "weight": "241",
       "40Time": "4.65u"
     },
-    "rating": 79,
-    "scoutingReport": "ARM: 2978 HAND: 0938 Runs as if every play is his last. Balance and strength are elite. Can really catch as well."
+    "rating": 73,
+    "scoutingReport": "Very smooth mover and can make people miss in open space. Has reliable hands and can catch the ball naturally in stride picking up yards after the catch. Sprained ankle at combine before running, so late March pro day testing will be big for him."
   },
   {
     "name": "Harold Fannin Jr.",
@@ -988,28 +976,28 @@
     "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college and young. Ideally, he goes to a creative team that allows Fannin to utilize his receiving ability and doesn't ask him to block in line on edge players. Very good 10 yard split (1.56) and 3 cone (6.97)"
   },
   {
-    "name": "Quinshon Judkins",
-    "position": "RB",
-    "team": "Ohio State",
+    "name": "Deone Walker",
+    "position": "DL",
+    "team": "Kentucky",
     "stats": {
-      "height": "6'0\"",
-      "weight": "221",
-      "40Time": "4.48"
+      "height": "6'7\"",
+      "weight": "340",
+      "40Time": "5.21u"
     },
     "rating": 81,
-    "scoutingReport": "ARM: 3028 HAND: 0928 A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker. Great 10 yard split of 1.51, especially impressive considering his size."
+    "scoutingReport": "HAND: 1068 ARM: 3458 WING 8448 A huge defensive tackle with athletic ability, but often plays too high which results in him losing leverage and ground and unable to apply all that power as successfully as he should. Talent is there, but needs to be coached up."
   },
   {
-    "name": "Nic Scourton",
-    "position": "EDGE",
-    "team": "Texas A&M",
+    "name": "Marcus Mbow",
+    "position": "OT",
+    "team": "Purdue",
     "stats": {
-      "height": "6'3\"",
-      "weight": "257",
-      "40Time": "4.71u"
+      "height": "6'4",
+      "weight": "303",
+      "40Time": "5.10u"
     },
     "rating": 82,
-    "scoutingReport": "ARM: 3300 HAND: 1000 Only 20 and has a great physical skillset. Strong and fast, and has the versatility to play standing up on the edge or with his hand in the interior. A great combination of versatility and explosiveness."
+    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018"
   },
   {
     "name": "Ozzy Trapilo",
@@ -1143,17 +1131,18 @@
     "rating": 93,
     "scoutingReport": "ARM: 3048 HAND: 0868 10.48 100m HS time. A very fast and explosive back with great agility and vision. Can catch the ball out of the backfield. A home run hitter."
   },
+  
   {
-    "name": "Josaiah Stewart",
-    "position": "EDGE",
-    "team": "Michigan",
+    "name": "Zy Alexander",
+    "position": "CB",
+    "team": "LSU",
     "stats": {
       "height": "6'1\"",
-      "weight": "249",
-      "40Time": "4.59u"
+      "weight": "187",
+      "40Time": "4.56"
     },
     "rating": 94,
-    "scoutingReport": "HAND: 0958 ARM: 3178 WING: 7878 Great speed and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+    "scoutingReport": "ARM: 3100 HAND: 0928 Outside man to man corner with good long speed and length. 1 year removed from a torn ACL. Shows the ability to make open field tackles at a high rate, limiting yards after the catch."
   },
   {
     "name": "Jordan Burch",
