@@ -810,17 +810,18 @@
     "scoutingReport": "ARM: 3458 HAND: 1000 Huge nosetackle that has a knack for being able to get off blocks. Doesn't offer much in the pass rush, but a very stout run defender."
   },
   {
-    "name": "Isaiah Bond",
-    "position": "WR",
-    "team": "Texas",
+    "name": "Marcus Mbow",
+    "position": "OT",
+    "team": "Purdue",
     "stats": {
-      "height": "5'11\"",
-      "weight": "180",
-      "40Time": "4.39"
+      "height": "6'4",
+      "weight": "303",
+      "40Time": "5.10u"
     },
     "rating": 66,
-    "scoutingReport": "ARM: 3048 HAND: 0848 A very fast and explosive WR who can stretch the defense"
+    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 If Jackie Chan played offensive line. He has a handful of hand techniques that control and limit defenders, in addition to great movement skills that allow him to stay in front of pass rushers and block down field in open space. Small and short, will likely have to move inside in the NFL."
   },
+  
 {
   "name": "Kevin Winston Jr.",
   "position": "S",
@@ -892,6 +893,18 @@
   },
   "rating": 72,
   "scoutingReport": "ARM: 3028 HAND: 0928 A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker. Great 10 yard split of 1.51, especially impressive considering his size."
+},
+{
+  "name": "Shemar Turner",
+  "position": "DL",
+  "team": "Texas A&M",
+  "stats": {
+    "height": "6'3\"",
+    "weight": "290",
+    "40Time": "5.05u"
+  },
+  "rating": 72,
+  "scoutingReport": "ARM: 3358 HAND: 1028 Quick and athletic, can play as a 3 tech or 5. Wins with great hand use and movement skills as a pass rusher. Has a history of character concerns."
 },
 {
   "name": "Josaiah Stewart",
@@ -991,18 +1004,7 @@
     "scoutingReport": "HAND: 0938 ARM: 3318 WING 7878 A unique undersized TE that can line up in the slot, in line, or even at fullback. Not sudden as a mover but has great hands and is a willing blocker. Historic production in college and young. Ideally, he goes to a creative team that allows Fannin to utilize his receiving ability and doesn't ask him to block in line on edge players. Very good 10 yard split (1.56) and 3 cone (6.97)"
   },
   
-  {
-    "name": "Marcus Mbow",
-    "position": "OT",
-    "team": "Purdue",
-    "stats": {
-      "height": "6'4",
-      "weight": "303",
-      "40Time": "5.10u"
-    },
-    "rating": 82,
-    "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 If Jackie Chan played offensive line. He has a handful of hand techniques that control and limit defenders, in addition to great movement skills that allow him to stay in front of pass rushers and block down field in open space. Small and short, will likely have to move inside in the NFL."
-  },
+  
   {
     "name": "Ozzy Trapilo",
     "position": "OT",
@@ -1110,7 +1112,7 @@
       "40Time": "4.35"
     },
     "rating": 91,
-    "scoutingReport": "HAND: 0900 ARM: 3078 WING 7500"
+    "scoutingReport": "HAND: 0900 ARM: 3078 WING 7500 Played outside at Kansas State for the most part, but has shown that he can play inside. Very aggressive and a reliable tackler and has the movement skills to stick with anyone in coverage. "
   },
   {
     "name": "Tory Horton",
@@ -1234,17 +1236,18 @@
     "scoutingReport": "ARM: 3038 HAND: 0918 4.06 shuttle which is very good. 154 broken tackles the last two years, has a great ability to make the first defender miss even in confinded spaces."
   },
   {
-    "name": "JJ Pegues",
-    "position": "DI",
-    "team": "Mississippi",
+    "name": "Ashton Gillotte",
+    "position": "EDGE",
+    "team": "Louisville",
     "stats": {
       "height": "6'3\"",
-      "weight": "309",
-      "40Time": "5.17"
+      "weight": "264",
+      "40Time": "4.63"
     },
-    "rating": 105,
-    "scoutingReport": "ARM: 3248 HAND: 0938"
+    "rating": 104,
+    "scoutingReport": "ARM: 3178 HAND: 0848 A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
   },
+  
   {
     "name": "Brandon Crenshaw-Dickson",
     "position": "OT",
@@ -1488,17 +1491,18 @@
     "scoutingReport": "41.5 inch vert. Explosive start and stop ability that puts defenders in bad positions to make a tackle."
   },
   {
-    "name": "Shemar Turner",
-    "position": "DL",
-    "team": "Texas A&M",
+    "name": "Isaiah Bond",
+    "position": "WR",
+    "team": "Texas",
     "stats": {
-      "height": "6'3\"",
-      "weight": "290",
-      "40Time": "5.05u"
+      "height": "5'11\"",
+      "weight": "180",
+      "40Time": "4.39"
     },
     "rating": 136,
-    "scoutingReport": "ARM: 3358 HAND: 1028"
+    "scoutingReport": "ARM: 3048 HAND: 0848 A very fast and explosive WR who can stretch the defense"
   },
+  
   {
     "name": "Kobe King",
     "position": "LB",
@@ -1596,16 +1600,16 @@
     "scoutingReport": "ARM: 3218 HAND: 0948"
   },
   {
-    "name": "Ashton Gillotte",
-    "position": "EDGE",
-    "team": "Louisville",
+    "name": "JJ Pegues",
+    "position": "DI",
+    "team": "Mississippi",
     "stats": {
       "height": "6'3\"",
-      "weight": "264",
-      "40Time": "4.63"
+      "weight": "309",
+      "40Time": "5.17"
     },
     "rating": 145,
-    "scoutingReport": "ARM: 3178 HAND: 0848 A 5 tech with a solid all around game, but lacks the explosiveness to become a high end pass rusher"
+    "scoutingReport": "ARM: 3248 HAND: 0938"
   },
   {
     "name": "Denzel Burke",
