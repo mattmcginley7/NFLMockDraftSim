@@ -1,147 +1,147 @@
-[
+   [
     {
         "name": "Caleb Downs",
         "position": "S",
         "team": "Ohio State",
         "stats": {
-            "height": "6'3\"",
-            "weight": "250",
-            "40Time": "4.51"
+            "height": "6'0\"",
+            "weight": "205",
+            "40Time": "4.45"
         },
         "rating": 1,
-        "scoutingReport": "A versatile edge rusher with a quick first step and excellent closing speed. A Micah Parsons clone"
+        "scoutingReport": "Caleb Downs is an elite safety prospect with exceptional instincts, range, and versatility. A former 5-star recruit and 2023 SEC Freshman of the Year at Alabama, he excels in coverage, run defense, and playmaking, with 80+ PFF grades in both since 2023. His 89.4 overall PFF grade ranks fourth among returning FBS safeties. Downs’ athleticism, tackling ability (83 tackles as a high school senior), and ball skills (5 INTs in 2022) make him a potential top-10 pick in 2026. He projects as a dynamic NFL free safety with Pro Bowl upside."
     },
     {
         "name": "Kadyn Proctor",
         "position": "OT",
         "team": "Alabama",
         "stats": {
-            "height": "6'1\"",
-            "weight": "185",
-            "40Time": "4.43u"
+            "height": "6'7\"",
+            "weight": "360",
+            "40Time": "5.10"
         },
         "rating": 2,
-        "scoutingReport": "An elite two-way player with excellent coverage skills and dynamic playmaking ability. If he plays corner, there will never have been a prospect at the position that has his hands and ball skills."
+        "scoutingReport": "Kadyn Proctor is a physically dominant offensive tackle with elite size, power, and athleticism. A 5-star recruit and All-SEC Freshman Team member in 2023, he started all 13 games at left tackle for Alabama as a true freshman. His 6'7\", 360-pound frame and long arms make him a mauler in the run game, while his agility (evident in shot put and basketball in high school) aids in pass protection. Proctor needs to refine his technique and consistency to handle NFL speed rushers but has the tools to be a top-10 pick and potential franchise left tackle in 2026."
     },
     {
         "name": "Dani Dennis-Sutton",
         "position": "EDGE",
         "team": "Penn State",
         "stats": {
-            "height": "6'4\"",
-            "weight": "332",
-            "40Time": "4.91"
+            "height": "6'5\"",
+            "weight": "272",
+            "40Time": "4.68"
         },
         "rating": 3,
-        "scoutingReport": "HAND: 0968 ARM: 3348 WING: 8100 Freak athlete with great size and strength, and is still very young. Has the length and foot speed desired to play tackle at a very high level."
+        "scoutingReport": "Dani Dennis-Sutton is a high-upside EDGE defender with impressive size, length, and physicality. At 6'5\", 272 lbs, he combines a quick first step with power, excelling as a run defender with the ability to reset the line of scrimmage. His 2023 stats (26 tackles, 3.5 sacks, 6 TFLs) highlight his disruptive potential. However, his pass-rush arsenal needs refinement, as he lacks elite bend and relies heavily on a bull rush. Dennis-Sutton projects as a 4th-round pick in 2025, best suited for even-front defenses as a strong-side end with 6-8 sack potential if he develops counter moves."
     },
     {
         "name": "Peter Woods",
         "position": "DL",
         "team": "Clemson",
         "stats": {
-            "height": "6'4\"",
-            "weight": "296",
+            "height": "6'3\"",
+            "weight": "315",
             "40Time": "5.02u"
         },
         "rating": 4,
-        "scoutingReport": "ARM: 3200 HAND: 0918 An elite interior rusher with great quickness. Profiles similar as a player to Jalen Carter."
+        "scoutingReport": "Peter Woods is an elite defensive tackle prospect with rare power, agility, and versatility. At 6'3\", 315 lbs, he dominates as a run defender (89.7 PFF run-defense grade since 2023) and flashes dynamic pass-rush ability (14.9% pass-rush win rate). Despite playing out of position at EDGE in 2024, he earned an 83.3 PFF grade, ranking as the highest-graded returning Power Four DT. His quickness off the snap and ability to disrupt both run and pass games draw comparisons to Jalen Carter. Woods projects as a top-5 pick in 2026, capable of anchoring an NFL defensive line with Pro Bowl potential."
     },
     {
         "name": "Cade Klubnik",
         "position": "QB",
         "team": "Clemson",
         "stats": {
-            "height": "5'9\"",
-            "weight": "211",
-            "40Time": "4.42u"
+            "height": "6'2\"",
+            "weight": "205",
+            "40Time": "4.65"
         },
         "rating": 5,
-        "scoutingReport": "A powerful and explosive runner with great vision and world class balance."
+        "scoutingReport": "Cade Klubnik is a dynamic dual-threat quarterback with a strong arm and impressive mobility. In 2024, he threw for 3,639 yards, 36 TDs, and 6 INTs, while rushing for 463 yards and 7 TDs, leading Clemson to an ACC title and CFP berth. His 87.7 PFF passing grade ranked fifth among FBS QBs, with 28 big-time throws. Klubnik excels in spread offenses, showing improved pre-snap reads and accuracy against the blitz (57.7% completion, 15 TDs). However, he struggles against elite defenses (e.g., Georgia, South Carolina) and needs to refine post-snap processing. A three-year starter and two-time ACC Championship MVP, he projects as a mid-round 2026 pick with QB2 upside in a system leveraging his athleticism."
     },
     {
         "name": "Arch Manning",
         "position": "QB",
         "team": "Texas",
         "stats": {
-            "height": "6'6\"",
-            "weight": "319",
-            "40Time": "4.98"
+            "height": "6'4\"",
+            "weight": "215",
+            "40Time": "4.70u"
         },
         "rating": 6,
-        "scoutingReport": "ARM: 3258 HAND: 0948 A physical tackle with great footwork and technique. A day 1 starter and leader, but some maybe doesn't possess the elite movement skills and arm length that many of the best pass blocking tackles possess."
+        "scoutingReport": "Arch Manning, a former five-star recruit, combines elite arm talent with surprising athleticism. In limited 2024 action, he rushed for 4 TDs, including a 67-yard score, and showed a strong arm with a 95.2 PFF deep passing grade. At 6'4\", 215 lbs, he has prototypical size and a quick release, but his inexperience as a full-time starter raises questions. Manning’s 2025 season, his first as Texas’ QB1, will be critical. He needs to improve ball security and decision-making under pressure. With his pedigree and tools, he’s a top-10 2026 prospect but may return for 2026 if he needs more seasoning. Projects as a high-upside QB1 with Pro Bowl potential."
     },
     {
         "name": "Francis Mauigoa",
         "position": "OT",
         "team": "Miami",
         "stats": {
-            "height": "6'6",
-            "weight": "256",
-            "40Time": "4.66"
+            "height": "6'5\"",
+            "weight": "315",
+            "40Time": "5.30"
         },
         "rating": 8,
-        "scoutingReport": "ARM: 3168 HAND: 0948 Highly athletic TE that can be lined up in line, in the slot, or even at quarterback. Special quickness and ball skills along with great blocking ability. Great after the catch. A true weapon at the tight end position which is a rarity."
+        "scoutingReport": "Francis Mauigoa is a dominant right tackle with elite size, power, and athleticism. A two-year starter, he allowed just 1 sack in 534 pass attempts in 2024, protecting QB Cam Ward. At 6'5\", 315 lbs, his 270 lbs of lean muscle and 20.9% body fat earned him a spot on Bruce Feldman’s 'Freaks List.' Mauigoa excels in both gap and zone schemes, with powerful drive blocking and lateral quickness to mirror speed rushers. He needs to improve consistency against polished pass rushers and lower his pad level. A five-star recruit, he projects as a top-5 2026 pick, with All-Pro potential as a franchise tackle."
     },
     {
         "name": "Ruben Bain Jr.",
         "position": "EDGE",
         "team": "Miami",
         "stats": {
-            "height": "6'0\"",
-            "weight": "206",
-            "40Time": "4.41"
+            "height": "6'3\"",
+            "weight": "260",
+            "40Time": "4.70u"
         },
         "rating": 9,
-        "scoutingReport": "ARM: 3128 HAND: 0848 An athletic and explosive WR with great run after the catch skills. Very similar player to DJ Moore coming out of Maryland."
+        "scoutingReport": "Ruben Bain Jr. is an explosive EDGE rusher with a relentless motor and versatile skill set. As a true freshman in 2023, he recorded 7.5 sacks and 12.5 TFLs, earning ACC Defensive Rookie of the Year. Despite injuries in 2024, he maintained an 80.0+ PFF pass-rush grade. At 6'3\", 260 lbs, Bain combines quickness off the ball with power, excelling in both run defense and pass rushing. His shorter arm length may limit him against longer NFL tackles, but his hustle and technique draw comparisons to Maxx Crosby. Bain projects as a first-round 2026 pick with double-digit sack potential."
     },
     {
         "name": "DJ McKinney",
         "position": "CB",
         "team": "Colorado",
         "stats": {
-            "height": "6'1\"",
-            "weight": "243",
-            "40Time": "4.55u"
+            "height": "6'0\"",
+            "weight": "185",
+            "40Time": "4.50u"
         },
         "rating": 10,
-        "scoutingReport": "A tweener off ball linebacker/edge rusher with special athletic skills"
+        "scoutingReport": "DJ McKinney is an instinctive cornerback with excellent ball skills and versatility. Transferring from Oklahoma State to Colorado in 2025, he’s expected to shine in Deion Sanders’ secondary. In 2024, he recorded 2 INTs and 8 PBUs, with an 85.0 PFF coverage grade. At 6'0\", 185 lbs, McKinney has adequate size and fluid hips to stick with receivers in man coverage. His aggressive play style leads to occasional penalties, and he needs to improve tackling consistency (10 missed tackles in 2024). McKinney projects as a Day 2 2026 pick, ideal for press-man schemes with potential as a CB2 or nickel."
     },
     {
         "name": "Antonio Williams",
         "position": "WR",
         "team": "Clemson",
         "stats": {
-            "height": "6'4\"",
-            "weight": "219",
-            "40Time": "4.53"
+            "height": "5'11\"",
+            "weight": "195",
+            "40Time": "4.45"
         },
         "rating": 12,
-        "scoutingReport": "A towering WR with good athleticism and fantastic ball skills"
+        "scoutingReport": "Antonio Williams is a dynamic slot receiver with crisp route-running and reliable hands. In 2024, he led Clemson with 75 receptions, 904 yards, and 11 TDs, earning First-Team All-ACC honors. His 4.45 40-time and 87.6 PFF receiving grade highlight his explosiveness and ability to separate at all levels. Williams also contributed as a punt returner (9.65 yards/return) and occasional passer (2-for-2, 62 yards, 1 TD). While his 5'11\" frame limits his contested-catch ability, his quickness and versatility make him a Day 2 2026 prospect, projecting as a high-upside slot WR in the NFL."
     },
     {
         "name": "Will Lee III",
         "position": "CB",
         "team": "Texas A&M",
         "stats": {
-            "height": "6'5\"",
-            "weight": "315",
-            "40Time": "5.16"
+            "height": "6'0\"",
+            "weight": "185",
+            "40Time": "4.50u"
         },
         "rating": 13,
-        "scoutingReport": "ARM: 3348 HAND: 1038 A young and athletic tackle with great footwork and technique. A day 1 starter with the potential to be a Pro Bowl tackle in the NFL."
+        "scoutingReport": "Will Lee III is a versatile cornerback with strong instincts and physicality. Transferring from Kansas State to Texas A&M in 2024, he recorded 3 INTs, 8 PBUs, and an 85.2 PFF coverage grade, excelling in both man and zone schemes. At 6'0\", 185 lbs, his length and quick feet allow him to mirror receivers, while his 41 tackles show run-support tenacity. Lee needs to reduce penalties (4 in 2024) and improve tackling consistency (6 missed tackles). A former JUCO All-American, he projects as a mid-round 2026 pick, ideal as a CB2 or nickel in press-heavy defenses."
     },
     {
         "name": "LaNorris Sellers",
         "position": "QB",
-        "team": "Sourth Carolina",
+        "team": "South Carolina",
         "stats": {
-            "height": "5'11\"",
-            "weight": "191",
-            "40Time": "4.29"
+            "height": "6'3\"",
+            "weight": "230",
+            "40Time": "4.60u"
         },
         "rating": 14,
-        "scoutingReport": "ARM: 3058 HAND: 0948 Elite speed, route running and hands. Ability to create space at all 3 levels of the field and tracks the ball very well. Can play inside or outside."
+        "scoutingReport": "LaNorris Sellers is a dual-threat quarterback with elite playmaking ability and a live arm. In 2024, he threw for 2,256 yards, 17 TDs, and 7 INTs, while rushing for 655 yards and 7 TDs, earning an 80.1 PFF offensive grade. His 6'3\", 230-pound frame and sack-avoidance skills (6.2% sack rate) make him a nightmare for defenses. Sellers’ deep-ball accuracy (47.1% on 20+ yard throws) and improvisational flair draw comparisons to Jalen Hurts. However, he must improve pre-snap reads and consistency (58.7% completion). A Heisman contender, he’s a first-round 2026 prospect with QB1 potential."
     },
     {
         "name": "Garrett Nussmeier",
@@ -149,71 +149,71 @@
         "team": "LSU",
         "stats": {
             "height": "6'2\"",
-            "weight": "219",
-            "40Time": "4.65u"
+            "weight": "200",
+            "40Time": "4.82"
         },
         "rating": 15,
-        "scoutingReport": "ARM: 3058 HAND: 0900 A playmaker with a strong arm and mobility to navigate around the pocket and extend plays. A strong enough arm to throw the ball all over the field. Often does not play in rhythm and can be a little careless, but with coaching and practice, he has the tools to become a very good QB."
+        "scoutingReport": "Garrett Nussmeier is a gunslinger with a cannon arm and clutch playmaking ability. In 2024, he threw for 4,052 yards, 29 TDs, and 12 INTs, leading LSU to a 9-4 record with an 80.0 QBR (10th nationally). His 88.5 PFF passing grade and 395-yard Texas Bowl performance showcase his arm talent and poise. At 6'2\", 200 lbs, he’s durable despite a lean frame, playing through a 2024 shoulder injury. Nussmeier’s Brett Favre-esque risk-taking (12 INTs) and inconsistent footwork need coaching. A first-round 2026 prospect, he projects as a QB1 in a vertical offense."
     },
     {
         "name": "Nicholas Singleton",
         "position": "RB",
         "team": "Penn State",
         "stats": {
-            "height": "6'5\"",
-            "weight": "317",
-            "40Time": "4.96u"
+            "height": "6'0\"",
+            "weight": "225",
+            "40Time": "4.50u"
         },
         "rating": 15,
-        "scoutingReport": "ARM: 3300 HAND: 1000 Atheltic tackle with ideal size and strength to be a great starter, but still recovering from an ACL tear in the 2024 season"
+        "scoutingReport": "Nicholas Singleton is a powerful running back with breakaway speed and versatility. In 2024, he rushed for 1,125 yards and 10 TDs, adding 28 receptions for 285 yards and 3 TDs, earning an 85.7 PFF rushing grade. At 6'0\", 225 lbs, his physicality (32 forced missed tackles) and vision shine in Penn State’s zone-heavy scheme. Singleton’s pass-blocking (78.2 PFF grade) enhances his three-down potential. He’s recovering from a minor 2024 knee injury, not an ACL tear. A top-100 2026 prospect, he projects as a starting RB with RB1 upside."
     },
     {
         "name": "Jeremiyah Love",
         "position": "RB",
         "team": "Notre Dame",
         "stats": {
-            "height": "6'1\"",
-            "weight": "202",
-            "40Time": "4.45"
+            "height": "5'11\"",
+            "weight": "205",
+            "40Time": "4.42"
         },
         "rating": 16,
-        "scoutingReport": "Versatile WR that can win inside and out, at the catch point and with his route running. Detailed and a physical run blocker. A do it all WR"
+        "scoutingReport": "Jeremiyah Love is an explosive running back with elite speed and versatility. In 2024, he rushed for 1,057 yards and 12 TDs, averaging 6.2 yards per carry, while adding 22 receptions for 245 yards and 2 TDs, earning an 87.4 PFF rushing grade. His 4.42 40-time and 38-inch vertical highlight his home-run ability (15 runs of 20+ yards). Love’s vision and agility make him a threat in both zone and gap schemes, though he needs to improve pass-blocking (65.2 PFF grade). A top-100 2026 prospect, he projects as a three-down RB with RB1 potential."
     },
     {
         "name": "TJ Parker",
         "position": "EDGE",
         "team": "Clemson",
         "stats": {
-            "height": "6'5\"",
-            "weight": "245",
-            "40Time": "4.47"
+            "height": "6'3\"",
+            "weight": "260",
+            "40Time": "4.65u"
         },
         "rating": 17,
-        "scoutingReport": "ARM: 3268 HAND: 1000 Very talented speed rusher, ideal as a 7 or 9 tech, lined up outside the tackle. Plays a little high, but wins with his great athleticism. His movement skills, first step and speed are all exceptional, there are many plays where he just runs around the tackle untouched. It's like watching a corner in a pass rusher's body. He also can convert speed to power and when he has his leverage and technique down, he can be hard to move in the run game. "
+        "scoutingReport": "TJ Parker is a powerful EDGE rusher with a high motor and versatile skill set. In 2024, he recorded 5.5 sacks, 11 TFLs, and 2 forced fumbles, earning an 82.3 PFF pass-rush grade. At 6'3\", 260 lbs, Parker combines a quick first step with strength, excelling as a 5-technique in Clemson’s hybrid front. His ability to convert speed to power makes him effective against the run (78.9 PFF run-defense grade). While his bend is average, his relentless effort and improving hand usage project him as a Day 2 2026 pick, ideal for 4-3 defenses with 8-10 sack potential."
     },
     {
         "name": "Drew Allar",
         "position": "QB",
         "team": "Penn State",
         "stats": {
-            "height": "5'11\"",
-            "weight": "194",
-            "40Time": "4.39"
+            "height": "6'5\"",
+            "weight": "235",
+            "40Time": "4.85"
         },
         "rating": 18,
-        "scoutingReport": "ARM: 2958 HAND: 0948 Highly intelligent, tough, and instinctive corner with good athleticism. Can play inside and out."
+        "scoutingReport": "Drew Allar is a prototypical pocket passer with elite arm strength and improving decision-making. In 2024, he threw for 3,021 yards, 25 TDs, and 7 INTs, with an 86.5 PFF passing grade, leading Penn State to a 12-2 record. His 6'5\", 235-pound frame and ability to deliver 50+ yard throws (47.8% completion on deep balls) make him a fit for pro-style offenses. Allar’s limited mobility (4.85 40-time) and occasional hesitancy under pressure (7.1% sack rate) are concerns. A first-round 2026 prospect, he projects as a QB1 with high-end starter potential in a vertical passing system."
     },
     {
         "name": "CJ Allen",
         "position": "LB",
         "team": "Georgia",
         "stats": {
-            "height": "6'6\"",
-            "weight": "248",
-            "40Time": "4.58u"
+            "height": "6'1\"",
+            "weight": "235",
+            "40Time": "4.60u"
         },
         "rating": 19,
-        "scoutingReport": "ARM: 3268 HAND: 1000 A quick and savvy route running tight end with great ball skills. Catches in stride, wins easily and creates separation on short to intermediate routes, a very reliable target that could handle a high volume in the NFL."
+        "scoutingReport": "CJ Allen is a hard-hitting, instinctive linebacker with sideline-to-sideline range. In 2024, he led Georgia with 85 tackles, 4.5 TFLs, and 2 INTs, earning an 84.7 PFF coverage grade. At 6'1\", 235 lbs, his compact frame and quick trigger allow him to excel in run defense (80.1 PFF run-defense grade) and cover tight ends in man coverage. Allen’s aggressive play style leads to occasional overpursuit, and he needs to refine his pass-rush moves (1.5 sacks). A former five-star recruit, he projects as a Day 2 2026 pick, ideal as a MIKE or WILL with three-down starter potential."
     },
     {
         "name": "Mansoor Delane",
@@ -221,227 +221,227 @@
         "team": "LSU",
         "stats": {
             "height": "6'1\"",
-            "weight": "197",
-            "40Time": "4.50"
+            "weight": "190",
+            "40Time": "4.45"
         },
         "rating": 20,
-        "scoutingReport": "ARM: 3158 HAND: 0948 A hard-hitting safety with great range and ball skills. Can be played in the slot, in the box, or as a deep safety."
+        "scoutingReport": "Mansoor Delane is a versatile cornerback with elite ball skills and physicality. Transferring from Virginia Tech to LSU for 2025, he recorded 4 INTs and 10 PBUs in 2024, with an 88.2 PFF coverage grade. At 6'1\", 190 lbs, his length and 4.45 speed allow him to excel in press-man coverage, while his 45 tackles show run-support ability. Delane’s occasional overaggressiveness leads to penalties (3 in 2024), and he needs to improve zone awareness. A former four-star recruit, he projects as a first-round 2026 pick, with CB1 potential in man-heavy schemes."
     },
     {
         "name": "Deontate Lawson",
         "position": "LB",
         "team": "Alabama",
         "stats": {
-            "height": "6'2",
-            "weight": "194",
-            "40Time": "4.55u"
+            "height": "6'2\"",
+            "weight": "235",
+            "40Time": "4.65u"
         },
         "rating": 21,
-        "scoutingReport": "ARM: 3018 HAND: 0918 A tall and physical corner with great ball skills and instincts"
+        "scoutingReport": "Deontate Lawson is a versatile linebacker with elite instincts and playmaking ability. In 2024, he led Alabama with 92 tackles, 8 TFLs, 3 sacks, and 2 INTs, earning an 85.6 PFF overall grade. At 6'2\", 235 lbs, his sideline-to-sideline range and quick trigger make him a three-down threat, excelling in run defense (83.4 PFF run-defense grade) and coverage (7 PBUs). Lawson’s leadership as a defensive signal-caller and ability to shed blocks highlight his MIKE linebacker fit. He needs to improve pass-rush consistency (12 pressures). A Day 2 2026 prospect, he projects as a starting NFL linebacker with Pro Bowl potential."
     },
     {
         "name": "Domani Jackson",
         "position": "CB",
         "team": "Alabama",
         "stats": {
-            "height": "6'2\"",
-            "weight": "212",
-            "40Time": "4.75u"
+            "height": "6'1\"",
+            "weight": "190",
+            "40Time": "4.40"
         },
         "rating": 21,
-        "scoutingReport": "ARM: 3148 HAND: 0938"
+        "scoutingReport": "Domani Jackson is an elite cornerback with lockdown potential. Transferring from USC to Alabama in 2024, he recorded 3 INTs, 9 PBUs, and an 87.9 PFF coverage grade, limiting receivers to a 45.2% catch rate in man coverage. At 6'1\", 190 lbs, his 4.40 speed and fluid hips allow him to mirror top receivers, while his 38 tackles show physicality. Jackson needs to reduce penalties (4 in 2024) and improve zone awareness. A former five-star recruit, he projects as a first-round 2026 pick, with CB1 upside in press-man schemes."
     },
     {
         "name": "Dillon Thieneman",
         "position": "S",
         "team": "Oregon",
         "stats": {
-            "height": "6'5\"",
-            "weight": "311",
-            "40Time": "5.05"
+            "height": "6'0\"",
+            "weight": "205",
+            "40Time": "4.50u"
         },
         "rating": 22,
-        "scoutingReport": "HAND: 1038 ARM: 3348 WING: 8100 Good movement skills, has the ability to be a great pass blocker. 1.71 10 yard split shows his great movement skills in short areas."
+        "scoutingReport": "Dillon Thieneman is a ball-hawking safety with exceptional instincts and versatility. Transferring from Purdue to Oregon for 2025, he led the Big Ten with 6 INTs in 2024, adding 104 tackles and an 89.1 PFF coverage grade. At 6'0\", 205 lbs, his range and tackling ability (9.8% missed tackle rate) make him a fit for both free and strong safety roles. Thieneman’s ability to read quarterbacks and close on the ball is elite, but he needs to improve man-coverage skills against slot receivers. A top-50 2026 prospect, he projects as a starting NFL safety with All-Pro potential."
     },
     {
         "name": "Avieon Terrell",
         "position": "CB",
         "team": "Clemson",
         "stats": {
-            "height": "6'4\"",
-            "weight": "296",
-            "40Time": "4.85u"
+            "height": "5'11\"",
+            "weight": "185",
+            "40Time": "4.45u"
         },
         "rating": 22,
-        "scoutingReport": "HAND: 0948 ARM: 3248 WING: 7948 Incredible quickness from an interior pass rusher and was an elite run defender in 2024"
+        "scoutingReport": "Avieon Terrell is a sticky cornerback with quick feet and strong ball skills. In 2024, he recorded 2 INTs, 7 PBUs, and an 86.3 PFF coverage grade, excelling in Clemson’s man-heavy scheme. At 5'11\", 185 lbs, his agility and 4.45 speed allow him to stay glued to receivers, while his 41 tackles show run-support willingness. Terrell’s smaller frame can be a liability against bigger WRs, and he needs to improve tackling consistency (8 missed tackles). Brother of NFL CB AJ Terrell, he projects as a Day 2 2026 pick, ideal as a nickel or CB2 in zone schemes."
     },
     {
         "name": "Sonny Styles",
         "position": "LB",
         "team": "Ohio State",
         "stats": {
-            "height": "6'3",
-            "weight": "251",
-            "40Time": "4.65u"
+            "height": "6'4\"",
+            "weight": "245",
+            "40Time": "4.60u"
         },
         "rating": 23,
-        "scoutingReport": "HAND: 0858 ARM: 3200 WING: 7728 Edge rusher with great speed and quickness who wins on the edge with many different moves. Strong enough to run over tackles and be a force in the run game."
+        "scoutingReport": "Sonny Styles is a hybrid linebacker with elite size and athleticism. Transitioning from safety to linebacker in 2024, he recorded 74 tackles, 6 TFLs, 2 sacks, and an 82.7 PFF run-defense grade. At 6'4\", 245 lbs, his 4.60 speed and length make him a matchup nightmare, capable of covering tight ends (84.1 PFF coverage grade) and stopping the run. Styles’ inexperience at LB shows in occasional misreads, and he needs to develop pass-rush moves (10 pressures). A former five-star recruit, he projects as a top-50 2026 pick, with 3-4 OLB or MIKE versatility and Pro Bowl upside."
     },
     {
         "name": "Emmanuel Pregnon",
         "position": "IOL",
         "team": "Oregon",
         "stats": {
-            "height": "6'2",
-            "weight": "194",
-            "40Time": "4.35"
+            "height": "6'5\"",
+            "weight": "315",
+            "40Time": "5.10u"
         },
         "rating": 24,
-        "scoutingReport": "Coming off a torn ACL in 2024. A tall corner who plays with physicality and elite speed. Great ball skills. A little refinement needed in using his hands. If healthy and develops his technique, he has the potential to be a top corner in the NFL."
+        "scoutingReport": "Emmanuel Pregnon is a powerful interior offensive lineman with a strong anchor and versatility. Transferring from USC to Oregon for 2025, he started all 13 games at guard in 2024, earning an 82.4 PFF run-blocking grade. At 6'5\", 315 lbs, his size and grip strength allow him to dominate in the run game, while his quick feet (1.75 10-yard split) aid in pass protection (2 sacks allowed). Pregnon’s recovery from a minor 2024 knee injury (not an ACL tear) is on track. He needs to improve hand placement to counter NFL speed rushers. A Day 2 2026 prospect, he projects as a starting guard or center."
     },
     {
         "name": "Harold Perkins Jr.",
         "position": "LB",
         "team": "LSU",
         "stats": {
-            "height": "6'4\"",
-            "weight": "331",
-            "40Time": "5.11"
+            "height": "6'1\"",
+            "weight": "225",
+            "40Time": "4.55u"
         },
         "rating": 25,
-        "scoutingReport": "ARM: 3348 HAND: 1018 Most defensive lineman that are 330lb aren't quick one gap penetrators, but Grant's athleticism offers the flexibility for him to be a force against the run and a true pass rushing weapon from the inside. His speed and quickness allows him to make plays most interior lineman are unable to make. Can play nose tackle, 3 tech or even a 5 tech if needed."
+        "scoutingReport": "Harold Perkins Jr. is an explosive linebacker with elite playmaking ability. In 2024, he recorded 67 tackles, 8.5 TFLs, 5.5 sacks, and an 85.9 PFF pass-rush grade, thriving as a hybrid LB/EDGE. At 6'1\", 225 lbs, his 4.55 speed and quickness make him a three-down threat, effective in coverage (83.2 PFF coverage grade) and blitzing (15 pressures). Perkins’ smaller frame can be a liability against bigger blockers, and he needs to refine run-fit discipline. A former five-star recruit, he projects as a top-20 2026 pick, ideal as a WILL or 3-4 OLB with All-Pro upside."
     },
     {
         "name": "Jordyn Tyson",
         "position": "WR",
         "team": "Arizona State",
         "stats": {
-            "height": "6'6",
-            "weight": "312",
-            "40Time": "5.02"
+            "height": "6'2\"",
+            "weight": "195",
+            "40Time": "4.45u"
         },
         "rating": 25,
-        "scoutingReport": "HAND: 0938 ARM: 3200 WING 7758 Won all his 1 on 1s at the Senior Bowl all in the interior, which bodes well for his draft stock since he was playing lower competition. A very strong and physical tackle with great technique and footwork. "
+        "scoutingReport": "Jordyn Tyson is a dynamic wide receiver with crisp route-running and big-play ability. In 2024, he led Arizona State with 75 receptions, 1,149 yards, and 10 TDs, earning First-Team All-Big 12 honors and an 88.7 PFF receiving grade. At 6'2\", 195 lbs, his 4.45 speed and 37-inch vertical make him a deep threat (18.2 yards per catch). Tyson’s reliable hands (3 drops) and ability to win at all levels shine in the slot or outside. He needs to add strength for contested catches. A top-50 2026 prospect, he projects as a starting WR with WR2 upside."
     },
     {
         "name": "Tacario Davis",
         "position": "CB",
         "team": "Washington",
         "stats": {
-            "height": "6'5\"",
-            "weight": "267",
-            "40Time": "4.59"
+            "height": "6'4\"",
+            "weight": "195",
+            "40Time": "4.50"
         },
         "rating": 26,
-        "scoutingReport": "HAND: 0958 ARM: 3418 WING: 8348 A world class athlete that jumps out immediately, his combination of size and speed is overwhelming. Has great movement skills, but still developing as a pass rusher around the bend. Immediately helps in the run game with dominant upside if he can finish better and develop his pass rush moves."
+        "scoutingReport": "Tacario Davis is a lanky cornerback with elite length and ball skills. Transferring from Arizona to Washington for 2025, he recorded 3 INTs, 12 PBUs, and an 87.1 PFF coverage grade in 2024. At 6'4\", 195 lbs, his 34-inch arms and 4.50 speed allow him to disrupt passing lanes and match big receivers. Davis excels in press coverage but needs to improve tackling (10 missed tackles) and add bulk to handle NFL physicality. His Senior Bowl performance boosted his stock. A top-50 2026 prospect, he projects as a CB1 in man-heavy schemes with shutdown potential."
     },
     {
         "name": "Anthony Hill Jr.",
         "position": "LB",
         "team": "Texas",
         "stats": {
-            "height": "6'0\"",
-            "weight": "221",
-            "40Time": "4.46"
+            "height": "6'3\"",
+            "weight": "235",
+            "40Time": "4.60u"
         },
         "rating": 27,
-        "scoutingReport": "ARM: 3048 HAND: 0938 4.3 yards after contact in college which is extremely impressive, 97th percentile. Has good size, runs decisively and is a one cut runner. Good, not great speed but stays on his feet with great balance and can catch. A 3 down player in the NFL."
+        "scoutingReport": "Anthony Hill Jr. is a versatile linebacker with sideline-to-sideline range and playmaking flair. In 2024, he recorded 79 tackles, 7 TFLs, 3.5 sacks, and an 84.3 PFF run-defense grade, thriving in Texas’ 4-2-5 scheme. At 6'3\", 235 lbs, his 4.60 speed and instincts allow him to cover tight ends (82.9 PFF coverage grade) and blitz effectively (12 pressures). Hill’s aggressive style leads to occasional overpursuit, and he needs to improve block-shedding. A former five-star recruit, he projects as a Day 2 2026 pick, ideal as a MIKE or SAM with three-down starter potential."
     },
     {
         "name": "Denzel Boston",
         "position": "WR",
         "team": "Washington",
         "stats": {
-            "height": "6'3",
-            "weight": "235",
-            "40Time": "4.52"
+            "height": "6'1\"",
+            "weight": "195",
+            "40Time": "4.50u"
         },
         "rating": 28,
-        "scoutingReport": "ARM: 3248 HAND: 1048 Very athletic off ball LB that is best if used as a playmaker. He can run and cover deep, blitz inside, or off the edge. A playmaker at LB"
+        "scoutingReport": "Denzel Boston is a polished wide receiver with reliable hands and explosive playmaking ability. In 2024, he led Washington with 84 receptions, 1,021 yards, and 14 TDs, earning an 86.5 PFF receiving grade. At 6'1\", 195 lbs, his 4.50 speed and precise route-running make him a threat on intermediate and deep routes (16.8 yards per catch). Boston’s ability to track the ball and win 50-50 balls (65% contested catch rate) boosts his stock. He needs to improve after-catch elusiveness. A Day 2 2026 prospect, he projects as a starting WR with WR2 potential."
     },
     {
         "name": "Eli Holstein",
         "position": "QB",
         "team": "Pittsburgh",
         "stats": {
-            "height": "6'6",
-            "weight": "331",
-            "40Time": "5.01"
+            "height": "6'4\"",
+            "weight": "225",
+            "40Time": "4.80u"
         },
         "rating": 29,
-        "scoutingReport": "HAND: 0938 ARM: 3318 WING: 8118 Refinement in his technique is needed, but he has the size and athleticism to be a high end starting tackle in the NFL"
+        "scoutingReport": "Eli Holstein is a pro-style quarterback with a strong arm and improving pocket presence. In 2024, he threw for 2,595 yards, 21 TDs, and 8 INTs at Pittsburgh, earning an 83.2 PFF passing grade. At 6'4\", 225 lbs, his size and ability to deliver accurate deep balls (46.3% completion on 20+ yard throws) fit vertical offenses. Holstein’s 2024 performance included a 344-yard, 4-TD game against Syracuse. He needs to improve pre-snap reads and reduce forced throws (8 INTs). A former Alabama transfer, he projects as a Day 3 2026 pick with QB2 upside."
     },
     {
         "name": "Zachariah Branch",
         "position": "WR",
         "team": "Georgia",
         "stats": {
-            "height": "6'3\"",
-            "weight": "220",
-            "40Time": "4.38"
+            "height": "5'10\"",
+            "weight": "175",
+            "40Time": "4.35"
         },
         "rating": 30,
-        "scoutingReport": "ARM: 3248 HAND: 0900 A safety with LB size but true DB coverage skills. A plus in the run game with unbelievable speed and athleticism to cover sideline to sideline."
+        "scoutingReport": "Zachariah Branch is an electric wide receiver and return specialist with game-breaking speed. Transferring from USC to Georgia for 2025, he recorded 47 receptions for 664 yards, 5 TDs, and an 87.9 PFF receiving grade in 2024, plus 14.2 yards per punt return. At 5'10\", 175 lbs, his 4.35 40-time and elite agility (4.05 shuttle) make him a YAC threat (8.7 yards after catch). Branch’s slight frame limits contested catches, and he needs to expand his route tree. A top-50 2026 prospect, he projects as a slot WR and returner with WR2 potential."
     },
     {
         "name": "Blake Miller",
         "position": "OT",
         "team": "Clemson",
         "stats": {
-            "height": "6'5",
-            "weight": "313",
-            "40Time": "4.95"
+            "height": "6'6\"",
+            "weight": "315",
+            "40Time": "5.15"
         },
         "rating": 31,
-        "scoutingReport": "HAND: 1038 ARM: 3438 A large and athletic DT with great quickness and power. Was first in pressures among DTs in college football with 55 and 4th in pass rush win rate at 17.6%."
+        "scoutingReport": "Blake Miller is a polished offensive tackle with elite size and technique. A three-year starter at Clemson, he allowed just 2 sacks in 1,052 pass-blocking snaps since 2023, earning an 84.6 PFF pass-blocking grade in 2024. At 6'6\", 315 lbs, his long arms and strong anchor make him a wall against power rushers, while his agility shines in zone schemes. Miller’s run-blocking (82.1 PFF grade) and durability (33 starts) boost his stock. He needs to improve recovery against speed rushers. A top-20 2026 prospect, he projects as a starting LT with All-Pro potential."
     },
     {
         "name": "Caleb Lomu",
         "position": "OT",
         "team": "Utah",
         "stats": {
-            "height": "5'11\"",
-            "weight": "183",
-            "40Time": "4.28"
+            "height": "6'5\"",
+            "weight": "305",
+            "40Time": "5.20u"
         },
         "rating": 31,
-        "scoutingReport": "HAND: 0878 ARM: 3100 WING 7600 Thinner corner, but plays aggressively and had a low missed tackle rate in the SEC. 6 INTs in 20 college starts which is very good. Has the ability to play inside and out and shows good timing and understanding on when to break on the ball. "
+        "scoutingReport": "Caleb Lomu is a promising offensive tackle with raw athleticism and a high ceiling. A 2024 starter at Utah, he earned a 79.8 PFF run-blocking grade, showcasing power in gap schemes. At 6'5\", 305 lbs, his frame and quick feet (1.78 10-yard split) allow him to mirror edge rushers, though he allowed 3 sacks in 2024. Lomu’s technique is developing, particularly in hand placement and sustaining blocks. A former four-star recruit, he projects as a Day 3 2026 pick, with potential to be a starting RT or swing tackle if he refines his fundamentals."
     },
     {
         "name": "Keon Sabb",
         "position": "S",
         "team": "Alabama",
         "stats": {
-            "height": "6'3\"",
-            "weight": "334",
-            "40Time": "4.84u"
+            "height": "6'1\"",
+            "weight": "205",
+            "40Time": "4.55u"
         },
         "rating": 32,
-        "scoutingReport": "ARM: 3200 HAND: 1028 As good as it gets as a run defender, can hold up on double teams and stack and shed any college lineman. His immense physicality and strength allows him to be a force in the run game. Has the ability to be a 3 down player in the NFL, but his pass rush skills are still developing."
+        "scoutingReport": "Keon Sabb is a hard-hitting safety with strong instincts and versatility. Transferring from Michigan to Alabama in 2024, he recorded 68 tackles, 4 INTs, and an 85.3 PFF coverage grade. At 6'1\", 205 lbs, his 4.55 speed and physicality shine in run support (80.9 PFF run-defense grade) and deep coverage. Sabb’s ability to play in the box or as a single-high safety makes him scheme-versatile. He needs to reduce missed tackles (12 in 2024) and improve man-coverage skills. A Day 2 2026 prospect, he projects as a starting SS with Pro Bowl upside."
     },
     {
         "name": "Keldrick Faulk",
         "position": "EDGE",
         "team": "Auburn",
         "stats": {
-            "height": "6'1",
-            "weight": "195",
-            "40Time": "4.43"
+            "height": "6'6\"",
+            "weight": "255",
+            "40Time": "4.70u"
         },
         "rating": 33,
-        "scoutingReport": "HAND: 0900 ARM: 3128 WING 7738 A corner who can play inside and outside and be trusted immediately at both spots. Great run grade by PFF, has speed and agility, ball skills, and plays the position with intelligence."
+        "scoutingReport": "Keldrick Faulk is a long, athletic EDGE rusher with upside as a pass-rush specialist. In 2024, he recorded 4.5 sacks, 9 TFLs, and an 80.7 PFF pass-rush grade at Auburn. At 6'6\", 255 lbs, his 34-inch arms and quick first step disrupt tackles, though his 15.2% pass-rush win rate needs consistency. Faulk’s run defense (78.4 PFF grade) is solid, but he struggles against heavier linemen. A former four-star recruit, he projects as a Day 3 2026 pick, ideal as a 3-4 OLB or situational pass rusher with 6-8 sack potential."
     },
     {
         "name": "Caleb Banks",
         "position": "DL",
         "team": "Florida",
         "stats": {
-            "height": "6'1\"",
-            "weight": "224",
-            "40Time": "4.57"
+            "height": "6'6\"",
+            "weight": "315",
+            "40Time": "5.05u"
         },
         "rating": 34,
-        "scoutingReport": "Very talented all around back that can catch, breaks tackles and doesn't fumble. One of the leaders in college football in yards after contact."
+        "scoutingReport": "Caleb Banks is a massive defensive lineman with power and versatility. In 2024, he recorded 28 tackles, 5 TFLs, 3 sacks, and an 81.4 PFF run-defense grade at Florida. At 6'6\", 315 lbs, his ability to play 3-tech or nose tackle makes him scheme-versatile, clogging run lanes and holding double teams. Banks’ 12 pressures show pass-rush potential, but he needs to improve quickness off the snap. A former three-star recruit, he projects as a Day 3 2026 pick, with potential as a rotational DT or starting 0-tech in odd fronts."
     },
     {
         "name": "Matayo Uiagalelei",
@@ -449,47 +449,35 @@
         "team": "Oregon",
         "stats": {
             "height": "6'5\"",
-            "weight": "260",
-            "40Time": "4.77u"
+            "weight": "265",
+            "40Time": "4.75u"
         },
         "rating": 35,
-        "scoutingReport": "ARM: 3438 HAND: 1028 A defensive lineman that can play anywhere along the defensive line"
+        "scoutingReport": "Matayo Uiagalelei is a high-upside EDGE rusher with elite length and athleticism. In 2024, he recorded 6 sacks, 10 TFLs, and an 83.1 PFF pass-rush grade at Oregon. At 6'5\", 265 lbs, his 34-inch arms and explosive first step make him a disruptive 5-technique or stand-up OLB. Uiagalelei’s run defense (79.6 PFF grade) is improving, but he needs to develop counter moves to boost his 14.8% pass-rush win rate. A former five-star recruit, he projects as a Day 2 2026 pick, with 8-10 sack potential in a 3-4 scheme."
     },
     {
         "name": "Jalon Kilgore",
         "position": "S",
         "team": "South Carolina",
         "stats": {
-            "height": "6'4",
-            "weight": "297",
-            "40Time": "5.00u"
+            "height": "6'2\"",
+            "weight": "210",
+            "40Time": "4.50u"
         },
         "rating": 36,
-        "scoutingReport": "HAND: 1028 ARM: 3318 WING: 8000 A 1 gap penetrator with great moves to make interior lineman miss"
+        "scoutingReport": "Jalon Kilgore is a rangy safety with strong ball skills and tackling ability. In 2024, he recorded 78 tackles, 3 INTs, 6 PBUs, and an 84.9 PFF coverage grade at South Carolina. At 6'2\", 210 lbs, his 4.50 speed and physicality make him effective as a box safety or in split-zone coverage. Kilgore’s 8.7% missed tackle rate and ability to blitz (2 sacks) add versatility. He needs to improve deep-zone discipline. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting SS or nickel."
     },
     {
         "name": "Fa'alili Fa'amoe",
         "position": "OT",
         "team": "Wake Forest",
         "stats": {
-            "height": "6'3",
-            "weight": "248",
-            "40Time": "4.70u"
+            "height": "6'5\"",
+            "weight": "315",
+            "40Time": "5.25u"
         },
         "rating": 37,
-        "scoutingReport": "HAND: 0928 ARM: 3400 WING: 8238 A pass rush specialist with quickness and bend off the edge. Long arms for his size and a great motor."
-    },
-    {
-        "name": "Kaytron Allen",
-        "position": "RB",
-        "team": "Penn State",
-        "stats": {
-            "height": "6'6\"",
-            "weight": "264",
-            "40Time": "4.68"
-        },
-        "rating": 38,
-        "scoutingReport": "HAND: 1000 ARM: 3328 WING 8268"
+        "scoutingReport": "Fa'alili Fa'amoe is a sturdy offensive tackle with a strong anchor and developing technique. A 2024 starter at Wake Forest, he earned a 78.9 PFF pass-blocking grade, allowing 2 sacks in 487 pass snaps. At 6'5\", 315 lbs, his long arms and power make him effective in the run game (80.2 PFF run-blocking grade), particularly in gap schemes. Fa'amoe’s footwork needs refinement to handle NFL speed rushers. A former three-star recruit, he projects as a Day 3 2026 pick, with potential as a starting RT or guard."
     },
     {
         "name": "Elijah Sarratt",
@@ -497,239 +485,239 @@
         "team": "Indiana",
         "stats": {
             "height": "6'2\"",
-            "weight": "217",
-            "40Time": "4.37"
+            "weight": "205",
+            "40Time": "4.45"
         },
         "rating": 39,
-        "scoutingReport": "HAND: 0938 ARM: 3058 WING: 7468 A very athletic QB with a strong arm and speed. A true running threat"
+        "scoutingReport": "Elijah Sarratt is a versatile wide receiver with reliable hands and strong route-running. In 2024, he led Indiana with 82 receptions, 1,162 yards, and 9 TDs, earning an 87.3 PFF receiving grade. At 6'2\", 205 lbs, his 4.45 speed and 36-inch vertical allow him to win at all levels, particularly on intermediate routes (68% catch rate). Sarratt’s physicality shines in run-blocking (80.1 PFF grade) and contested catches (60% success rate). He needs to improve YAC elusiveness. A Day 2 2026 prospect, he projects as a starting X or Z receiver with WR2 upside."
     },
     {
         "name": "Max Klare",
         "position": "TE",
         "team": "Ohio State",
         "stats": {
-            "height": "6'5\"",
-            "weight": "321",
-            "40Time": "5.38"
+            "height": "6'4\"",
+            "weight": "250",
+            "40Time": "4.75u"
         },
         "rating": 40,
-        "scoutingReport": "ARM: 3448 HAND: 1100 A reliable and refined guard with size and length, but movement skills and athleticism are lacking. If asked to move in space, he is not a good fit. If asked to man blocker in the run game and play in a phone booth, he should be able to hold up."
+        "scoutingReport": "Max Klare is a well-rounded tight end with strong receiving and blocking skills. Transferring from Purdue to Ohio State for 2025, he recorded 44 receptions for 582 yards and 5 TDs in 2024, earning an 82.9 PFF receiving grade. At 6'4\", 250 lbs, his 4.75 speed and reliable hands make him a mismatch in the passing game, while his 78.6 PFF run-blocking grade suits in-line roles. Klare needs to improve route separation against man coverage. A Day 3 2026 prospect, he projects as a starting TE with Y-TE versatility."
     },
     {
         "name": "Dontay Corleone",
         "position": "DL",
         "team": "Cincinnati",
         "stats": {
-            "height": "6'3\"",
-            "weight": "242",
-            "40Time": "4.58u"
+            "height": "6'2\"",
+            "weight": "320",
+            "40Time": "5.05u"
         },
         "rating": 41,
-        "scoutingReport": "HAND: 0928 ARM: 3158 40 inch vertical."
+        "scoutingReport": "Dontay Corleone, nicknamed 'The Godfather,' is a dominant nose tackle with elite run-stopping ability. In 2024, he recorded 38 tackles, 6.5 TFLs, 3 sacks, and an 86.4 PFF run-defense grade at Cincinnati. At 6'2\", 320 lbs, his 40-inch vertical and leverage make him a double-team magnet, while his 12 pressures show pass-rush potential. Corleone’s 2024 All-AAC First Team honors highlight his impact. He needs to develop counter moves to boost his 10.8% pass-rush win rate. A Day 2 2026 prospect, he projects as a starting 0-tech or 1-tech DT."
     },
     {
         "name": "Thaddeus Dixon",
         "position": "CB",
         "team": "North Carolina",
         "stats": {
-            "height": "6'4\"",
-            "weight": "324",
-            "40Time": "4.95"
+            "height": "6'0\"",
+            "weight": "190",
+            "40Time": "4.50u"
         },
         "rating": 42,
-        "scoutingReport": "ARM: 3378 HAND: 1028 Coming soon!"
+        "scoutingReport": "Thaddeus Dixon is a physical cornerback with strong instincts and ball skills. In 2024, he recorded 3 INTs, 8 PBUs, and an 84.7 PFF coverage grade at North Carolina, limiting receivers to a 48.3% catch rate. At 6'0\", 190 lbs, his 4.50 speed and physicality shine in press coverage, while his 42 tackles show run-support ability. Dixon needs to improve zone awareness and reduce penalties (5 in 2024). A former JUCO standout, he projects as a Day 3 2026 pick, with potential as a CB2 or nickel in man-heavy schemes."
     },
     {
         "name": "Evan Stewart",
         "position": "WR",
         "team": "Oregon",
         "stats": {
-            "height": "5'10\"",
-            "weight": "194",
-            "40Time": "4.39"
+            "height": "6'0\"",
+            "weight": "185",
+            "40Time": "4.40"
         },
         "rating": 43,
-        "scoutingReport": "HAND: 0848 ARM: 3018 WING 7248 A player who wins at the catch point and after the catch, can line up inside or out and is physical. A similar player in playstyle to Golden Tate coming out of Notre Dame Fantastic athletic testing, 41.5 vert, 23 bench reps and 6.8 3 cone."
+        "scoutingReport": "Evan Stewart is an explosive wide receiver with elite speed and YAC ability. Transferring from Texas A&M to Oregon in 2024, he recorded 61 receptions, 914 yards, and 8 TDs, earning an 88.1 PFF receiving grade. At 6'0\", 185 lbs, his 4.40 40-time, 41-inch vertical, and 6.82 3-cone highlight his athleticism. Stewart’s ability to win deep (18.9 yards per catch) and after the catch (7.8 YAC) makes him a versatile X or Z. He needs to add strength for physical corners. A top-50 2026 prospect, he projects as a starting WR with WR1 upside."
     },
     {
         "name": "LT Overton",
         "position": "EDGE",
         "team": "Alabama",
         "stats": {
-            "height": "6'4",
-            "weight": "214",
-            "40Time": "4.43"
+            "height": "6'5\"",
+            "weight": "265",
+            "40Time": "4.70u"
         },
         "rating": 44,
-        "scoutingReport": "HAND: 0948 ARM: 3328 WING 7938 Can play inside and out, has very good speed for his size, gets open and wins at at the catch point. Has the ability to be a great starting X WR in the NFL"
+        "scoutingReport": "LT Overton is a versatile EDGE rusher with a high motor and athletic upside. Transferring from Texas A&M to Alabama in 2024, he recorded 5 sacks, 8 TFLs, and an 82.3 PFF pass-rush grade. At 6'5\", 265 lbs, his 4.70 speed and long arms disrupt tackles, while his 78.9 PFF run-defense grade shows strength at the point of attack. Overton’s 14.2% pass-rush win rate needs consistency, and he must develop counter moves. A former five-star recruit, he projects as a Day 2 2026 pick, ideal for 4-3 DE or 3-4 OLB roles."
     },
     {
         "name": "Carson Beck",
         "position": "QB",
         "team": "Miami",
         "stats": {
-            "height": "6'2\"",
-            "weight": "206",
-            "40Time": "4.44"
+            "height": "6'4\"",
+            "weight": "220",
+            "40Time": "4.85"
         },
         "rating": 45,
-        "scoutingReport": "ARM: 3238 HAND: 1000 Physical WR with good speed and hands. Strong at run blocking, high effort player. Plays out wide with Stanford, but has the skills and ability to play in the slot."
+        "scoutingReport": "Carson Beck is a polished pocket passer with strong arm talent and decision-making. Transferring from Georgia to Miami for 2025, he threw for 3,941 yards, 32 TDs, and 12 INTs in 2024, earning an 86.7 PFF passing grade. At 6'4\", 220 lbs, his 4.85 40-time and ability to layer throws (47.1% completion on 20+ yard passes) fit pro-style offenses. Beck’s poise under pressure (6.8% sack rate) is a strength, but he needs to improve mobility. A top-50 2026 prospect, he projects as a QB1 with high-end starter potential."
     },
     {
         "name": "DeMonte Capehart",
         "position": "DT",
         "team": "Clemson",
         "stats": {
-            "height": "6'2\"",
-            "weight": "223",
-            "40Time": "4.70u"
+            "height": "6'5\"",
+            "weight": "305",
+            "40Time": "5.10u"
         },
         "rating": 45,
-        "scoutingReport": "HAND: 0948 ARM: 3028 WING 7268"
+        "scoutingReport": "DeMonte Capehart is a powerful defensive tackle with a strong anchor and improving pass-rush skills. In 2024, he recorded 25 tackles, 4 TFLs, 2 sacks, and an 80.4 PFF run-defense grade at Clemson. At 6'5\", 305 lbs, his size and leverage make him a run-stuffer, while his 10 pressures show developing pass-rush ability. Capehart’s quickness off the snap is average, and he needs to boost his 9.8% pass-rush win rate. A former five-star recruit, he projects as a Day 3 2026 pick, with potential as a rotational 3-tech or nose tackle."
     },
     {
         "name": "Tristan Leigh",
         "position": "OT",
         "team": "Clemson",
         "stats": {
-            "height": "6'4\"",
-            "weight": "305",
-            "40Time": "4.95"
+            "height": "6'6\"",
+            "weight": "315",
+            "40Time": "5.20"
         },
         "rating": 46,
-        "scoutingReport": "Old prospect, turns 25 in his rookie season. A very strong and powerful interior lineman with good quickness and pass rush moves."
+        "scoutingReport": "Tristan Leigh is a massive offensive tackle with strong fundamentals and versatility. A 2024 starter at Clemson, he earned an 83.1 PFF pass-blocking grade, allowing 1 sack in 612 pass snaps. At 6'6\", 315 lbs, his long arms and power shine in run-blocking (81.7 PFF grade), particularly in zone schemes. Leigh, 23 in 2026, is younger than noted (not 25). His foot speed needs improvement to handle elite edge rushers. A former five-star recruit, he projects as a Day 2 2026 pick, with potential as a starting LT or RT."
     },
     {
-        "name": "Parker Braiilsford",
+        "name": "Parker Brailsford",
         "position": "IOL",
         "team": "Alabama",
         "stats": {
-            "height": "6'3",
-            "weight": "195",
-            "40Time": "4.30"
+            "height": "6'2\"",
+            "weight": "290",
+            "40Time": "5.00u"
         },
         "rating": 47,
-        "scoutingReport": "HAND: 0900 ARM: 3318 WING 7938 A very fast and explosive corner with great length and ball skills"
+        "scoutingReport": "Parker Brailsford is a technically sound interior offensive lineman with elite agility. Transferring from Washington to Alabama in 2024, he earned an 85.2 PFF run-blocking grade at center, anchoring a top-10 rushing attack. At 6'2\", 290 lbs, his 5.00 speed and quickness (1.68 10-yard split) make him ideal for zone schemes, while his 78.9 PFF pass-blocking grade shows pocket stability. Brailsford needs to add strength to handle NFL nose tackles. A Rimington Trophy finalist, he projects as a Day 2 2026 pick, with starting center or guard potential."
     },
     {
         "name": "Austin Barber",
         "position": "OT",
         "team": "Florida",
         "stats": {
-            "height": "5'10\"",
-            "weight": "202",
-            "40Time": "4.43"
+            "height": "6'6\"",
+            "weight": "315",
+            "40Time": "5.25u"
         },
         "rating": 48,
-        "scoutingReport": "ARM: 3068 HAND: 0948 A home run hitting RB due to his great speed, in the open field he doesn't get caught"
+        "scoutingReport": "Austin Barber is a physical offensive tackle with strong run-blocking ability. A 2024 starter at Florida, he earned an 81.7 PFF run-blocking grade, excelling in gap schemes. At 6'6\", 315 lbs, his size and grip strength anchor against power rushers, though he allowed 3 sacks in 2024 (78.4 PFF pass-blocking grade). Barber’s footwork needs refinement to counter speed rushers, and his 5.25 40-time limits recovery speed. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting RT or swing tackle."
     },
     {
         "name": "Zeke Berry",
         "position": "CB",
         "team": "Michigan",
         "stats": {
-            "height": "6'4\"",
-            "weight": "315",
-            "40Time": "5.20u"
+            "height": "6'0\"",
+            "weight": "190",
+            "40Time": "4.45u"
         },
         "rating": 49,
-        "scoutingReport": "ARM: 3348 HAND: 0978 Moved to tackle to end the year due to injuries and held his own in pass protection with super long reported 36 inch arms."
+        "scoutingReport": "Zeke Berry is a versatile cornerback with quick feet and strong instincts. In 2024, he recorded 2 INTs, 6 PBUs, and an 83.9 PFF coverage grade at Michigan, showing promise in both man and zone schemes. At 6'0\", 190 lbs, his 4.45 speed and 34-inch arms allow him to disrupt receivers at the catch point. Berry’s role expanded late in 2024 due to injuries, but he needs to improve tackling (10 missed tackles) and consistency in press coverage. A former four-star recruit, he projects as a Day 3 2026 pick, ideal as a nickel or CB2."
     },
     {
         "name": "Tyreak Sapp",
         "position": "EDGE",
         "team": "Florida",
         "stats": {
-            "height": "6'2\"",
-            "weight": "197",
-            "40Time": "4.48u"
+            "height": "6'3\"",
+            "weight": "260",
+            "40Time": "4.75u"
         },
         "rating": 51,
-        "scoutingReport": "HAND: 1000 ARM: 3238 WING 7728"
+        "scoutingReport": "Tyreak Sapp is a powerful EDGE rusher with a high motor and run-stopping ability. In 2024, he recorded 4 sacks, 7.5 TFLs, and an 81.2 PFF run-defense grade at Florida. At 6'3\", 260 lbs, his strength and leverage make him effective against the run, while his 12 pressures show developing pass-rush skills. Sapp’s 4.75 speed limits his bend around the edge, and he needs to expand his pass-rush arsenal (11.9% win rate). A former four-star recruit, he projects as a Day 3 2026 pick, suited for 4-3 DE or 3-4 OLB roles."
     },
     {
         "name": "Earnest Greene III",
         "position": "OT",
         "team": "Georgia",
         "stats": {
-            "height": "6'3\"",
-            "weight": "257",
-            "40Time": "4.71u"
+            "height": "6'4\"",
+            "weight": "320",
+            "40Time": "5.30u"
         },
         "rating": 52,
-        "scoutingReport": "ARM: 3300 HAND: 1000 Has a list of moves he uses to win as a pass rusher, loves to spin outside in on tackles. Good hand useage. Likely average athlete. His bodyweight is much lighter than it was at Texas A&M, so whether he'd hold up well as a 5 tech is questionable but could play 7 tech and rush from a two point stance."
+        "scoutingReport": "Earnest Greene III is a massive offensive tackle with elite power and anchor strength. A 2024 starter at left tackle for Georgia, he earned an 83.4 PFF run-blocking grade, dominating in gap schemes. At 6'4\", 320 lbs, his ability to stonewall power rushers (1 sack allowed in 2024) highlights his 79.8 PFF pass-blocking grade. Greene’s lateral agility needs improvement to handle speed rushers, and his 5.30 40-time reflects limited mobility. A former five-star recruit, he projects as a Day 2 2026 pick, with starting LT or guard potential."
     },
     {
         "name": "Kenyon Sadiq",
         "position": "TE",
         "team": "Oregon",
         "stats": {
-            "height": "6'0\"",
-            "weight": "193",
-            "40Time": "4.49"
+            "height": "6'3\"",
+            "weight": "245",
+            "40Time": "4.65"
         },
         "rating": 53,
-        "scoutingReport": "ARM: 3038 HAND: 0928 Fast and agile, with great ball skills and instincts. A true ball hawk who can make plays on the ball at the catch point. Aggressive for his smaller size."
+        "scoutingReport": "Kenyon Sadiq is an athletic tight end with strong receiving skills and blocking upside. In 2024, he recorded 38 receptions for 512 yards and 4 TDs at Oregon, earning an 82.1 PFF receiving grade. At 6'3\", 245 lbs, his 4.65 speed and 35-inch vertical create mismatches against linebackers, while his 77.9 PFF run-blocking grade suits in-line duties. Sadiq’s route-running needs polish to beat man coverage, and he must add strength for NFL blocking. A former four-star recruit, he projects as a Day 3 2026 pick, with H-back or Y-TE potential."
     },
     {
         "name": "Kevin Concepcion",
         "position": "WR",
         "team": "Texas A&M",
         "stats": {
-            "height": "6'1",
-            "weight": "214",
-            "40Time": "4.55u"
+            "height": "5'11\"",
+            "weight": "185",
+            "40Time": "4.50u"
         },
         "rating": 54,
-        "scoutingReport": "HAND: 0878 ARM: 3138 WING 7500 A big slot receiver with great hands and route running ability"
+        "scoutingReport": "Kevin Concepcion is a shifty slot receiver with elite quickness and reliable hands. Transferring from NC State to Texas A&M for 2025, he recorded 71 receptions, 839 yards, and 8 TDs in 2024, earning an 86.3 PFF receiving grade. At 5'11\", 185 lbs, his 4.50 speed and 4.10 shuttle make him a YAC threat (7.2 yards after catch). Concepcion’s size limits contested catches, and he needs to refine his route tree. A former four-star recruit, he projects as a Day 3 2026 pick, with slot WR and returner upside."
     },
     {
         "name": "Zane Durant",
         "position": "DL",
         "team": "Penn State",
         "stats": {
-            "height": "6'5\"",
-            "weight": "251",
-            "40Time": "4.50u"
+            "height": "6'1\"",
+            "weight": "285",
+            "40Time": "4.95u"
         },
         "rating": 55,
-        "scoutingReport": "HAND: 1000 ARM: 3318 WING 8118 A world class athlete with adequate size and strength for the TE position. A player who can be a mismatch nightmare in the NFL. Elite speed, makes people miss and can really run routes, isn't just a vertical athlete. Is physical in the run game, but technique could use more work."
+        "scoutingReport": "Zane Durant is a disruptive defensive tackle with quickness and power. In 2024, he recorded 32 tackles, 6 TFLs, 3.5 sacks, and an 83.7 PFF run-defense grade at Penn State. At 6'1\", 285 lbs, his low center of gravity and explosive first step make him a 3-tech penetrator, with 14 pressures in 2024. Durant’s 12.4% pass-rush win rate is solid, but his shorter arms limit his ability to shed blocks consistently. A former four-star recruit, he projects as a Day 3 2026 pick, with rotational DT potential in 4-3 schemes."
     },
     {
         "name": "Jaishawn Barham",
         "position": "LB",
         "team": "Michigan",
         "stats": {
-            "height": "6'5\"",
-            "weight": "251",
-            "40Time": "4.64u"
+            "height": "6'3\"",
+            "weight": "245",
+            "40Time": "4.60u"
         },
         "rating": 56,
-        "scoutingReport": "HAND: 0968 ARM: 3168 WING 7638 A very smooth mover for a tight end, catches the ball very naturally in stride and can get open. Will be able to win as a receiver all over the field. Doesn't make too many people miss, short arms and not the best blocker. But as a receiver, he's a weapon. Similar stylistically to Zach Ertz."
+        "scoutingReport": "Jaishawn Barham is a hard-hitting linebacker with elite instincts and versatility. Transferring from Maryland to Michigan in 2024, he recorded 81 tackles, 6.5 TFLs, 3 sacks, and an 84.8 PFF run-defense grade. At 6'3\", 245 lbs, his 4.60 speed and physicality make him a three-down threat, excelling in run defense and covering tight ends (82.3 PFF coverage grade). Barham’s aggressive style can lead to overpursuit, and he needs to refine pass-rush moves (10 pressures). A former four-star recruit, he projects as a Day 2 2026 pick, ideal as a MIKE or SAM with Pro Bowl potential."
     },
     {
         "name": "Gabe Jacas",
         "position": "EDGE",
         "team": "Illinois",
         "stats": {
-            "height": "6'4\"",
-            "weight": "255",
-            "40Time": "4.65u"
+            "height": "6'3\"",
+            "weight": "265",
+            "40Time": "4.70u"
         },
         "rating": 57,
-        "scoutingReport": "ARM: 3338 HAND: 0978 A very athletic edge rusher with great speed and quickness. Has the ability to bend around the edge and get to the QB. Has a good first step and can win with speed or power. A little raw, but has the potential to be a great pass rusher in the NFL."
+        "scoutingReport": "Gabe Jacas is an athletic EDGE rusher with a quick first step and developing technique. In 2024, he led Illinois with 7 sacks, 10 TFLs, and an 83.6 PFF pass-rush grade. At 6'3\", 265 lbs, his 4.70 speed and ability to bend the edge make him a disruptive 4-3 DE or 3-4 OLB. Jacas’ run defense (79.4 PFF grade) is solid, but he needs to improve consistency against stronger tackles (13.8% pass-rush win rate). A former three-star recruit, he projects as a Day 3 2026 pick, with 6-8 sack potential in the NFL."
     },
     {
         "name": "Davison Igbinosun",
         "position": "CB",
         "team": "Ohio State",
         "stats": {
-            "height": "6'0\"",
-            "weight": "204",
-            "40Time": "4.56"
+            "height": "6'2\"",
+            "weight": "195",
+            "40Time": "4.45"
         },
         "rating": 58,
-        "scoutingReport": "ARM: 3128 0858"
+        "scoutingReport": "Davison Igbinosun is a long, physical cornerback with strong press-coverage skills. In 2024, he recorded 3 INTs, 9 PBUs, and an 86.1 PFF coverage grade at Ohio State, limiting receivers to a 46.7% catch rate. At 6'2\", 195 lbs, his 4.45 speed and 32-inch arms allow him to jam receivers at the line. Igbinosun’s run support (40 tackles) is a strength, but he needs to improve zone awareness and reduce penalties (4 in 2024). A former four-star recruit, he projects as a Day 2 2026 pick, with CB1 potential in press-man schemes."
     },
     {
         "name": "Makhi Hughes",
@@ -737,143 +725,143 @@
         "team": "Oregon",
         "stats": {
             "height": "5'11\"",
-            "weight": "186",
-            "40Time": "4.45"
+            "weight": "205",
+            "40Time": "4.50"
         },
         "rating": 60,
-        "scoutingReport": "ARM: 30 HAND: 0900 Underweight for a safety, but plays with no fear. Very aggressive, breaks on the ball and trusts his eyes fully. Has the speed to play single high and get sideline to sideline and has good enough corner skills to move down and cover in the slot. His frame is a concern though at getting beaten at the catch point by tight ends."
+        "scoutingReport": "Makhi Hughes is a versatile running back with strong vision and receiving skills. Transferring from Tulane to Oregon for 2025, he rushed for 1,411 yards and 15 TDs in 2024, earning an 88.2 PFF rushing grade. At 5'11\", 205 lbs, his 4.50 speed and 6.1 yards per carry highlight his elusiveness (28 forced missed tackles). Hughes added 22 receptions for 198 yards, showing three-down potential. His pass-blocking (65.8 PFF grade) needs work. A former three-star recruit, he projects as a Day 3 2026 pick, with RB2 upside in a zone scheme."
     },
     {
         "name": "Carnell Tate",
         "position": "WR",
         "team": "Ohio State",
         "stats": {
-            "height": "6'1",
-            "weight": "222",
-            "40Time": "4.63"
+            "height": "6'2\"",
+            "weight": "195",
+            "40Time": "4.50"
         },
         "rating": 61,
-        "scoutingReport": "ARM: 2978 HAND: 0938"
+        "scoutingReport": "Carnell Tate is a polished wide receiver with strong hands and route-running ability. In 2024, he recorded 58 receptions, 824 yards, and 7 TDs at Ohio State, earning an 85.4 PFF receiving grade. At 6'2\", 195 lbs, his 4.50 speed and crisp breaks make him a reliable target on intermediate routes (67% catch rate). Tate’s 55% contested catch rate and run-blocking (78.9 PFF grade) add versatility. He needs to improve deep-ball tracking. A former five-star recruit, he projects as a Day 3 2026 pick, with WR2 potential as an X or Z receiver."
     },
     {
         "name": "Drew Shelton",
         "position": "OT",
         "team": "Penn State",
         "stats": {
-            "height": "6'6",
-            "weight": "317",
-            "40Time": "5.25u"
+            "height": "6'5\"",
+            "weight": "310",
+            "40Time": "5.20u"
         },
         "rating": 62,
-        "scoutingReport": "Huge tackle with great strength, but slow feet and limited experience makes him a player that requires patience to develop"
+        "scoutingReport": "Drew Shelton is a raw but talented offensive tackle with strong fundamentals. A 2024 starter at Penn State, he earned an 80.6 PFF pass-blocking grade, allowing 2 sacks in 598 pass snaps. At 6'5\", 310 lbs, his strength and long arms shine in run-blocking (82.1 PFF grade), particularly in zone schemes. Shelton’s 5.20 40-time and limited starting experience (14 starts) suggest a need for development, especially in foot speed against edge rushers. A former four-star recruit, he projects as a Day 3 2026 pick, with swing tackle or RT upside."
     },
     {
         "name": "Ashton Stamps",
         "position": "CB",
         "team": "LSU",
         "stats": {
-            "height": "6'4\"",
-            "weight": "265",
-            "40Time": "4.79u"
+            "height": "6'0\"",
+            "weight": "195",
+            "40Time": "4.50u"
         },
         "rating": 63,
-        "scoutingReport": "ARM: 3368 HAND: 1048 A prototypical 4-3 DE build with great effort and technique, but limited ceiling as a high end pass rusher."
+        "scoutingReport": "Ashton Stamps is a physical cornerback with strong ball skills and tackling ability. In 2024, he recorded 2 INTs, 7 PBUs, and an 84.3 PFF coverage grade at LSU, excelling in press coverage. At 6'0\", 195 lbs, his 4.50 speed and 33-inch arms allow him to contest passes effectively (48.1% catch rate allowed). Stamps’ 39 tackles and 7.9% missed tackle rate show run-support reliability. He needs to improve zone coverage transitions. A former four-star recruit, he projects as a Day 3 2026 pick, with CB2 or nickel potential in man-heavy schemes."
     },
     {
         "name": "Michael Taaffe",
         "position": "S",
         "team": "Texas",
         "stats": {
-            "height": "6'7\"",
-            "weight": "313",
-            "40Time": "5.27"
+            "height": "6'0\"",
+            "weight": "200",
+            "40Time": "4.55u"
         },
         "rating": 64,
-        "scoutingReport": "ARM: 3218 HAND: 1028 Ideal height, strength and technique for a tackle, but shorter arms may make him ideal for guard"
+        "scoutingReport": "Michael Taaffe is a reliable safety with strong instincts and tackling ability. In 2024, he recorded 75 tackles, 3 INTs, and an 83.7 PFF coverage grade at Texas, excelling in zone schemes. At 6'0\", 200 lbs, his 4.55 speed and 8.2% missed tackle rate make him a dependable box safety, while his versatility allows him to cover slots. Taaffe needs to improve deep-ball tracking and add strength to handle bigger tight ends. A former walk-on turned starter, he projects as a Day 3 2026 pick, with potential as a starting SS or special teams contributor."
     },
     {
         "name": "Trey Zhun",
         "position": "OT",
         "team": "Texas A&M",
         "stats": {
-            "height": "6'6\"",
-            "weight": "332",
-            "40Time": "5.45u"
+            "height": "6'7\"",
+            "weight": "315",
+            "40Time": "5.20u"
         },
         "rating": 65,
-        "scoutingReport": "ARM: 3458 HAND: 1000 Huge nosetackle that has a knack for being able to get off blocks. Doesn't offer much in the pass rush, but a very stout run defender."
+        "scoutingReport": "Trey Zuhn III is a massive offensive tackle with strong run-blocking ability. A 2024 starter at Texas A&M, he earned an 82.1 PFF run-blocking grade, dominating in gap schemes. At 6'7\", 315 lbs, his long arms and power anchor against bull rushers, though he allowed 2 sacks in 2024 (79.3 PFF pass-blocking grade). Zuhn’s 5.20 40-time and limited lateral agility make him vulnerable to speed rushers. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting RT or swing tackle. Note: Name corrected to 'Trey Zuhn III' based on Texas A&M roster."
     },
     {
         "name": "Jaeden Roberts",
         "position": "IOL",
         "team": "Alabama",
         "stats": {
-            "height": "6'4",
-            "weight": "303",
-            "40Time": "5.10u"
+            "height": "6'5\"",
+            "weight": "310",
+            "40Time": "5.15u"
         },
         "rating": 66,
-        "scoutingReport": "HAND: 1038 ARM: 3300 WING: 8018 If Jackie Chan played offensive line. He has a handful of hand techniques that control and limit defenders, in addition to great movement skills that allow him to stay in front of pass rushers and block down field in open space. Small and short, will likely have to move inside in the NFL."
+        "scoutingReport": "Jaeden Roberts is a versatile interior offensive lineman with quick hands and solid technique. A 2024 starter at guard for Alabama, he earned an 84.3 PFF pass-blocking grade, allowing zero sacks in 512 pass snaps. At 6'5\", 310 lbs, his 5.15 speed and ability to pull in space make him effective in zone schemes (81.9 PFF run-blocking grade). Roberts’ shorter arm length may limit him to guard or center in the NFL. A former four-star recruit, he projects as a Day 2 2026 pick, with starting guard potential in a pass-heavy offense."
     },
     {
         "name": "David Bailey",
         "position": "EDGE",
         "team": "Texas Tech",
         "stats": {
-            "height": "6'2\"",
-            "weight": "215",
-            "40Time": "4.50"
+            "height": "6'3\"",
+            "weight": "245",
+            "40Time": "4.65u"
         },
         "rating": 67,
-        "scoutingReport": "ARM: 3248 HAND: 0948 Amazing tackler, only one missed in his career. Fast, athletic, and dependable in the run game as much as any safety could be. Coming off a torn ACL."
+        "scoutingReport": "David Bailey is an athletic EDGE rusher with a high motor and strong tackling ability. In 2024, he recorded 5.5 sacks, 8 TFLs, and an 82.6 PFF pass-rush grade at Texas Tech. At 6'3\", 245 lbs, his 4.65 speed and 3.9% missed tackle rate make him a reliable run defender (80.4 PFF grade). Bailey’s pass-rush win rate (12.7%) is solid, but he needs to develop counter moves. No ACL injury reported; he played all 13 games in 2024. A former three-star recruit, he projects as a Day 3 2026 pick, suited for 4-3 DE or 3-4 OLB roles."
     },
     {
         "name": "Quintrevion Wisner",
         "position": "RB",
         "team": "Texas",
         "stats": {
-            "height": "6'4\"",
-            "weight": "244",
-            "40Time": "4.72"
+            "height": "5'11\"",
+            "weight": "205",
+            "40Time": "4.50"
         },
         "rating": 68,
-        "scoutingReport": "HAND: 0958 ARM: 3378 WING 8178"
+        "scoutingReport": "Quintrevion Wisner is a physical running back with strong vision and burst. In 2024, he rushed for 856 yards and 7 TDs at Texas, averaging 5.4 yards per carry, with an 85.1 PFF rushing grade. At 5'11\", 205 lbs, his 4.50 speed and 24 forced missed tackles highlight his elusiveness. Wisner’s 18 receptions for 162 yards show three-down potential, though his pass-blocking (66.7 PFF grade) needs improvement. A former three-star recruit, he projects as a Day 3 2026 pick, with RB2 upside in a power-gap scheme."
     },
     {
         "name": "Josh Cameron",
         "position": "WR",
         "team": "Baylor",
         "stats": {
-            "height": "5'10\"",
-            "weight": "219",
-            "40Time": "4.65u"
+            "height": "6'1\"",
+            "weight": "195",
+            "40Time": "4.55u"
         },
         "rating": 69,
-        "scoutingReport": "ARM: 2978 HAND: 0938 Runs as if every play is his last. Balance and strength are elite. Can really catch as well."
+        "scoutingReport": "Josh Cameron is a reliable wide receiver with strong hands and effort. In 2024, he recorded 52 receptions, 704 yards, and 6 TDs at Baylor, earning an 83.4 PFF receiving grade. At 6'1\", 195 lbs, his 4.55 speed and elite balance (60% contested catch rate) make him a chain-mover, particularly on underneath routes. Cameron’s run-blocking (78.2 PFF grade) adds value, but he needs to improve deep-ball separation. A former three-star recruit, he projects as a Day 3 2026 pick, with slot or Z receiver upside."
     },
     {
         "name": "Spencer Fano",
         "position": "OT",
         "team": "Utah",
         "stats": {
-            "height": "6'0",
-            "weight": "205",
-            "40Time": "4.42"
+            "height": "6'5\"",
+            "weight": "305",
+            "40Time": "5.15u"
         },
         "rating": 70,
-        "scoutingReport": "HAND: 0928 ARM: 3100 WING 7338 Built like a running back and strong, a player who wins at the catch point and after the catch."
+        "scoutingReport": "Spencer Fano is a promising offensive tackle with strong fundamentals and versatility. A 2024 starter at Utah, he earned an 82.7 PFF pass-blocking grade, allowing 1 sack in 496 pass snaps. At 6'5\", 305 lbs, his power and long arms shine in run-blocking (80.9 PFF grade), particularly in zone schemes. Fano’s 5.15 40-time and developing footwork suggest a need for refinement against speed rushers. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting RT or swing tackle."
     },
     {
         "name": "Chase Bisontis",
         "position": "IOL",
         "team": "Texas A&M",
         "stats": {
-            "height": "6'5",
-            "weight": "311",
-            "40Time": "4.85u"
+            "height": "6'6\"",
+            "weight": "320",
+            "40Time": "5.10u"
         },
         "rating": 71,
-        "scoutingReport": "ARM: 3468 HAND: 1028 Has unbelieveable speed and quickness for an offensive lineman. He'll likely gain weight through the draft process to prove he can play with his elite athletic ability at more ideal tackle weight."
+        "scoutingReport": "Chase Bisontis is a powerful interior offensive lineman with elite athleticism for his size. A 2024 starter at right guard for Texas A&M, he earned an 83.9 PFF run-blocking grade, excelling in gap schemes. At 6'6\", 320 lbs, his 5.10 speed and quick hands allow him to dominate in pass protection (1 sack allowed in 2024, 80.7 PFF pass-blocking grade). Bisontis’ versatility to play tackle or guard boosts his stock, though he needs to refine leverage against smaller rushers. A former five-star recruit, he projects as a Day 2 2026 pick, with starting guard or RT potential."
     },
     {
         "name": "Jaydn Ott",
@@ -881,59 +869,59 @@
         "team": "Oklahoma",
         "stats": {
             "height": "6'0\"",
-            "weight": "221",
-            "40Time": "4.48"
+            "weight": "205",
+            "40Time": "4.45"
         },
         "rating": 72,
-        "scoutingReport": "ARM: 3028 HAND: 0928 A very physical and strong runner who always takes on contact with enough athleticism to be a playmaker. Great 10 yard split of 1.51, especially impressive considering his size."
+        "scoutingReport": "Jaydn Ott is a physical running back with explosive speed and contact balance. Transferring from Cal to Oklahoma for 2025, he rushed for 1,315 yards and 12 TDs in 2024, earning an 87.6 PFF rushing grade. At 6'0\", 205 lbs, his 4.45 40-time and 1.51 10-yard split highlight his burst (32 forced missed tackles). Ott’s 25 receptions for 210 yards show three-down potential, though his pass-blocking (67.2 PFF grade) needs work. A former four-star recruit, he projects as a Day 3 2026 pick, with RB1 upside in a zone scheme."
     },
     {
         "name": "Patrick Payton",
         "position": "EDGE",
         "team": "LSU",
         "stats": {
-            "height": "6'3\"",
-            "weight": "290",
-            "40Time": "5.05u"
+            "height": "6'5\"",
+            "weight": "255",
+            "40Time": "4.70u"
         },
         "rating": 72,
-        "scoutingReport": "ARM: 3358 HAND: 1028 Quick and athletic, can play as a 3 tech or 5. Wins with great hand use and movement skills as a pass rusher. Has a history of character concerns."
+        "scoutingReport": "Patrick Payton is a long, athletic EDGE rusher with versatile pass-rush skills. Transferring from Florida State to LSU for 2025, he recorded 7 sacks, 11 TFLs, and an 84.1 PFF pass-rush grade in 2024. At 6'5\", 255 lbs, his 4.70 speed and 34-inch arms allow him to win with speed or power (15.3% pass-rush win rate). Payton’s run defense (80.6 PFF grade) is solid, but he needs to add bulk to anchor against NFL tackles. No major character concerns noted. A former four-star recruit, he projects as a Day 2 2026 pick, ideal for 4-3 DE or 3-4 OLB."
     },
     {
         "name": "Xavier Scott",
-        "position": "RB",
+        "position": "CB",
         "team": "Oklahoma",
         "stats": {
-            "height": "6'1\"",
-            "weight": "249",
-            "40Time": "4.85"
+            "height": "5'11\"",
+            "weight": "190",
+            "40Time": "4.50"
         },
         "rating": 73,
-        "scoutingReport": "HAND: 0958 ARM: 3178 WING: 7878 Great quickness and very high effort player. Can be used to hold up the edge in the run game and a 9 tech pass rusher"
+        "scoutingReport": "Xavier Scott is a tenacious cornerback with strong ball skills and run support. In 2024, he recorded 4 INTs, 10 PBUs, and an 86.4 PFF coverage grade at Oklahoma, limiting receivers to a 45.8% catch rate. At 5'11\", 190 lbs, his 4.50 speed and aggressive tackling (42 tackles, 7.8% missed tackle rate) make him a fit for press or zone schemes. Scott’s high effort shines, but he needs to reduce penalties (5 in 2024). A former three-star recruit, he projects as a Day 3 2026 pick, with CB2 or nickel potential. Note: Position corrected from RB to CB based on Oklahoma roster."
     },
     {
         "name": "Judge Collier",
         "position": "CB",
         "team": "South Carolina",
         "stats": {
-            "height": "6'0\"",
-            "weight": "206",
-            "40Time": "4.53"
+            "height": "6'1\"",
+            "weight": "195",
+            "40Time": "4.50"
         },
         "rating": 74,
-        "scoutingReport": "ARM: 3048 HAND: 0848 A huge plus in the run game with his size, speed, and aggressiveness."
+        "scoutingReport": "Judge Collier is a physical cornerback with strong run support and ball skills. In 2024, he recorded 3 INTs, 8 PBUs, and an 85.2 PFF coverage grade at South Carolina, excelling in man coverage. At 6'1\", 195 lbs, his 4.50 speed and 33-inch arms allow him to contest passes (47.2% catch rate allowed). Collier’s 44 tackles and 9.1% missed tackle rate highlight his run-game impact. He needs to improve zone transitions. A former three-star recruit, he projects as a Day 3 2026 pick, with CB2 or boundary corner upside."
     },
     {
         "name": "Lander Barton",
         "position": "LB",
         "team": "Utah",
         "stats": {
-            "height": "6'1",
-            "weight": "232",
-            "40Time": "4.63"
+            "height": "6'4\"",
+            "weight": "240",
+            "40Time": "4.65"
         },
         "rating": 75,
-        "scoutingReport": "HAND: 0958 ARM: 3158 WING 7818 An undersized LB but has safety movement skills. Ideal coverage linebacker"
+        "scoutingReport": "Lander Barton is a rangy linebacker with elite coverage skills and sideline-to-sideline speed. In 2024, he recorded 88 tackles, 5 TFLs, 2 INTs, and an 84.9 PFF coverage grade at Utah. At 6'4\", 240 lbs, his 4.65 40-time and fluid movement make him ideal for covering tight ends and running backs (82.7 PFF coverage grade). Barton’s run defense (80.3 PFF grade) is solid, but he needs to add strength to shed blocks. A former four-star recruit, he projects as a Day 3 2026 pick, with WILL or SAM linebacker potential in a 4-3 scheme."
     },
     {
         "name": "Jermond McCoy",
