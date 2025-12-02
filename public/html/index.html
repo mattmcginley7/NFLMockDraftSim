@@ -50,6 +50,11 @@
             padding: 10px 20px;
         }
 
+        .team-selection img {
+            height: 60px;
+            width: auto;
+        }
+
         .team-selection {
             display: grid;
             gap: 10px;
@@ -78,23 +83,22 @@
         }
 
         .team-logo {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             cursor: pointer;
             border: 2px solid transparent;
             border-radius: 10px;
-            padding: 8px;
+            padding: 5px;
             transition: border-color 0.3s;
-            object-fit: contain;
-            background: #fff;
-            box-sizing: border-box;
         }
 
         /* Media query for smaller screens */
         @media (max-width: 768px) {
             .team-logo {
-                width: 70px;
-                height: 70px;
+                width: 22%;
+                /* Adjust this value as needed */
+                max-width: 80px;
+                height: auto;
                 margin-bottom: 15px;
             }
 
@@ -200,20 +204,29 @@
         }
 
         .player-rankings-button {
-    display: inline-block;         /* Makes it behave like a button */
-    background-color: #007bff;     /* Same color used elsewhere */
-    color: #fff;                   /* White text stands out */
-    padding: 10px 20px;            /* More padding for a button feel */
-    border: none;                  /* Remove default borders */
-    border-radius: 5px;            /* Rounded corners */
-    text-decoration: none;         /* Remove underline if it’s a link */
-    cursor: pointer;               /* Hand cursor on hover */
-    transition: background-color 0.3s ease;
-}
+            display: inline-block;
+            /* Makes it behave like a button */
+            background-color: #007bff;
+            /* Same color used elsewhere */
+            color: #fff;
+            /* White text stands out */
+            padding: 10px 20px;
+            /* More padding for a button feel */
+            border: none;
+            /* Remove default borders */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-decoration: none;
+            /* Remove underline if it’s a link */
+            cursor: pointer;
+            /* Hand cursor on hover */
+            transition: background-color 0.3s ease;
+        }
 
-.player-rankings-button:hover {
-    background-color: #0056b3;     /* Slightly darker on hover */
-}
+        .player-rankings-button:hover {
+            background-color: #0056b3;
+            /* Slightly darker on hover */
+        }
     </style>
 </head>
 
