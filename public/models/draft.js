@@ -101,16 +101,84 @@ function filterPlayers(criteria) {
 // Function to update draft history
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
-    draftHistoryContainer.innerHTML = ''; // Clear existing content
+
+    if (!draftHistoryContainer) {
+        console.error('Draft history container not found');
+        return;
+    }
+
+    // Keep the existing nodes so images remain cached and the layout stays stable.
+    const existingNodes = new Map(
+        Array.from(draftHistoryContainer.children)
+            .filter(node => node.dataset?.pickNumber)
+            .map(node => [node.dataset.pickNumber, node])
+    );
+
+    const fragment = document.createDocumentFragment();
+
     (draftHistory || []).forEach(pick => {
+        const pickKey = `${pick.pick}`;
         const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-        const pickElement = document.createElement('div');
-        pickElement.className = 'draft-pick-item';
-        pickElement.innerHTML = `
-           <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-           <strong>${pick.pick}. ${pick.player}</strong>, ${pick.position}, ${pick.college}`;
-        draftHistoryContainer.appendChild(pickElement);
+
+        let pickElement = existingNodes.get(pickKey);
+
+        if (!pickElement) {
+            pickElement = document.createElement('div');
+            pickElement.className = 'draft-pick-item';
+            pickElement.dataset.pickNumber = pickKey;
+            const logoImg = document.createElement('img');
+            logoImg.className = 'team-logo-small';
+            logoImg.alt = `${pick.team} Logo`;
+            logoImg.src = teamLogo;
+
+            const textWrapper = document.createElement('div');
+            const playerLine = document.createElement('strong');
+            playerLine.textContent = `${pick.pick}. ${pick.player}`;
+            const detailLine = document.createElement('span');
+            detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+
+            textWrapper.appendChild(playerLine);
+            textWrapper.appendChild(detailLine);
+
+            pickElement.appendChild(logoImg);
+            pickElement.appendChild(textWrapper);
+        } else {
+            // Update existing nodes to avoid reloading images and keep the list stable.
+            const logoImg = pickElement.querySelector('img');
+            const playerLine = pickElement.querySelector('strong');
+            let detailLine = pickElement.querySelector('span');
+            let textWrapper = playerLine ? playerLine.parentElement : null;
+
+            if (!textWrapper || textWrapper === pickElement) {
+                textWrapper = document.createElement('div');
+                if (playerLine) {
+                    textWrapper.appendChild(playerLine);
+                }
+            }
+
+            if (!detailLine) {
+                detailLine = document.createElement('span');
+                textWrapper.appendChild(detailLine);
+            }
+
+            if (logoImg && logoImg.src !== new URL(teamLogo, document.baseURI).href) {
+                logoImg.src = teamLogo;
+            }
+            if (logoImg) logoImg.alt = `${pick.team} Logo`;
+            if (playerLine) playerLine.textContent = `${pick.pick}. ${pick.player}`;
+            detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+
+            if (!textWrapper.parentElement) {
+                pickElement.appendChild(textWrapper);
+            }
+        }
+
+        fragment.appendChild(pickElement);
     });
+
+    // Replace the children in one operation to reduce layout thrashing and keep smooth scrolling.
+    draftHistoryContainer.replaceChildren(fragment);
+
     // Scroll to the bottom after elements are added
     setTimeout(() => {
         draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
