@@ -8,6 +8,10 @@ let draftState = { teamPicks: {} };
 let tradeOffers = [];
 let currentOfferIndex = 0;
 let teamsData = {};
+let draftHistoryPollTimeout;
+let draftHistoryAbortController;
+const fastPollInterval = 1200;
+const idlePollInterval = 2500;
 
 
 const apiUrl = "https://nflmockdraftsim.onrender.com";
@@ -98,7 +102,65 @@ function filterPlayers(criteria) {
 }
 
 
-// Function to update draft history
+function ensureDraftHistoryList(draftHistoryContainer) {
+    let listRoot = draftHistoryContainer.querySelector('.draft-history-list');
+
+    if (!listRoot) {
+        listRoot = document.createElement('div');
+        listRoot.className = 'draft-history-list';
+        draftHistoryContainer.appendChild(listRoot);
+    }
+
+    // If any pick nodes were previously appended directly to the container, move them into the list root
+    const strayPickNodes = Array.from(draftHistoryContainer.children).filter(node => node.dataset?.pickNumber);
+    strayPickNodes.forEach(node => listRoot.appendChild(node));
+
+    return listRoot;
+}
+
+function buildPickElement(pick, teamLogo, pickKey) {
+    const pickElement = document.createElement('div');
+    pickElement.className = 'draft-pick-item';
+    pickElement.dataset.pickNumber = pickKey;
+
+    const logoImg = document.createElement('img');
+    logoImg.className = 'team-logo-small';
+    logoImg.alt = `${pick.team} Logo`;
+    logoImg.src = teamLogo;
+
+    const textWrapper = document.createElement('div');
+    const playerLine = document.createElement('strong');
+    playerLine.textContent = `${pick.pick}. ${pick.player}`;
+    const detailLine = document.createElement('span');
+    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+
+    textWrapper.appendChild(playerLine);
+    textWrapper.appendChild(detailLine);
+
+    pickElement.appendChild(logoImg);
+    pickElement.appendChild(textWrapper);
+
+    return pickElement;
+}
+
+function refreshPickElement(pickElement, pick, teamLogo) {
+    const logoImg = pickElement.querySelector('img');
+    const playerLine = pickElement.querySelector('strong');
+    let detailLine = pickElement.querySelector('span');
+
+    if (logoImg && logoImg.src !== new URL(teamLogo, document.baseURI).href) {
+        logoImg.src = teamLogo;
+    }
+    if (logoImg) logoImg.alt = `${pick.team} Logo`;
+    if (playerLine) playerLine.textContent = `${pick.pick}. ${pick.player}`;
+    if (!detailLine) {
+        detailLine = document.createElement('span');
+        pickElement.appendChild(detailLine);
+    }
+    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+}
+
+// Function to update draft history without re-rendering existing nodes
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
 
@@ -107,82 +169,71 @@ function updateDraftHistory(draftHistory) {
         return;
     }
 
-    // Keep the existing nodes so images remain cached and the layout stays stable.
+    const listRoot = ensureDraftHistoryList(draftHistoryContainer);
+
     const existingNodes = new Map(
-        Array.from(draftHistoryContainer.children)
+        Array.from(listRoot.children)
             .filter(node => node.dataset?.pickNumber)
             .map(node => [node.dataset.pickNumber, node])
     );
 
-    const fragment = document.createDocumentFragment();
+    let appended = false;
 
-    (draftHistory || []).forEach(pick => {
+    (draftHistory || []).forEach((pick, index) => {
         const pickKey = `${pick.pick}`;
         const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
 
         let pickElement = existingNodes.get(pickKey);
 
         if (!pickElement) {
-            pickElement = document.createElement('div');
-            pickElement.className = 'draft-pick-item';
-            pickElement.dataset.pickNumber = pickKey;
-            const logoImg = document.createElement('img');
-            logoImg.className = 'team-logo-small';
-            logoImg.alt = `${pick.team} Logo`;
-            logoImg.src = teamLogo;
-
-            const textWrapper = document.createElement('div');
-            const playerLine = document.createElement('strong');
-            playerLine.textContent = `${pick.pick}. ${pick.player}`;
-            const detailLine = document.createElement('span');
-            detailLine.textContent = ` ${pick.position}, ${pick.college}`;
-
-            textWrapper.appendChild(playerLine);
-            textWrapper.appendChild(detailLine);
-
-            pickElement.appendChild(logoImg);
-            pickElement.appendChild(textWrapper);
+            pickElement = buildPickElement(pick, teamLogo, pickKey);
+            appended = true;
         } else {
-            // Update existing nodes to avoid reloading images and keep the list stable.
-            const logoImg = pickElement.querySelector('img');
-            const playerLine = pickElement.querySelector('strong');
-            let detailLine = pickElement.querySelector('span');
-            let textWrapper = playerLine ? playerLine.parentElement : null;
-
-            if (!textWrapper || textWrapper === pickElement) {
-                textWrapper = document.createElement('div');
-                if (playerLine) {
-                    textWrapper.appendChild(playerLine);
-                }
-            }
-
-            if (!detailLine) {
-                detailLine = document.createElement('span');
-                textWrapper.appendChild(detailLine);
-            }
-
-            if (logoImg && logoImg.src !== new URL(teamLogo, document.baseURI).href) {
-                logoImg.src = teamLogo;
-            }
-            if (logoImg) logoImg.alt = `${pick.team} Logo`;
-            if (playerLine) playerLine.textContent = `${pick.pick}. ${pick.player}`;
-            detailLine.textContent = ` ${pick.position}, ${pick.college}`;
-
-            if (!textWrapper.parentElement) {
-                pickElement.appendChild(textWrapper);
-            }
+            refreshPickElement(pickElement, pick, teamLogo);
         }
 
-        fragment.appendChild(pickElement);
+        const currentChild = listRoot.children[index];
+        if (currentChild !== pickElement) {
+            listRoot.insertBefore(pickElement, currentChild || null);
+        }
     });
 
-    // Replace the children in one operation to reduce layout thrashing and keep smooth scrolling.
-    draftHistoryContainer.replaceChildren(fragment);
+    if (appended) {
+        requestAnimationFrame(() => {
+            draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+        });
+    }
+}
 
-    // Scroll to the bottom after elements are added
-    setTimeout(() => {
-        draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
-    }, 0);
+function scheduleDraftHistoryPoll(delay = idlePollInterval) {
+    if (draftHistoryPollTimeout) {
+        clearTimeout(draftHistoryPollTimeout);
+    }
+    draftHistoryPollTimeout = setTimeout(pollDraftHistory, delay);
+}
+
+async function pollDraftHistory() {
+    if (draftHistoryAbortController) {
+        draftHistoryAbortController.abort();
+    }
+
+    draftHistoryAbortController = new AbortController();
+
+    try {
+        const response = await fetch(`${apiUrl}/api/draftHistory`, { signal: draftHistoryAbortController.signal });
+        if (!response.ok) {
+            throw new Error('Failed to sync draft history');
+        }
+        const history = await response.json();
+        updateDraftHistory(history);
+    } catch (error) {
+        if (error.name !== 'AbortError') {
+            console.error('Error polling draft history:', error);
+        }
+    } finally {
+        const nextDelay = draftSequence.length > 0 ? fastPollInterval : idlePollInterval;
+        scheduleDraftHistoryPoll(nextDelay);
+    }
 }
 
 
@@ -686,6 +737,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 fetchPlayers();
                 initializeDraftControls();
                 simulateDraft();
+                updateDraftHistory(draftState.draftHistory);
+                pollDraftHistory();
             });
         });
     });
