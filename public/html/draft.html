@@ -143,6 +143,17 @@
                 padding: 12px;
             }
         }
+
+        #scoutingReportContent .player-stats {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 12px 0;
+        }
+
+        #scoutingReportContent h2 {
+            margin-top: 0;
+        }
     </style>
 </head>
 
@@ -178,6 +189,7 @@
             <select id="playerSelect">
                 <!-- Options will be populated by JavaScript -->
             </select>
+            <button id="viewScoutingReport" disabled>View Scouting Report</button>
             <button id="selectPlayer" disabled>Select Player</button>
             <!-- Add this button next to the Select Player button -->
             <button id="showTradeOffers" onclick="showTradeOffers()">Show Trade Offers</button>
@@ -210,6 +222,13 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div id="tradeOfferText"></div>
+        </div>
+    </div>
+
+    <div id="scoutingReportModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="scoutingReportModal">&times;</span>
+            <div id="scoutingReportContent"></div>
         </div>
     </div>
 <footer>
