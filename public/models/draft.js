@@ -60,6 +60,86 @@ function populatePlayerDropdown(players) {
         playerSelect.appendChild(option);
     });
     document.getElementById('selectPlayer').disabled = true;
+    updateScoutingReportButtonState();
+}
+
+function updateScoutingReportButtonState() {
+    const playerSelect = document.getElementById('playerSelect');
+    const viewScoutingReportButton = document.getElementById('viewScoutingReport');
+
+    if (!playerSelect || !viewScoutingReportButton) {
+        return;
+    }
+
+    viewScoutingReportButton.disabled = !playerSelect.value;
+}
+
+function buildScoutingReportMarkup(player) {
+    const height = player?.stats?.height || 'N/A';
+    const weight = player?.stats?.weight || 'N/A';
+    const fortyTime = player?.stats?.40Time || 'N/A';
+    const scoutingReport = (player?.scoutingReport || '').trim() || 'No scouting report available yet.';
+
+    return `
+        <h2>${player.name}</h2>
+        <p><strong>Position:</strong> ${player.position} | <strong>School:</strong> ${player.team}</p>
+        <div class="player-stats">
+            <div><strong>Height:</strong> ${height}</div>
+            <div><strong>Weight:</strong> ${weight}</div>
+            <div><strong>40 Time:</strong> ${fortyTime}</div>
+        </div>
+        <h3>Scouting Report</h3>
+        <p>${scoutingReport}</p>
+    `;
+}
+
+function showScoutingReportModal() {
+    const playerSelect = document.getElementById('playerSelect');
+    const modal = document.getElementById('scoutingReportModal');
+    const modalContent = document.getElementById('scoutingReportContent');
+
+    if (!playerSelect || !modal || !modalContent) {
+        console.error('Scouting report modal elements are missing.');
+        return;
+    }
+
+    const selectedPlayer = allPlayers.find(player => player.name === playerSelect.value);
+
+    if (!selectedPlayer) {
+        alert('Please select a player to view their scouting report.');
+        return;
+    }
+
+    modalContent.innerHTML = buildScoutingReportMarkup(selectedPlayer);
+    modal.style.display = 'block';
+}
+
+function hideModal(modalId) {
+    const modal = document.getElementById(modalId);
+
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+function initializeScoutingReportModal() {
+    const modal = document.getElementById('scoutingReportModal');
+
+    if (!modal) {
+        console.error('Scouting report modal not found.');
+        return;
+    }
+
+    const closeButton = modal.querySelector('.close');
+    if (closeButton) {
+        closeButton.addEventListener('click', () => hideModal('scoutingReportModal'));
+    }
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            hideModal('scoutingReportModal');
+        }
+    });
 }
 
 function startDraft() {
@@ -572,10 +652,20 @@ function checkRoundEnd() {
 // Function to initialize draft controls
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
+    const viewScoutingReportButton = document.getElementById('viewScoutingReport');
+    const playerSelect = document.getElementById('playerSelect');
 
     if (!selectPlayerButton) {
         console.error("Select player button not found!");
         return;
+    }
+
+    if (viewScoutingReportButton) {
+        viewScoutingReportButton.addEventListener('click', showScoutingReportModal);
+    }
+
+    if (playerSelect) {
+        playerSelect.addEventListener('change', updateScoutingReportButtonState);
     }
 
     selectPlayerButton.addEventListener('click', function () {
@@ -637,6 +727,8 @@ function initializeDraftControls() {
             document.getElementById('selectPlayer').disabled = false; // Ensure the button is enabled after filtering
         });
     });
+
+    updateScoutingReportButtonState();
 }
 
 // Function to simulate the draft
@@ -730,6 +822,8 @@ document.addEventListener('DOMContentLoaded', function () {
     teamLogoImg.src = selectedTeamLogo;
     teamLogoImg.alt = `${userTeam} Logo`;
     document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
+
+    initializeScoutingReportModal();
 
     startDraft().then(() => {
         loadTeamsData().then(() => {
