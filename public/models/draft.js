@@ -51,27 +51,76 @@ function fetchPlayers() {
 
 // Function to populate player dropdown
 function populatePlayerDropdown(players) {
-    const playerSelect = document.getElementById('playerSelect');
-    playerSelect.innerHTML = '';
+    const playerSelectList = document.getElementById('playerSelectList');
+
+    if (!playerSelectList) {
+        console.error('Player select list not found.');
+        return;
+    }
+
+    playerSelectList.innerHTML = '';
+
     players.forEach((player) => {
-        let option = document.createElement('option');
-        option.value = player.name;
-        option.textContent = `${player.rating}. ${player.name} - ${player.position}, ${player.team}`;
-        playerSelect.appendChild(option);
+        const option = document.createElement('div');
+        option.className = 'player-option';
+
+        const radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = 'playerOption';
+        radio.value = player.name;
+        radio.id = `player-${player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+        radio.addEventListener('change', updateScoutingReportButtonState);
+
+        const label = document.createElement('label');
+        label.htmlFor = radio.id;
+        label.className = 'player-label';
+        label.innerHTML = `
+            <span class="player-name">${player.rating}. ${player.name}</span>
+            <span class="player-details">${player.position}, ${player.team}</span>
+        `;
+
+        const scoutingButton = document.createElement('button');
+        scoutingButton.type = 'button';
+        scoutingButton.className = 'scouting-report-btn';
+        scoutingButton.textContent = 'Scouting Report';
+        scoutingButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            showScoutingReportModal(player);
+        });
+
+        option.appendChild(radio);
+        option.appendChild(label);
+        option.appendChild(scoutingButton);
+
+        option.addEventListener('click', (event) => {
+            if (event.target !== scoutingButton) {
+                radio.checked = true;
+                updateScoutingReportButtonState();
+            }
+        });
+
+        playerSelectList.appendChild(option);
     });
+
     document.getElementById('selectPlayer').disabled = true;
     updateScoutingReportButtonState();
 }
 
 function updateScoutingReportButtonState() {
-    const playerSelect = document.getElementById('playerSelect');
     const viewScoutingReportButton = document.getElementById('viewScoutingReport');
+    const selectPlayerButton = document.getElementById('selectPlayer');
 
-    if (!playerSelect || !viewScoutingReportButton) {
+    const hasSelection = Boolean(getSelectedPlayerName());
+
+    if (!viewScoutingReportButton) {
         return;
     }
 
-    viewScoutingReportButton.disabled = !playerSelect.value;
+    viewScoutingReportButton.disabled = !hasSelection;
+
+    if (selectPlayerButton) {
+        selectPlayerButton.disabled = !hasSelection;
+    }
 }
 
 function buildScoutingReportMarkup(player) {
@@ -93,17 +142,22 @@ function buildScoutingReportMarkup(player) {
     `;
 }
 
-function showScoutingReportModal() {
-    const playerSelect = document.getElementById('playerSelect');
+function getSelectedPlayerName() {
+    const selectedRadio = document.querySelector('input[name="playerOption"]:checked');
+    return selectedRadio ? selectedRadio.value : '';
+}
+
+function showScoutingReportModal(playerOverride) {
     const modal = document.getElementById('scoutingReportModal');
     const modalContent = document.getElementById('scoutingReportContent');
 
-    if (!playerSelect || !modal || !modalContent) {
+    if (!modal || !modalContent) {
         console.error('Scouting report modal elements are missing.');
         return;
     }
 
-    const selectedPlayer = allPlayers.find(player => player.name === playerSelect.value);
+    const selectedPlayerName = playerOverride?.name || getSelectedPlayerName();
+    const selectedPlayer = playerOverride || allPlayers.find(player => player.name === selectedPlayerName);
 
     if (!selectedPlayer) {
         alert('Please select a player to view their scouting report.');
@@ -178,7 +232,7 @@ function filterPlayers(criteria) {
         filteredPlayers = allPlayers.filter(player => player.position === criteria);
     }
     populatePlayerDropdown(filteredPlayers);
-    document.getElementById('selectPlayer').disabled = false; // Ensure the button is enabled after filtering
+    updateScoutingReportButtonState();
 }
 
 
@@ -653,7 +707,6 @@ function checkRoundEnd() {
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
     const viewScoutingReportButton = document.getElementById('viewScoutingReport');
-    const playerSelect = document.getElementById('playerSelect');
 
     if (!selectPlayerButton) {
         console.error("Select player button not found!");
@@ -664,14 +717,15 @@ function initializeDraftControls() {
         viewScoutingReportButton.addEventListener('click', showScoutingReportModal);
     }
 
-    if (playerSelect) {
-        playerSelect.addEventListener('change', updateScoutingReportButtonState);
-    }
-
     selectPlayerButton.addEventListener('click', function () {
-        const selectedPlayerName = document.getElementById('playerSelect').value;
+        const selectedPlayerName = getSelectedPlayerName();
         const selectedTeam = userTeam;
         console.log(`Selected Team: ${selectedTeam}`);
+
+        if (!selectedPlayerName) {
+            alert('Please select a player first.');
+            return;
+        }
 
         const selectedPlayer = allPlayers.find(player => player.name === selectedPlayerName);
 
