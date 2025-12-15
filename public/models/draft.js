@@ -126,7 +126,7 @@ function updateScoutingReportButtonState() {
 function buildScoutingReportMarkup(player) {
     const height = player?.stats?.height || 'N/A';
     const weight = player?.stats?.weight || 'N/A';
-    const fortyTime = player?.stats?.40Time || 'N/A';
+    const fortyTime = player?.stats?.['40Time'] || 'N/A';
     const scoutingReport = (player?.scoutingReport || '').trim() || 'No scouting report available yet.';
 
     return `
