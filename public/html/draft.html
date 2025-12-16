@@ -107,7 +107,7 @@
 
         .player-select-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: 1fr;
             gap: 8px;
             margin: 12px 0;
         }
@@ -149,6 +149,13 @@
             font-size: 0.9em;
         }
 
+        .player-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-left: auto;
+        }
+
         .scouting-report-btn {
             align-self: center;
             padding: 6px 10px;
@@ -164,6 +171,23 @@
         .scouting-report-btn:hover {
             background: #0b5ed7;
             border-color: #0b5ed7;
+        }
+
+        .select-player-btn {
+            align-self: center;
+            padding: 6px 10px;
+            border: 1px solid #198754;
+            background: #198754;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .select-player-btn:hover {
+            background: #157347;
+            border-color: #157347;
         }
 
         .player-select-actions {
