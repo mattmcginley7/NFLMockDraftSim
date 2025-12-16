@@ -12,6 +12,7 @@ let draftHistoryPollTimeout;
 let draftHistoryAbortController;
 const fastPollInterval = 1200;
 const idlePollInterval = 2500;
+let canSelectPlayer = false;
 
 
 const apiUrl = "https://nflmockdraftsim.onrender.com";
@@ -69,7 +70,7 @@ function populatePlayerDropdown(players) {
         radio.name = 'playerOption';
         radio.value = player.name;
         radio.id = `player-${player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-        radio.addEventListener('change', updateScoutingReportButtonState);
+        radio.addEventListener('change', updateActionButtonsState);
 
         const label = document.createElement('label');
         label.htmlFor = radio.id;
@@ -88,39 +89,59 @@ function populatePlayerDropdown(players) {
             showScoutingReportModal(player);
         });
 
+        const selectButton = document.createElement('button');
+        selectButton.type = 'button';
+        selectButton.className = 'select-player-btn';
+        selectButton.textContent = 'Select Player';
+        selectButton.dataset.playerName = player.name;
+        selectButton.disabled = !canSelectPlayer;
+        selectButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            radio.checked = true;
+            updateActionButtonsState();
+            submitPlayerSelection(player.name);
+        });
+
+        const actionWrapper = document.createElement('div');
+        actionWrapper.className = 'player-actions';
+        actionWrapper.appendChild(scoutingButton);
+        actionWrapper.appendChild(selectButton);
+
         option.appendChild(radio);
         option.appendChild(label);
-        option.appendChild(scoutingButton);
+        option.appendChild(actionWrapper);
 
         option.addEventListener('click', (event) => {
-            if (event.target !== scoutingButton) {
-                radio.checked = true;
-                updateScoutingReportButtonState();
+            if (event.target.closest('.player-actions')) {
+                return;
             }
+            radio.checked = true;
+            updateActionButtonsState();
         });
 
         playerSelectList.appendChild(option);
     });
 
-    document.getElementById('selectPlayer').disabled = true;
-    updateScoutingReportButtonState();
+    updateActionButtonsState();
 }
 
-function updateScoutingReportButtonState() {
+function updateActionButtonsState() {
     const viewScoutingReportButton = document.getElementById('viewScoutingReport');
     const selectPlayerButton = document.getElementById('selectPlayer');
 
     const hasSelection = Boolean(getSelectedPlayerName());
 
-    if (!viewScoutingReportButton) {
-        return;
+    if (viewScoutingReportButton) {
+        viewScoutingReportButton.disabled = !hasSelection;
     }
-
-    viewScoutingReportButton.disabled = !hasSelection;
 
     if (selectPlayerButton) {
-        selectPlayerButton.disabled = !hasSelection;
+        selectPlayerButton.disabled = !(canSelectPlayer && hasSelection);
     }
+
+    document.querySelectorAll('.select-player-btn').forEach(button => {
+        button.disabled = !canSelectPlayer;
+    });
 }
 
 function buildScoutingReportMarkup(player) {
@@ -145,6 +166,11 @@ function buildScoutingReportMarkup(player) {
 function getSelectedPlayerName() {
     const selectedRadio = document.querySelector('input[name="playerOption"]:checked');
     return selectedRadio ? selectedRadio.value : '';
+}
+
+function setCanSelectPlayer(canSelect) {
+    canSelectPlayer = canSelect;
+    updateActionButtonsState();
 }
 
 function showScoutingReportModal(playerOverride) {
@@ -420,7 +446,7 @@ function processDraftSequence() {
 
     if (user) {
         clearTimeout(draftInterval);
-        document.getElementById('selectPlayer').disabled = false;
+        setCanSelectPlayer(true);
 
         tradeOffers = generateTradeOffers(pick, round);
         if (tradeOffers.length > 0) {
@@ -684,7 +710,7 @@ function declineTrade() {
 
 // Function to enable user pick
 function enableUserPick() {
-    document.getElementById('selectPlayer').disabled = false;
+    setCanSelectPlayer(true);
     console.log("It's your turn to pick!");
 }
 
@@ -719,56 +745,14 @@ function initializeDraftControls() {
 
     selectPlayerButton.addEventListener('click', function () {
         const selectedPlayerName = getSelectedPlayerName();
-        const selectedTeam = userTeam;
-        console.log(`Selected Team: ${selectedTeam}`);
+        console.log(`Selected Team: ${userTeam}`);
 
         if (!selectedPlayerName) {
             alert('Please select a player first.');
             return;
         }
 
-        const selectedPlayer = allPlayers.find(player => player.name === selectedPlayerName);
-
-        fetch(`${apiUrl}/api/selectPlayer`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ player: selectedPlayerName, team: selectedTeam })
-        })
-            .then(response => {
-                if (!response.ok) {
-                    return response.json().then(err => {
-                        throw new Error(err.message);
-                    });
-                }
-                return response.json();
-            })
-            .then(data => {
-                // The server returns the updated draftHistory.
-                // The last item in draftHistory should be the pick we just made.
-                const latestPick = data.draftHistory[data.draftHistory.length - 1];
-                const pickNumber = latestPick.pick;
-
-                // Build the HTML output with the pick number in front of the player name.
-                const teamLogo = `../images/${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-                document.getElementById('draftResults').innerHTML += `
-        <div class="draft-pick-item">
-          <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
-          <strong>${pickNumber}. ${selectedPlayerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
-        </div>
-      `;
-
-                // Refresh players list and update the full draft history on the page
-                fetchPlayers();
-                updateDraftHistory(data.draftHistory);
-
-                // Disable the button and proceed to the next pick
-                document.getElementById('selectPlayer').disabled = true;
-                setTimeout(processDraftSequence, 500);
-            })
-            .catch(error => {
-                console.error('Failed to select player:', error);
-                alert(`Error: ${error.message}`);
-            });
+        submitPlayerSelection(selectedPlayerName);
     });
 
 
@@ -778,11 +762,56 @@ function initializeDraftControls() {
             document.querySelector('.filter-btn.active').classList.remove('active');
             button.classList.add('active');
             filterPlayers(button.id.replace('filter-', ''));
-            document.getElementById('selectPlayer').disabled = false; // Ensure the button is enabled after filtering
         });
     });
 
-    updateScoutingReportButtonState();
+    updateActionButtonsState();
+}
+
+function submitPlayerSelection(playerName) {
+    const selectedTeam = userTeam;
+    const selectedPlayer = allPlayers.find(player => player.name === playerName);
+
+    if (!selectedPlayer) {
+        alert('Please select a player first.');
+        return;
+    }
+
+    fetch(`${apiUrl}/api/selectPlayer`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ player: playerName, team: selectedTeam })
+    })
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => {
+                    throw new Error(err.message);
+                });
+            }
+            return response.json();
+        })
+        .then(data => {
+            const latestPick = data.draftHistory[data.draftHistory.length - 1];
+            const pickNumber = latestPick.pick;
+
+            const teamLogo = `../images/${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+            document.getElementById('draftResults').innerHTML += `
+        <div class="draft-pick-item">
+          <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
+          <strong>${pickNumber}. ${playerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
+        </div>
+      `;
+
+            fetchPlayers();
+            updateDraftHistory(data.draftHistory);
+
+            setCanSelectPlayer(false);
+            setTimeout(processDraftSequence, 500);
+        })
+        .catch(error => {
+            console.error('Failed to select player:', error);
+            alert(`Error: ${error.message}`);
+        });
 }
 
 // Function to simulate the draft
