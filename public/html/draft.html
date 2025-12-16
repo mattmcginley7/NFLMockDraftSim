@@ -94,6 +94,21 @@
             padding: 0 12px 48px;
         }
 
+        #restartDraft {
+            background-color: #dc3545;
+            border: 1px solid #dc3545;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        #restartDraft:hover {
+            background-color: #bb2d3b;
+            border-color: #bb2d3b;
+        }
+
         #teamLogo {
             width: 200px;
             height: auto;
@@ -245,6 +260,78 @@
         #scoutingReportContent h2 {
             margin-top: 0;
         }
+
+        .selected-player-card {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            width: 280px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+            padding: 12px 14px;
+            z-index: 900;
+        }
+
+        .selected-player-header {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0d3b66;
+            letter-spacing: 0.01em;
+        }
+
+        .selected-player-body {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .selected-player-body.empty .selected-player-details {
+            display: none;
+        }
+
+        .selected-player-body.empty .selected-player-empty-text {
+            display: block;
+        }
+
+        .selected-player-empty-text {
+            margin: 0;
+            color: #6c757d;
+            display: none;
+        }
+
+        .selected-player-details {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .selected-player-logo {
+            width: 56px;
+            height: 56px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 6px;
+        }
+
+        .selected-player-name {
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .selected-player-meta {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .selected-player-pick {
+            color: #0d6efd;
+            font-weight: 600;
+            margin-top: 4px;
+        }
     </style>
 </head>
 
@@ -300,6 +387,21 @@
             <!-- Draft history will be populated by JavaScript -->
         </div>
     </main>
+
+    <div id="selectedPlayerCard" class="selected-player-card">
+        <div class="selected-player-header">Your Selection</div>
+        <div id="selectedPlayerContent" class="selected-player-body empty">
+            <p class="selected-player-empty-text">No player selected yet.</p>
+            <div class="selected-player-details">
+                <img id="selectedPlayerLogo" class="selected-player-logo" src="" alt="">
+                <div>
+                    <div id="selectedPlayerName" class="selected-player-name"></div>
+                    <div id="selectedPlayerMeta" class="selected-player-meta"></div>
+                    <div id="selectedPlayerPick" class="selected-player-pick"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="resultsModal" class="modal">
         <div class="modal-content">

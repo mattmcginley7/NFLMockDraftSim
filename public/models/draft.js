@@ -144,6 +144,39 @@ function updateActionButtonsState() {
     });
 }
 
+function updateSelectedPlayerCard(selectedInfo) {
+    const card = document.getElementById('selectedPlayerCard');
+    const content = document.getElementById('selectedPlayerContent');
+    const nameEl = document.getElementById('selectedPlayerName');
+    const metaEl = document.getElementById('selectedPlayerMeta');
+    const pickEl = document.getElementById('selectedPlayerPick');
+    const logoEl = document.getElementById('selectedPlayerLogo');
+    const emptyText = document.querySelector('.selected-player-empty-text');
+
+    if (!card || !content || !nameEl || !metaEl || !pickEl || !logoEl || !emptyText) {
+        return;
+    }
+
+    if (!selectedInfo) {
+        nameEl.textContent = '';
+        metaEl.textContent = '';
+        pickEl.textContent = '';
+        logoEl.src = '';
+        logoEl.alt = '';
+        emptyText.style.display = '';
+        content.classList.add('empty');
+        return;
+    }
+
+    nameEl.textContent = selectedInfo.name;
+    metaEl.textContent = `${selectedInfo.position} | ${selectedInfo.school}`;
+    pickEl.textContent = `Pick ${selectedInfo.pick}`;
+    logoEl.src = selectedInfo.logo;
+    logoEl.alt = `${selectedInfo.teamName} Logo`;
+    emptyText.style.display = 'none';
+    content.classList.remove('empty');
+}
+
 function buildScoutingReportMarkup(player) {
     const height = player?.stats?.height || 'N/A';
     const weight = player?.stats?.weight || 'N/A';
@@ -804,6 +837,14 @@ function submitPlayerSelection(playerName) {
 
             fetchPlayers();
             updateDraftHistory(data.draftHistory);
+            updateSelectedPlayerCard({
+                name: playerName,
+                position: selectedPlayer.position,
+                school: selectedPlayer.team,
+                pick: pickNumber,
+                logo: teamLogo,
+                teamName: selectedTeam
+            });
 
             setCanSelectPlayer(false);
             setTimeout(processDraftSequence, 500);
