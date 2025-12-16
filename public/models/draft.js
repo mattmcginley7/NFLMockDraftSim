@@ -177,6 +177,63 @@ function updateSelectedPlayerCard(selectedInfo) {
     content.classList.remove('empty');
 }
 
+function updateUserSelections(draftHistory = []) {
+    const latestPickContainer = document.getElementById('latestUserPick');
+    const listContainer = document.getElementById('userPicksList');
+
+    if (!latestPickContainer || !listContainer || !userTeam) {
+        return;
+    }
+
+    const normalizedTeam = userTeam.trim().toLowerCase();
+    const userPicks = draftHistory.filter(pick => pick.team?.trim().toLowerCase() === normalizedTeam);
+
+    listContainer.innerHTML = '';
+
+    if (userPicks.length === 0) {
+        latestPickContainer.innerHTML = `
+            <div class="user-pick-details">
+                <strong>No selections yet.</strong>
+                <span class="user-pick-meta">Your picks will appear here as the draft progresses.</span>
+            </div>
+        `;
+        return;
+    }
+
+    const latestPick = userPicks[userPicks.length - 1];
+    const latestTeamLogo = `../images/${latestPick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+
+    latestPickContainer.innerHTML = `
+        <img src="${latestTeamLogo}" alt="${latestPick.team} Logo" class="team-logo-small">
+        <div class="user-pick-details">
+            <strong>Pick ${latestPick.pick}: ${latestPick.player}</strong>
+            <span class="user-pick-meta">${latestPick.position} | ${latestPick.college}</span>
+        </div>
+    `;
+
+    userPicks.forEach(pick => {
+        const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+        const pickElement = document.createElement('div');
+        pickElement.className = 'draft-pick-item';
+        pickElement.innerHTML = `
+            <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+            <div>
+                <strong>${pick.pick}. ${pick.player}</strong><br>
+                <span>${pick.position}, ${pick.college}</span>
+            </div>
+        `;
+        listContainer.appendChild(pickElement);
+    });
+}
+
+function updateTradeOfferButtonState(hasOffers) {
+    const button = document.getElementById('showTradeOffers');
+    if (!button) return;
+
+    button.style.display = hasOffers ? 'inline-block' : 'none';
+    button.disabled = !hasOffers;
+}
+
 function buildScoutingReportMarkup(player) {
     const height = player?.stats?.height || 'N/A';
     const weight = player?.stats?.weight || 'N/A';
@@ -396,6 +453,8 @@ function updateDraftHistory(draftHistory) {
             draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
         });
     }
+
+    updateUserSelections(draftHistory);
 }
 
 function scheduleDraftHistoryPoll(delay = idlePollInterval) {
@@ -473,6 +532,8 @@ function processDraftSequence() {
 
     const { team, round, user, pick } = draftSequence.shift();
 
+    updateTradeOfferButtonState(false);
+
     if (round !== currentRound) {
         currentRound = round;
     }
@@ -482,6 +543,7 @@ function processDraftSequence() {
         setCanSelectPlayer(true);
 
         tradeOffers = generateTradeOffers(pick, round);
+        updateTradeOfferButtonState(tradeOffers.length > 0);
         if (tradeOffers.length > 0) {
             showTradeOffersModal(tradeOffers);
         }
@@ -649,7 +711,7 @@ function showTradeOffersModal(offers) {
     displayCurrentOffer();
 
     modal.style.display = 'block';
-    document.getElementById('showTradeOffers').style.display = 'none';
+    updateTradeOfferButtonState(false);
 
     span.onclick = function () {
         hideTradeOffers(); // Call hideTradeOffers instead of hiding the modal permanently
@@ -667,13 +729,19 @@ function showTradeOffersModal(offers) {
 // Function to hide trade offers
 function hideTradeOffers() {
     document.getElementById('tradeOfferModal').style.display = 'none';
-    document.getElementById('showTradeOffers').style.display = 'inline-block';
+    updateTradeOfferButtonState(tradeOffers.length > 0);
 }
 
 // Function to show trade offers
 function showTradeOffers() {
+    if (!tradeOffers.length) {
+        alert('No trade offers available for this pick.');
+        updateTradeOfferButtonState(false);
+        return;
+    }
+
     document.getElementById('tradeOfferModal').style.display = 'block';
-    document.getElementById('showTradeOffers').style.display = 'none';
+    updateTradeOfferButtonState(false);
 }
 
 // Function to go to the next offer
@@ -710,6 +778,9 @@ function acceptTrade(offerIndex) {
             // Close the trade offer modal
             document.getElementById('tradeOfferModal').style.display = 'none';
 
+            tradeOffers = [];
+            updateTradeOfferButtonState(false);
+
             // Update the UI
             updateDraftDisplay();
 
@@ -727,6 +798,7 @@ function acceptTrade(offerIndex) {
 function updateDraftDisplay() {
     updateDraftHistory(draftState.draftHistory);
     fetchPlayers();
+    updateUserSelections(draftState.draftHistory);
     // You may need to update other UI elements here
 }
 
@@ -737,6 +809,8 @@ function declineTrade() {
         displayCurrentOffer();
     } else {
         document.getElementById('tradeOfferModal').style.display = 'none';
+        tradeOffers = [];
+        updateTradeOfferButtonState(false);
         enableUserPick();
     }
 }
@@ -847,6 +921,8 @@ function submitPlayerSelection(playerName) {
             });
 
             setCanSelectPlayer(false);
+            tradeOffers = [];
+            updateTradeOfferButtonState(false);
             setTimeout(processDraftSequence, 500);
         })
         .catch(error => {
