@@ -144,37 +144,47 @@ function updateActionButtonsState() {
     });
 }
 
-function updateSelectedPlayerCard(selectedInfo) {
+function updateSelectedPlayerCard(userPicks = []) {
     ensureSelectionCardVisible();
 
     const card = document.getElementById('selectedPlayerCard');
     const content = document.getElementById('selectedPlayerContent');
-    const nameEl = document.getElementById('selectedPlayerName');
-    const metaEl = document.getElementById('selectedPlayerMeta');
-    const pickEl = document.getElementById('selectedPlayerPick');
-    const logoEl = document.getElementById('selectedPlayerLogo');
+    const listEl = document.getElementById('selectedPlayerList');
     const emptyText = document.querySelector('.selected-player-empty-text');
 
-    if (!card || !content || !nameEl || !metaEl || !pickEl || !logoEl || !emptyText) {
+    if (!card || !content || !listEl || !emptyText) {
         return;
     }
 
-    if (!selectedInfo) {
-        nameEl.textContent = '';
-        metaEl.textContent = '';
-        pickEl.textContent = '';
-        logoEl.src = '';
-        logoEl.alt = '';
+    listEl.innerHTML = '';
+
+    if (!userPicks || userPicks.length === 0) {
         emptyText.style.display = '';
         content.classList.add('empty');
         return;
     }
 
-    nameEl.textContent = selectedInfo.name;
-    metaEl.textContent = `${selectedInfo.position} | ${selectedInfo.school}`;
-    pickEl.textContent = `Pick ${selectedInfo.pick}`;
-    logoEl.src = selectedInfo.logo;
-    logoEl.alt = `${selectedInfo.teamName} Logo`;
+    userPicks.forEach((pick) => {
+        const pickElement = document.createElement('div');
+        pickElement.className = 'selected-player-entry';
+
+        const logo = document.createElement('img');
+        logo.src = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+        logo.alt = `${pick.team} Logo`;
+        logo.className = 'team-logo-small';
+
+        const pickDetails = document.createElement('div');
+        pickDetails.className = 'pick-details';
+        pickDetails.innerHTML = `
+            <span class="selected-player-name">Pick ${pick.pick}: ${pick.player}</span>
+            <span class="selected-player-meta">${pick.position} | ${pick.college}</span>
+        `;
+
+        pickElement.appendChild(logo);
+        pickElement.appendChild(pickDetails);
+        listEl.appendChild(pickElement);
+    });
+
     emptyText.style.display = 'none';
     content.classList.remove('empty');
 }
@@ -233,13 +243,15 @@ function updateUserSelections(draftHistory = []) {
         `;
         listContainer.appendChild(pickElement);
     });
+
+    updateSelectedPlayerCard(userPicks);
 }
 
 function updateTradeOfferButtonState(hasOffers) {
     const button = document.getElementById('showTradeOffers');
     if (!button) return;
 
-    button.disabled = !(hasOffers && canSelectPlayer);
+    button.disabled = !hasOffers;
 }
 
 function buildScoutingReportMarkup(player) {
@@ -850,6 +862,7 @@ function checkRoundEnd() {
 function initializeDraftControls() {
     const selectPlayerButton = document.getElementById('selectPlayer');
     const viewScoutingReportButton = document.getElementById('viewScoutingReport');
+    const showTradeOffersButton = document.getElementById('showTradeOffers');
 
     if (!selectPlayerButton) {
         console.error("Select player button not found!");
@@ -858,6 +871,10 @@ function initializeDraftControls() {
 
     if (viewScoutingReportButton) {
         viewScoutingReportButton.addEventListener('click', showScoutingReportModal);
+    }
+
+    if (showTradeOffersButton) {
+        showTradeOffersButton.addEventListener('click', showTradeOffers);
     }
 
     updateTradeOfferButtonState(false);
@@ -923,14 +940,6 @@ function submitPlayerSelection(playerName) {
 
             fetchPlayers();
             updateDraftHistory(data.draftHistory);
-            updateSelectedPlayerCard({
-                name: playerName,
-                position: selectedPlayer.position,
-                school: selectedPlayer.team,
-                pick: pickNumber,
-                logo: teamLogo,
-                teamName: selectedTeam
-            });
 
             setCanSelectPlayer(false);
             tradeOffers = [];
