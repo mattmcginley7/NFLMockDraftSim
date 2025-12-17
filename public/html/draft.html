@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         :root {
-            --fixed-selection-height: 140px;
+            --fixed-selection-height: 220px;
         }
 
         .team-logo-small {
@@ -244,7 +244,7 @@
 
         @media (max-width: 768px) {
             :root {
-                --fixed-selection-height: 180px;
+                --fixed-selection-height: 240px;
             }
 
             .fixed-selection {
@@ -255,13 +255,6 @@
             .main-content {
                 margin-top: 0;
                 padding-top: calc(var(--fixed-selection-height) + 12px);
-            }
-
-            .selected-player-card {
-                left: 12px;
-                right: 12px;
-                bottom: 100px;
-                width: auto;
             }
 
             .draft-pick-item {
@@ -288,167 +281,60 @@
             margin-top: 0;
         }
 
-        .selected-player-card {
-            position: fixed;
-            right: 16px;
-            bottom: 88px;
-            width: 280px;
-            max-width: calc(100% - 32px);
-            max-height: 70vh;
-            background: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-            padding: 12px 14px;
-            z-index: 1200;
-            overflow: hidden;
-        }
-
-        .selected-player-header {
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #0d3b66;
-            letter-spacing: 0.01em;
-        }
-
-        .selected-player-body {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            max-height: 58vh;
-            overflow-y: auto;
-        }
-
-        .selected-player-body.empty .selected-player-details {
-            display: none;
-        }
-
-        .selected-player-body.empty .selected-player-list {
-            display: none;
-        }
-
-        .selected-player-body.empty .selected-player-empty-text {
-            display: block;
-        }
-
-        .selected-player-empty-text {
-            margin: 0;
-            color: #6c757d;
-            display: none;
-        }
-
-        .selected-player-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .selected-player-entry {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: 1px solid #e9ecef;
-            border-radius: 10px;
-            padding: 8px 10px;
-            background: #f8f9fa;
-        }
-
-        .selected-player-entry .team-logo-small {
-            width: 44px;
-            height: 44px;
-            object-fit: contain;
-        }
-
-        .selected-player-entry .pick-details {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .selected-player-details {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .selected-player-logo {
-            width: 56px;
-            height: 56px;
-            object-fit: contain;
-            border-radius: 8px;
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            padding: 6px;
-        }
-
-        .selected-player-name {
-            font-weight: 700;
-            margin-bottom: 2px;
-        }
-
-        .selected-player-meta {
-            color: #555;
-            font-size: 0.95em;
-        }
-
-        .selected-player-pick {
-            color: #0d6efd;
-            font-weight: 600;
-            margin-top: 4px;
-        }
-
-        .user-picks-panel {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 14px 16px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-            margin-bottom: 16px;
-            position: sticky;
-            top: calc(var(--fixed-selection-height) + 12px);
-            z-index: 10;
-        }
-
-        .user-picks-panel h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .user-pick-highlight {
+        .user-picks-inline {
+            margin-top: 12px;
+            background: #f8f9fb;
             border: 1px solid #e0e0e0;
             border-radius: 10px;
             padding: 10px 12px;
+            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+        }
+
+        .user-picks-inline__header {
             display: flex;
-            gap: 12px;
+            justify-content: space-between;
             align-items: center;
-            background: #f8f9fa;
+            gap: 8px;
+            margin-bottom: 8px;
         }
 
-        .user-pick-highlight .team-logo-small {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
+        .user-picks-inline__status {
+            color: #555;
+            font-size: 0.95em;
         }
 
-        .user-pick-details {
+        .user-picks-inline__list {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 6px;
+        }
+
+        .user-pick-chip {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 8px 10px;
+            min-width: 180px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .user-pick-chip__details {
             display: flex;
             flex-direction: column;
             gap: 2px;
         }
 
-        .user-pick-meta {
+        .user-pick-chip__player {
+            font-weight: 700;
+        }
+
+        .user-pick-chip__meta {
             color: #555;
             font-size: 0.95em;
-        }
-
-        .user-picks-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .user-picks-list .draft-pick-item {
-            margin-bottom: 0;
         }
     </style>
 </head>
@@ -484,6 +370,14 @@
             <button id="showTradeOffers" type="button">Show Trade Offers</button>
         </div>
 
+        <div id="userPinnedPicks" class="user-picks-inline">
+            <div class="user-picks-inline__header">
+                <h3>Your Picks</h3>
+                <span id="userPinnedStatus" class="user-picks-inline__status">No selections yet.</span>
+            </div>
+            <div id="userPinnedList" class="user-picks-inline__list" aria-live="polite"></div>
+        </div>
+
         <div>
             <div id="playerSelectList" class="player-select-list">
                 <!-- Player options will be populated by JavaScript -->
@@ -496,17 +390,6 @@
     </div>
 
     <main class="main-content">
-        <div id="userPicksPanel" class="user-picks-panel">
-            <h2>Your Picks</h2>
-            <div id="latestUserPick" class="user-pick-highlight">
-                <div class="user-pick-details">
-                    <strong>No selections yet.</strong>
-                    <span class="user-pick-meta">Your picks will appear here as the draft progresses.</span>
-                </div>
-            </div>
-            <div id="userPicksList" class="user-picks-list"></div>
-        </div>
-
         <div id="draftResults">
             <h2></h2>
             <!-- Draft results will be populated by JavaScript -->
@@ -517,14 +400,6 @@
             <!-- Draft history will be populated by JavaScript -->
         </div>
     </main>
-
-    <div id="selectedPlayerCard" class="selected-player-card">
-        <div class="selected-player-header">Your Picks (Pinned)</div>
-        <div id="selectedPlayerContent" class="selected-player-body empty">
-            <p class="selected-player-empty-text">No player selected yet.</p>
-            <div id="selectedPlayerList" class="selected-player-list"></div>
-        </div>
-    </div>
 
     <div id="resultsModal" class="modal">
         <div class="modal-content">
