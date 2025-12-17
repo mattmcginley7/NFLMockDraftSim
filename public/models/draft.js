@@ -166,16 +166,9 @@ function updateSelectedPlayerCard(selectedInfo) {
         logoEl.src = '';
         logoEl.alt = '';
         emptyText.style.display = '';
-    content.classList.add('empty');
-    return;
-}
-
-function ensureSelectionCardVisible() {
-    const card = document.getElementById('selectedPlayerCard');
-    if (card) {
-        card.style.display = '';
+        content.classList.add('empty');
+        return;
     }
-}
 
     nameEl.textContent = selectedInfo.name;
     metaEl.textContent = `${selectedInfo.position} | ${selectedInfo.school}`;
@@ -184,6 +177,13 @@ function ensureSelectionCardVisible() {
     logoEl.alt = `${selectedInfo.teamName} Logo`;
     emptyText.style.display = 'none';
     content.classList.remove('empty');
+}
+
+function ensureSelectionCardVisible() {
+    const card = document.getElementById('selectedPlayerCard');
+    if (card) {
+        card.style.display = '';
+    }
 }
 
 function updateUserSelections(draftHistory = []) {
@@ -749,6 +749,7 @@ function showTradeOffers() {
         return;
     }
 
+    displayCurrentOffer();
     document.getElementById('tradeOfferModal').style.display = 'block';
     updateTradeOfferButtonState(false);
 }
