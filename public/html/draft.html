@@ -245,6 +245,13 @@
                 padding-top: calc(var(--fixed-selection-height) + 12px);
             }
 
+            .selected-player-card {
+                left: 12px;
+                right: 12px;
+                bottom: 100px;
+                width: auto;
+            }
+
             .draft-pick-item {
                 align-items: flex-start;
             }
@@ -272,14 +279,15 @@
         .selected-player-card {
             position: fixed;
             right: 16px;
-            bottom: 16px;
+            bottom: 88px;
             width: 280px;
+            max-width: calc(100% - 32px);
             background: #ffffff;
             border: 1px solid #e0e0e0;
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
             padding: 12px 14px;
-            z-index: 900;
+            z-index: 1200;
         }
 
         .selected-player-header {
