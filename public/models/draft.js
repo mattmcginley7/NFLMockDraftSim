@@ -145,28 +145,29 @@ function updateActionButtonsState() {
 }
 
 function updateSelectedPlayerCard(userPicks = []) {
-    ensureSelectionCardVisible();
+    const container = document.getElementById('userPinnedPicks');
+    const listEl = document.getElementById('userPinnedList');
+    const statusEl = document.getElementById('userPinnedStatus');
 
-    const card = document.getElementById('selectedPlayerCard');
-    const content = document.getElementById('selectedPlayerContent');
-    const listEl = document.getElementById('selectedPlayerList');
-    const emptyText = document.querySelector('.selected-player-empty-text');
-
-    if (!card || !content || !listEl || !emptyText) {
+    if (!container || !listEl || !statusEl) {
         return;
     }
 
     listEl.innerHTML = '';
 
     if (!userPicks || userPicks.length === 0) {
-        emptyText.style.display = '';
-        content.classList.add('empty');
+        statusEl.textContent = 'No selections yet.';
+        container.classList.add('empty');
         return;
     }
 
+    const latestPick = userPicks[userPicks.length - 1];
+    statusEl.textContent = `Latest: Pick ${latestPick.pick} - ${latestPick.player}`;
+    container.classList.remove('empty');
+
     userPicks.forEach((pick) => {
         const pickElement = document.createElement('div');
-        pickElement.className = 'selected-player-entry';
+        pickElement.className = 'user-pick-chip';
 
         const logo = document.createElement('img');
         logo.src = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
@@ -174,75 +175,67 @@ function updateSelectedPlayerCard(userPicks = []) {
         logo.className = 'team-logo-small';
 
         const pickDetails = document.createElement('div');
-        pickDetails.className = 'pick-details';
+        pickDetails.className = 'user-pick-chip__details';
         pickDetails.innerHTML = `
-            <span class="selected-player-name">Pick ${pick.pick}: ${pick.player}</span>
-            <span class="selected-player-meta">${pick.position} | ${pick.college}</span>
+            <span class="user-pick-chip__player">Pick ${pick.pick}: ${pick.player}</span>
+            <span class="user-pick-chip__meta">${pick.position} | ${pick.college}</span>
         `;
 
         pickElement.appendChild(logo);
         pickElement.appendChild(pickDetails);
         listEl.appendChild(pickElement);
     });
-
-    emptyText.style.display = 'none';
-    content.classList.remove('empty');
-}
-
-function ensureSelectionCardVisible() {
-    const card = document.getElementById('selectedPlayerCard');
-    if (card) {
-        card.style.display = '';
-    }
 }
 
 function updateUserSelections(draftHistory = []) {
     const latestPickContainer = document.getElementById('latestUserPick');
     const listContainer = document.getElementById('userPicksList');
 
-    if (!latestPickContainer || !listContainer || !userTeam) {
+    if (!userTeam) {
+        updateSelectedPlayerCard([]);
         return;
     }
 
     const normalizedTeam = userTeam.trim().toLowerCase();
     const userPicks = draftHistory.filter(pick => pick.team?.trim().toLowerCase() === normalizedTeam);
 
-    listContainer.innerHTML = '';
+    if (latestPickContainer && listContainer) {
+        listContainer.innerHTML = '';
 
-    if (userPicks.length === 0) {
-        latestPickContainer.innerHTML = `
-            <div class="user-pick-details">
-                <strong>No selections yet.</strong>
-                <span class="user-pick-meta">Your picks will appear here as the draft progresses.</span>
-            </div>
-        `;
-        return;
+        if (userPicks.length === 0) {
+            latestPickContainer.innerHTML = `
+                <div class="user-pick-details">
+                    <strong>No selections yet.</strong>
+                    <span class="user-pick-meta">Your picks will appear here as the draft progresses.</span>
+                </div>
+            `;
+        } else {
+            const latestPick = userPicks[userPicks.length - 1];
+            const latestTeamLogo = `../images/${latestPick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+
+            latestPickContainer.innerHTML = `
+                <img src="${latestTeamLogo}" alt="${latestPick.team} Logo" class="team-logo-small">
+                <div class="user-pick-details">
+                    <strong>Pick ${latestPick.pick}: ${latestPick.player}</strong>
+                    <span class="user-pick-meta">${latestPick.position} | ${latestPick.college}</span>
+                </div>
+            `;
+
+            userPicks.forEach(pick => {
+                const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+                const pickElement = document.createElement('div');
+                pickElement.className = 'draft-pick-item';
+                pickElement.innerHTML = `
+                    <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
+                    <div>
+                        <strong>${pick.pick}. ${pick.player}</strong><br>
+                        <span>${pick.position}, ${pick.college}</span>
+                    </div>
+                `;
+                listContainer.appendChild(pickElement);
+            });
+        }
     }
-
-    const latestPick = userPicks[userPicks.length - 1];
-    const latestTeamLogo = `../images/${latestPick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-
-    latestPickContainer.innerHTML = `
-        <img src="${latestTeamLogo}" alt="${latestPick.team} Logo" class="team-logo-small">
-        <div class="user-pick-details">
-            <strong>Pick ${latestPick.pick}: ${latestPick.player}</strong>
-            <span class="user-pick-meta">${latestPick.position} | ${latestPick.college}</span>
-        </div>
-    `;
-
-    userPicks.forEach(pick => {
-        const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-        const pickElement = document.createElement('div');
-        pickElement.className = 'draft-pick-item';
-        pickElement.innerHTML = `
-            <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-            <div>
-                <strong>${pick.pick}. ${pick.player}</strong><br>
-                <span>${pick.position}, ${pick.college}</span>
-            </div>
-        `;
-        listContainer.appendChild(pickElement);
-    });
 
     updateSelectedPlayerCard(userPicks);
 }
@@ -1038,8 +1031,6 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
         return;
     }
-
-    ensureSelectionCardVisible();
 
     const teamLogoImg = document.getElementById('teamLogo');
     teamLogoImg.src = selectedTeamLogo;
