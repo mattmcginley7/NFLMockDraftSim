@@ -145,6 +145,8 @@ function updateActionButtonsState() {
 }
 
 function updateSelectedPlayerCard(selectedInfo) {
+    ensureSelectionCardVisible();
+
     const card = document.getElementById('selectedPlayerCard');
     const content = document.getElementById('selectedPlayerContent');
     const nameEl = document.getElementById('selectedPlayerName');
@@ -164,9 +166,16 @@ function updateSelectedPlayerCard(selectedInfo) {
         logoEl.src = '';
         logoEl.alt = '';
         emptyText.style.display = '';
-        content.classList.add('empty');
-        return;
+    content.classList.add('empty');
+    return;
+}
+
+function ensureSelectionCardVisible() {
+    const card = document.getElementById('selectedPlayerCard');
+    if (card) {
+        card.style.display = '';
     }
+}
 
     nameEl.textContent = selectedInfo.name;
     metaEl.textContent = `${selectedInfo.position} | ${selectedInfo.school}`;
@@ -230,8 +239,7 @@ function updateTradeOfferButtonState(hasOffers) {
     const button = document.getElementById('showTradeOffers');
     if (!button) return;
 
-    button.style.display = hasOffers ? 'inline-block' : 'none';
-    button.disabled = !hasOffers;
+    button.disabled = !(hasOffers && canSelectPlayer);
 }
 
 function buildScoutingReportMarkup(player) {
@@ -260,6 +268,7 @@ function getSelectedPlayerName() {
 
 function setCanSelectPlayer(canSelect) {
     canSelectPlayer = canSelect;
+    updateTradeOfferButtonState(tradeOffers.length > 0);
     updateActionButtonsState();
 }
 
@@ -850,6 +859,8 @@ function initializeDraftControls() {
         viewScoutingReportButton.addEventListener('click', showScoutingReportModal);
     }
 
+    updateTradeOfferButtonState(false);
+
     selectPlayerButton.addEventListener('click', function () {
         const selectedPlayerName = getSelectedPlayerName();
         console.log(`Selected Team: ${userTeam}`);
@@ -1017,6 +1028,8 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
         return;
     }
+
+    ensureSelectionCardVisible();
 
     const teamLogoImg = document.getElementById('teamLogo');
     teamLogoImg.src = selectedTeamLogo;
