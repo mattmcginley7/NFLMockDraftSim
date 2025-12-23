@@ -144,6 +144,42 @@ function updateActionButtonsState() {
     });
 }
 
+function initializeDraftTabs(defaultTabId = 'tab-players') {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    if (!tabButtons.length || !tabPanels.length) {
+        return;
+    }
+
+    const activateTab = (targetId) => {
+        tabButtons.forEach((button) => {
+            const isActive = button.dataset.tabTarget === targetId;
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            button.tabIndex = isActive ? 0 : -1;
+        });
+
+        tabPanels.forEach((panel) => {
+            const isActive = panel.id === targetId;
+            panel.classList.toggle('active', isActive);
+            panel.hidden = !isActive;
+        });
+    };
+
+    tabButtons.forEach((button) => {
+        button.addEventListener('click', () => activateTab(button.dataset.tabTarget));
+        button.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                activateTab(button.dataset.tabTarget);
+            }
+        });
+    });
+
+    activateTab(defaultTabId);
+}
+
 function updateSelectedPlayerCard(userPicks = []) {
     const container = document.getElementById('userPinnedPicks');
     const listEl = document.getElementById('userPinnedList');
@@ -424,6 +460,22 @@ function refreshPickElement(pickElement, pick, teamLogo) {
     detailLine.textContent = ` ${pick.position}, ${pick.college}`;
 }
 
+function updateDraftResultsList(draftHistory = []) {
+    const resultsList = document.getElementById('draftResultsList');
+
+    if (!resultsList) {
+        return;
+    }
+
+    resultsList.innerHTML = '';
+
+    (draftHistory || []).forEach((pick) => {
+        const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+        const pickElement = buildPickElement(pick, teamLogo, `${pick.pick}`);
+        resultsList.appendChild(pickElement);
+    });
+}
+
 // Function to update draft history without re-rendering existing nodes
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
@@ -469,6 +521,7 @@ function updateDraftHistory(draftHistory) {
     }
 
     updateUserSelections(draftHistory);
+    updateDraftResultsList(draftHistory);
 }
 
 function scheduleDraftHistoryPoll(delay = idlePollInterval) {
@@ -920,17 +973,6 @@ function submitPlayerSelection(playerName) {
             return response.json();
         })
         .then(data => {
-            const latestPick = data.draftHistory[data.draftHistory.length - 1];
-            const pickNumber = latestPick.pick;
-
-            const teamLogo = `../images/${selectedTeam.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-            document.getElementById('draftResults').innerHTML += `
-        <div class="draft-pick-item">
-          <img src="${teamLogo}" alt="${selectedTeam} Logo" class="team-logo-small">
-          <strong>${pickNumber}. ${playerName}</strong>, ${selectedPlayer.position}, ${selectedPlayer.team}
-        </div>
-      `;
-
             fetchPlayers();
             updateDraftHistory(data.draftHistory);
 
@@ -1037,6 +1079,7 @@ document.addEventListener('DOMContentLoaded', function () {
     teamLogoImg.alt = `${userTeam} Logo`;
     document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
 
+    initializeDraftTabs('tab-players');
     initializeScoutingReportModal();
 
     startDraft().then(() => {
