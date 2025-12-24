@@ -13,6 +13,7 @@ let draftHistoryAbortController;
 const fastPollInterval = 1200;
 const idlePollInterval = 2500;
 let canSelectPlayer = false;
+let selectedPlayerName = '';
 
 
 const apiUrl = "https://nflmockdraftsim.onrender.com";
@@ -60,20 +61,14 @@ function populatePlayerDropdown(players) {
     }
 
     playerSelectList.innerHTML = '';
+    selectedPlayerName = '';
 
     players.forEach((player) => {
         const option = document.createElement('div');
         option.className = 'player-option';
-
-        const radio = document.createElement('input');
-        radio.type = 'radio';
-        radio.name = 'playerOption';
-        radio.value = player.name;
-        radio.id = `player-${player.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-        radio.addEventListener('change', updateActionButtonsState);
+        option.dataset.playerName = player.name;
 
         const label = document.createElement('label');
-        label.htmlFor = radio.id;
         label.className = 'player-label';
         label.innerHTML = `
             <span class="player-name">${player.rating}. ${player.name}</span>
@@ -97,8 +92,7 @@ function populatePlayerDropdown(players) {
         selectButton.disabled = !canSelectPlayer;
         selectButton.addEventListener('click', (event) => {
             event.stopPropagation();
-            radio.checked = true;
-            updateActionButtonsState();
+            setSelectedPlayer(player.name);
             submitPlayerSelection(player.name);
         });
 
@@ -107,7 +101,6 @@ function populatePlayerDropdown(players) {
         actionWrapper.appendChild(scoutingButton);
         actionWrapper.appendChild(selectButton);
 
-        option.appendChild(radio);
         option.appendChild(label);
         option.appendChild(actionWrapper);
 
@@ -115,8 +108,7 @@ function populatePlayerDropdown(players) {
             if (event.target.closest('.player-actions')) {
                 return;
             }
-            radio.checked = true;
-            updateActionButtonsState();
+            setSelectedPlayer(player.name);
         });
 
         playerSelectList.appendChild(option);
@@ -291,8 +283,17 @@ function buildScoutingReportMarkup(player) {
 }
 
 function getSelectedPlayerName() {
-    const selectedRadio = document.querySelector('input[name="playerOption"]:checked');
-    return selectedRadio ? selectedRadio.value : '';
+    return selectedPlayerName;
+}
+
+function setSelectedPlayer(playerName) {
+    selectedPlayerName = playerName;
+
+    document.querySelectorAll('.player-option').forEach(option => {
+        option.classList.toggle('selected', option.dataset.playerName === playerName);
+    });
+
+    updateActionButtonsState();
 }
 
 function setCanSelectPlayer(canSelect) {

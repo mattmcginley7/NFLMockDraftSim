@@ -325,17 +325,23 @@ footer a:last-child {
     color: white;
 }
 
+.draft-footer .draft-footer__restart {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.draft-footer .draft-footer__rankings {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
 footer a:hover {
     opacity: 0.9;
 }
 
 #draftHistory {
-    max-height: 400px;
-    /* Set a fixed height; adjust as needed for your layout */
-    overflow-y: auto;
-    /* Enable vertical scrolling when content overflows */
-    padding: 10px;
-    /* Optional: improves readability */
-    border: 1px solid #ddd;
-    /* Optional: visual separation */
+    max-height: none;
+    overflow: visible;
+    padding: 16px;
+    border: none;
 }
