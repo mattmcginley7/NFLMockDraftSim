@@ -230,25 +230,82 @@ function updateUserSelections(draftHistory = []) {
     const userPicks = draftHistory.filter(pick => pick.team?.trim().toLowerCase() === normalizedTeam);
 
     if (listContainer) {
-        listContainer.innerHTML = '';
-
         if (userPicks.length === 0) {
-            listContainer.innerHTML = `
-                <div class="empty-state">No selections yet.</div>
-            `;
+            const existingEmpty = listContainer.querySelector('.empty-state');
+            if (!existingEmpty || listContainer.children.length !== 1) {
+                listContainer.innerHTML = '';
+                const emptyState = document.createElement('div');
+                emptyState.className = 'empty-state';
+                emptyState.textContent = 'No selections yet.';
+                listContainer.appendChild(emptyState);
+            }
         } else {
-            userPicks.forEach(pick => {
+            listContainer.querySelectorAll('.empty-state').forEach((node) => node.remove());
+
+            if (Array.from(listContainer.children).some(node => !node.dataset?.pickNumber)) {
+                listContainer.innerHTML = '';
+            }
+
+            const existingNodes = new Map(
+                Array.from(listContainer.children)
+                    .filter(node => node.dataset?.pickNumber)
+                    .map(node => [node.dataset.pickNumber, node])
+            );
+
+            const activePickNumbers = new Set();
+
+            userPicks.forEach((pick, index) => {
+                const pickKey = `${pick.pick}`;
+                activePickNumbers.add(pickKey);
                 const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-                const pickElement = document.createElement('div');
-                pickElement.className = 'draft-pick-item';
-                pickElement.innerHTML = `
-                    <img src="${teamLogo}" alt="${pick.team} Logo" class="team-logo-small">
-                    <div>
-                        <strong>${pick.pick}. ${pick.player}</strong><br>
-                        <span>${pick.position}, ${pick.college}</span>
-                    </div>
-                `;
-                listContainer.appendChild(pickElement);
+
+                let pickElement = existingNodes.get(pickKey);
+
+                if (!pickElement) {
+                    pickElement = document.createElement('div');
+                    pickElement.className = 'draft-pick-item';
+                    pickElement.dataset.pickNumber = pickKey;
+
+                    const logo = document.createElement('img');
+                    logo.className = 'team-logo-small';
+                    pickElement.appendChild(logo);
+
+                    const content = document.createElement('div');
+                    const title = document.createElement('strong');
+                    const details = document.createElement('span');
+
+                    content.appendChild(title);
+                    content.appendChild(document.createElement('br'));
+                    content.appendChild(details);
+
+                    pickElement.appendChild(content);
+                }
+
+                const logo = pickElement.querySelector('img');
+                if (logo && logo.src !== new URL(teamLogo, document.baseURI).href) {
+                    logo.src = teamLogo;
+                }
+                if (logo) logo.alt = `${pick.team} Logo`;
+
+                const title = pickElement.querySelector('strong');
+                if (title) {
+                    title.textContent = `${pick.pick}. ${pick.player}`;
+                }
+                const details = pickElement.querySelector('span');
+                if (details) {
+                    details.textContent = `${pick.position}, ${pick.college}`;
+                }
+
+                const currentChild = listContainer.children[index];
+                if (currentChild !== pickElement) {
+                    listContainer.insertBefore(pickElement, currentChild || null);
+                }
+            });
+
+            Array.from(listContainer.children).forEach((node) => {
+                if (node.dataset?.pickNumber && !activePickNumbers.has(node.dataset.pickNumber)) {
+                    node.remove();
+                }
             });
         }
     }
