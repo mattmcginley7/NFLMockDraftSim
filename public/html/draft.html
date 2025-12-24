@@ -192,8 +192,9 @@
 
         .player-actions {
             display: flex;
-            flex-direction: column;
-            gap: 6px;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
             margin-left: auto;
         }
 
@@ -245,7 +246,6 @@
             flex-wrap: wrap;
         }
 
-        #draftResults,
         #draftHistory {
             background: #fff;
             border-radius: 10px;
@@ -445,13 +445,8 @@
 
         <main class="main-content">
             <section id="tab-results" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-results" hidden>
-                <div id="draftResults" class="section-card">
-                    <h2>Draft Results</h2>
-                    <div id="draftResultsList" class="draft-results-list" aria-live="polite"></div>
-                </div>
-
                 <div id="draftHistory" class="section-card">
-                    <h2>Draft History</h2>
+                    <h2>Draft Results</h2>
                     <!-- Draft history will be populated by JavaScript -->
                 </div>
             </section>
@@ -483,25 +478,13 @@
                     </div>
                     <div class="player-select-actions">
                         <button id="viewScoutingReport" disabled>View Scouting Report</button>
-                        <button id="selectPlayer" disabled>Select Player</button>
+                        <button id="selectPlayer" disabled>Draft</button>
                     </div>
                 </div>
             </section>
 
             <section id="tab-my-picks" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-my-picks" hidden>
-                <div id="userPinnedPicks" class="user-picks-inline">
-                    <div class="user-picks-inline__header">
-                        <h3>Your Picks</h3>
-                        <span id="userPinnedStatus" class="user-picks-inline__status">No selections yet.</span>
-                    </div>
-                    <div id="userPinnedList" class="user-picks-inline__list" aria-live="polite"></div>
-                </div>
-
                 <div class="my-picks-grid">
-                    <div class="my-picks-card">
-                        <h3>Latest Selection</h3>
-                        <div id="latestUserPick" class="empty-state">No selections yet.</div>
-                    </div>
                     <div class="my-picks-card">
                         <h3>All Picks</h3>
                         <div id="userPicksList" class="draft-history-list"></div>

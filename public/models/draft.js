@@ -92,7 +92,7 @@ function populatePlayerDropdown(players) {
         const selectButton = document.createElement('button');
         selectButton.type = 'button';
         selectButton.className = 'select-player-btn';
-        selectButton.textContent = 'Select Player';
+        selectButton.textContent = 'Draft';
         selectButton.dataset.playerName = player.name;
         selectButton.disabled = !canSelectPlayer;
         selectButton.addEventListener('click', (event) => {
@@ -224,39 +224,27 @@ function updateSelectedPlayerCard(userPicks = []) {
 }
 
 function updateUserSelections(draftHistory = []) {
-    const latestPickContainer = document.getElementById('latestUserPick');
     const listContainer = document.getElementById('userPicksList');
 
     if (!userTeam) {
         updateSelectedPlayerCard([]);
+        if (listContainer) {
+            listContainer.innerHTML = '';
+        }
         return;
     }
 
     const normalizedTeam = userTeam.trim().toLowerCase();
     const userPicks = draftHistory.filter(pick => pick.team?.trim().toLowerCase() === normalizedTeam);
 
-    if (latestPickContainer && listContainer) {
+    if (listContainer) {
         listContainer.innerHTML = '';
 
         if (userPicks.length === 0) {
-            latestPickContainer.innerHTML = `
-                <div class="user-pick-details">
-                    <strong>No selections yet.</strong>
-                    <span class="user-pick-meta">Your picks will appear here as the draft progresses.</span>
-                </div>
+            listContainer.innerHTML = `
+                <div class="empty-state">No selections yet.</div>
             `;
         } else {
-            const latestPick = userPicks[userPicks.length - 1];
-            const latestTeamLogo = `../images/${latestPick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-
-            latestPickContainer.innerHTML = `
-                <img src="${latestTeamLogo}" alt="${latestPick.team} Logo" class="team-logo-small">
-                <div class="user-pick-details">
-                    <strong>Pick ${latestPick.pick}: ${latestPick.player}</strong>
-                    <span class="user-pick-meta">${latestPick.position} | ${latestPick.college}</span>
-                </div>
-            `;
-
             userPicks.forEach(pick => {
                 const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
                 const pickElement = document.createElement('div');
@@ -460,22 +448,6 @@ function refreshPickElement(pickElement, pick, teamLogo) {
     detailLine.textContent = ` ${pick.position}, ${pick.college}`;
 }
 
-function updateDraftResultsList(draftHistory = []) {
-    const resultsList = document.getElementById('draftResultsList');
-
-    if (!resultsList) {
-        return;
-    }
-
-    resultsList.innerHTML = '';
-
-    (draftHistory || []).forEach((pick) => {
-        const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
-        const pickElement = buildPickElement(pick, teamLogo, `${pick.pick}`);
-        resultsList.appendChild(pickElement);
-    });
-}
-
 // Function to update draft history without re-rendering existing nodes
 function updateDraftHistory(draftHistory) {
     const draftHistoryContainer = document.getElementById('draftHistory');
@@ -521,7 +493,6 @@ function updateDraftHistory(draftHistory) {
     }
 
     updateUserSelections(draftHistory);
-    updateDraftResultsList(draftHistory);
 }
 
 function scheduleDraftHistoryPoll(delay = idlePollInterval) {
