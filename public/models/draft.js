@@ -544,6 +544,7 @@ function updateDraftHistory(draftHistory) {
     );
 
     let appended = false;
+    let latestPickElement = null;
 
     (draftHistory || []).forEach((pick, index) => {
         const pickKey = `${pick.pick}`;
@@ -562,12 +563,18 @@ function updateDraftHistory(draftHistory) {
         if (currentChild !== pickElement) {
             listRoot.insertBefore(pickElement, currentChild || null);
         }
+
+        latestPickElement = pickElement;
     });
 
     if (appended) {
         requestAnimationFrame(() => {
             if (followLatestPick || isDraftHistoryPinnedToBottom(draftHistoryContainer)) {
-                draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+                if (latestPickElement) {
+                    latestPickElement.scrollIntoView({ block: 'end' });
+                } else {
+                    draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+                }
             }
         });
     }
