@@ -496,9 +496,11 @@ function buildPickElement(pick, teamLogo, pickKey) {
 
     const textWrapper = document.createElement('div');
     const playerLine = document.createElement('strong');
-    playerLine.textContent = `${pick.pick}. ${pick.player}`;
     const detailLine = document.createElement('span');
-    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+    const pickText = getPickText(pick);
+    playerLine.textContent = pickText.headline;
+    detailLine.textContent = pickText.detail;
+    pickElement.classList.toggle('draft-pick-item--pending', !pickText.hasPlayer);
 
     textWrapper.appendChild(playerLine);
     textWrapper.appendChild(detailLine);
@@ -513,17 +515,66 @@ function refreshPickElement(pickElement, pick, teamLogo) {
     const logoImg = pickElement.querySelector('img');
     const playerLine = pickElement.querySelector('strong');
     let detailLine = pickElement.querySelector('span');
+    const pickText = getPickText(pick);
 
     if (logoImg && logoImg.src !== new URL(teamLogo, document.baseURI).href) {
         logoImg.src = teamLogo;
     }
     if (logoImg) logoImg.alt = `${pick.team} Logo`;
-    if (playerLine) playerLine.textContent = `${pick.pick}. ${pick.player}`;
+    if (playerLine) playerLine.textContent = pickText.headline;
     if (!detailLine) {
         detailLine = document.createElement('span');
         pickElement.appendChild(detailLine);
     }
-    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+    detailLine.textContent = pickText.detail;
+    pickElement.classList.toggle('draft-pick-item--pending', !pickText.hasPlayer);
+}
+
+function getTeamLogoPath(teamName) {
+    return `../images/${teamName.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+}
+
+function getPickText(pick) {
+    const hasPlayer = Boolean(pick.player);
+    return {
+        hasPlayer,
+        headline: `${pick.pick}. ${hasPlayer ? pick.player : 'TBD'}`,
+        detail: hasPlayer ? ` ${pick.position}, ${pick.college}` : ' Awaiting selection'
+    };
+}
+
+function getDraftPickSlots(draftHistory = []) {
+    if (!draftState || !draftState.teamPicks) {
+        return draftHistory || [];
+    }
+
+    const historyByPick = new Map(
+        (draftHistory || []).map(pick => [Number(pick.pick), pick])
+    );
+
+    const pickSlots = [];
+
+    Object.entries(draftState.teamPicks).forEach(([team, picks]) => {
+        picks.forEach((pick) => {
+            const pickNumber = Number(pick.pick);
+            const historyPick = historyByPick.get(pickNumber);
+            if (historyPick) {
+                pickSlots.push(historyPick);
+                return;
+            }
+            pickSlots.push({
+                pick: pickNumber,
+                team,
+                player: null,
+                position: '',
+                college: ''
+            });
+        });
+    });
+
+    pickSlots.sort((a, b) => a.pick - b.pick);
+
+    return pickSlots;
 }
 
 // Function to update draft history without re-rendering existing nodes
@@ -546,9 +597,11 @@ function updateDraftHistory(draftHistory) {
     let appended = false;
     let latestPickElement = null;
 
-    (draftHistory || []).forEach((pick, index) => {
+    const pickSlots = getDraftPickSlots(draftHistory);
+
+    pickSlots.forEach((pick, index) => {
         const pickKey = `${pick.pick}`;
-        const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
+        const teamLogo = getTeamLogoPath(pick.team);
 
         let pickElement = existingNodes.get(pickKey);
 
