@@ -496,12 +496,16 @@ function buildPickElement(pick, teamLogo, pickKey) {
 
     const textWrapper = document.createElement('div');
     const playerLine = document.createElement('strong');
-    playerLine.textContent = `${pick.pick}. ${pick.player}`;
-    const detailLine = document.createElement('span');
-    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+    const hasPlayer = Boolean(pick.player);
+    playerLine.textContent = hasPlayer ? `${pick.pick}. ${pick.player}` : `${pick.pick}.`;
 
     textWrapper.appendChild(playerLine);
-    textWrapper.appendChild(detailLine);
+
+    if (hasPlayer) {
+        const detailLine = document.createElement('span');
+        detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+        textWrapper.appendChild(detailLine);
+    }
 
     pickElement.appendChild(logoImg);
     pickElement.appendChild(textWrapper);
@@ -512,18 +516,44 @@ function buildPickElement(pick, teamLogo, pickKey) {
 function refreshPickElement(pickElement, pick, teamLogo) {
     const logoImg = pickElement.querySelector('img');
     const playerLine = pickElement.querySelector('strong');
+    const textWrapper = pickElement.querySelector('div');
     let detailLine = pickElement.querySelector('span');
 
     if (logoImg && logoImg.src !== new URL(teamLogo, document.baseURI).href) {
         logoImg.src = teamLogo;
     }
     if (logoImg) logoImg.alt = `${pick.team} Logo`;
-    if (playerLine) playerLine.textContent = `${pick.pick}. ${pick.player}`;
-    if (!detailLine) {
-        detailLine = document.createElement('span');
-        pickElement.appendChild(detailLine);
+    const hasPlayer = Boolean(pick.player);
+    if (playerLine) {
+        playerLine.textContent = hasPlayer ? `${pick.pick}. ${pick.player}` : `${pick.pick}.`;
     }
-    detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+    if (hasPlayer) {
+        if (!detailLine) {
+            detailLine = document.createElement('span');
+            if (textWrapper) {
+                textWrapper.appendChild(detailLine);
+            } else {
+                pickElement.appendChild(detailLine);
+            }
+        }
+        detailLine.textContent = ` ${pick.position}, ${pick.college}`;
+    } else if (detailLine) {
+        detailLine.remove();
+    }
+}
+
+function getDraftPickOrder() {
+    const picks = [];
+
+    if (draftState && draftState.teamPicks) {
+        Object.entries(draftState.teamPicks).forEach(([team, teamPicks]) => {
+            (teamPicks || []).forEach((pick) => {
+                picks.push({ ...pick, team });
+            });
+        });
+    }
+
+    return picks.sort((a, b) => a.pick - b.pick);
 }
 
 // Function to update draft history without re-rendering existing nodes
@@ -546,7 +576,21 @@ function updateDraftHistory(draftHistory) {
     let appended = false;
     let latestPickElement = null;
 
-    (draftHistory || []).forEach((pick, index) => {
+    const historyByPick = new Map(
+        (draftHistory || []).map((pick) => [`${pick.pick}`, pick])
+    );
+
+    const fullPickOrder = getDraftPickOrder();
+    const picksToRender = fullPickOrder.length
+        ? fullPickOrder.map((pick) => {
+            const historyPick = historyByPick.get(`${pick.pick}`);
+            return historyPick
+                ? { ...pick, ...historyPick }
+                : { ...pick, player: '', position: '', college: '' };
+        })
+        : (draftHistory || []);
+
+    picksToRender.forEach((pick, index) => {
         const pickKey = `${pick.pick}`;
         const teamLogo = `../images/${pick.team.toLowerCase().replace(/\s/g, '-')}-logo.png`;
 
