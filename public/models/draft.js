@@ -14,6 +14,8 @@ const fastPollInterval = 1200;
 const idlePollInterval = 2500;
 let canSelectPlayer = false;
 let selectedPlayerName = '';
+let followLatestPick = true;
+const draftHistoryFollowThreshold = 32;
 
 
 const apiUrl = "https://nflmockdraftsim.onrender.com";
@@ -464,6 +466,24 @@ function ensureDraftHistoryList(draftHistoryContainer) {
     return listRoot;
 }
 
+function isDraftHistoryPinnedToBottom(container) {
+    return container.scrollHeight - container.scrollTop - container.clientHeight <= draftHistoryFollowThreshold;
+}
+
+function setupDraftHistoryAutoScroll() {
+    const draftHistoryContainer = document.getElementById('draftHistory');
+
+    if (!draftHistoryContainer) {
+        return;
+    }
+
+    followLatestPick = true;
+
+    draftHistoryContainer.addEventListener('scroll', () => {
+        followLatestPick = isDraftHistoryPinnedToBottom(draftHistoryContainer);
+    });
+}
+
 function buildPickElement(pick, teamLogo, pickKey) {
     const pickElement = document.createElement('div');
     pickElement.className = 'draft-pick-item';
@@ -546,7 +566,9 @@ function updateDraftHistory(draftHistory) {
 
     if (appended) {
         requestAnimationFrame(() => {
-            draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+            if (followLatestPick || isDraftHistoryPinnedToBottom(draftHistoryContainer)) {
+                draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
+            }
         });
     }
 
@@ -1110,6 +1132,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initializeDraftTabs('tab-players');
     initializeScoutingReportModal();
+    setupDraftHistoryAutoScroll();
 
     startDraft().then(() => {
         loadTeamsData().then(() => {
