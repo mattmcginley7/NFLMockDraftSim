@@ -439,21 +439,21 @@
             </div>
 
             <div class="tab-buttons" role="tablist" aria-label="Draft views">
-                <button class="tab-button" id="tab-btn-results" data-tab-target="tab-results" role="tab" aria-controls="tab-results" aria-selected="false">Draft Results</button>
-                <button class="tab-button active" id="tab-btn-players" data-tab-target="tab-players" role="tab" aria-controls="tab-players" aria-selected="true">Players</button>
+                <button class="tab-button active" id="tab-btn-results" data-tab-target="tab-results" role="tab" aria-controls="tab-results" aria-selected="true">Draft Results</button>
+                <button class="tab-button" id="tab-btn-players" data-tab-target="tab-players" role="tab" aria-controls="tab-players" aria-selected="false">Players</button>
                 <button class="tab-button" id="tab-btn-my-picks" data-tab-target="tab-my-picks" role="tab" aria-controls="tab-my-picks" aria-selected="false">My Picks</button>
             </div>
         </div>
 
         <main class="main-content">
-            <section id="tab-results" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-results" hidden>
+            <section id="tab-results" class="tab-panel active" role="tabpanel" aria-labelledby="tab-btn-results">
                 <div id="draftHistory" class="section-card">
                     <h2>Draft Results</h2>
                     <!-- Draft history will be populated by JavaScript -->
                 </div>
             </section>
 
-            <section id="tab-players" class="tab-panel active" role="tabpanel" aria-labelledby="tab-btn-players">
+            <section id="tab-players" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-players" hidden>
                 <div class="section-card">
                     <div class="filters">
                         <div class="filter-buttons">
