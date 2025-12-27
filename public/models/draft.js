@@ -138,7 +138,7 @@ function updateActionButtonsState() {
     });
 }
 
-function initializeDraftTabs(defaultTabId = 'tab-players') {
+function initializeDraftTabs(defaultTabId = 'tab-results') {
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabPanels = document.querySelectorAll('.tab-panel');
 
@@ -573,7 +573,6 @@ function updateDraftHistory(draftHistory) {
             .map(node => [node.dataset.pickNumber, node])
     );
 
-    let appended = false;
     let latestPickElement = null;
 
     const historyByPick = new Map(
@@ -598,7 +597,6 @@ function updateDraftHistory(draftHistory) {
 
         if (!pickElement) {
             pickElement = buildPickElement(pick, teamLogo, pickKey);
-            appended = true;
         } else {
             refreshPickElement(pickElement, pick, teamLogo);
         }
@@ -608,20 +606,20 @@ function updateDraftHistory(draftHistory) {
             listRoot.insertBefore(pickElement, currentChild || null);
         }
 
-        latestPickElement = pickElement;
+        if (historyByPick.has(pickKey) && pick.player) {
+            latestPickElement = pickElement;
+        }
     });
 
-    if (appended) {
-        requestAnimationFrame(() => {
-            if (followLatestPick || isDraftHistoryPinnedToBottom(draftHistoryContainer)) {
-                if (latestPickElement) {
-                    latestPickElement.scrollIntoView({ block: 'end' });
-                } else {
-                    draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
-                }
+    requestAnimationFrame(() => {
+        if (followLatestPick || isDraftHistoryPinnedToBottom(draftHistoryContainer)) {
+            if (latestPickElement) {
+                latestPickElement.scrollIntoView({ block: 'end' });
+            } else {
+                draftHistoryContainer.scrollTop = draftHistoryContainer.scrollHeight;
             }
-        });
-    }
+        }
+    });
 
     updateUserSelections(draftHistory);
 }
@@ -1181,7 +1179,7 @@ document.addEventListener('DOMContentLoaded', function () {
     teamLogoImg.alt = `${userTeam} Logo`;
     document.getElementById('teamName').textContent = `Drafting for: ${userTeam}`;
 
-    initializeDraftTabs('tab-players');
+    initializeDraftTabs('tab-results');
     initializeScoutingReportModal();
     setupDraftHistoryAutoScroll();
 
