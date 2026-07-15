@@ -4,2352 +4,252 @@
     "position": "WR",
     "team": "Ohio State",
     "stats": {
-      "height": "6'3\"",
-      "weight": "223",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 1,
-    "scoutingReport": "Premier boundary receiver with rare size, speed and ball skills; a blue-chip 2027 prospect who can win vertically, separate through contact and create after the catch."
-  },
-  {
-    "name": "Arch Manning",
-    "position": "QB",
-    "team": "Texas",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "226",
-      "40Time": "N/A"
-    },
-    "rating": 2,
-    "scoutingReport": "Prototype quarterback with NFL bloodlines, plus arm talent and improving mobility; projects as an early 2027 option if his processing and full-season consistency continue to grow."
-  },
-  {
-    "name": "Colin Simmons",
-    "position": "EDGE",
-    "team": "Texas",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "245",
-      "40Time": "N/A"
-    },
-    "rating": 3,
-    "scoutingReport": "Explosive edge rusher with first-step juice, bend and closing burst; profiles as a disruptive pressure creator with room to add power."
-  },
-  {
-    "name": "Dante Moore",
-    "position": "QB",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "206",
-      "40Time": "N/A"
-    },
-    "rating": 4,
-    "scoutingReport": "Smooth pocket passer with high-end accuracy, touch and rhythm; offers starter traits if he keeps improving pressure management and downfield aggression."
-  },
-  {
-    "name": "Dylan Stewart",
-    "position": "EDGE",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "245",
-      "40Time": "N/A"
-    },
-    "rating": 5,
-    "scoutingReport": "Long, twitched-up pass rusher with outstanding traits; wins with burst and length while developing a more complete rush plan."
+    "scoutingReport": "2027 draft-eligible WR prospect from Ohio State added from the updated draft board."
   },
   {
     "name": "Leonard Moore",
     "position": "CB",
     "team": "Notre Dame",
     "stats": {
-      "height": "6'2\"",
-      "weight": "195",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 6,
-    "scoutingReport": "Long corner with impressive ball production and man-coverage tools; size and instincts give him top-of-the-class defensive back upside."
+    "rating": 2,
+    "scoutingReport": "2027 draft-eligible CB prospect from Notre Dame added from the updated draft board."
+  },
+  {
+    "name": "Dante Moore",
+    "position": "QB",
+    "team": "Oregon",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 3,
+    "scoutingReport": "2027 draft-eligible QB prospect from Oregon added from the updated draft board."
+  },
+  {
+    "name": "Dylan Stewart",
+    "position": "EDGE",
+    "team": "South Carolina",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 4,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from South Carolina added from the updated draft board."
   },
   {
     "name": "Cam Coleman",
     "position": "WR",
     "team": "Texas",
     "stats": {
-      "height": "6'3\"",
-      "weight": "200",
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 5,
+    "scoutingReport": "2027 draft-eligible WR prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Colin Simmons",
+    "position": "EDGE",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 6,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 7,
-    "scoutingReport": "Big-play receiver with catch-radius and vertical ability; dangerous above the rim and still improving as a nuanced route runner."
+    "scoutingReport": "2027 draft-eligible QB prospect from Texas added from the updated draft board."
   },
   {
     "name": "Jordan Seaton",
     "position": "OT",
     "team": "LSU",
     "stats": {
-      "height": "6'5\"",
-      "weight": "307",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 8,
-    "scoutingReport": "Athletic tackle prospect with premium movement skills and pass-protection upside; projects as a high-end blindside or right tackle candidate."
+    "scoutingReport": "2027 draft-eligible OT prospect from LSU added from the updated draft board."
   },
   {
-    "name": "Julian Sayin",
-    "position": "QB",
-    "team": "Ohio State",
+    "name": "David Stone",
+    "position": "DT",
+    "team": "Oklahoma",
     "stats": {
-      "height": "6'1\"",
-      "weight": "208",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 9,
-    "scoutingReport": "Accurate, efficient passer with quick decisions and touch; size is average, but timing and ball placement keep him in the early-round conversation."
+    "scoutingReport": "2027 draft-eligible DT prospect from Oklahoma added from the updated draft board."
   },
   {
     "name": "Trevor Goosby",
     "position": "OT",
     "team": "Texas",
     "stats": {
-      "height": "6'7\"",
-      "weight": "325",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 10,
-    "scoutingReport": "Massive offensive tackle with length, power and SEC experience; has the tools to develop into a franchise-caliber edge protector."
+    "scoutingReport": "2027 draft-eligible OT prospect from Texas added from the updated draft board."
   },
   {
-    "name": "Dakorien Moore",
+    "name": "Charlie Becker",
     "position": "WR",
-    "team": "Oregon",
+    "team": "Indiana",
     "stats": {
-      "height": "5'11\"",
-      "weight": "195",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
     "rating": 11,
-    "scoutingReport": "Explosive receiver with elite acceleration and open-field creativity; can stress defenses vertically and after the catch."
-  },
-  {
-    "name": "David Stone",
-    "position": "DL",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "275",
-      "40Time": "N/A"
-    },
-    "rating": 12,
-    "scoutingReport": "Powerful interior defender with quickness and heavy hands; disruptive against the run with upside as a pocket-collapsing pass rusher."
-  },
-  {
-    "name": "Justin Scott",
-    "position": "DL",
-    "team": "Miami",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "310",
-      "40Time": "N/A"
-    },
-    "rating": 13,
-    "scoutingReport": "Big, athletic defensive lineman with gap-control strength and pass-rush traits; flashes the ability to become a three-down interior force."
-  },
-  {
-    "name": "Sammy Brown",
-    "position": "LB",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 14,
-    "scoutingReport": "Dynamic linebacker with range, burst and downhill physicality; offers blitz value and sideline-to-sideline pursuit skills."
-  },
-  {
-    "name": "Rasheem Biles",
-    "position": "LB",
-    "team": "Texas",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "220",
-      "40Time": "N/A"
-    },
-    "rating": 15,
-    "scoutingReport": "Fast, productive linebacker with coverage range and playmaking instincts; fits modern defenses that ask linebackers to run and cover."
-  },
-  {
-    "name": "Jelani McDonald",
-    "position": "S",
-    "team": "Texas",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 16,
-    "scoutingReport": "Versatile safety with size and range; can rotate deep, match tight ends and support the run from multiple alignments."
-  },
-  {
-    "name": "David Sanders Jr.",
-    "position": "OT",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "305",
-      "40Time": "N/A"
-    },
-    "rating": 17,
-    "scoutingReport": "Former elite recruit with rare tackle athleticism; projects as a high-upside pass protector as technique and strength mature."
-  },
-  {
-    "name": "KJ Bolden",
-    "position": "S",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 18,
-    "scoutingReport": "Explosive defensive back with coverage versatility and return ability; can play safety, nickel or matchup roles."
-  },
-  {
-    "name": "Ellis Robinson IV",
-    "position": "CB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "185",
-      "40Time": "N/A"
-    },
-    "rating": 19,
-    "scoutingReport": "Fluid cover corner with five-star traits, speed and ball skills; press technique and consistency will determine his ceiling."
-  },
-  {
-    "name": "Ryan Williams",
-    "position": "WR",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "175",
-      "40Time": "N/A"
-    },
-    "rating": 20,
-    "scoutingReport": "Electric receiver with instant acceleration and separation ability; a home-run threat despite a lean frame."
-  },
-  {
-    "name": "Elijah Rushing",
-    "position": "EDGE",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "251",
-      "40Time": "N/A"
-    },
-    "rating": 21,
-    "scoutingReport": "Long edge defender with developmental pass-rush upside; length, frame and athleticism make him a high-ceiling 2027 projection."
-  },
-  {
-    "name": "Williams Nwaneri",
-    "position": "EDGE",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "260",
-      "40Time": "N/A"
-    },
-    "rating": 22,
-    "scoutingReport": "Powerful, long defensive end with rare physical tools; can set the edge and grow into a dangerous power rusher."
-  },
-  {
-    "name": "TJ Capers",
-    "position": "LB",
-    "team": "Louisville",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "230",
-      "40Time": "N/A"
-    },
-    "rating": 23,
-    "scoutingReport": "Athletic linebacker with coverage upside and closing speed; profiles as a movable second-level defender."
-  },
-  {
-    "name": "Duce Robinson",
-    "position": "TE",
-    "team": "USC",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 24,
-    "scoutingReport": "Oversized receiving weapon with basketball-style catch radius; creates mismatches detached or inline if blocking continues to develop."
-  },
-  {
-    "name": "Justice Haynes",
-    "position": "RB",
-    "team": "Michigan",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 25,
-    "scoutingReport": "Compact, explosive runner with vision, burst and receiving value; has three-down potential in a zone-heavy offense."
-  },
-  {
-    "name": "Jerrick Gibson",
-    "position": "RB",
-    "team": "Texas",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 26,
-    "scoutingReport": "Physical runner with burst through the hole and contact balance; offers early-down value with room to grow as a receiver."
-  },
-  {
-    "name": "Aidan Chiles",
-    "position": "QB",
-    "team": "Michigan State",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "217",
-      "40Time": "N/A"
-    },
-    "rating": 27,
-    "scoutingReport": "Toolsy quarterback with mobility and arm strength; developmental upside hinges on accuracy and decision-making growth."
-  },
-  {
-    "name": "CJ Carr",
-    "position": "QB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "210",
-      "40Time": "N/A"
-    },
-    "rating": 28,
-    "scoutingReport": "Polished passer with anticipation and pocket feel; has starter upside as his arm strength and live-game r\u00e9sum\u00e9 expand."
-  },
-  {
-    "name": "Darian Mensah",
-    "position": "QB",
-    "team": "Miami",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 29,
-    "scoutingReport": "Ascending quarterback prospect with poise, accuracy and functional mobility; a strong season could push him up boards."
-  },
-  {
-    "name": "Drew Mestemaker",
-    "position": "QB",
-    "team": "Oklahoma State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "215",
-      "40Time": "N/A"
-    },
-    "rating": 30,
-    "scoutingReport": "Intriguing passer with size and production trajectory; projects as a developmental quarterback with rising-stock potential."
-  },
-  {
-    "name": "Kelley Jones",
-    "position": "CB",
-    "team": "Mississippi State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 31,
-    "scoutingReport": "Rarely long corner with man-coverage upside, ball production and recovery speed; strength and tackling refinement are next steps."
-  },
-  {
-    "name": "Trinidad Chambliss",
-    "position": "QB",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 32,
-    "scoutingReport": "Experienced dual-threat quarterback with accuracy, pocket movement and pressure answers; could rise with another efficient season."
-  },
-  {
-    "name": "Kyngstonn Viliamu-Asa",
-    "position": "LB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "230",
-      "40Time": "4.65"
-    },
-    "rating": 33,
-    "scoutingReport": "Instinctive three-down linebacker with downhill trigger, coverage range and finishing ability; projects as a defensive leader with every-down versatility."
-  },
-  {
-    "name": "Carter Smith",
-    "position": "OT",
-    "team": "Indiana",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "308",
-      "40Time": "5.18"
-    },
-    "rating": 34,
-    "scoutingReport": "Athletic left tackle prospect with quality feet, balance and recovery skills; offers blind-side upside if his anchor and hand placement keep improving."
-  },
-  {
-    "name": "Matayo Uiagalelei",
-    "position": "EDGE",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "272",
-      "40Time": "4.85"
-    },
-    "rating": 35,
-    "scoutingReport": "Powerful edge defender with length, heavy hands and inside-out rush ability; sets a firm edge while flashing pocket-collapsing strength."
-  },
-  {
-    "name": "Cayden Green",
-    "position": "OT",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "324",
-      "40Time": "5.20"
-    },
-    "rating": 36,
-    "scoutingReport": "Massive offensive tackle with SEC-tested power and positional flexibility; wins with grip strength, torque and a mauling run-game demeanor."
-  },
-  {
-    "name": "Damon Wilson II",
-    "position": "EDGE",
-    "team": "Miami",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "250",
-      "40Time": "4.58"
-    },
-    "rating": 37,
-    "scoutingReport": "Explosive pass rusher with first-step burst and bend; has the athletic profile to become a high-pressure edge if his counter package matures."
-  },
-  {
-    "name": "Will Echoles",
-    "position": "DL",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "310",
-      "40Time": "5.10"
-    },
-    "rating": 38,
-    "scoutingReport": "Disruptive interior lineman with stout leverage and active hands; combines run-game toughness with enough quickness to push the pocket."
-  },
-  {
-    "name": "Ahmad Hardy",
-    "position": "RB",
-    "team": "Missouri",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "206",
-      "40Time": "4.59"
-    },
-    "rating": 39,
-    "scoutingReport": "Compact, violent runner with contact balance and one-cut burst; brings feature-back traits when paired with improved passing-down polish."
-  },
-  {
-    "name": "Trey'Dez Green",
-    "position": "TE",
-    "team": "LSU",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "240",
-      "40Time": "4.65"
-    },
-    "rating": 40,
-    "scoutingReport": "Oversized receiving tight end with rare catch radius and red-zone utility; creates matchup stress with basketball-style body control."
-  },
-  {
-    "name": "PJ Williams",
-    "position": "OT",
-    "team": "SMU",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "313",
-      "40Time": "5.20"
-    },
-    "rating": 41,
-    "scoutingReport": "Experienced tackle with a sturdy frame and reliable pass sets; profiles as a polished edge protector with swing-tackle flexibility."
-  },
-  {
-    "name": "Chris Cole",
-    "position": "LB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "235",
-      "40Time": "4.55"
-    },
-    "rating": 42,
-    "scoutingReport": "Fast second-level defender with coverage upside and blitz timing; offers modern linebacker range with room to grow against downhill run schemes."
-  },
-  {
-    "name": "Austin Siereveld",
-    "position": "OT",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "325",
-      "40Time": "5.20"
-    },
-    "rating": 43,
-    "scoutingReport": "Physical blocker with tackle size and guard power; moves defenders in the run game and has the frame to handle NFL strength."
+    "scoutingReport": "2027 draft-eligible WR prospect from Indiana added from the updated draft board."
   },
   {
     "name": "Tae Johnson",
     "position": "S",
     "team": "Notre Dame",
     "stats": {
-      "height": "6'2\"",
-      "weight": "193",
-      "40Time": "4.50"
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
     },
-    "rating": 44,
-    "scoutingReport": "Rangy safety with ball skills, tackling reliability and split-field versatility; can patrol space or rotate downhill into the box."
-  },
-  {
-    "name": "Dashawn Spears",
-    "position": "S",
-    "team": "LSU",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "208",
-      "40Time": "4.43"
-    },
-    "rating": 45,
-    "scoutingReport": "Big, fast safety with impressive closing burst and run support temperament; brings interchangeable backend traits and special-teams value."
+    "rating": 12,
+    "scoutingReport": "2027 draft-eligible S prospect from Notre Dame added from the updated draft board."
   },
   {
     "name": "Jamari Johnson",
     "position": "TE",
     "team": "Oregon",
     "stats": {
-      "height": "6'5\"",
-      "weight": "257",
-      "40Time": "4.74"
-    },
-    "rating": 46,
-    "scoutingReport": "Well-built tight end with seam-stretching tools and inline potential; combines soft hands with enough mass to develop as a blocker."
-  },
-  {
-    "name": "A'Mauri Washington",
-    "position": "DL",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "330",
-      "40Time": "4.85"
-    },
-    "rating": 47,
-    "scoutingReport": "Powerful nose/interior defender with unusual movement skills for his size; controls gaps and can collapse the middle with raw strength."
-  },
-  {
-    "name": "Brendan Sorsby",
-    "position": "QB",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "235",
-      "40Time": "4.65"
-    },
-    "rating": 48,
-    "scoutingReport": "Strong-framed quarterback with mobility, toughness and vertical arm talent; decision-making gains could push him into the top quarterback tier."
-  },
-  {
-    "name": "KJ Duff",
-    "position": "WR",
-    "team": "Rutgers",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "225",
-      "40Time": "4.58"
-    },
-    "rating": 49,
-    "scoutingReport": "Towering receiver with contested-catch dominance and a massive target window; offers boundary mismatch ability and red-zone upside."
-  },
-  {
-    "name": "Chris Peal",
-    "position": "CB",
-    "team": "Syracuse",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "200",
-      "40Time": "4.35"
-    },
-    "rating": 50,
-    "scoutingReport": "Long, explosive corner with zone instincts and recovery speed; has the athletic foundation to match bigger receivers outside."
-  },
-  {
-    "name": "Jordan Ross",
-    "position": "EDGE",
-    "team": "LSU",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "245",
-      "40Time": "4.60"
-    },
-    "rating": 51,
-    "scoutingReport": "High-upside edge rusher with length, speed and closing burst; threatens tackles with space-rush athleticism and developmental power."
-  },
-  {
-    "name": "Teitum Tuioti",
-    "position": "EDGE",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "263",
-      "40Time": "4.70"
-    },
-    "rating": 52,
-    "scoutingReport": "Heavy-handed edge defender with run-game strength and pocket squeeze; wins with leverage and power while adding pass-rush nuance."
-  },
-  {
-    "name": "Brice Pollock",
-    "position": "CB",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.44"
-    },
-    "rating": 53,
-    "scoutingReport": "Ball-hawking corner with route vision and takeaways production; fits zone-heavy looks and has enough speed to carry verticals."
-  },
-  {
-    "name": "Rueben Bain Jr.",
-    "position": "EDGE",
-    "team": "Miami",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "275",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 54,
-    "scoutingReport": "Despite his size, he's still consistently beating tackles on the edge with speed. His ability to turn the corner at the arc is similar to players 30lb less than him. His strength is elite, you could line him up as a 3 tech if you wanted to. In all, a physically dominant prospect that can be moved all along the defensive line that will immediately be a huge plus in the the run game and could develop into an All Pro 10+ sack pass rusher."
+    "rating": 13,
+    "scoutingReport": "2027 draft-eligible TE prospect from Oregon added from the updated draft board."
   },
   {
-    "name": "Caleb Downs",
+    "name": "Ellis Robinson IV",
+    "position": "CB",
+    "team": "Georgia",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 14,
+    "scoutingReport": "2027 draft-eligible CB prospect from Georgia added from the updated draft board."
+  },
+  {
+    "name": "Justin Scott",
+    "position": "DT",
+    "team": "Miami (FL)",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 15,
+    "scoutingReport": "2027 draft-eligible DT prospect from Miami (FL) added from the updated draft board."
+  },
+  {
+    "name": "KJ Bolden",
     "position": "S",
-    "team": "Ohio State",
+    "team": "Georgia",
     "stats": {
-      "height": "6'0\"",
-      "weight": "205",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 55,
-    "scoutingReport": "You can have him play safety, in the box, nickel, corner, he can do it all. You can even have him return punts and kicks. He won't miss tackles, he won't get beat with speed or bad decisions, he's just a great all around saftety that can do everything you could ever want a defensive back to do."
+    "rating": 16,
+    "scoutingReport": "2027 draft-eligible S prospect from Georgia added from the updated draft board."
   },
   {
-    "name": "Jordyn Tyson",
+    "name": "Omarion Miller",
     "position": "WR",
     "team": "Arizona State",
     "stats": {
-      "height": "6'2\"",
-      "weight": "195",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 58,
-    "scoutingReport": "Great body control and hands, will make acrobatic catches routinely. Great seperation ability in and out of breaks and fast enough to win vertically. Can play inside or outside and wins most in the intermediate areas."
-  },
-  {
-    "name": "Peter Woods",
-    "position": "DL",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "315",
-      "40Time": "N/A"
-    },
-    "rating": 59,
-    "scoutingReport": "Moves very well for his size, can be a 3 tech, 5 or 1 in certain situations. Has a great ability to shed blocks in the run game almost instantly. Can be a great pass rusher."
-  },
-  {
-    "name": "Ty Simpson",
-    "position": "QB",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "208",
-      "40Time": "N/A"
-    },
-    "rating": 60,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Spencer Fano",
-    "position": "OT",
-    "team": "Utah",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "302",
-      "40Time": "N/A"
-    },
-    "rating": 61,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Keldric Faulk",
-    "position": "EDGE",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "270",
-      "40Time": "N/A"
-    },
-    "rating": 62,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Francis Mauigoa",
-    "position": "OT",
-    "team": "Miami",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "335",
-      "40Time": "N/A"
-    },
-    "rating": 65,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Mansoor Delane",
-    "position": "CB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "187",
-      "40Time": "N/A"
-    },
-    "rating": 66,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jermod McCoy",
-    "position": "CB",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "193",
-      "40Time": "N/A"
-    },
-    "rating": 67,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kadyn Proctor",
-    "position": "OT",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "366",
-      "40Time": "N/A"
-    },
-    "rating": 69,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kenyon Sadiq",
-    "position": "TE",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "245",
-      "40Time": "N/A"
-    },
-    "rating": 70,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Avieon Terrell",
-    "position": "CB",
-    "team": "Clemson",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "180",
-      "40Time": "N/A"
-    },
-    "rating": 71,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Makai Lemon",
-    "position": "WR",
-    "team": "USC",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 73,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Denzel Boston",
-    "position": "WR",
-    "team": "Washington",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "209",
-      "40Time": "N/A"
-    },
-    "rating": 74,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Sonny Styles",
-    "position": "LB",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 75,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Caleb Lomu",
-    "position": "OT",
-    "team": "Utah",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "304",
-      "40Time": "N/A"
-    },
-    "rating": 76,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Cashius Howell",
-    "position": "EDGE",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "248",
-      "40Time": "N/A"
-    },
-    "rating": 77,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Vega Ioane",
-    "position": "IOL",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "328",
-      "40Time": "N/A"
-    },
-    "rating": 78,
-    "scoutingReport": ""
-  },
-  {
-    "name": "CJ Allen",
-    "position": "LB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 79,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Chris Bell",
-    "position": "WR",
-    "team": "Louisville",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "220",
-      "40Time": "N/A"
-    },
-    "rating": 80,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Colton Hood",
-    "position": "CB",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 81,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Caleb Banks",
-    "position": "DL",
-    "team": "Florida",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "329",
-      "40Time": "N/A"
-    },
-    "rating": 82,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Anthony Hill Jr.",
-    "position": "LB",
-    "team": "Texas",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 83,
-    "scoutingReport": ""
-  },
-  {
-    "name": "LT Overton",
-    "position": "EDGE",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "283",
-      "40Time": "N/A"
-    },
-    "rating": 84,
-    "scoutingReport": ""
-  },
-  {
-    "name": "KC Concepcion",
-    "position": "WR",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 85,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Chris Brazzell II",
-    "position": "WR",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 86,
-    "scoutingReport": ""
-  },
-  {
-    "name": "R Mason Thomas",
-    "position": "EDGE",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "249",
-      "40Time": "N/A"
-    },
-    "rating": 87,
-    "scoutingReport": ""
-  },
-  {
-    "name": "LaNorris Sellers",
-    "position": "QB",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "240",
-      "40Time": "N/A"
-    },
-    "rating": 88,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kayden McDonald",
-    "position": "DL",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "326",
-      "40Time": "N/A"
-    },
-    "rating": 89,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Christen Miller",
-    "position": "DL",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "305",
-      "40Time": "N/A"
-    },
-    "rating": 90,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Gennings Dunker",
-    "position": "OT",
-    "team": "Iowa",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "316",
-      "40Time": "N/A"
-    },
-    "rating": 92,
-    "scoutingReport": ""
+    "rating": 17,
+    "scoutingReport": "2027 draft-eligible WR prospect from Arizona State added from the updated draft board."
   },
   {
     "name": "Quincy Rhodes Jr.",
     "position": "EDGE",
     "team": "Arkansas",
     "stats": {
-      "height": "6'6\"",
-      "weight": "275",
+      "height": "N/A",
+      "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 93,
-    "scoutingReport": ""
+    "rating": 18,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Arkansas added from the updated draft board."
   },
   {
-    "name": "Dani Dennis-Sutton",
-    "position": "EDGE",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "270",
-      "40Time": "N/A"
-    },
-    "rating": 94,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Joshua Josephs",
-    "position": "EDGE",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "240",
-      "40Time": "N/A"
-    },
-    "rating": 95,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jake Slaughter",
-    "position": "IOL",
-    "team": "Florida",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "315",
-      "40Time": "N/A"
-    },
-    "rating": 96,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Isaiah World",
-    "position": "OT",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'8\"",
-      "weight": "295",
-      "40Time": "N/A"
-    },
-    "rating": 97,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Connor Lew",
-    "position": "IOL",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "295",
-      "40Time": "N/A"
-    },
-    "rating": 98,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dontay Corleone",
-    "position": "DL",
-    "team": "Cincinnati",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "318",
-      "40Time": "N/A"
-    },
-    "rating": 99,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Garrett Nussmeier",
-    "position": "QB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 100,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jayden Maiava",
-    "position": "QB",
-    "team": "USC",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "220",
-      "40Time": "N/A"
-    },
-    "rating": 101,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kamari Ramsey",
-    "position": "S",
-    "team": "USC",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 102,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Daylen Everette",
-    "position": "CB",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 103,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Ja'Kobi Lane",
-    "position": "WR",
-    "team": "USC",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 104,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jonah Coleman",
-    "position": "RB",
-    "team": "Washington",
-    "stats": {
-      "height": "5'9\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 105,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Elijah Sarratt",
-    "position": "WR",
-    "team": "Indiana",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "213",
-      "40Time": "N/A"
-    },
-    "rating": 106,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tyreak Sapp",
-    "position": "EDGE",
-    "team": "Florida",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "260",
-      "40Time": "N/A"
-    },
-    "rating": 107,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Nyck Harbor",
-    "position": "WR",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 108,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Romello Height",
-    "position": "EDGE",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "230",
-      "40Time": "N/A"
-    },
-    "rating": 109,
-    "scoutingReport": ""
-  },
-  {
-    "name": "John Mateer",
-    "position": "QB",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 110,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Taurean York",
-    "position": "LB",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 111,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Austin Barber",
-    "position": "OT",
-    "team": "Florida",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "314",
-      "40Time": "N/A"
-    },
-    "rating": 113,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Germie Bernard",
-    "position": "WR",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "204",
-      "40Time": "N/A"
-    },
-    "rating": 114,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Darrell Jackson Jr.",
-    "position": "DL",
-    "team": "Florida State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "337",
-      "40Time": "N/A"
-    },
-    "rating": 115,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Rod Moore",
-    "position": "S",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "198",
-      "40Time": "N/A"
-    },
-    "rating": 116,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Michael Taaffe",
-    "position": "S",
-    "team": "Texas",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "189",
-      "40Time": "N/A"
-    },
-    "rating": 117,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Cade Klubnik",
-    "position": "QB",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "210",
-      "40Time": "N/A"
-    },
-    "rating": 118,
-    "scoutingReport": ""
-  },
-  {
-    "name": "A.J. Harris",
-    "position": "CB",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "191",
-      "40Time": "N/A"
-    },
-    "rating": 119,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Antonio Williams",
-    "position": "WR",
-    "team": "Clemson",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 120,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Deontae Lawson",
-    "position": "LB",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "228",
-      "40Time": "N/A"
-    },
-    "rating": 121,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Zakee Wheatley",
-    "position": "S",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 122,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Brian Parker II",
-    "position": "IOL",
-    "team": "Duke",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "300",
-      "40Time": "N/A"
-    },
-    "rating": 123,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Domonique Orange",
-    "position": "DL",
-    "team": "Iowa State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "325",
-      "40Time": "N/A"
-    },
-    "rating": 124,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Malachi Fields",
-    "position": "WR",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "223",
-      "40Time": "N/A"
-    },
-    "rating": 125,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Julian Neal",
-    "position": "CB",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 126,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Zion Young",
-    "position": "EDGE",
-    "team": "Missouri",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "262",
-      "40Time": "N/A"
-    },
-    "rating": 127,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Caleb Tiernan",
-    "position": "OT",
-    "team": "Northwestern",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "325",
-      "40Time": "N/A"
-    },
-    "rating": 128,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Drew Shelton",
-    "position": "OT",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "305",
-      "40Time": "N/A"
-    },
-    "rating": 129,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Omar Cooper Jr.",
-    "position": "WR",
-    "team": "Indiana",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "201",
-      "40Time": "N/A"
-    },
-    "rating": 130,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Chandler Rivers",
-    "position": "CB",
-    "team": "Duke",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "185",
-      "40Time": "N/A"
-    },
-    "rating": 131,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Nicholas Singleton",
-    "position": "RB",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "224",
-      "40Time": "N/A"
-    },
-    "rating": 132,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Harold Perkins Jr.",
-    "position": "LB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "222",
-      "40Time": "N/A"
-    },
-    "rating": 133,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Emmanuel McNeil-Warren",
-    "position": "S",
-    "team": "Toledo",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 134,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jalon Kilgore",
-    "position": "S",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 135,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jadarian Price",
-    "position": "RB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 136,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Emmett Johnson",
-    "position": "RB",
-    "team": "Nebraska",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "210",
-      "40Time": "N/A"
-    },
-    "rating": 137,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Le'Veon Moss",
-    "position": "RB",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "215",
-      "40Time": "N/A"
-    },
-    "rating": 138,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Derrick Moore",
-    "position": "EDGE",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "260",
-      "40Time": "N/A"
-    },
-    "rating": 139,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Eli Raridon",
-    "position": "TE",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "250",
-      "40Time": "N/A"
-    },
-    "rating": 140,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Robert Spears-Jennings",
-    "position": "S",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 141,
-    "scoutingReport": ""
-  },
-  {
-    "name": "John Henry Daley",
-    "position": "EDGE",
-    "team": "Utah",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "250",
-      "40Time": "N/A"
-    },
-    "rating": 142,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Domani Jackson",
-    "position": "CB",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 143,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jermaine Mathews Jr.",
-    "position": "CB",
-    "team": "Ohio State",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 144,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Taylen Green",
-    "position": "QB",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 145,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Blake Miller",
-    "position": "OT",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "315",
-      "40Time": "N/A"
-    },
-    "rating": 146,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tim Keenan III",
-    "position": "DL",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "315",
-      "40Time": "N/A"
-    },
-    "rating": 147,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Whit Weeks",
-    "position": "LB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 148,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jude Bowry",
-    "position": "OT",
-    "team": "Boston College",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "310",
-      "40Time": "N/A"
-    },
-    "rating": 149,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Keylan Rutledge",
-    "position": "IOL",
-    "team": "Georgia Tech",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "315",
-      "40Time": "N/A"
-    },
-    "rating": 150,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Keith Abney II",
-    "position": "CB",
-    "team": "Arizona State",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "185",
-      "40Time": "N/A"
-    },
-    "rating": 151,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Logan Taylor",
-    "position": "IOL",
-    "team": "Boston College",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "310",
-      "40Time": "N/A"
-    },
-    "rating": 152,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Xavier Nwankpa",
-    "position": "S",
-    "team": "Iowa",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "210",
-      "40Time": "N/A"
-    },
-    "rating": 153,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kaytron Allen",
-    "position": "RB",
-    "team": "Penn State",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "220",
-      "40Time": "N/A"
-    },
-    "rating": 154,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Gabe Jacas",
-    "position": "EDGE",
-    "team": "Illinois",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "255",
-      "40Time": "N/A"
-    },
-    "rating": 155,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tao Johnson",
-    "position": "S",
-    "team": "Utah",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 156,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Brenen Thompson",
-    "position": "WR",
-    "team": "Mississippi State",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "185",
-      "40Time": "N/A"
-    },
-    "rating": 157,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Skyler Bell",
-    "position": "WR",
-    "team": "Connecticut",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 158,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Bud Clark",
-    "position": "S",
-    "team": "TCU",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 159,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Drew Allar",
-    "position": "QB",
-    "team": "Penn State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "243",
-      "40Time": "N/A"
-    },
-    "rating": 160,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Demond Claiborne",
-    "position": "RB",
-    "team": "Wake Forest",
-    "stats": {
-      "height": "5'9\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 161,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Eric Singleton Jr.",
-    "position": "WR",
-    "team": "Auburn",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "180",
-      "40Time": "N/A"
-    },
-    "rating": 162,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Lee Hunter",
-    "position": "DL",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "320",
-      "40Time": "N/A"
-    },
-    "rating": 163,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Austin Romaine",
-    "position": "LB",
-    "team": "Kansas State",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "235",
-      "40Time": "N/A"
-    },
-    "rating": 164,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Bray Hubbard",
-    "position": "S",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 165,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jeremiah Cooper",
-    "position": "S",
-    "team": "Iowa State",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "N/A"
-    },
-    "rating": 166,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Xavier Chaplin",
-    "position": "OT",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "330",
-      "40Time": "N/A"
-    },
-    "rating": 167,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Ian Strong",
-    "position": "WR",
-    "team": "Rutgers",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "205",
-      "40Time": "N/A"
-    },
-    "rating": 168,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Bryce Boettcher",
-    "position": "LB",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 169,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dae'Quan Wright",
-    "position": "TE",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "245",
-      "40Time": "N/A"
-    },
-    "rating": 170,
-    "scoutingReport": ""
-  },
-  {
-    "name": "A.J. Haulcy",
-    "position": "S",
-    "team": "LSU",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "200",
-      "40Time": "N/A"
-    },
-    "rating": 171,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Mikail Kamara",
-    "position": "EDGE",
-    "team": "Indiana",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "250",
-      "40Time": "N/A"
-    },
-    "rating": 172,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Isaiah Glasker",
-    "position": "LB",
-    "team": "BYU",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "220",
-      "40Time": "N/A"
-    },
-    "rating": 173,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Beau Stephens",
-    "position": "IOL",
-    "team": "Iowa",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "335",
-      "40Time": "N/A"
-    },
-    "rating": 174,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Davison Igbinosun",
-    "position": "CB",
+    "name": "Austin Siereveld",
+    "position": "OG",
     "team": "Ohio State",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 176,
-    "scoutingReport": ""
+    "rating": 19,
+    "scoutingReport": "2027 draft-eligible OG prospect from Ohio State added from the updated draft board."
   },
   {
-    "name": "Jake Golday",
-    "position": "LB",
-    "team": "Cincinnati",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 177,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Max Klare",
-    "position": "TE",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "243",
-      "40Time": "N/A"
-    },
-    "rating": 178,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Keon Sabb",
-    "position": "S",
-    "team": "Alabama",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 179,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jyaire Hill",
-    "position": "CB",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "190",
-      "40Time": "N/A"
-    },
-    "rating": 180,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Zachariah Branch",
-    "position": "WR",
-    "team": "USC",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 181,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Chris Johnson",
-    "position": "RB",
+    "name": "Ahmad Moten Sr.",
+    "position": "DT",
     "team": "Miami (FL)",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 183,
-    "scoutingReport": ""
+    "rating": 20,
+    "scoutingReport": "2027 draft-eligible DT prospect from Miami (FL) added from the updated draft board."
   },
   {
-    "name": "Will Lee III",
+    "name": "Zabien Brown",
     "position": "CB",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 184,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Marlin Klein",
-    "position": "TE",
-    "team": "Georgia",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 185,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Marcel Reed",
-    "position": "QB",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 188,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Oscar Delp",
-    "position": "TE",
-    "team": "Georgia",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 189,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Parker Brailsford",
-    "position": "IOL",
     "team": "Alabama",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 190,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Lander Barton",
-    "position": "LB",
-    "team": "Utah",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 191,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Joe Royer",
-    "position": "TE",
-    "team": "Cincinnati",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 192,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Zane Durant",
-    "position": "DL",
-    "team": "Penn State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 193,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Hank Beatty",
-    "position": "WR",
-    "team": "Illinois",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 194,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jacob Rodriguez",
-    "position": "LB",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 195,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Joey Aguilar",
-    "position": "QB",
-    "team": "Tennessee",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 196,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Trey Zuhn III",
-    "position": "IOL",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 197,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Sam Leavitt",
-    "position": "QB",
-    "team": "Arizona State",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "210",
-      "40Time": "N/A"
-    },
-    "rating": 198,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Eli Stowers",
-    "position": "TE",
-    "team": "Vanderbilt",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 199,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Eugene Wilson III",
-    "position": "WR",
-    "team": "Florida",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 200,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kendrick Law",
-    "position": "WR",
-    "team": "Alabama",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 201,
-    "scoutingReport": ""
-  },
-  {
-    "name": "R. Mason Thomas",
-    "position": "EDGE",
-    "team": "Iowa State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 202,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kaimon Rucker",
-    "position": "EDGE",
-    "team": "North Carolina",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 203,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Akeem Mesidor",
-    "position": "EDGE",
-    "team": "Miami (FL)",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 204,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Clev Lubin",
-    "position": "EDGE",
-    "team": "Wake Forest",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 206,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Josh Hoover",
-    "position": "QB",
-    "team": "TCU",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 207,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Caden Curry",
-    "position": "EDGE",
-    "team": "Ohio State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 208,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Anthony Smith",
-    "position": "EDGE",
-    "team": "Minnesota",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 209,
-    "scoutingReport": ""
+    "rating": 21,
+    "scoutingReport": "2027 draft-eligible CB prospect from Alabama added from the updated draft board."
   },
   {
     "name": "Kenyatta Jackson Jr.",
@@ -2360,608 +260,188 @@
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 210,
-    "scoutingReport": ""
+    "rating": 22,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Ohio State added from the updated draft board."
   },
   {
-    "name": "Brandon Cisse",
-    "position": "CB",
-    "team": "South Carolina",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 211,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jaylon Guilbeau",
-    "position": "CB",
-    "team": "Texas",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 212,
-    "scoutingReport": ""
-  },
-  {
-    "name": "D.J. McKinney",
-    "position": "CB",
-    "team": "Colorado",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 213,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Xavier Scott",
-    "position": "CB",
-    "team": "Illinois",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 214,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Christian Gray",
-    "position": "CB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 215,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Devin Moore",
-    "position": "CB",
-    "team": "Florida",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 216,
-    "scoutingReport": ""
-  },
-  {
-    "name": "D'Angelo Ponds",
-    "position": "CB",
-    "team": "Indiana",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 217,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Desmond Reid",
-    "position": "RB",
-    "team": "Pittsburgh",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 218,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Hollywood Smothers",
-    "position": "RB",
-    "team": "NC State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 219,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Bryce Lance",
+    "name": "Mario Craver",
     "position": "WR",
-    "team": "North Dakota State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 220,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Keionte Scott",
-    "position": "CB",
-    "team": "Miami (FL)",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 221,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jadon Canady",
-    "position": "CB",
-    "team": "Oregon",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 222,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Cam Miller",
-    "position": "CB",
-    "team": "Rutgers",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 223,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Devon Marshall",
-    "position": "CB",
-    "team": "NC State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 224,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Benjamin Brahmer",
-    "position": "TE",
-    "team": "Iowa State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 225,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Justin Joly",
-    "position": "TE",
-    "team": "NC State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 226,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Isaiah Smith",
-    "position": "EDGE",
-    "team": "SMU",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 227,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Joe Fagnano",
-    "position": "QB",
-    "team": "UConn",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 228,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Micah Pettus",
-    "position": "OT",
-    "team": "Florida State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 229,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Adonijah Green",
-    "position": "EDGE",
-    "team": "Louisville",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 230,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Noah Whittington",
-    "position": "RB",
-    "team": "Oregon",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 231,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Mike Washington Jr.",
-    "position": "RB",
-    "team": "Arkansas",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 232,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Quintrevion Wisner",
-    "position": "RB",
-    "team": "Texas",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 233,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jack Endries",
-    "position": "TE",
-    "team": "Texas",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 234,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Michael Trigg",
-    "position": "TE",
-    "team": "Baylor",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 235,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kage Casey",
-    "position": "OT",
-    "team": "Boise State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 236,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Santana Hopper",
-    "position": "DL",
-    "team": "Tulane",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 238,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Anthony Lucas",
-    "position": "EDGE",
-    "team": "USC",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 239,
-    "scoutingReport": ""
-  },
-  {
-    "name": "J.C. Davis",
-    "position": "OT",
-    "team": "Illinois",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 240,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jaren Kanak",
-    "position": "TE",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 241,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Luke Altmyer",
-    "position": "QB",
-    "team": "Illinois",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 242,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Aaron Anderson",
-    "position": "WR",
-    "team": "LSU",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 243,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dasan McCullough",
-    "position": "LB",
-    "team": "Nebraska",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 244,
-    "scoutingReport": ""
-  },
-  {
-    "name": "C.J. Fite",
-    "position": "DT",
-    "team": "Arizona State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 245,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Suntarine Perkins",
-    "position": "LB",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 246,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Princewill Umanmielen",
-    "position": "EDGE",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 247,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Chase Roberts",
-    "position": "WR",
-    "team": "BYU",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 248,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Demon Clowney",
-    "position": "EDGE",
-    "team": "South Carolina",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 249,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tacario Davis",
-    "position": "CB",
-    "team": "Washington",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 250,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Ty Thompson",
-    "position": "TE",
-    "team": "Tulane",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 251,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Evan Tengesdahl",
-    "position": "OG",
-    "team": "Cincinnati",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 252,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jahiem White",
-    "position": "RB",
-    "team": "West Virginia",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 253,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Charles Jagusah",
-    "position": "OL",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 254,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Aaron Graves",
-    "position": "DL",
-    "team": "Iowa",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 255,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jaishawn Barham",
-    "position": "LB",
-    "team": "Michigan",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 256,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Fa'alili Fa'amoe",
-    "position": "OT",
-    "team": "Wake Forest",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 257,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Lance Heard",
-    "position": "OT",
-    "team": "Tennessee",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 258,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dametrious Crownover",
-    "position": "OT",
     "team": "Texas A&M",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 259,
-    "scoutingReport": ""
+    "rating": 23,
+    "scoutingReport": "2027 draft-eligible WR prospect from Texas A&M added from the updated draft board."
   },
   {
-    "name": "Amare Ferrell",
-    "position": "S",
+    "name": "Kewan Lacy",
+    "position": "RB",
+    "team": "Ole Miss",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 24,
+    "scoutingReport": "2027 draft-eligible RB prospect from Ole Miss added from the updated draft board."
+  },
+  {
+    "name": "Drew Mestemaker",
+    "position": "QB",
+    "team": "Oklahoma State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 25,
+    "scoutingReport": "2027 draft-eligible QB prospect from Oklahoma State added from the updated draft board."
+  },
+  {
+    "name": "A'Mauri Washington",
+    "position": "DT",
+    "team": "Oregon",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 26,
+    "scoutingReport": "2027 draft-eligible DT prospect from Oregon added from the updated draft board."
+  },
+  {
+    "name": "Matayo Uiagalelei",
+    "position": "EDGE",
+    "team": "Oregon",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 27,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Oregon added from the updated draft board."
+  },
+  {
+    "name": "Kade Pieper",
+    "position": "OC",
+    "team": "Iowa",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 28,
+    "scoutingReport": "2027 draft-eligible OC prospect from Iowa added from the updated draft board."
+  },
+  {
+    "name": "Ashton Hampton",
+    "position": "CB",
+    "team": "Clemson",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 29,
+    "scoutingReport": "2027 draft-eligible CB prospect from Clemson added from the updated draft board."
+  },
+  {
+    "name": "Sammy Brown",
+    "position": "LB",
+    "team": "Clemson",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 30,
+    "scoutingReport": "2027 draft-eligible LB prospect from Clemson added from the updated draft board."
+  },
+  {
+    "name": "Mateen Ibirogba",
+    "position": "DT",
+    "team": "Texas Tech",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 31,
+    "scoutingReport": "2027 draft-eligible DT prospect from Texas Tech added from the updated draft board."
+  },
+  {
+    "name": "Jadan Baugh",
+    "position": "RB",
+    "team": "Florida",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 32,
+    "scoutingReport": "2027 draft-eligible RB prospect from Florida added from the updated draft board."
+  },
+  {
+    "name": "Carter Smith",
+    "position": "OT",
     "team": "Indiana",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 261,
-    "scoutingReport": ""
+    "rating": 33,
+    "scoutingReport": "2027 draft-eligible OT prospect from Indiana added from the updated draft board."
   },
   {
-    "name": "CJ Daniels",
-    "position": "WR",
-    "team": "Miami (FL)",
+    "name": "Princewill Umanmielen",
+    "position": "EDGE",
+    "team": "LSU",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 262,
-    "scoutingReport": ""
+    "rating": 34,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from LSU added from the updated draft board."
+  },
+  {
+    "name": "Cayden Green",
+    "position": "OG",
+    "team": "Missouri",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 35,
+    "scoutingReport": "2027 draft-eligible OG prospect from Missouri added from the updated draft board."
+  },
+  {
+    "name": "Jelani McDonald",
+    "position": "S",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 36,
+    "scoutingReport": "2027 draft-eligible S prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Trey'Dez Green",
+    "position": "TE",
+    "team": "LSU",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 37,
+    "scoutingReport": "2027 draft-eligible TE prospect from LSU added from the updated draft board."
   },
   {
     "name": "Iapani Laloulu",
@@ -2972,1027 +452,175 @@
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 263,
-    "scoutingReport": ""
+    "rating": 38,
+    "scoutingReport": "2027 draft-eligible OC prospect from Oregon added from the updated draft board."
   },
   {
-    "name": "Tristan Leigh",
-    "position": "OT",
-    "team": "Clemson",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 264,
-    "scoutingReport": ""
-  },
-  {
-    "name": "DeMonte Capehart",
+    "name": "Will Echoles",
     "position": "DT",
-    "team": "Clemson",
+    "team": "Ole Miss",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 265,
-    "scoutingReport": ""
+    "rating": 39,
+    "scoutingReport": "2027 draft-eligible DT prospect from Ole Miss added from the updated draft board."
   },
   {
-    "name": "Deion Burks",
-    "position": "WR",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 266,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Roman Hemby",
+    "name": "Ahmad Hardy",
     "position": "RB",
+    "team": "Missouri",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 40,
+    "scoutingReport": "2027 draft-eligible RB prospect from Missouri added from the updated draft board."
+  },
+  {
+    "name": "CJ Carr",
+    "position": "QB",
+    "team": "Notre Dame",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 41,
+    "scoutingReport": "2027 draft-eligible QB prospect from Notre Dame added from the updated draft board."
+  },
+  {
+    "name": "Nick Marsh",
+    "position": "WR",
     "team": "Indiana",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 268,
-    "scoutingReport": ""
+    "rating": 42,
+    "scoutingReport": "2027 draft-eligible WR prospect from Indiana added from the updated draft board."
   },
   {
-    "name": "Darrell Jackson",
-    "position": "DT",
-    "team": "Florida State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 269,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Earl Little Jr.",
+    "name": "Xavier Scott",
     "position": "S",
-    "team": "Florida State",
+    "team": "Illinois",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 270,
-    "scoutingReport": ""
+    "rating": 43,
+    "scoutingReport": "2027 draft-eligible S prospect from Illinois added from the updated draft board."
   },
   {
-    "name": "Barion Brown",
+    "name": "Wyatt Young",
     "position": "WR",
+    "team": "Oklahoma State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 44,
+    "scoutingReport": "2027 draft-eligible WR prospect from Oklahoma State added from the updated draft board."
+  },
+  {
+    "name": "OJ Frederique Jr.",
+    "position": "CB",
+    "team": "Miami (FL)",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 45,
+    "scoutingReport": "2027 draft-eligible CB prospect from Miami (FL) added from the updated draft board."
+  },
+  {
+    "name": "Ryan Wingo",
+    "position": "WR",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 46,
+    "scoutingReport": "2027 draft-eligible WR prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Brandon Baker",
+    "position": "OG",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 47,
+    "scoutingReport": "2027 draft-eligible OG prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Braelin Moore",
+    "position": "OC",
     "team": "LSU",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 271,
-    "scoutingReport": ""
+    "rating": 48,
+    "scoutingReport": "2027 draft-eligible OC prospect from LSU added from the updated draft board."
   },
   {
-    "name": "Febechi Nwaiwu",
-    "position": "OG",
-    "team": "Oklahoma",
+    "name": "Bear Alexander",
+    "position": "DT",
+    "team": "Oregon",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 272,
-    "scoutingReport": ""
+    "rating": 49,
+    "scoutingReport": "2027 draft-eligible DT prospect from Oregon added from the updated draft board."
   },
   {
-    "name": "Max Iheanachor",
+    "name": "Blake Frazier",
     "position": "OT",
-    "team": "Arizona State",
+    "team": "Michigan",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 273,
-    "scoutingReport": ""
+    "rating": 50,
+    "scoutingReport": "2027 draft-eligible OT prospect from Michigan added from the updated draft board."
   },
   {
-    "name": "Sawyer Robertson",
-    "position": "QB",
-    "team": "Baylor",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 274,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jamarion Miller",
+    "name": "LJ Martin",
     "position": "RB",
-    "team": "Alabama",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 275,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Jack Kelly",
-    "position": "LB",
     "team": "BYU",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 276,
-    "scoutingReport": ""
+    "rating": 51,
+    "scoutingReport": "2027 draft-eligible RB prospect from BYU added from the updated draft board."
   },
   {
-    "name": "Jontez Williams",
-    "position": "CB",
-    "team": "Iowa State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 277,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tomas Rimac",
-    "position": "OG",
-    "team": "Virginia Tech",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 278,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Lawson Luckie",
+    "name": "Peter Clarke",
     "position": "TE",
-    "team": "Georgia",
+    "team": "Temple",
     "stats": {
       "height": "N/A",
       "weight": "N/A",
       "40Time": "N/A"
     },
-    "rating": 279,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Boubacar Traore",
-    "position": "EDGE",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 280,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Johntay Cook",
-    "position": "WR",
-    "team": "Syracuse",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 281,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dezz Ricks",
-    "position": "CB",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 282,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kevin Coleman Jr.",
-    "position": "WR",
-    "team": "Missouri",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 283,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Drew Azzopardi",
-    "position": "OT",
-    "team": "Washington",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 284,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Gracen Halton",
-    "position": "DT",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 285,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Preston Hodge",
-    "position": "CB",
-    "team": "Colorado",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 286,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Riley Mahlman",
-    "position": "OT",
-    "team": "Wisconsin",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 287,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Behren Morton",
-    "position": "QB",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 288,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Evan Stewart",
-    "position": "WR",
-    "team": "Oregon",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 289,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Ricardo Hallman",
-    "position": "CB",
-    "team": "Wisconsin",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 290,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Brett Norfleet",
-    "position": "TE",
-    "team": "Missouri",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 291,
-    "scoutingReport": ""
-  },
-  {
-    "name": "L.T. Overton",
-    "position": "DL",
-    "team": "Alabama",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 292,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Olaivavega Ioane",
-    "position": "IOL",
-    "team": "Penn State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 293,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Zxavian Harris",
-    "position": "DL",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 294,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Kevin Concepcion",
-    "position": "WR",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 295,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Bear Alexander",
-    "position": "DL",
-    "team": "Oregon",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 296,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Nick Singleton",
-    "position": "RB",
-    "team": "Penn State",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 297,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Ruben Bain Jr.",
-    "position": "EDGE",
-    "team": "Miami",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "260",
-      "40Time": "4.70u"
-    },
-    "rating": 298,
-    "scoutingReport": "Ruben Bain Jr. is an explosive EDGE rusher with a relentless motor and versatile skill set. As a true freshman in 2023, he recorded 7.5 sacks and 12.5 TFLs, earning ACC Defensive Rookie of the Year. Despite injuries in 2024, he maintained an 80.0+ PFF pass-rush grade. At 6'3\", 260 lbs, Bain combines quickness off the ball with power, excelling in both run defense and pass rushing. His shorter arm length may limit him against longer NFL tackles, but his hustle and technique draw comparisons to Maxx Crosby. Bain projects as a first-round 2026 pick with double-digit sack potential."
-  },
-  {
-    "name": "DJ McKinney",
-    "position": "CB",
-    "team": "Colorado",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "185",
-      "40Time": "4.50u"
-    },
-    "rating": 299,
-    "scoutingReport": "DJ McKinney is an instinctive cornerback with excellent ball skills and versatility. Transferring from Oklahoma State to Colorado in 2025, he\u2019s expected to shine in Deion Sanders\u2019 secondary. In 2024, he recorded 2 INTs and 8 PBUs, with an 85.0 PFF coverage grade. At 6'0\", 185 lbs, McKinney has adequate size and fluid hips to stick with receivers in man coverage. His aggressive play style leads to occasional penalties, and he needs to improve tackling consistency (10 missed tackles in 2024). McKinney projects as a Day 2 2026 pick, ideal for press-man schemes with potential as a CB2 or nickel."
-  },
-  {
-    "name": "Deontate Lawson",
-    "position": "LB",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "235",
-      "40Time": "4.65u"
-    },
-    "rating": 300,
-    "scoutingReport": "Deontate Lawson is a versatile linebacker with elite instincts and playmaking ability. In 2024, he led Alabama with 92 tackles, 8 TFLs, 3 sacks, and 2 INTs, earning an 85.6 PFF overall grade. At 6'2\", 235 lbs, his sideline-to-sideline range and quick trigger make him a three-down threat, excelling in run defense (83.4 PFF run-defense grade) and coverage (7 PBUs). Lawson\u2019s leadership as a defensive signal-caller and ability to shed blocks highlight his MIKE linebacker fit. He needs to improve pass-rush consistency (12 pressures). A Day 2 2026 prospect, he projects as a starting NFL linebacker with Pro Bowl potential."
-  },
-  {
-    "name": "Eli Holstein",
-    "position": "QB",
-    "team": "Pittsburgh",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "225",
-      "40Time": "4.80u"
-    },
-    "rating": 301,
-    "scoutingReport": "Eli Holstein is a pro-style quarterback with a strong arm and improving pocket presence. In 2024, he threw for 2,595 yards, 21 TDs, and 8 INTs at Pittsburgh, earning an 83.2 PFF passing grade. At 6'4\", 225 lbs, his size and ability to deliver accurate deep balls (46.3% completion on 20+ yard throws) fit vertical offenses. Holstein\u2019s 2024 performance included a 344-yard, 4-TD game against Syracuse. He needs to improve pre-snap reads and reduce forced throws (8 INTs). A former Alabama transfer, he projects as a Day 3 2026 pick with QB2 upside."
-  },
-  {
-    "name": "Keldrick Faulk",
-    "position": "EDGE",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "255",
-      "40Time": "4.70u"
-    },
-    "rating": 302,
-    "scoutingReport": "Keldrick Faulk is a long, athletic EDGE rusher with upside as a pass-rush specialist. In 2024, he recorded 4.5 sacks, 9 TFLs, and an 80.7 PFF pass-rush grade at Auburn. At 6'6\", 255 lbs, his 34-inch arms and quick first step disrupt tackles, though his 15.2% pass-rush win rate needs consistency. Faulk\u2019s run defense (78.4 PFF grade) is solid, but he struggles against heavier linemen. A former four-star recruit, he projects as a Day 3 2026 pick, ideal as a 3-4 OLB or situational pass rusher with 6-8 sack potential."
-  },
-  {
-    "name": "Thaddeus Dixon",
-    "position": "CB",
-    "team": "North Carolina",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "190",
-      "40Time": "4.50u"
-    },
-    "rating": 303,
-    "scoutingReport": "Thaddeus Dixon is a physical cornerback with strong instincts and ball skills. In 2024, he recorded 3 INTs, 8 PBUs, and an 84.7 PFF coverage grade at North Carolina, limiting receivers to a 48.3% catch rate. At 6'0\", 190 lbs, his 4.50 speed and physicality shine in press coverage, while his 42 tackles show run-support ability. Dixon needs to improve zone awareness and reduce penalties (5 in 2024). A former JUCO standout, he projects as a Day 3 2026 pick, with potential as a CB2 or nickel in man-heavy schemes."
-  },
-  {
-    "name": "Zeke Berry",
-    "position": "CB",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "190",
-      "40Time": "4.45u"
-    },
-    "rating": 304,
-    "scoutingReport": "Zeke Berry is a versatile cornerback with quick feet and strong instincts. In 2024, he recorded 2 INTs, 6 PBUs, and an 83.9 PFF coverage grade at Michigan, showing promise in both man and zone schemes. At 6'0\", 190 lbs, his 4.45 speed and 34-inch arms allow him to disrupt receivers at the catch point. Berry\u2019s role expanded late in 2024 due to injuries, but he needs to improve tackling (10 missed tackles) and consistency in press coverage. A former four-star recruit, he projects as a Day 3 2026 pick, ideal as a nickel or CB2."
-  },
-  {
-    "name": "Earnest Greene III",
-    "position": "OT",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "320",
-      "40Time": "5.30u"
-    },
-    "rating": 305,
-    "scoutingReport": "Earnest Greene III is a massive offensive tackle with elite power and anchor strength. A 2024 starter at left tackle for Georgia, he earned an 83.4 PFF run-blocking grade, dominating in gap schemes. At 6'4\", 320 lbs, his ability to stonewall power rushers (1 sack allowed in 2024) highlights his 79.8 PFF pass-blocking grade. Greene\u2019s lateral agility needs improvement to handle speed rushers, and his 5.30 40-time reflects limited mobility. A former five-star recruit, he projects as a Day 2 2026 pick, with starting LT or guard potential."
-  },
-  {
-    "name": "Makhi Hughes",
-    "position": "RB",
-    "team": "Oregon",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "205",
-      "40Time": "4.50"
-    },
-    "rating": 306,
-    "scoutingReport": "Makhi Hughes is a versatile running back with strong vision and receiving skills. Transferring from Tulane to Oregon for 2025, he rushed for 1,411 yards and 15 TDs in 2024, earning an 88.2 PFF rushing grade. At 5'11\", 205 lbs, his 4.50 speed and 6.1 yards per carry highlight his elusiveness (28 forced missed tackles). Hughes added 22 receptions for 198 yards, showing three-down potential. His pass-blocking (65.8 PFF grade) needs work. A former three-star recruit, he projects as a Day 3 2026 pick, with RB2 upside in a zone scheme."
-  },
-  {
-    "name": "Ashton Stamps",
-    "position": "CB",
-    "team": "LSU",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.50u"
-    },
-    "rating": 307,
-    "scoutingReport": "Ashton Stamps is a physical cornerback with strong ball skills and tackling ability. In 2024, he recorded 2 INTs, 7 PBUs, and an 84.3 PFF coverage grade at LSU, excelling in press coverage. At 6'0\", 195 lbs, his 4.50 speed and 33-inch arms allow him to contest passes effectively (48.1% catch rate allowed). Stamps\u2019 39 tackles and 7.9% missed tackle rate show run-support reliability. He needs to improve zone coverage transitions. A former four-star recruit, he projects as a Day 3 2026 pick, with CB2 or nickel potential in man-heavy schemes."
-  },
-  {
-    "name": "Trey Zhun",
-    "position": "OT",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "315",
-      "40Time": "5.20u"
-    },
-    "rating": 308,
-    "scoutingReport": "Trey Zuhn III is a massive offensive tackle with strong run-blocking ability. A 2024 starter at Texas A&M, he earned an 82.1 PFF run-blocking grade, dominating in gap schemes. At 6'7\", 315 lbs, his long arms and power anchor against bull rushers, though he allowed 2 sacks in 2024 (79.3 PFF pass-blocking grade). Zuhn\u2019s 5.20 40-time and limited lateral agility make him vulnerable to speed rushers. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting RT or swing tackle. Note: Name corrected to 'Trey Zuhn III' based on Texas A&M roster."
-  },
-  {
-    "name": "Jaeden Roberts",
-    "position": "IOL",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "310",
-      "40Time": "5.15u"
-    },
-    "rating": 309,
-    "scoutingReport": "Jaeden Roberts is a versatile interior offensive lineman with quick hands and solid technique. A 2024 starter at guard for Alabama, he earned an 84.3 PFF pass-blocking grade, allowing zero sacks in 512 pass snaps. At 6'5\", 310 lbs, his 5.15 speed and ability to pull in space make him effective in zone schemes (81.9 PFF run-blocking grade). Roberts\u2019 shorter arm length may limit him to guard or center in the NFL. A former four-star recruit, he projects as a Day 2 2026 pick, with starting guard potential in a pass-heavy offense."
-  },
-  {
-    "name": "Jaydn Ott",
-    "position": "RB",
-    "team": "Oklahoma",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "205",
-      "40Time": "4.45"
-    },
-    "rating": 310,
-    "scoutingReport": "Jaydn Ott is a physical running back with explosive speed and contact balance. Transferring from Cal to Oklahoma for 2025, he rushed for 1,315 yards and 12 TDs in 2024, earning an 87.6 PFF rushing grade. At 6'0\", 205 lbs, his 4.45 40-time and 1.51 10-yard split highlight his burst (32 forced missed tackles). Ott\u2019s 25 receptions for 210 yards show three-down potential, though his pass-blocking (67.2 PFF grade) needs work. A former four-star recruit, he projects as a Day 3 2026 pick, with RB1 upside in a zone scheme."
-  },
-  {
-    "name": "Patrick Payton",
-    "position": "EDGE",
-    "team": "LSU",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "255",
-      "40Time": "4.70u"
-    },
-    "rating": 311,
-    "scoutingReport": "Patrick Payton is a long, athletic EDGE rusher with versatile pass-rush skills. Transferring from Florida State to LSU for 2025, he recorded 7 sacks, 11 TFLs, and an 84.1 PFF pass-rush grade in 2024. At 6'5\", 255 lbs, his 4.70 speed and 34-inch arms allow him to win with speed or power (15.3% pass-rush win rate). Payton\u2019s run defense (80.6 PFF grade) is solid, but he needs to add bulk to anchor against NFL tackles. No major character concerns noted. A former four-star recruit, he projects as a Day 2 2026 pick, ideal for 4-3 DE or 3-4 OLB."
-  },
-  {
-    "name": "Judge Collier",
-    "position": "CB",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "195",
-      "40Time": "4.50"
-    },
-    "rating": 312,
-    "scoutingReport": "Judge Collier is a physical cornerback with strong run support and ball skills. In 2024, he recorded 3 INTs, 8 PBUs, and an 85.2 PFF coverage grade at South Carolina, excelling in man coverage. At 6'1\", 195 lbs, his 4.50 speed and 33-inch arms allow him to contest passes (47.2% catch rate allowed). Collier\u2019s 44 tackles and 9.1% missed tackle rate highlight his run-game impact. He needs to improve zone transitions. A former three-star recruit, he projects as a Day 3 2026 pick, with CB2 or boundary corner upside."
-  },
-  {
-    "name": "Jermond McCoy",
-    "position": "CB",
-    "team": "Tennessee",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "190",
-      "40Time": "4.45"
-    },
-    "rating": 313,
-    "scoutingReport": "Jermond McCoy is a smooth cornerback with strong instincts and fluid hips. In 2024, he recorded 3 INTs, 9 PBUs, and an 85.6 PFF coverage grade at Tennessee, limiting receivers to a 46.2% catch rate. At 6'0\", 190 lbs, his 4.45 40-time and quick feet allow him to mirror receivers in man coverage, while his zone awareness helps him jump routes. McCoy\u2019s physicality is adequate, but he struggles against bigger WRs at the catch point and needs to reduce missed tackles (10 in 2024, 9.8% rate). A former Oregon transfer, he projects as a Day 3 2026 pick, with CB2 or nickel upside in zone-heavy schemes."
-  },
-  {
-    "name": "Jack Velling",
-    "position": "TE",
-    "team": "Michigan State",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "245",
-      "40Time": "4.70u"
-    },
-    "rating": 314,
-    "scoutingReport": "Jack Velling is a versatile tight end with strong receiving skills and reliable hands. Transferring from Oregon State to Michigan State in 2024, he recorded 42 receptions for 598 yards and 6 TDs, earning an 83.7 PFF receiving grade. At 6'5\", 245 lbs, his 4.70 speed and 35-inch vertical create mismatches against linebackers, while his 78.2 PFF run-blocking grade suits in-line roles. Velling\u2019s route-running is smooth, but he needs to improve blocking leverage against NFL edge rushers. A former three-star recruit, he projects as a Day 3 2026 pick, with H-back or Y-TE upside."
-  },
-  {
-    "name": "Duce Chestnut",
-    "position": "CB",
-    "team": "Syracuse",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.50"
-    },
-    "rating": 315,
-    "scoutingReport": "Duce Chestnut is a physical cornerback with strong instincts and ball skills. Returning to Syracuse in 2024 after a stint at LSU, he recorded 3 INTs, 8 PBUs, and an 84.9 PFF coverage grade, limiting receivers to a 47.3% catch rate. At 6'0\", 195 lbs, his 4.50 40-time and 33-inch arms allow him to excel in press coverage. Chestnut\u2019s 41 tackles show run-support ability, but he needs to reduce missed tackles (9 in 2024, 9.6% rate). A former four-star recruit, he projects as a Day 3 2026 pick, with CB2 or nickel potential in man-heavy schemes."
-  },
-  {
-    "name": "DJ Campbell",
-    "position": "IOL",
-    "team": "Texas",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "305",
-      "40Time": "5.05u"
-    },
-    "rating": 316,
-    "scoutingReport": "DJ Campbell is an athletic interior offensive lineman with elite movement skills. A 2024 starter at guard for Texas, he earned an 85.1 PFF run-blocking grade, excelling in pulling and reaching the second level. At 6'3\", 305 lbs, his 5.05 speed, 1.72 10-yard split, and 7.38 3-cone time allow him to mirror pass rushers (0 sacks allowed, 81.6 PFF pass-blocking grade). Campbell\u2019s ability to block in space makes him ideal for zone schemes, though he needs to add strength for power gaps. A former four-star recruit, he projects as a Day 2 2026 pick, with starting guard potential."
-  },
-  {
-    "name": "Maurice Westmoreland",
-    "position": "EDGE",
-    "team": "Tulane",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "250",
-      "40Time": "4.70u"
-    },
-    "rating": 317,
-    "scoutingReport": "Maurice Westmoreland is an explosive EDGE rusher with a quick first step. In 2024, he recorded 6.5 sacks, 9 TFLs, and an 83.2 PFF pass-rush grade at Tulane. At 6'2\", 250 lbs, his 4.70 speed and 33-inch arms allow him to disrupt tackles, though his 14.1% pass-rush win rate needs consistency. Westmoreland\u2019s run defense (80.7 PFF grade) is solid, but he needs to develop counter moves. No Virginia Tech connection noted; he\u2019s a Tulane native. A former three-star recruit, he projects as a Day 3 2026 pick, suited for 4-3 DE or 3-4 OLB roles."
-  },
-  {
-    "name": "Jalen Catalon",
-    "position": "S",
-    "team": "UNLV",
-    "stats": {
-      "height": "5'11\"",
-      "weight": "200",
-      "40Time": "4.50"
-    },
-    "rating": 318,
-    "scoutingReport": "Jalen Catalon is a hard-hitting safety with strong instincts and ball skills. Transferring from Arkansas to UNLV via Texas for 2024, he recorded 68 tackles, 3 INTs, and an 84.7 PFF coverage grade. At 5'11\", 200 lbs, his 4.50 40-time and physicality make him a force in run support (81.2 PFF run-defense grade) and in-the-box coverage. Catalon\u2019s injury history (shoulder, knee issues) and occasional over-aggressiveness (8 missed tackles) are concerns. A former four-star recruit, he projects as a Day 3 2026 pick, with potential as a starting SS or special teams contributor."
-  },
-  {
-    "name": "Devonte Ross",
-    "position": "WR",
-    "team": "Troy",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "175",
-      "40Time": "4.40"
-    },
-    "rating": 319,
-    "scoutingReport": "Devonte Ross is an explosive wide receiver with elite speed and agility. In 2024, he recorded 78 receptions, 1,021 yards, and 9 TDs at Troy, earning an 87.3 PFF receiving grade. At 5'10\", 175 lbs, his 4.40 40-time and 4.05 shuttle make him a YAC threat (8.2 yards after catch). Ross\u2019s quick cuts and acceleration shine in the slot, but his smaller frame and hesitation at the line need addressing. No Penn State connection noted. A former three-star recruit, he projects as a Day 3 2026 pick, with slot WR and returner upside."
-  },
-  {
-    "name": "Bryce Foster",
-    "position": "OC",
-    "team": "Kansas",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "315",
-      "40Time": "5.20u"
-    },
-    "rating": 320,
-    "scoutingReport": "Bryce Foster is a powerful center with elite strength and technical skill. Transferring from Texas A&M to Kansas in 2024, he earned an 84.8 PFF run-blocking grade, anchoring a top-25 rushing attack. At 6'5\", 315 lbs, his 5.20 speed and 32-inch arms allow him to control nose tackles in pass protection (0 sacks allowed, 81.4 PFF pass-blocking grade). Foster\u2019s ability to reach the second level is a strength, but he needs to improve snap consistency. A former four-star recruit, he projects as a Day 2 2026 pick, with starting center potential."
-  },
-  {
-    "name": "Dane Key",
-    "position": "WR",
-    "team": "Nebraska",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "195",
-      "40Time": "4.50"
-    },
-    "rating": 321,
-    "scoutingReport": "Dane Key is a polished wide receiver with strong hands and route-running ability. In 2024 at Kentucky, he recorded 65 receptions, 918 yards, and 7 TDs, earning an 85.4 PFF receiving grade. His 6'3\", 195-lb frame, 4.50 40-time, and 4.06 shuttle highlight his agility, making him effective on deep routes (50% contested catch rate). Key\u2019s ability to force missed tackles (154 over two years) shows YAC prowess, but he needs to attack holes faster. He projects as a Day 3 2026 pick with X or Z receiver upside."
-  },
-  {
-    "name": "Christian Grey",
-    "position": "CB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "190",
-      "40Time": "4.50u"
-    },
-    "rating": 322,
-    "scoutingReport": "Christian Grey is a promising cornerback with fluid movement and strong coverage skills. In 2024 at Notre Dame, he recorded 2 INTs, 7 PBUs, and an 84.3 PFF coverage grade, limiting receivers to a 46.8% catch rate. His 6'0\", 190-lb frame and 4.50 speed make him effective in press and zone coverage. Grey\u2019s run support (35 tackles) is solid, but he lacks elite explosiveness and needs to improve tackling consistency (8.9% missed tackle rate). He projects as a Day 3 2026 pick with CB2 or nickel potential."
-  },
-  {
-    "name": "Jager Burton",
-    "position": "IOL",
-    "team": "Kentucky",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "305",
-      "40Time": "5.15u"
-    },
-    "rating": 324,
-    "scoutingReport": "Jager Burton is a versatile interior offensive lineman with strong fundamentals. A 2024 starter at guard for Kentucky, he earned an 83.2 PFF run-blocking grade, excelling in zone schemes. His 6'4\", 305-lb frame and 5.15 speed help him anchor in pass protection (0 sacks allowed, 81.3 PFF pass-blocking grade). Burton\u2019s ability to play center or guard adds value, but he needs to improve leverage against bull rushers. A former four-star recruit, he projects as a Day 3 2026 pick with starting guard potential."
-  },
-  {
-    "name": "Treydan Stukes",
-    "position": "CB",
-    "team": "Arizona",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "195",
-      "40Time": "4.50u"
-    },
-    "rating": 325,
-    "scoutingReport": "Treydan Stukes is a long cornerback with strong press-coverage skills. In 2024 at Arizona, he recorded 3 INTs, 9 PBUs, and an 85.0 PFF coverage grade, limiting receivers to a 45.7% catch rate. His 6'2\", 195-lb frame and 4.50 speed make him effective in man coverage. Stukes\u2019 40 tackles show run-support ability, but he needs to reduce missed tackles (10 in 2024, 9.3% rate). A former three-star recruit, he projects as a Day 3 2026 pick with CB2 or boundary corner upside."
-  },
-  {
-    "name": "Frenando Carmona Jr.",
-    "position": "IOL",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "315",
-      "40Time": "5.25u"
-    },
-    "rating": 326,
-    "scoutingReport": "Frenando Carmona Jr. is a powerful interior offensive lineman with strong run-blocking ability. A 2024 starter at tackle and guard for Arkansas, he earned an 82.8 PFF run-blocking grade, fitting their gap-heavy scheme. His 6'5\", 315-lb frame and strength shine in pass protection (1 sack allowed, 80.5 PFF pass-blocking grade). Carmona\u2019s 5.25 40-time and limited mobility suggest a move to guard in the NFL. A former three-star recruit, he projects as a Day 3 2026 pick with backup guard potential."
-  },
-  {
-    "name": "Bryce Anderson",
-    "position": "S",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.50"
-    },
-    "rating": 327,
-    "scoutingReport": "Bryce Anderson is a versatile safety with strong instincts and physicality. In 2024 at Texas A&M, he recorded 62 tackles, 3 INTs, and an 85.2 PFF coverage grade, excelling in both deep and box roles. His 6'0\", 195-lb frame and 4.50 40-time allow him to cover tight ends and support the run (80.9 PFF run-defense grade). Anderson\u2019s occasional over-aggressiveness leads to missed tackles (7.8% rate). A former four-star recruit, he projects as a Day 3 2026 pick with potential as a starting SS or special teams contributor."
-  },
-  {
-    "name": "John Michael Gyllenborg",
-    "position": "TE",
-    "team": "Wyoming",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "245",
-      "40Time": "4.70u"
-    },
-    "rating": 328,
-    "scoutingReport": "John Michael Gyllenborg is a reliable tight end with strong receiving skills. In 2024 at Wyoming, he recorded 38 receptions, 512 yards, and 5 TDs, earning an 83.1 PFF receiving grade. His 6'5\", 245-lb frame and 4.70 speed create mismatches against linebackers, while his 78.6 PFF run-blocking grade suits in-line roles. Gyllenborg needs to improve blocking leverage against edge rushers. A former three-star recruit, he projects as a Day 3 2026 pick with potential as a rotational Y-TE or H-back."
-  },
-  {
-    "name": "Raion Strader",
-    "position": "CB",
-    "team": "Auburn",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "185",
-      "40Time": "4.50u"
-    },
-    "rating": 329,
-    "scoutingReport": "Raion Strader is a quick cornerback with solid coverage instincts. In 2024 at Auburn, he recorded 2 INTs, 8 PBUs, and an 84.0 PFF coverage grade, limiting receivers to a 47.1% catch rate. His 6'0\", 185-lb frame and 4.50 speed suit zone and off-man schemes. Strader\u2019s 36 tackles show run-support willingness, but he needs to reduce missed tackles (9.1% rate) and improve physicality against bigger receivers. A former three-star recruit, he projects as a Day 3 2026 pick with nickel or CB2 potential."
-  },
-  {
-    "name": "Diego Pounds",
-    "position": "OT",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "315",
-      "40Time": "5.20u"
-    },
-    "rating": 330,
-    "scoutingReport": "Diego Pounds is a powerful offensive tackle with strong run-blocking ability. In 2024 at Ole Miss, he earned an 82.5 PFF run-blocking grade, excelling in gap schemes. His 6'6\", 315-lb frame and strength shine in pass protection (2 sacks allowed, 80.3 PFF pass-blocking grade). Pounds\u2019 5.20 40-time and moderate agility suggest a need for improved footwork against speed rushers. A former three-star recruit, he projects as a Day 3 2026 pick with potential as a starting RT or swing tackle."
-  },
-  {
-    "name": "Kanye Udoh",
-    "position": "RB",
-    "team": "Arizona State",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "215",
-      "40Time": "4.50"
-    },
-    "rating": 331,
-    "scoutingReport": "Kanye Udoh is a physical running back with strong vision and burst. In 2024 at Arizona State, he rushed for 921 yards and 9 TDs, earning an 85.8 PFF rushing grade. His 6'0\", 215-lb frame and 4.50 40-time allow him to break tackles (28 forced missed tackles) and hit holes quickly. Udoh\u2019s 18 receptions for 156 yards show three-down potential, but his pass-blocking (67.5 PFF grade) needs work. A former three-star recruit, he projects as a Day 3 2026 pick with RB2 upside."
-  },
-  {
-    "name": "J Michael Sturdivant",
-    "position": "WR",
-    "team": "Florida",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "205",
-      "40Time": "4.50"
-    },
-    "rating": 332,
-    "scoutingReport": "J Michael Sturdivant is a smooth wide receiver with strong route-running and ball skills. Transferring from UCLA to Florida for 2024, he recorded 58 receptions, 762 yards, and 6 TDs, earning an 84.5 PFF receiving grade. His 6'3\", 205-lb frame and 4.50 40-time help him win contested catches (55% rate). Sturdivant\u2019s agility (4.15 shuttle) aids separation, but he needs to improve physicality against press coverage. A former four-star recruit, he projects as a Day 3 2026 pick with X receiver upside."
-  },
-  {
-    "name": "O'Mega Blake",
-    "position": "WR",
-    "team": "Arkansas",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "190",
-      "40Time": "4.50"
-    },
-    "rating": 333,
-    "scoutingReport": "O\u2019Mega Blake is a speedy wide receiver with strong deep-ball tracking. In 2024 at Arkansas, he recorded 48 receptions, 732 yards, and 7 TDs, earning an 84.8 PFF receiving grade. His 6'2\", 190-lb frame and 4.50 40-time make him a vertical threat (8.7 yards after catch). Blake\u2019s route-running needs polish to create separation against press coverage. A former three-star recruit, he projects as a Day 3 2026 pick with potential as a Z receiver or deep-threat specialist."
-  },
-  {
-    "name": "Noah Thomas",
-    "position": "WR",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "200",
-      "40Time": "4.50"
-    },
-    "rating": 334,
-    "scoutingReport": "Noah Thomas is a tall wide receiver with strong contested-catch ability. In 2024 at Texas A&M before transferring to Georgia, he recorded 38 receptions, 512 yards, and 5 TDs, earning an 83.2 PFF receiving grade. His 6'5\", 200-lb frame and 4.50 40-time make him a red-zone threat (55% contested catch rate). Thomas\u2019 quickness and balance help him gain yards after catch, but he needs to refine route-running to beat press coverage. A former four-star recruit, he projects as a Day 3 2026 pick with X receiver upside."
-  },
-  {
-    "name": "Trey Moore",
-    "position": "EDGE",
-    "team": "Texas",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "245",
-      "40Time": "4.65u"
-    },
-    "rating": 335,
-    "scoutingReport": "Trey Moore is an explosive EDGE rusher with a quick first step. In 2024 at Texas, he recorded 7 sacks, 10 TFLs, and an 84.7 PFF pass-rush grade. His 6'3\", 245-lb frame and 4.65 speed generate a 15.1% pass-rush win rate, disrupting tackles. Moore\u2019s run defense (80.8 PFF grade) is solid, but he needs to add strength to anchor against NFL linemen. A former three-star recruit, he projects as a Day 3 2026 pick, suited for 4-3 DE or 3-4 OLB roles."
-  },
-  {
-    "name": "Nic Anderson",
-    "position": "WR",
-    "team": "LSU",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "205",
-      "40Time": "4.50"
-    },
-    "rating": 336,
-    "scoutingReport": "Nic Anderson is a physical wide receiver with strong ball skills. In 2024 at Oklahoma before transferring to LSU, he recorded 42 receptions, 648 yards, and 6 TDs, earning an 84.0 PFF receiving grade. His 6'4\", 205-lb frame and 4.50 40-time help him win jump balls (58% contested catch rate). Anderson\u2019s route-running needs polish to create separation, particularly against press coverage. A former three-star recruit, he projects as a Day 3 2026 pick with X or Z receiver upside."
-  },
-  {
-    "name": "Nyckoles Harbor",
-    "position": "WR",
-    "team": "South Carolina",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "235",
-      "40Time": "4.40"
-    },
-    "rating": 337,
-    "scoutingReport": "Nyckoles Harbor is an athletic freak at wide receiver with elite speed and size. In 2024 at South Carolina, he recorded 35 receptions, 582 yards, and 5 TDs, earning an 83.5 PFF receiving grade. His 6'5\", 235-lb frame and 4.40 40-time make him a matchup nightmare (9.2 yards after catch). Harbor\u2019s raw route-running and limited experience require development, but his upside is immense. A former five-star recruit, he projects as a Day 3 2026 pick with X receiver potential."
-  },
-  {
-    "name": "Nico Iamaleava",
-    "position": "QB",
-    "team": "UCLA",
-    "stats": {
-      "height": "6'6\"",
-      "weight": "205",
-      "40Time": "4.65u"
-    },
-    "rating": 338,
-    "scoutingReport": "Nico Iamaleava is a strong-armed quarterback with good mobility. In 2024 at Tennessee before transferring to UCLA, he threw for 2,912 yards, 18 TDs, and 7 INTs, earning an 86.2 PFF passing grade. His 6'6\", 205-lb frame and 4.65 speed allow him to extend plays (412 rushing yards, 4 TDs). Iamaleava\u2019s accuracy on deep throws (48.5% on 20+ yard passes) is promising, but he needs to improve pre-snap reads (6.5% sack rate). A former five-star recruit, he projects as a Day 2 2026 pick with QB1 upside."
-  },
-  {
-    "name": "Conner Weigman",
-    "position": "QB",
-    "team": "Houston",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "220",
-      "40Time": "4.70u"
-    },
-    "rating": 339,
-    "scoutingReport": "Conner Weigman is a rhythm passer with strong accuracy and mobility. In 2024 at Texas A&M before transferring to Houston, he threw for 2,784 yards, 20 TDs, and 6 INTs, earning an 86.8 PFF passing grade. His 6'3\", 220-lb frame and 4.70 speed allow him to escape pressure (352 rushing yards). Weigman\u2019s short-to-intermediate accuracy (68.2% completion) is a strength, but his deep-ball consistency (45.1% on 20+ yard throws) needs work. A former five-star recruit, he projects as a Day 3 2026 pick with QB2 upside."
-  },
-  {
-    "name": "Monore Freeling",
-    "position": "OT",
-    "team": "Georgia",
-    "stats": {
-      "height": "6'7\"",
-      "weight": "310",
-      "40Time": "5.15u"
-    },
-    "rating": 340,
-    "scoutingReport": "Monroe Freeling is a massive offensive tackle with strong run-blocking ability. In 2024 at Georgia, he earned an 83.7 PFF run-blocking grade, excelling in gap schemes. His 6'7\", 310-lb frame and long arms anchor against power rushers (1 sack allowed, 81.4 PFF pass-blocking grade). Freeling\u2019s 5.15 40-time and developing footwork make him vulnerable to speed rushers. A former four-star recruit, he projects as a Day 3 2026 pick with potential as a starting RT or swing tackle."
-  },
-  {
-    "name": "Nyziah Hunter",
-    "position": "WR",
-    "team": "Nebraska",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "4.50u"
-    },
-    "rating": 341,
-    "scoutingReport": "Nyziah Hunter is a versatile wide receiver with strong route-running and hands. In 2024 at Cal before transferring to Nebraska, he recorded 45 receptions, 672 yards, and 5 TDs, earning an 83.8 PFF receiving grade. His 6'2\", 200-lb frame and 4.50 speed help him win contested catches (52% rate). Hunter\u2019s agility aids separation, but he needs to improve physicality against press coverage. A former three-star recruit, he projects as a Day 3 2026 pick with slot or Z receiver upside."
-  },
-  {
-    "name": "Darius Taylor",
-    "position": "RB",
-    "team": "Minnesota",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "215",
-      "40Time": "4.50"
-    },
-    "rating": 342,
-    "scoutingReport": "Darius Taylor is a versatile running back with strong vision and explosiveness. In 2024 at Minnesota, he rushed for 1,124 yards and 11 TDs, earning an 87.1 PFF rushing grade, and added 20 receptions for 182 yards. His 6'0\", 215-lb frame and 4.50 40-time enable him to break tackles (32 forced missed tackles) and hit holes quickly. Taylor\u2019s pass-blocking (68.4 PFF grade) needs improvement for three-down roles. A former four-star recruit, he projects as a Day 3 2026 pick with RB1 potential in a committee."
-  },
-  {
-    "name": "Anto Saka",
-    "position": "EDGE",
-    "team": "Northwestern",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "255",
-      "40Time": "4.70u"
-    },
-    "rating": 343,
-    "scoutingReport": "Anto Saka is a high-motor EDGE rusher with strong run-defense skills. In 2024 at Northwestern, he recorded 5 sacks, 8 TFLs, and an 83.2 PFF pass-rush grade. His 6'4\", 255-lb frame and 4.70 speed allow him to set the edge (81.5 PFF run-defense grade) and generate a 13.4% pass-rush win rate. Saka needs to develop a broader pass-rush move set to counter NFL tackles. A former three-star recruit, he projects as a Day 3 2026 pick, suited for 4-3 DE or 3-4 OLB roles."
-  },
-  {
-    "name": "CJ Donaldson",
-    "position": "RB",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "235",
-      "40Time": "4.60u"
-    },
-    "rating": 344,
-    "scoutingReport": "CJ Donaldson is a powerful running back with physicality and short-yardage prowess. In 2024 at West Virginia before transferring to Ohio State, he rushed for 912 yards and 10 TDs, earning an 85.9 PFF rushing grade. His 6'2\", 235-lb frame and 4.60 speed make him a tackle-breaker (28 forced missed tackles). Donaldson\u2019s 12 receptions for 108 yards show limited receiving skills, and his pass-blocking (65.7 PFF grade) needs work. He projects as a Day 3 2026 pick with RB2 upside."
-  },
-  {
-    "name": "Dontae Balfour",
-    "position": "CB",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "185",
-      "40Time": "4.50"
-    },
-    "rating": 345,
-    "scoutingReport": "Dontae Balfour is a lanky cornerback with strong zone-coverage skills. In 2024 at Texas Tech, he recorded 3 INTs, 9 PBUs, and an 84.8 PFF coverage grade, limiting receivers to a 46.1% catch rate. His 6'1\", 185-lb frame and 4.50 40-time suit off-man and zone schemes. Balfour\u2019s 35 tackles show run-support ability, but he needs to improve physicality against bigger receivers (8.7% missed tackle rate). A former three-star recruit, he projects as a Day 3 2026 pick with CB2 or nickel potential."
-  },
-  {
-    "name": "Khalil Barnes",
-    "position": "S",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "195",
-      "40Time": "4.50u"
-    },
-    "rating": 346,
-    "scoutingReport": "Khalil Barnes is a versatile safety with strong instincts and coverage skills. In 2024 at Clemson, he recorded 2 INTs, 6 PBUs, and an 85.3 PFF coverage grade, excelling in two-high schemes. His 6'0\", 195-lb frame and 4.50 speed allow him to cover tight ends and support the run (80.9 PFF run-defense grade). Barnes\u2019 42 tackles are solid, but he needs to reduce missed tackles (9.2% rate). A former three-star recruit, he projects as a Day 3 2026 pick with starting FS potential."
-  },
-  {
-    "name": "TJ Metcalf",
-    "position": "S",
-    "team": "Michigan",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "205",
-      "40Time": "4.55"
-    },
-    "rating": 347,
-    "scoutingReport": "TJ Metcalf is a physical safety with strong tackling and box presence. In 2024 at Michigan, he recorded 58 tackles, 2 INTs, and an 84.7 PFF run-defense grade, thriving near the line of scrimmage. His 6'0\", 205-lb frame and 4.55 40-time suit strong safety roles, though his coverage (80.2 PFF grade) needs refinement against slot receivers. Metcalf\u2019s low missed tackle rate (6.8%) is a strength. A former three-star recruit, he projects as a Day 3 2026 pick with SS or special teams upside."
-  },
-  {
-    "name": "Theran Johnson",
-    "position": "CB",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "190",
-      "40Time": "4.45"
-    },
-    "rating": 348,
-    "scoutingReport": "Theran Johnson is a quick cornerback with strong man-coverage skills. In 2024 at Oregon, he recorded 3 INTs, 8 PBUs, and an 86.0 PFF coverage grade, limiting receivers to a 45.3% catch rate. His 6'1\", 190-lb frame and 4.45 40-time make him effective in press coverage. Johnson\u2019s 37 tackles show run-support willingness, but he needs to reduce penalties (5 in 2024). A former three-star recruit, he projects as a Day 3 2026 pick with CB2 or boundary corner potential."
-  },
-  {
-    "name": "Isaiah Horton",
-    "position": "WR",
-    "team": "Alabama",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "205",
-      "40Time": "4.50u"
-    },
-    "rating": 349,
-    "scoutingReport": "Isaiah Horton is a tall wide receiver with strong hands and body control. In 2024 at Alabama, he recorded 52 receptions, 784 yards, and 7 TDs, earning an 85.1 PFF receiving grade. His 6'4\", 205-lb frame and 4.50 speed help him win contested catches (57% rate). Horton\u2019s route-running needs refinement to beat press coverage, but his red-zone presence is a strength. A former three-star recruit, he projects as a Day 3 2026 pick with X receiver upside."
-  },
-  {
-    "name": "Kapena Gushiken",
-    "position": "S",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "5'10\"",
-      "weight": "195",
-      "40Time": "4.45"
-    },
-    "rating": 350,
-    "scoutingReport": "Kapena Gushiken is a quick safety with elite speed and coverage instincts. In 2024 at Ole Miss, he recorded 3 INTs, 7 PBUs, and an 85.8 PFF coverage grade, limiting receivers to a 44.7% catch rate. His 5'10\", 195-lb frame and 4.45 40-time, with a reported 21 mph top speed at Senior Bowl practices, make him a sideline-to-sideline playmaker. Gushiken\u2019s 40 tackles show run-support ability, but he needs to improve tackling consistency (8.3% missed tackle rate). He projects as a Day 3 2026 pick with nickel or FS potential."
+    "rating": 52,
+    "scoutingReport": "2027 draft-eligible TE prospect from Temple added from the updated draft board."
   }
 ]
