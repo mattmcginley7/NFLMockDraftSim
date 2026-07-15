@@ -2422,5 +2422,605 @@
     },
     "rating": 202,
     "scoutingReport": "2027 draft-eligible WR prospect from Florida State added from the updated draft board."
+  },
+  {
+    "name": "Nyckoles Harbor",
+    "position": "WR",
+    "team": "South Carolina",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 203,
+    "scoutingReport": "2027 draft-eligible WR prospect from South Carolina added from the updated draft board."
+  },
+  {
+    "name": "Jimarion McCrimon",
+    "position": "OT",
+    "team": "NC State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 204,
+    "scoutingReport": "2027 draft-eligible OT prospect from NC State added from the updated draft board."
+  },
+  {
+    "name": "Owen Heinecke",
+    "position": "LB",
+    "team": "Oklahoma",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 205,
+    "scoutingReport": "2027 draft-eligible LB prospect from Oklahoma added from the updated draft board."
+  },
+  {
+    "name": "Garrett Oakley",
+    "position": "TE",
+    "team": "Kansas State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 206,
+    "scoutingReport": "2027 draft-eligible TE prospect from Kansas State added from the updated draft board."
+  },
+  {
+    "name": "J'Mond Tapp",
+    "position": "EDGE",
+    "team": "Memphis",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 207,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Memphis added from the updated draft board."
+  },
+  {
+    "name": "KJ Duff",
+    "position": "WR",
+    "team": "Rutgers",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 208,
+    "scoutingReport": "2027 draft-eligible WR prospect from Rutgers added from the updated draft board."
+  },
+  {
+    "name": "Demond Williams",
+    "position": "QB",
+    "team": "Washington",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 209,
+    "scoutingReport": "2027 draft-eligible QB prospect from Washington added from the updated draft board."
+  },
+  {
+    "name": "Ja'bril Rawls",
+    "position": "CB",
+    "team": "Florida State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 210,
+    "scoutingReport": "2027 draft-eligible CB prospect from Florida State added from the updated draft board."
+  },
+  {
+    "name": "Hero Kanu",
+    "position": "DT",
+    "team": "Texas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 211,
+    "scoutingReport": "2027 draft-eligible DT prospect from Texas added from the updated draft board."
+  },
+  {
+    "name": "Ty Bryant",
+    "position": "S",
+    "team": "Kentucky",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 212,
+    "scoutingReport": "2027 draft-eligible S prospect from Kentucky added from the updated draft board."
+  },
+  {
+    "name": "John Mateer",
+    "position": "QB",
+    "team": "Oklahoma",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 213,
+    "scoutingReport": "2027 draft-eligible QB prospect from Oklahoma added from the updated draft board."
+  },
+  {
+    "name": "Edrees Farooq",
+    "position": "S",
+    "team": "Tennessee",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 214,
+    "scoutingReport": "2027 draft-eligible S prospect from Tennessee added from the updated draft board."
+  },
+  {
+    "name": "Jared Richardson",
+    "position": "WR",
+    "team": "Duke",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 215,
+    "scoutingReport": "2027 draft-eligible WR prospect from Duke added from the updated draft board."
+  },
+  {
+    "name": "Carson Hinzman",
+    "position": "OC",
+    "team": "Ohio State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 216,
+    "scoutingReport": "2027 draft-eligible OC prospect from Ohio State added from the updated draft board."
+  },
+  {
+    "name": "Ray Coney",
+    "position": "LB",
+    "team": "Texas A&M",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 217,
+    "scoutingReport": "2027 draft-eligible LB prospect from Texas A&M added from the updated draft board."
+  },
+  {
+    "name": "Bryson Washington",
+    "position": "RB",
+    "team": "Auburn",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 218,
+    "scoutingReport": "2027 draft-eligible RB prospect from Auburn added from the updated draft board."
+  },
+  {
+    "name": "Eddy Pierre-Louis",
+    "position": "OG",
+    "team": "Oklahoma",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 219,
+    "scoutingReport": "2027 draft-eligible OG prospect from Oklahoma added from the updated draft board."
+  },
+  {
+    "name": "Fluff Bothwell",
+    "position": "RB",
+    "team": "Mississippi State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 220,
+    "scoutingReport": "2027 draft-eligible RB prospect from Mississippi State added from the updated draft board."
+  },
+  {
+    "name": "Jordan Ross",
+    "position": "EDGE",
+    "team": "LSU",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 221,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from LSU added from the updated draft board."
+  },
+  {
+    "name": "Earnest Greene III",
+    "position": "OT",
+    "team": "Georgia",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 222,
+    "scoutingReport": "2027 draft-eligible OT prospect from Georgia added from the updated draft board."
+  },
+  {
+    "name": "Stephiylan Green",
+    "position": "DT",
+    "team": "LSU",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 223,
+    "scoutingReport": "2027 draft-eligible DT prospect from LSU added from the updated draft board."
+  },
+  {
+    "name": "Drew Bobo",
+    "position": "OC",
+    "team": "Georgia",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 224,
+    "scoutingReport": "2027 draft-eligible OC prospect from Georgia added from the updated draft board."
+  },
+  {
+    "name": "Shadre Hurst",
+    "position": "OG",
+    "team": "Houston",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 225,
+    "scoutingReport": "2027 draft-eligible OG prospect from Houston added from the updated draft board."
+  },
+  {
+    "name": "Dylan Lonergan",
+    "position": "QB",
+    "team": "Rutgers",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 226,
+    "scoutingReport": "2027 draft-eligible QB prospect from Rutgers added from the updated draft board."
+  },
+  {
+    "name": "Sheridan Wilson",
+    "position": "OC",
+    "team": "Texas Tech",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 227,
+    "scoutingReport": "2027 draft-eligible OC prospect from Texas Tech added from the updated draft board."
+  },
+  {
+    "name": "Smith Snowden",
+    "position": "CB",
+    "team": "Michigan",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 228,
+    "scoutingReport": "2027 draft-eligible CB prospect from Michigan added from the updated draft board."
+  },
+  {
+    "name": "Jaden Greathouse",
+    "position": "WR",
+    "team": "Notre Dame",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 229,
+    "scoutingReport": "2027 draft-eligible WR prospect from Notre Dame added from the updated draft board."
+  },
+  {
+    "name": "Isaac Smith",
+    "position": "S",
+    "team": "Mississippi State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 230,
+    "scoutingReport": "2027 draft-eligible S prospect from Mississippi State added from the updated draft board."
+  },
+  {
+    "name": "DeSean Bishop",
+    "position": "RB",
+    "team": "Tennessee",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 231,
+    "scoutingReport": "2027 draft-eligible RB prospect from Tennessee added from the updated draft board."
+  },
+  {
+    "name": "Jahiem Johnson",
+    "position": "CB",
+    "team": "Arkansas",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 232,
+    "scoutingReport": "2027 draft-eligible CB prospect from Arkansas added from the updated draft board."
+  },
+  {
+    "name": "Wendell Gregory",
+    "position": "EDGE",
+    "team": "Kansas State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 233,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Kansas State added from the updated draft board."
+  },
+  {
+    "name": "Cole Spence",
+    "position": "TE",
+    "team": "Vanderbilt",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 234,
+    "scoutingReport": "2027 draft-eligible TE prospect from Vanderbilt added from the updated draft board."
+  },
+  {
+    "name": "Jyaire Hill",
+    "position": "CB",
+    "team": "Michigan",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 235,
+    "scoutingReport": "2027 draft-eligible CB prospect from Michigan added from the updated draft board."
+  },
+  {
+    "name": "Dontay Joyner",
+    "position": "CB",
+    "team": "Maryland",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 236,
+    "scoutingReport": "2027 draft-eligible CB prospect from Maryland added from the updated draft board."
+  },
+  {
+    "name": "Ikenna Ezeogu",
+    "position": "DT",
+    "team": "Penn State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 237,
+    "scoutingReport": "2027 draft-eligible DT prospect from Penn State added from the updated draft board."
+  },
+  {
+    "name": "Lyndon Cooper",
+    "position": "OC",
+    "team": "Vanderbilt",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 238,
+    "scoutingReport": "2027 draft-eligible OC prospect from Vanderbilt added from the updated draft board."
+  },
+  {
+    "name": "Cade Uluave",
+    "position": "LB",
+    "team": "BYU",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 239,
+    "scoutingReport": "2027 draft-eligible LB prospect from BYU added from the updated draft board."
+  },
+  {
+    "name": "Mark Fletcher Jr.",
+    "position": "RB",
+    "team": "Miami (FL)",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 240,
+    "scoutingReport": "2027 draft-eligible RB prospect from Miami (FL) added from the updated draft board."
+  },
+  {
+    "name": "Nico Iamaleava",
+    "position": "QB",
+    "team": "UCLA",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 241,
+    "scoutingReport": "2027 draft-eligible QB prospect from UCLA added from the updated draft board."
+  },
+  {
+    "name": "Dave Iuli",
+    "position": "OG",
+    "team": "Oregon",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 242,
+    "scoutingReport": "2027 draft-eligible OG prospect from Oregon added from the updated draft board."
+  },
+  {
+    "name": "Arion Carter",
+    "position": "LB",
+    "team": "Tennessee",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 243,
+    "scoutingReport": "2027 draft-eligible LB prospect from Tennessee added from the updated draft board."
+  },
+  {
+    "name": "Jonathan Maldonado",
+    "position": "EDGE",
+    "team": "Ole Miss",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 244,
+    "scoutingReport": "2027 draft-eligible EDGE prospect from Ole Miss added from the updated draft board."
+  },
+  {
+    "name": "Markis Deal",
+    "position": "DT",
+    "team": "TCU",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 245,
+    "scoutingReport": "2027 draft-eligible DT prospect from TCU added from the updated draft board."
+  },
+  {
+    "name": "Ricardo Jones",
+    "position": "S",
+    "team": "Vanderbilt",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 246,
+    "scoutingReport": "2027 draft-eligible S prospect from Vanderbilt added from the updated draft board."
+  },
+  {
+    "name": "Que'Sean Brown",
+    "position": "WR",
+    "team": "Duke",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 247,
+    "scoutingReport": "2027 draft-eligible WR prospect from Duke added from the updated draft board."
+  },
+  {
+    "name": "Zion Tracy",
+    "position": "CB",
+    "team": "Penn State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 248,
+    "scoutingReport": "2027 draft-eligible CB prospect from Penn State added from the updated draft board."
+  },
+  {
+    "name": "Eryx Daugherty",
+    "position": "OG",
+    "team": "Louisville",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 249,
+    "scoutingReport": "2027 draft-eligible OG prospect from Louisville added from the updated draft board."
+  },
+  {
+    "name": "John Curry",
+    "position": "LB",
+    "team": "Texas Tech",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 250,
+    "scoutingReport": "2027 draft-eligible LB prospect from Texas Tech added from the updated draft board."
+  },
+  {
+    "name": "Luke Reynolds",
+    "position": "TE",
+    "team": "Penn State",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 251,
+    "scoutingReport": "2027 draft-eligible TE prospect from Penn State added from the updated draft board."
+  },
+  {
+    "name": "Xavier Lucas",
+    "position": "CB",
+    "team": "Miami (FL)",
+    "stats": {
+      "height": "N/A",
+      "weight": "N/A",
+      "40Time": "N/A"
+    },
+    "rating": 252,
+    "scoutingReport": "2027 draft-eligible CB prospect from Miami (FL) added from the updated draft board."
   }
 ]
