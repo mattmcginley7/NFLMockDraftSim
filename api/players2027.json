@@ -1,0 +1,386 @@
+[
+    {
+        "name": "Jeremiah Smith",
+        "position": "WR",
+        "team": "Ohio State",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "223",
+            "40Time": "N/A"
+        },
+        "rating": 1,
+        "scoutingReport": "Premier boundary receiver with rare size, speed and ball skills; a blue-chip 2027 prospect who can win vertically, separate through contact and create after the catch."
+    },
+    {
+        "name": "Arch Manning",
+        "position": "QB",
+        "team": "Texas",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "226",
+            "40Time": "N/A"
+        },
+        "rating": 2,
+        "scoutingReport": "Prototype quarterback with NFL bloodlines, plus arm talent and improving mobility; projects as an early 2027 option if his processing and full-season consistency continue to grow."
+    },
+    {
+        "name": "Colin Simmons",
+        "position": "EDGE",
+        "team": "Texas",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "245",
+            "40Time": "N/A"
+        },
+        "rating": 3,
+        "scoutingReport": "Explosive edge rusher with first-step juice, bend and closing burst; profiles as a disruptive pressure creator with room to add power."
+    },
+    {
+        "name": "Dante Moore",
+        "position": "QB",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "206",
+            "40Time": "N/A"
+        },
+        "rating": 4,
+        "scoutingReport": "Smooth pocket passer with high-end accuracy, touch and rhythm; offers starter traits if he keeps improving pressure management and downfield aggression."
+    },
+    {
+        "name": "Dylan Stewart",
+        "position": "EDGE",
+        "team": "South Carolina",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "245",
+            "40Time": "N/A"
+        },
+        "rating": 5,
+        "scoutingReport": "Long, twitched-up pass rusher with outstanding traits; wins with burst and length while developing a more complete rush plan."
+    },
+    {
+        "name": "Leonard Moore",
+        "position": "CB",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'2\"",
+            "weight": "195",
+            "40Time": "N/A"
+        },
+        "rating": 6,
+        "scoutingReport": "Long corner with impressive ball production and man-coverage tools; size and instincts give him top-of-the-class defensive back upside."
+    },
+    {
+        "name": "Cam Coleman",
+        "position": "WR",
+        "team": "Texas",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "200",
+            "40Time": "N/A"
+        },
+        "rating": 7,
+        "scoutingReport": "Big-play receiver with catch-radius and vertical ability; dangerous above the rim and still improving as a nuanced route runner."
+    },
+    {
+        "name": "Jordan Seaton",
+        "position": "OT",
+        "team": "LSU",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "307",
+            "40Time": "N/A"
+        },
+        "rating": 8,
+        "scoutingReport": "Athletic tackle prospect with premium movement skills and pass-protection upside; projects as a high-end blindside or right tackle candidate."
+    },
+    {
+        "name": "Julian Sayin",
+        "position": "QB",
+        "team": "Ohio State",
+        "stats": {
+            "height": "6'1\"",
+            "weight": "208",
+            "40Time": "N/A"
+        },
+        "rating": 9,
+        "scoutingReport": "Accurate, efficient passer with quick decisions and touch; size is average, but timing and ball placement keep him in the early-round conversation."
+    },
+    {
+        "name": "Trevor Goosby",
+        "position": "OT",
+        "team": "Texas",
+        "stats": {
+            "height": "6'7\"",
+            "weight": "325",
+            "40Time": "N/A"
+        },
+        "rating": 10,
+        "scoutingReport": "Massive offensive tackle with length, power and SEC experience; has the tools to develop into a franchise-caliber edge protector."
+    },
+    {
+        "name": "Dakorien Moore",
+        "position": "WR",
+        "team": "Oregon",
+        "stats": {
+            "height": "5'11\"",
+            "weight": "195",
+            "40Time": "N/A"
+        },
+        "rating": 11,
+        "scoutingReport": "Explosive receiver with elite acceleration and open-field creativity; can stress defenses vertically and after the catch."
+    },
+    {
+        "name": "David Stone",
+        "position": "DL",
+        "team": "Oklahoma",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "275",
+            "40Time": "N/A"
+        },
+        "rating": 12,
+        "scoutingReport": "Powerful interior defender with quickness and heavy hands; disruptive against the run with upside as a pocket-collapsing pass rusher."
+    },
+    {
+        "name": "Justin Scott",
+        "position": "DL",
+        "team": "Miami",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "310",
+            "40Time": "N/A"
+        },
+        "rating": 13,
+        "scoutingReport": "Big, athletic defensive lineman with gap-control strength and pass-rush traits; flashes the ability to become a three-down interior force."
+    },
+    {
+        "name": "Sammy Brown",
+        "position": "LB",
+        "team": "Clemson",
+        "stats": {
+            "height": "6'2\"",
+            "weight": "235",
+            "40Time": "N/A"
+        },
+        "rating": 14,
+        "scoutingReport": "Dynamic linebacker with range, burst and downhill physicality; offers blitz value and sideline-to-sideline pursuit skills."
+    },
+    {
+        "name": "Rasheem Biles",
+        "position": "LB",
+        "team": "Texas",
+        "stats": {
+            "height": "6'1\"",
+            "weight": "220",
+            "40Time": "N/A"
+        },
+        "rating": 15,
+        "scoutingReport": "Fast, productive linebacker with coverage range and playmaking instincts; fits modern defenses that ask linebackers to run and cover."
+    },
+    {
+        "name": "Jelani McDonald",
+        "position": "S",
+        "team": "Texas",
+        "stats": {
+            "height": "6'2\"",
+            "weight": "200",
+            "40Time": "N/A"
+        },
+        "rating": 16,
+        "scoutingReport": "Versatile safety with size and range; can rotate deep, match tight ends and support the run from multiple alignments."
+    },
+    {
+        "name": "David Sanders Jr.",
+        "position": "OT",
+        "team": "Tennessee",
+        "stats": {
+            "height": "6'6\"",
+            "weight": "305",
+            "40Time": "N/A"
+        },
+        "rating": 17,
+        "scoutingReport": "Former elite recruit with rare tackle athleticism; projects as a high-upside pass protector as technique and strength mature."
+    },
+    {
+        "name": "KJ Bolden",
+        "position": "S",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'1\"",
+            "weight": "190",
+            "40Time": "N/A"
+        },
+        "rating": 18,
+        "scoutingReport": "Explosive defensive back with coverage versatility and return ability; can play safety, nickel or matchup roles."
+    },
+    {
+        "name": "Ellis Robinson IV",
+        "position": "CB",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'0\"",
+            "weight": "185",
+            "40Time": "N/A"
+        },
+        "rating": 19,
+        "scoutingReport": "Fluid cover corner with five-star traits, speed and ball skills; press technique and consistency will determine his ceiling."
+    },
+    {
+        "name": "Ryan Williams",
+        "position": "WR",
+        "team": "Alabama",
+        "stats": {
+            "height": "6'0\"",
+            "weight": "175",
+            "40Time": "N/A"
+        },
+        "rating": 20,
+        "scoutingReport": "Electric receiver with instant acceleration and separation ability; a home-run threat despite a lean frame."
+    },
+    {
+        "name": "Elijah Rushing",
+        "position": "EDGE",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'6\"",
+            "weight": "251",
+            "40Time": "N/A"
+        },
+        "rating": 21,
+        "scoutingReport": "Long edge defender with developmental pass-rush upside; length, frame and athleticism make him a high-ceiling 2027 projection."
+    },
+    {
+        "name": "Williams Nwaneri",
+        "position": "EDGE",
+        "team": "Missouri",
+        "stats": {
+            "height": "6'6\"",
+            "weight": "260",
+            "40Time": "N/A"
+        },
+        "rating": 22,
+        "scoutingReport": "Powerful, long defensive end with rare physical tools; can set the edge and grow into a dangerous power rusher."
+    },
+    {
+        "name": "TJ Capers",
+        "position": "LB",
+        "team": "Louisville",
+        "stats": {
+            "height": "6'2\"",
+            "weight": "230",
+            "40Time": "N/A"
+        },
+        "rating": 23,
+        "scoutingReport": "Athletic linebacker with coverage upside and closing speed; profiles as a movable second-level defender."
+    },
+    {
+        "name": "Duce Robinson",
+        "position": "TE",
+        "team": "USC",
+        "stats": {
+            "height": "6'6\"",
+            "weight": "225",
+            "40Time": "N/A"
+        },
+        "rating": 24,
+        "scoutingReport": "Oversized receiving weapon with basketball-style catch radius; creates mismatches detached or inline if blocking continues to develop."
+    },
+    {
+        "name": "Justice Haynes",
+        "position": "RB",
+        "team": "Michigan",
+        "stats": {
+            "height": "5'11\"",
+            "weight": "205",
+            "40Time": "N/A"
+        },
+        "rating": 25,
+        "scoutingReport": "Compact, explosive runner with vision, burst and receiving value; has three-down potential in a zone-heavy offense."
+    },
+    {
+        "name": "Jerrick Gibson",
+        "position": "RB",
+        "team": "Texas",
+        "stats": {
+            "height": "5'10\"",
+            "weight": "205",
+            "40Time": "N/A"
+        },
+        "rating": 26,
+        "scoutingReport": "Physical runner with burst through the hole and contact balance; offers early-down value with room to grow as a receiver."
+    },
+    {
+        "name": "Aidan Chiles",
+        "position": "QB",
+        "team": "Michigan State",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "217",
+            "40Time": "N/A"
+        },
+        "rating": 27,
+        "scoutingReport": "Toolsy quarterback with mobility and arm strength; developmental upside hinges on accuracy and decision-making growth."
+    },
+    {
+        "name": "CJ Carr",
+        "position": "QB",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "210",
+            "40Time": "N/A"
+        },
+        "rating": 28,
+        "scoutingReport": "Polished passer with anticipation and pocket feel; has starter upside as his arm strength and live-game r\u00e9sum\u00e9 expand."
+    },
+    {
+        "name": "Darian Mensah",
+        "position": "QB",
+        "team": "Miami",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "205",
+            "40Time": "N/A"
+        },
+        "rating": 29,
+        "scoutingReport": "Ascending quarterback prospect with poise, accuracy and functional mobility; a strong season could push him up boards."
+    },
+    {
+        "name": "Drew Mestemaker",
+        "position": "QB",
+        "team": "Oklahoma State",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "215",
+            "40Time": "N/A"
+        },
+        "rating": 30,
+        "scoutingReport": "Intriguing passer with size and production trajectory; projects as a developmental quarterback with rising-stock potential."
+    },
+    {
+        "name": "Kelley Jones",
+        "position": "CB",
+        "team": "Mississippi State",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "195",
+            "40Time": "N/A"
+        },
+        "rating": 31,
+        "scoutingReport": "Rarely long corner with man-coverage upside, ball production and recovery speed; strength and tackling refinement are next steps."
+    },
+    {
+        "name": "Trinidad Chambliss",
+        "position": "QB",
+        "team": "Ole Miss",
+        "stats": {
+            "height": "6'1\"",
+            "weight": "205",
+            "40Time": "N/A"
+        },
+        "rating": 32,
+        "scoutingReport": "Experienced dual-threat quarterback with accuracy, pocket movement and pressure answers; could rise with another efficient season."
+    }
+]

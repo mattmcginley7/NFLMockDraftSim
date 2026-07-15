@@ -1110,7 +1110,7 @@ function showResultsModal() {
 
     // Add the new h1 element
     const heading = document.createElement('h1');
-    heading.textContent = 'Your 2025 Draft Class';
+    heading.textContent = 'Your 2027 Draft Class';
     heading.style.textAlign = 'center';
     resultsContainer.appendChild(heading);
 

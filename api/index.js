@@ -36,7 +36,7 @@ app.get('/rankings.html', (req, res) => {
 });
 
 
-const playersFilePath = path.join(__dirname, 'players.json');
+const playersFilePath = path.join(__dirname, 'players2027.json');
 const teamsFilePath = path.join(__dirname, 'teams.json');
 
 // MongoDB connection setup
@@ -70,14 +70,14 @@ app.listen(PORT, '0.0.0.0', () => {
 // Endpoint for Player Rankings (All Players, No Draft State Filtering)
 app.get('/api/allPlayers', (req, res) => {
     try {
-        const filePath = path.join(__dirname, 'players.json');
+        const filePath = playersFilePath;
         if (!fs.existsSync(filePath)) {
-            throw new Error('players.json file not found');
+            throw new Error('players2027.json file not found');
         }
         const players = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
         res.json(players);
     } catch (error) {
-        console.error('Error reading players.json:', error);
+        console.error('Error reading players2027.json:', error);
         res.status(500).json({ message: 'Failed to fetch all players' });
     }
 });
