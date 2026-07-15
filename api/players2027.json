@@ -660,30 +660,6 @@
     "scoutingReport": "You can have him play safety, in the box, nickel, corner, he can do it all. You can even have him return punts and kicks. He won't miss tackles, he won't get beat with speed or bad decisions, he's just a great all around saftety that can do everything you could ever want a defensive back to do."
   },
   {
-    "name": "Arvell Reese",
-    "position": "LB",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'4\"",
-      "weight": "243",
-      "40Time": "N/A"
-    },
-    "rating": 56,
-    "scoutingReport": "Think Micah Parsons. He can play off ball linebacker in space, or the edge and be an elite pass rusher with his speed, bend, strength and overall movement skills. Can win with speed to power or just pure speed. A creative defensive coordinator can have him blitzing from the interior as a standup linebacker and offers insane versatility in the front 7."
-  },
-  {
-    "name": "Fernando Mendoza",
-    "position": "QB",
-    "team": "Indiana",
-    "stats": {
-      "height": "6'5\"",
-      "weight": "225",
-      "40Time": "N/A"
-    },
-    "rating": 57,
-    "scoutingReport": "Accurate and good decision maker. Athletic enough that he can make a defense pay if they don't take his running ability seriously. Can throw on the run but best in the pocket with timing and rhythm. High quality human who loves football and can be counted on as a leader of a franchise."
-  },
-  {
     "name": "Jordyn Tyson",
     "position": "WR",
     "team": "Arizona State",
@@ -744,30 +720,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "Carnell Tate",
-    "position": "WR",
-    "team": "Ohio State",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "191",
-      "40Time": "N/A"
-    },
-    "rating": 63,
-    "scoutingReport": "Boundary WR with great speed and hands. Must have someone over the top because he can win vertically."
-  },
-  {
-    "name": "Jeremiyah Love",
-    "position": "RB",
-    "team": "Notre Dame",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "214",
-      "40Time": "N/A"
-    },
-    "rating": 64,
-    "scoutingReport": ""
-  },
-  {
     "name": "Francis Mauigoa",
     "position": "OT",
     "team": "Miami",
@@ -804,18 +756,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "David Bailey",
-    "position": "EDGE",
-    "team": "Texas Tech",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "250",
-      "40Time": "N/A"
-    },
-    "rating": 68,
-    "scoutingReport": ""
-  },
-  {
     "name": "Kadyn Proctor",
     "position": "OT",
     "team": "Alabama",
@@ -849,18 +789,6 @@
       "40Time": "N/A"
     },
     "rating": 71,
-    "scoutingReport": ""
-  },
-  {
-    "name": "T.J. Parker",
-    "position": "EDGE",
-    "team": "Clemson",
-    "stats": {
-      "height": "6'3\"",
-      "weight": "265",
-      "40Time": "N/A"
-    },
-    "rating": 72,
     "scoutingReport": ""
   },
   {
@@ -1077,18 +1005,6 @@
       "40Time": "N/A"
     },
     "rating": 90,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Dillon Thieneman",
-    "position": "S",
-    "team": "Oregon",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "207",
-      "40Time": "N/A"
-    },
-    "rating": 91,
     "scoutingReport": ""
   },
   {
@@ -1329,18 +1245,6 @@
       "40Time": "N/A"
     },
     "rating": 111,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Malik Muhammad",
-    "position": "CB",
-    "team": "Texas",
-    "stats": {
-      "height": "6'0\"",
-      "weight": "180",
-      "40Time": "N/A"
-    },
-    "rating": 112,
     "scoutingReport": ""
   },
   {
@@ -2088,18 +1992,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "Emmanuel Pregnon",
-    "position": "IOL",
-    "team": "Oregon",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 175,
-    "scoutingReport": ""
-  },
-  {
     "name": "Davison Igbinosun",
     "position": "CB",
     "team": "Ohio State",
@@ -2172,18 +2064,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "Chase Bisontis",
-    "position": "OT",
-    "team": "Texas A&M",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 182,
-    "scoutingReport": ""
-  },
-  {
     "name": "Chris Johnson",
     "position": "RB",
     "team": "Miami (FL)",
@@ -2217,30 +2097,6 @@
       "40Time": "N/A"
     },
     "rating": 185,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Josh Cameron",
-    "position": "WR",
-    "team": "Baylor",
-    "stats": {
-      "height": "6'1\"",
-      "weight": "224",
-      "40Time": "N/A"
-    },
-    "rating": 186,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Tanner Koziol",
-    "position": "TE",
-    "team": "Miami (FL)",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 187,
     "scoutingReport": ""
   },
   {
@@ -2445,18 +2301,6 @@
       "40Time": "N/A"
     },
     "rating": 204,
-    "scoutingReport": ""
-  },
-  {
-    "name": "TJ Parker",
-    "position": "EDGE",
-    "team": "Clemson",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 205,
     "scoutingReport": ""
   },
   {
@@ -2832,18 +2676,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "Logan Jones",
-    "position": "IOL",
-    "team": "Iowa",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 237,
-    "scoutingReport": ""
-  },
-  {
     "name": "Santana Hopper",
     "position": "DL",
     "team": "Tulane",
@@ -3108,18 +2940,6 @@
     "scoutingReport": ""
   },
   {
-    "name": "Genesis Smith",
-    "position": "S",
-    "team": "Arizona",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 260,
-    "scoutingReport": ""
-  },
-  {
     "name": "Amare Ferrell",
     "position": "S",
     "team": "Indiana",
@@ -3189,18 +3009,6 @@
       "40Time": "N/A"
     },
     "rating": 266,
-    "scoutingReport": ""
-  },
-  {
-    "name": "Carson Beck",
-    "position": "QB",
-    "team": "Miami (FL)",
-    "stats": {
-      "height": "N/A",
-      "weight": "N/A",
-      "40Time": "N/A"
-    },
-    "rating": 267,
     "scoutingReport": ""
   },
   {
@@ -3862,18 +3670,6 @@
     },
     "rating": 322,
     "scoutingReport": "Christian Grey is a promising cornerback with fluid movement and strong coverage skills. In 2024 at Notre Dame, he recorded 2 INTs, 7 PBUs, and an 84.3 PFF coverage grade, limiting receivers to a 46.8% catch rate. His 6'0\", 190-lb frame and 4.50 speed make him effective in press and zone coverage. Grey\u2019s run support (35 tackles) is solid, but he lacks elite explosiveness and needs to improve tackling consistency (8.9% missed tackle rate). He projects as a Day 3 2026 pick with CB2 or nickel potential."
-  },
-  {
-    "name": "De'Zhaun Stribling",
-    "position": "WR",
-    "team": "Ole Miss",
-    "stats": {
-      "height": "6'2\"",
-      "weight": "200",
-      "40Time": "4.55u"
-    },
-    "rating": 323,
-    "scoutingReport": "De'Zhaun Stribling is a lanky wide receiver with strong ball skills and body control. Transferring from Oklahoma State to Ole Miss for 2025, he recorded 52 receptions, 784 yards, and 6 TDs in 2024, earning an 83.9 PFF receiving grade. His 6'2\", 200-lb frame and 4.55 speed help him win jump balls (60% contested catch rate). Stribling\u2019s route-running needs polish to beat press coverage. A former three-star recruit, he projects as a Day 3 2026 pick with possession X receiver potential."
   },
   {
     "name": "Jager Burton",
