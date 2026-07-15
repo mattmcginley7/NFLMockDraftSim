@@ -382,5 +382,257 @@
         },
         "rating": 32,
         "scoutingReport": "Experienced dual-threat quarterback with accuracy, pocket movement and pressure answers; could rise with another efficient season."
+    },
+    {
+        "name": "Kyngstonn Viliamu-Asa",
+        "position": "LB",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "230",
+            "40Time": "4.65"
+        },
+        "rating": 33,
+        "scoutingReport": "Instinctive three-down linebacker with downhill trigger, coverage range and finishing ability; projects as a defensive leader with every-down versatility."
+    },
+    {
+        "name": "Carter Smith",
+        "position": "OT",
+        "team": "Indiana",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "308",
+            "40Time": "5.18"
+        },
+        "rating": 34,
+        "scoutingReport": "Athletic left tackle prospect with quality feet, balance and recovery skills; offers blind-side upside if his anchor and hand placement keep improving."
+    },
+    {
+        "name": "Matayo Uiagalelei",
+        "position": "EDGE",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "272",
+            "40Time": "4.85"
+        },
+        "rating": 35,
+        "scoutingReport": "Powerful edge defender with length, heavy hands and inside-out rush ability; sets a firm edge while flashing pocket-collapsing strength."
+    },
+    {
+        "name": "Cayden Green",
+        "position": "OT",
+        "team": "Missouri",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "324",
+            "40Time": "5.20"
+        },
+        "rating": 36,
+        "scoutingReport": "Massive offensive tackle with SEC-tested power and positional flexibility; wins with grip strength, torque and a mauling run-game demeanor."
+    },
+    {
+        "name": "Damon Wilson II",
+        "position": "EDGE",
+        "team": "Miami",
+        "stats": {
+            "height": "6'4\"",
+            "weight": "250",
+            "40Time": "4.58"
+        },
+        "rating": 37,
+        "scoutingReport": "Explosive pass rusher with first-step burst and bend; has the athletic profile to become a high-pressure edge if his counter package matures."
+    },
+    {
+        "name": "Will Echoles",
+        "position": "DL",
+        "team": "Ole Miss",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "310",
+            "40Time": "5.10"
+        },
+        "rating": 38,
+        "scoutingReport": "Disruptive interior lineman with stout leverage and active hands; combines run-game toughness with enough quickness to push the pocket."
+    },
+    {
+        "name": "Ahmad Hardy",
+        "position": "RB",
+        "team": "Missouri",
+        "stats": {
+            "height": "5'10\"",
+            "weight": "206",
+            "40Time": "4.59"
+        },
+        "rating": 39,
+        "scoutingReport": "Compact, violent runner with contact balance and one-cut burst; brings feature-back traits when paired with improved passing-down polish."
+    },
+    {
+        "name": "Trey'Dez Green",
+        "position": "TE",
+        "team": "LSU",
+        "stats": {
+            "height": "6'7\"",
+            "weight": "240",
+            "40Time": "4.65"
+        },
+        "rating": 40,
+        "scoutingReport": "Oversized receiving tight end with rare catch radius and red-zone utility; creates matchup stress with basketball-style body control."
+    },
+    {
+        "name": "PJ Williams",
+        "position": "OT",
+        "team": "SMU",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "313",
+            "40Time": "5.20"
+        },
+        "rating": 41,
+        "scoutingReport": "Experienced tackle with a sturdy frame and reliable pass sets; profiles as a polished edge protector with swing-tackle flexibility."
+    },
+    {
+        "name": "Chris Cole",
+        "position": "LB",
+        "team": "Georgia",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "235",
+            "40Time": "4.55"
+        },
+        "rating": 42,
+        "scoutingReport": "Fast second-level defender with coverage upside and blitz timing; offers modern linebacker range with room to grow against downhill run schemes."
+    },
+    {
+        "name": "Austin Siereveld",
+        "position": "OT",
+        "team": "Ohio State",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "325",
+            "40Time": "5.20"
+        },
+        "rating": 43,
+        "scoutingReport": "Physical blocker with tackle size and guard power; moves defenders in the run game and has the frame to handle NFL strength."
+    },
+    {
+        "name": "Tae Johnson",
+        "position": "S",
+        "team": "Notre Dame",
+        "stats": {
+            "height": "6'2\"",
+            "weight": "193",
+            "40Time": "4.50"
+        },
+        "rating": 44,
+        "scoutingReport": "Rangy safety with ball skills, tackling reliability and split-field versatility; can patrol space or rotate downhill into the box."
+    },
+    {
+        "name": "Dashawn Spears",
+        "position": "S",
+        "team": "LSU",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "208",
+            "40Time": "4.43"
+        },
+        "rating": 45,
+        "scoutingReport": "Big, fast safety with impressive closing burst and run support temperament; brings interchangeable backend traits and special-teams value."
+    },
+    {
+        "name": "Jamari Johnson",
+        "position": "TE",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "257",
+            "40Time": "4.74"
+        },
+        "rating": 46,
+        "scoutingReport": "Well-built tight end with seam-stretching tools and inline potential; combines soft hands with enough mass to develop as a blocker."
+    },
+    {
+        "name": "A'Mauri Washington",
+        "position": "DL",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "330",
+            "40Time": "4.85"
+        },
+        "rating": 47,
+        "scoutingReport": "Powerful nose/interior defender with unusual movement skills for his size; controls gaps and can collapse the middle with raw strength."
+    },
+    {
+        "name": "Brendan Sorsby",
+        "position": "QB",
+        "team": "Texas Tech",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "235",
+            "40Time": "4.65"
+        },
+        "rating": 48,
+        "scoutingReport": "Strong-framed quarterback with mobility, toughness and vertical arm talent; decision-making gains could push him into the top quarterback tier."
+    },
+    {
+        "name": "KJ Duff",
+        "position": "WR",
+        "team": "Rutgers",
+        "stats": {
+            "height": "6'6\"",
+            "weight": "225",
+            "40Time": "4.58"
+        },
+        "rating": 49,
+        "scoutingReport": "Towering receiver with contested-catch dominance and a massive target window; offers boundary mismatch ability and red-zone upside."
+    },
+    {
+        "name": "Chris Peal",
+        "position": "CB",
+        "team": "Syracuse",
+        "stats": {
+            "height": "6'1\"",
+            "weight": "200",
+            "40Time": "4.35"
+        },
+        "rating": 50,
+        "scoutingReport": "Long, explosive corner with zone instincts and recovery speed; has the athletic foundation to match bigger receivers outside."
+    },
+    {
+        "name": "Jordan Ross",
+        "position": "EDGE",
+        "team": "LSU",
+        "stats": {
+            "height": "6'5\"",
+            "weight": "245",
+            "40Time": "4.60"
+        },
+        "rating": 51,
+        "scoutingReport": "High-upside edge rusher with length, speed and closing burst; threatens tackles with space-rush athleticism and developmental power."
+    },
+    {
+        "name": "Teitum Tuioti",
+        "position": "EDGE",
+        "team": "Oregon",
+        "stats": {
+            "height": "6'3\"",
+            "weight": "263",
+            "40Time": "4.70"
+        },
+        "rating": 52,
+        "scoutingReport": "Heavy-handed edge defender with run-game strength and pocket squeeze; wins with leverage and power while adding pass-rush nuance."
+    },
+    {
+        "name": "Brice Pollock",
+        "position": "CB",
+        "team": "Texas Tech",
+        "stats": {
+            "height": "6'0\"",
+            "weight": "195",
+            "40Time": "4.44"
+        },
+        "rating": 53,
+        "scoutingReport": "Ball-hawking corner with route vision and takeaways production; fits zone-heavy looks and has enough speed to carry verticals."
     }
 ]
