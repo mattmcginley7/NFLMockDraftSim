@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2027 My Draft Board</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="board-page">
+    <header class="site-header">
+        <a class="site-brand" href="/">NFL Draft Hub</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="/">Mock Draft</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="board.html" aria-current="page">My Board</a>
+        </nav>
+    </header>
+
+    <main class="board-shell">
+        <section class="board-topbar" aria-labelledby="boardTitle">
+            <div>
+                <p class="eyebrow">2027 Draft Class</p>
+                <h1 id="boardTitle">My Draft Board</h1>
+                <p id="boardStatus" class="board-status">Loading board...</p>
+            </div>
+
+            <form id="authForm" class="auth-panel">
+                <div class="auth-panel__header">
+                    <strong id="authTitle">Sign in</strong>
+                    <button type="button" id="authModeToggle" class="link-button">Create account</button>
+                </div>
+                <label>
+                    Username
+                    <input type="text" id="username" autocomplete="username" minlength="3" required>
+                </label>
+                <label>
+                    Password
+                    <input type="password" id="password" autocomplete="current-password" minlength="8" required>
+                </label>
+                <button type="submit" class="primary-action" id="authSubmit">Sign in</button>
+                <button type="button" class="secondary-action" id="signOut" hidden>Sign out</button>
+                <p id="authMessage" class="auth-message" role="status"></p>
+            </form>
+        </section>
+
+        <section class="board-controls" aria-label="Board controls">
+            <label class="control-field">
+                Search
+                <input type="search" id="boardSearch" placeholder="Name or school">
+            </label>
+            <label class="control-field">
+                Position
+                <select id="positionFilter">
+                    <option value="">All</option>
+                    <option value="QB">QB</option>
+                    <option value="RB">RB</option>
+                    <option value="WR">WR</option>
+                    <option value="TE">TE</option>
+                    <option value="OT">OT</option>
+                    <option value="IOL">IOL</option>
+                    <option value="DL">DL</option>
+                    <option value="EDGE">EDGE</option>
+                    <option value="LB">LB</option>
+                    <option value="CB">CB</option>
+                    <option value="S">S</option>
+                </select>
+            </label>
+            <label class="control-field">
+                Status
+                <select id="statusFilter">
+                    <option value="">All</option>
+                    <option value="watch">Watch</option>
+                    <option value="target">Target</option>
+                    <option value="fade">Fade</option>
+                </select>
+            </label>
+            <button type="button" id="resetBoard" class="secondary-action">Reset</button>
+        </section>
+
+        <section class="board-list-shell" aria-label="Personal board">
+            <div class="board-list-heading">
+                <span id="boardCount">0 players</span>
+                <span id="saveState">Ready</span>
+            </div>
+            <div id="boardList" class="board-list"></div>
+        </section>
+    </main>
+
+    <script src="../models/board.js"></script>
+</body>
+
+</html>
